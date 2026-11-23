@@ -1,0 +1,530 @@
+{
+  "seed": 2,
+  "condition": "mixed_5lang",
+  "condition_paper_label": "Balanced",
+  "n_windows": 64,
+  "window_chars": 2048,
+  "seqlen_cap_tokens": 512,
+  "total_tokens": 32768,
+  "expected_total_tokens": 32768,
+  "total_tokens_matches_table_a1_budget": true,
+  "languages": {
+    "eng_Latn": {
+      "tokens": 1431,
+      "share_pct_of_all_tokens": 4.3670654296875,
+      "share_pct_of_language_attributed_tokens": 4.490116096642611,
+      "manifest_char_share_pct": 20.006359782588095
+    },
+    "swh_Latn": {
+      "tokens": 3318,
+      "share_pct_of_all_tokens": 10.125732421875,
+      "share_pct_of_language_attributed_tokens": 10.411044869783495,
+      "manifest_char_share_pct": 20.007412726725196
+    },
+    "zho_Hans": {
+      "tokens": 4424,
+      "share_pct_of_all_tokens": 13.5009765625,
+      "share_pct_of_language_attributed_tokens": 13.881393159711328,
+      "manifest_char_share_pct": 19.99625151887192
+    },
+    "kor_Hang": {
+      "tokens": 12059,
+      "share_pct_of_all_tokens": 36.8011474609375,
+      "share_pct_of_language_attributed_tokens": 37.83809224976467,
+      "manifest_char_share_pct": 19.999831528938063
+    },
+    "ben_Beng": {
+      "tokens": 10638,
+      "share_pct_of_all_tokens": 32.464599609375,
+      "share_pct_of_language_attributed_tokens": 33.379353624097895,
+      "manifest_char_share_pct": 19.990144442876726
+    }
+  },
+  "boundary_tokens": {
+    "tokens": 0,
+    "share_pct_of_all_tokens": 0.0,
+    "cross_language": 0,
+    "language_to_separator": 0
+  },
+  "separator_only_tokens": {
+    "tokens": 834,
+    "share_pct_of_all_tokens": 2.545166015625
+  },
+  "special_tokens": {
+    "tokens": 64,
+    "share_pct_of_all_tokens": 0.1953125
+  },
+  "language_attributed_tokens": 31870,
+  "share_sum_check_pct": 100.0,
+  "per_window_language_counts": [
+    {
+      "eng_Latn": 110,
+      "swh_Latn": 32,
+      "zho_Hans": 64,
+      "kor_Hang": 289,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 57,
+      "swh_Latn": 80,
+      "zho_Hans": 41,
+      "kor_Hang": 94,
+      "ben_Beng": 225
+    },
+    {
+      "eng_Latn": 45,
+      "swh_Latn": 37,
+      "zho_Hans": 142,
+      "kor_Hang": 94,
+      "ben_Beng": 173
+    },
+    {
+      "eng_Latn": 19,
+      "swh_Latn": 38,
+      "zho_Hans": 31,
+      "kor_Hang": 221,
+      "ben_Beng": 190
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 110,
+      "kor_Hang": 259,
+      "ben_Beng": 128
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 62,
+      "zho_Hans": 30,
+      "kor_Hang": 126,
+      "ben_Beng": 285
+    },
+    {
+      "eng_Latn": 6,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 497,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 67,
+      "zho_Hans": 84,
+      "kor_Hang": 0,
+      "ben_Beng": 348
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 90,
+      "zho_Hans": 70,
+      "kor_Hang": 194,
+      "ben_Beng": 145
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 116,
+      "zho_Hans": 7,
+      "kor_Hang": 226,
+      "ben_Beng": 152
+    },
+    {
+      "eng_Latn": 71,
+      "swh_Latn": 57,
+      "zho_Hans": 72,
+      "kor_Hang": 159,
+      "ben_Beng": 134
+    },
+    {
+      "eng_Latn": 34,
+      "swh_Latn": 52,
+      "zho_Hans": 45,
+      "kor_Hang": 304,
+      "ben_Beng": 64
+    },
+    {
+      "eng_Latn": 9,
+      "swh_Latn": 0,
+      "zho_Hans": 51,
+      "kor_Hang": 89,
+      "ben_Beng": 350
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 65,
+      "kor_Hang": 399,
+      "ben_Beng": 37
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 45,
+      "kor_Hang": 296,
+      "ben_Beng": 162
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 106,
+      "zho_Hans": 0,
+      "kor_Hang": 46,
+      "ben_Beng": 353
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 44,
+      "zho_Hans": 48,
+      "kor_Hang": 89,
+      "ben_Beng": 322
+    },
+    {
+      "eng_Latn": 36,
+      "swh_Latn": 36,
+      "zho_Hans": 67,
+      "kor_Hang": 80,
+      "ben_Beng": 280
+    },
+    {
+      "eng_Latn": 77,
+      "swh_Latn": 161,
+      "zho_Hans": 184,
+      "kor_Hang": 69,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 55,
+      "swh_Latn": 118,
+      "zho_Hans": 87,
+      "kor_Hang": 233,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 287,
+      "zho_Hans": 48,
+      "kor_Hang": 41,
+      "ben_Beng": 119
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 43,
+      "zho_Hans": 78,
+      "kor_Hang": 52,
+      "ben_Beng": 326
+    },
+    {
+      "eng_Latn": 22,
+      "swh_Latn": 35,
+      "zho_Hans": 79,
+      "kor_Hang": 348,
+      "ben_Beng": 13
+    },
+    {
+      "eng_Latn": 41,
+      "swh_Latn": 0,
+      "zho_Hans": 119,
+      "kor_Hang": 276,
+      "ben_Beng": 59
+    },
+    {
+      "eng_Latn": 27,
+      "swh_Latn": 19,
+      "zho_Hans": 16,
+      "kor_Hang": 150,
+      "ben_Beng": 289
+    },
+    {
+      "eng_Latn": 47,
+      "swh_Latn": 95,
+      "zho_Hans": 129,
+      "kor_Hang": 222,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 10,
+      "swh_Latn": 146,
+      "zho_Hans": 66,
+      "kor_Hang": 114,
+      "ben_Beng": 161
+    },
+    {
+      "eng_Latn": 5,
+      "swh_Latn": 39,
+      "zho_Hans": 23,
+      "kor_Hang": 245,
+      "ben_Beng": 187
+    },
+    {
+      "eng_Latn": 42,
+      "swh_Latn": 0,
+      "zho_Hans": 10,
+      "kor_Hang": 162,
+      "ben_Beng": 287
+    },
+    {
+      "eng_Latn": 52,
+      "swh_Latn": 75,
+      "zho_Hans": 177,
+      "kor_Hang": 85,
+      "ben_Beng": 96
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 25,
+      "zho_Hans": 29,
+      "kor_Hang": 449,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 0,
+      "zho_Hans": 67,
+      "kor_Hang": 135,
+      "ben_Beng": 264
+    },
+    {
+      "eng_Latn": 20,
+      "swh_Latn": 0,
+      "zho_Hans": 67,
+      "kor_Hang": 62,
+      "ben_Beng": 354
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 76,
+      "zho_Hans": 91,
+      "kor_Hang": 330,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 150,
+      "zho_Hans": 30,
+      "kor_Hang": 0,
+      "ben_Beng": 325
+    },
+    {
+      "eng_Latn": 13,
+      "swh_Latn": 0,
+      "zho_Hans": 44,
+      "kor_Hang": 102,
+      "ben_Beng": 340
+    },
+    {
+      "eng_Latn": 20,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 134,
+      "ben_Beng": 351
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 140,
+      "zho_Hans": 17,
+      "kor_Hang": 304,
+      "ben_Beng": 34
+    },
+    {
+      "eng_Latn": 18,
+      "swh_Latn": 0,
+      "zho_Hans": 47,
+      "kor_Hang": 405,
+      "ben_Beng": 29
+    },
+    {
+      "eng_Latn": 20,
+      "swh_Latn": 110,
+      "zho_Hans": 110,
+      "kor_Hang": 24,
+      "ben_Beng": 231
+    },
+    {
+      "eng_Latn": 12,
+      "swh_Latn": 90,
+      "zho_Hans": 50,
+      "kor_Hang": 113,
+      "ben_Beng": 234
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 29,
+      "zho_Hans": 86,
+      "kor_Hang": 0,
+      "ben_Beng": 386
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 118,
+      "zho_Hans": 164,
+      "kor_Hang": 213,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 38,
+      "swh_Latn": 0,
+      "zho_Hans": 126,
+      "kor_Hang": 99,
+      "ben_Beng": 236
+    },
+    {
+      "eng_Latn": 61,
+      "swh_Latn": 0,
+      "zho_Hans": 110,
+      "kor_Hang": 322,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 19,
+      "swh_Latn": 254,
+      "zho_Hans": 33,
+      "kor_Hang": 55,
+      "ben_Beng": 128
+    },
+    {
+      "eng_Latn": 23,
+      "swh_Latn": 0,
+      "zho_Hans": 115,
+      "kor_Hang": 357,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 17,
+      "swh_Latn": 0,
+      "zho_Hans": 125,
+      "kor_Hang": 357,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 11,
+      "swh_Latn": 0,
+      "zho_Hans": 234,
+      "kor_Hang": 98,
+      "ben_Beng": 146
+    },
+    {
+      "eng_Latn": 38,
+      "swh_Latn": 30,
+      "zho_Hans": 85,
+      "kor_Hang": 105,
+      "ben_Beng": 237
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 1,
+      "zho_Hans": 87,
+      "kor_Hang": 197,
+      "ben_Beng": 214
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 301,
+      "ben_Beng": 204
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 343,
+      "ben_Beng": 162
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 150,
+      "zho_Hans": 24,
+      "kor_Hang": 329,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 67,
+      "zho_Hans": 111,
+      "kor_Hang": 79,
+      "ben_Beng": 240
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 100,
+      "kor_Hang": 280,
+      "ben_Beng": 117
+    },
+    {
+      "eng_Latn": 60,
+      "swh_Latn": 0,
+      "zho_Hans": 110,
+      "kor_Hang": 0,
+      "ben_Beng": 323
+    },
+    {
+      "eng_Latn": 47,
+      "swh_Latn": 0,
+      "zho_Hans": 102,
+      "kor_Hang": 16,
+      "ben_Beng": 334
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 44,
+      "zho_Hans": 51,
+      "kor_Hang": 146,
+      "ben_Beng": 227
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 86,
+      "kor_Hang": 122,
+      "ben_Beng": 293
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 27,
+      "kor_Hang": 476,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 30,
+      "swh_Latn": 51,
+      "zho_Hans": 14,
+      "kor_Hang": 402,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 99,
+      "swh_Latn": 148,
+      "zho_Hans": 33,
+      "kor_Hang": 88,
+      "ben_Beng": 125
+    },
+    {
+      "eng_Latn": 62,
+      "swh_Latn": 0,
+      "zho_Hans": 61,
+      "kor_Hang": 157,
+      "ben_Beng": 219
+    }
+  ],
+  "provenance": {
+    "calib_text_hash_md5_12": "ac67f789d87c",
+    "first_sample_preview": "artelly aliapisha Baraza mpya la muda la Uchaguzi la (CEP) l",
+    "window_char_offsets_reproduced": true,
+    "table_a1_published": {
+      "mean_raw_tokens": 1965.921875,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_measured": {
+      "mean_raw_tokens": 1965.921875,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_exact_match": {
+      "mean_raw_tokens": true,
+      "mean_realized_tokens": true,
+      "cap_hit_fraction": true
+    },
+    "table_a1_all_match": true
+  }
+}

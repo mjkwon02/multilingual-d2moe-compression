@@ -1,0 +1,468 @@
+[qwen15-followup 2026-09-18T11:20:39Z] + python -u qwen15_calib_report.py --conditions swahili_only --seeds 1
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[qwen15-tok] swahili_only seed1: hash=217a14cd2c6a (in DeepSeek logs: True) mean_raw=784.3 mean_realised=512.0 cap_hit=1.000 slow!=fast: 0
+[qwen15-followup 2026-09-18T11:20:58Z] + python -u qwen15_freq.py --condition swahili_only --seed 1
+[mem patch] max_memory={0: '22GiB', 1: '22GiB'}
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.09s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.02s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.07s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.07s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.03s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.03s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.01s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.31it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.07it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Collecting expert activation counts:   0%|          | 0/238 [00:00<?, ?it/s]We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+
+Collecting expert activation counts:   0%|          | 1/238 [00:00<03:27,  1.14it/s]
+Collecting expert activation counts:   1%|          | 2/238 [00:01<02:39,  1.48it/s]
+Collecting expert activation counts:   1%|▏         | 3/238 [00:01<02:23,  1.64it/s]
+Collecting expert activation counts:   2%|▏         | 4/238 [00:02<02:16,  1.72it/s]
+Collecting expert activation counts:   2%|▏         | 5/238 [00:03<02:12,  1.76it/s]
+Collecting expert activation counts:   3%|▎         | 6/238 [00:03<02:11,  1.77it/s]
+Collecting expert activation counts:   3%|▎         | 7/238 [00:04<02:07,  1.82it/s]
+Collecting expert activation counts:   3%|▎         | 8/238 [00:04<02:03,  1.86it/s]
+Collecting expert activation counts:   4%|▍         | 9/238 [00:05<02:03,  1.85it/s]
+Collecting expert activation counts:   4%|▍         | 10/238 [00:05<02:03,  1.85it/s]
+Collecting expert activation counts:   5%|▍         | 11/238 [00:06<02:02,  1.85it/s]
+Collecting expert activation counts:   5%|▌         | 12/238 [00:06<02:00,  1.87it/s]
+Collecting expert activation counts:   5%|▌         | 13/238 [00:07<01:58,  1.90it/s]
+Collecting expert activation counts:   6%|▌         | 14/238 [00:07<01:57,  1.91it/s]
+Collecting expert activation counts:   6%|▋         | 15/238 [00:08<01:56,  1.91it/s]
+Collecting expert activation counts:   7%|▋         | 16/238 [00:08<01:57,  1.89it/s]
+Collecting expert activation counts:   7%|▋         | 17/238 [00:09<01:57,  1.88it/s]
+Collecting expert activation counts:   8%|▊         | 18/238 [00:09<01:57,  1.88it/s]
+Collecting expert activation counts:   8%|▊         | 19/238 [00:10<01:56,  1.88it/s]
+Collecting expert activation counts:   8%|▊         | 20/238 [00:10<01:55,  1.89it/s]
+Collecting expert activation counts:   9%|▉         | 21/238 [00:11<01:55,  1.89it/s]
+Collecting expert activation counts:   9%|▉         | 22/238 [00:12<01:56,  1.86it/s]
+Collecting expert activation counts:  10%|▉         | 23/238 [00:12<01:54,  1.88it/s]
+Collecting expert activation counts:  10%|█         | 24/238 [00:13<01:53,  1.89it/s]
+Collecting expert activation counts:  11%|█         | 25/238 [00:13<01:52,  1.89it/s]
+Collecting expert activation counts:  11%|█         | 26/238 [00:14<01:52,  1.88it/s]
+Collecting expert activation counts:  11%|█▏        | 27/238 [00:14<01:51,  1.89it/s]
+Collecting expert activation counts:  12%|█▏        | 28/238 [00:15<01:50,  1.90it/s]
+Collecting expert activation counts:  12%|█▏        | 29/238 [00:15<01:49,  1.90it/s]
+Collecting expert activation counts:  13%|█▎        | 30/238 [00:16<01:48,  1.91it/s]
+Collecting expert activation counts:  13%|█▎        | 31/238 [00:16<01:49,  1.90it/s]
+Collecting expert activation counts:  13%|█▎        | 32/238 [00:17<01:49,  1.88it/s]
+Collecting expert activation counts:  14%|█▍        | 33/238 [00:17<01:49,  1.87it/s]
+Collecting expert activation counts:  14%|█▍        | 34/238 [00:18<01:48,  1.88it/s]
+Collecting expert activation counts:  15%|█▍        | 35/238 [00:18<01:47,  1.89it/s]
+Collecting expert activation counts:  15%|█▌        | 36/238 [00:19<01:48,  1.87it/s]
+Collecting expert activation counts:  16%|█▌        | 37/238 [00:20<01:47,  1.88it/s]
+Collecting expert activation counts:  16%|█▌        | 38/238 [00:20<01:45,  1.89it/s]
+Collecting expert activation counts:  16%|█▋        | 39/238 [00:21<01:45,  1.89it/s]
+Collecting expert activation counts:  17%|█▋        | 40/238 [00:21<01:44,  1.89it/s]
+Collecting expert activation counts:  17%|█▋        | 41/238 [00:22<01:44,  1.89it/s]
+Collecting expert activation counts:  18%|█▊        | 42/238 [00:22<01:43,  1.90it/s]
+Collecting expert activation counts:  18%|█▊        | 43/238 [00:23<01:43,  1.88it/s]
+Collecting expert activation counts:  18%|█▊        | 44/238 [00:23<01:43,  1.88it/s]
+Collecting expert activation counts:  19%|█▉        | 45/238 [00:24<01:42,  1.88it/s]
+Collecting expert activation counts:  19%|█▉        | 46/238 [00:24<01:41,  1.90it/s]
+Collecting expert activation counts:  20%|█▉        | 47/238 [00:25<01:40,  1.91it/s]
+Collecting expert activation counts:  20%|██        | 48/238 [00:25<01:39,  1.91it/s]
+Collecting expert activation counts:  21%|██        | 49/238 [00:26<01:38,  1.92it/s]
+Collecting expert activation counts:  21%|██        | 50/238 [00:26<01:38,  1.92it/s]
+Collecting expert activation counts:  21%|██▏       | 51/238 [00:27<01:38,  1.91it/s]
+Collecting expert activation counts:  22%|██▏       | 52/238 [00:27<01:37,  1.91it/s]
+Collecting expert activation counts:  22%|██▏       | 53/238 [00:28<01:36,  1.92it/s]
+Collecting expert activation counts:  23%|██▎       | 54/238 [00:28<01:35,  1.92it/s]
+Collecting expert activation counts:  23%|██▎       | 55/238 [00:29<01:35,  1.91it/s]
+Collecting expert activation counts:  24%|██▎       | 56/238 [00:29<01:35,  1.91it/s]
+Collecting expert activation counts:  24%|██▍       | 57/238 [00:30<01:34,  1.91it/s]
+Collecting expert activation counts:  24%|██▍       | 58/238 [00:31<01:34,  1.91it/s]
+Collecting expert activation counts:  25%|██▍       | 59/238 [00:31<01:33,  1.91it/s]
+Collecting expert activation counts:  25%|██▌       | 60/238 [00:32<01:32,  1.92it/s]
+Collecting expert activation counts:  26%|██▌       | 61/238 [00:32<01:32,  1.92it/s]
+Collecting expert activation counts:  26%|██▌       | 62/238 [00:33<01:32,  1.91it/s]
+Collecting expert activation counts:  26%|██▋       | 63/238 [00:33<01:31,  1.91it/s]
+Collecting expert activation counts:  27%|██▋       | 64/238 [00:34<01:31,  1.91it/s]
+Collecting expert activation counts:  27%|██▋       | 65/238 [00:34<01:31,  1.90it/s]
+Collecting expert activation counts:  28%|██▊       | 66/238 [00:35<01:30,  1.91it/s]
+Collecting expert activation counts:  28%|██▊       | 67/238 [00:35<01:29,  1.91it/s]
+Collecting expert activation counts:  29%|██▊       | 68/238 [00:36<01:28,  1.91it/s]
+Collecting expert activation counts:  29%|██▉       | 69/238 [00:36<01:27,  1.93it/s]
+Collecting expert activation counts:  29%|██▉       | 70/238 [00:37<01:27,  1.92it/s]
+Collecting expert activation counts:  30%|██▉       | 71/238 [00:37<01:27,  1.90it/s]
+Collecting expert activation counts:  30%|███       | 72/238 [00:38<01:27,  1.89it/s]
+Collecting expert activation counts:  31%|███       | 73/238 [00:38<01:28,  1.87it/s]
+Collecting expert activation counts:  31%|███       | 74/238 [00:39<01:28,  1.86it/s]
+Collecting expert activation counts:  32%|███▏      | 75/238 [00:39<01:27,  1.87it/s]
+Collecting expert activation counts:  32%|███▏      | 76/238 [00:40<01:25,  1.89it/s]
+Collecting expert activation counts:  32%|███▏      | 77/238 [00:41<01:24,  1.90it/s]
+Collecting expert activation counts:  33%|███▎      | 78/238 [00:41<01:24,  1.90it/s]
+Collecting expert activation counts:  33%|███▎      | 79/238 [00:42<01:24,  1.88it/s]
+Collecting expert activation counts:  34%|███▎      | 80/238 [00:42<01:24,  1.88it/s]
+Collecting expert activation counts:  34%|███▍      | 81/238 [00:43<01:24,  1.86it/s]
+Collecting expert activation counts:  34%|███▍      | 82/238 [00:43<01:22,  1.88it/s]
+Collecting expert activation counts:  35%|███▍      | 83/238 [00:44<01:21,  1.90it/s]
+Collecting expert activation counts:  35%|███▌      | 84/238 [00:44<01:21,  1.90it/s]
+Collecting expert activation counts:  36%|███▌      | 85/238 [00:45<01:20,  1.89it/s]
+Collecting expert activation counts:  36%|███▌      | 86/238 [00:45<01:19,  1.90it/s]
+Collecting expert activation counts:  37%|███▋      | 87/238 [00:46<01:18,  1.92it/s]
+Collecting expert activation counts:  37%|███▋      | 88/238 [00:46<01:17,  1.93it/s]
+Collecting expert activation counts:  37%|███▋      | 89/238 [00:47<01:17,  1.93it/s]
+Collecting expert activation counts:  38%|███▊      | 90/238 [00:47<01:16,  1.93it/s]
+Collecting expert activation counts:  38%|███▊      | 91/238 [00:48<01:17,  1.90it/s]
+Collecting expert activation counts:  39%|███▊      | 92/238 [00:48<01:16,  1.90it/s]
+Collecting expert activation counts:  39%|███▉      | 93/238 [00:49<01:16,  1.90it/s]
+Collecting expert activation counts:  39%|███▉      | 94/238 [00:49<01:15,  1.91it/s]
+Collecting expert activation counts:  40%|███▉      | 95/238 [00:50<01:14,  1.91it/s]
+Collecting expert activation counts:  40%|████      | 96/238 [00:51<01:14,  1.91it/s]
+Collecting expert activation counts:  41%|████      | 97/238 [00:51<01:14,  1.89it/s]
+Collecting expert activation counts:  41%|████      | 98/238 [00:52<01:15,  1.87it/s]
+Collecting expert activation counts:  42%|████▏     | 99/238 [00:52<01:14,  1.88it/s]
+Collecting expert activation counts:  42%|████▏     | 100/238 [00:53<01:14,  1.86it/s]
+Collecting expert activation counts:  42%|████▏     | 101/238 [00:53<01:14,  1.84it/s]
+Collecting expert activation counts:  43%|████▎     | 102/238 [00:54<01:14,  1.83it/s]
+Collecting expert activation counts:  43%|████▎     | 103/238 [00:54<01:13,  1.83it/s]
+Collecting expert activation counts:  44%|████▎     | 104/238 [00:55<01:13,  1.83it/s]
+Collecting expert activation counts:  44%|████▍     | 105/238 [00:55<01:11,  1.86it/s]
+Collecting expert activation counts:  45%|████▍     | 106/238 [00:56<01:10,  1.88it/s]
+Collecting expert activation counts:  45%|████▍     | 107/238 [00:56<01:10,  1.86it/s]
+Collecting expert activation counts:  45%|████▌     | 108/238 [00:57<01:10,  1.85it/s]
+Collecting expert activation counts:  46%|████▌     | 109/238 [00:58<01:08,  1.87it/s]
+Collecting expert activation counts:  46%|████▌     | 110/238 [00:58<01:08,  1.87it/s]
+Collecting expert activation counts:  47%|████▋     | 111/238 [00:59<01:07,  1.88it/s]
+Collecting expert activation counts:  47%|████▋     | 112/238 [00:59<01:07,  1.86it/s]
+Collecting expert activation counts:  47%|████▋     | 113/238 [01:00<01:06,  1.87it/s]
+Collecting expert activation counts:  48%|████▊     | 114/238 [01:00<01:05,  1.88it/s]
+Collecting expert activation counts:  48%|████▊     | 115/238 [01:01<01:04,  1.89it/s]
+Collecting expert activation counts:  49%|████▊     | 116/238 [01:01<01:04,  1.88it/s]
+Collecting expert activation counts:  49%|████▉     | 117/238 [01:02<01:04,  1.88it/s]
+Collecting expert activation counts:  50%|████▉     | 118/238 [01:02<01:03,  1.89it/s]
+Collecting expert activation counts:  50%|█████     | 119/238 [01:03<01:03,  1.88it/s]
+Collecting expert activation counts:  50%|█████     | 120/238 [01:03<01:02,  1.88it/s]
+Collecting expert activation counts:  51%|█████     | 121/238 [01:04<01:02,  1.88it/s]
+Collecting expert activation counts:  51%|█████▏    | 122/238 [01:04<01:01,  1.88it/s]
+Collecting expert activation counts:  52%|█████▏    | 123/238 [01:05<01:01,  1.87it/s]
+Collecting expert activation counts:  52%|█████▏    | 124/238 [01:06<01:02,  1.83it/s]
+Collecting expert activation counts:  53%|█████▎    | 125/238 [01:06<01:01,  1.84it/s]
+Collecting expert activation counts:  53%|█████▎    | 126/238 [01:07<00:59,  1.87it/s]
+Collecting expert activation counts:  53%|█████▎    | 127/238 [01:07<00:59,  1.87it/s]
+Collecting expert activation counts:  54%|█████▍    | 128/238 [01:08<00:59,  1.86it/s]
+Collecting expert activation counts:  54%|█████▍    | 129/238 [01:08<00:58,  1.87it/s]
+Collecting expert activation counts:  55%|█████▍    | 130/238 [01:09<00:57,  1.87it/s]
+Collecting expert activation counts:  55%|█████▌    | 131/238 [01:09<00:57,  1.86it/s]
+Collecting expert activation counts:  55%|█████▌    | 132/238 [01:10<00:56,  1.86it/s]
+Collecting expert activation counts:  56%|█████▌    | 133/238 [01:10<00:55,  1.88it/s]
+Collecting expert activation counts:  56%|█████▋    | 134/238 [01:11<00:54,  1.90it/s]
+Collecting expert activation counts:  57%|█████▋    | 135/238 [01:11<00:53,  1.91it/s]
+Collecting expert activation counts:  57%|█████▋    | 136/238 [01:12<00:53,  1.90it/s]
+Collecting expert activation counts:  58%|█████▊    | 137/238 [01:12<00:52,  1.91it/s]
+Collecting expert activation counts:  58%|█████▊    | 138/238 [01:13<00:52,  1.91it/s]
+Collecting expert activation counts:  58%|█████▊    | 139/238 [01:13<00:52,  1.90it/s]
+Collecting expert activation counts:  59%|█████▉    | 140/238 [01:14<00:51,  1.89it/s]
+Collecting expert activation counts:  59%|█████▉    | 141/238 [01:15<00:51,  1.90it/s]
+Collecting expert activation counts:  60%|█████▉    | 142/238 [01:15<00:50,  1.89it/s]
+Collecting expert activation counts:  60%|██████    | 143/238 [01:16<00:49,  1.90it/s]
+Collecting expert activation counts:  61%|██████    | 144/238 [01:16<00:49,  1.91it/s]
+Collecting expert activation counts:  61%|██████    | 145/238 [01:17<00:48,  1.92it/s]
+Collecting expert activation counts:  61%|██████▏   | 146/238 [01:17<00:48,  1.91it/s]
+Collecting expert activation counts:  62%|██████▏   | 147/238 [01:18<00:47,  1.90it/s]
+Collecting expert activation counts:  62%|██████▏   | 148/238 [01:18<00:47,  1.91it/s]
+Collecting expert activation counts:  63%|██████▎   | 149/238 [01:19<00:46,  1.91it/s]
+Collecting expert activation counts:  63%|██████▎   | 150/238 [01:19<00:46,  1.89it/s]
+Collecting expert activation counts:  63%|██████▎   | 151/238 [01:20<00:46,  1.88it/s]
+Collecting expert activation counts:  64%|██████▍   | 152/238 [01:20<00:45,  1.88it/s]
+Collecting expert activation counts:  64%|██████▍   | 153/238 [01:21<00:44,  1.90it/s]
+Collecting expert activation counts:  65%|██████▍   | 154/238 [01:21<00:43,  1.91it/s]
+Collecting expert activation counts:  65%|██████▌   | 155/238 [01:22<00:43,  1.91it/s]
+Collecting expert activation counts:  66%|██████▌   | 156/238 [01:22<00:42,  1.91it/s]
+Collecting expert activation counts:  66%|██████▌   | 157/238 [01:23<00:42,  1.91it/s]
+Collecting expert activation counts:  66%|██████▋   | 158/238 [01:23<00:42,  1.90it/s]
+Collecting expert activation counts:  67%|██████▋   | 159/238 [01:24<00:41,  1.90it/s]
+Collecting expert activation counts:  67%|██████▋   | 160/238 [01:25<00:41,  1.89it/s]
+Collecting expert activation counts:  68%|██████▊   | 161/238 [01:25<00:40,  1.88it/s]
+Collecting expert activation counts:  68%|██████▊   | 162/238 [01:26<00:40,  1.88it/s]
+Collecting expert activation counts:  68%|██████▊   | 163/238 [01:26<00:40,  1.87it/s]
+Collecting expert activation counts:  69%|██████▉   | 164/238 [01:27<00:39,  1.86it/s]
+Collecting expert activation counts:  69%|██████▉   | 165/238 [01:27<00:39,  1.85it/s]
+Collecting expert activation counts:  70%|██████▉   | 166/238 [01:28<00:38,  1.87it/s]
+Collecting expert activation counts:  70%|███████   | 167/238 [01:28<00:37,  1.88it/s]
+Collecting expert activation counts:  71%|███████   | 168/238 [01:29<00:37,  1.88it/s]
+Collecting expert activation counts:  71%|███████   | 169/238 [01:29<00:36,  1.88it/s]
+Collecting expert activation counts:  71%|███████▏  | 170/238 [01:30<00:35,  1.89it/s]
+Collecting expert activation counts:  72%|███████▏  | 171/238 [01:30<00:35,  1.89it/s]
+Collecting expert activation counts:  72%|███████▏  | 172/238 [01:31<00:34,  1.89it/s]
+Collecting expert activation counts:  73%|███████▎  | 173/238 [01:31<00:34,  1.89it/s]
+Collecting expert activation counts:  73%|███████▎  | 174/238 [01:32<00:33,  1.90it/s]
+Collecting expert activation counts:  74%|███████▎  | 175/238 [01:33<00:33,  1.89it/s]
+Collecting expert activation counts:  74%|███████▍  | 176/238 [01:33<00:32,  1.89it/s]
+Collecting expert activation counts:  74%|███████▍  | 177/238 [01:34<00:32,  1.90it/s]
+Collecting expert activation counts:  75%|███████▍  | 178/238 [01:34<00:31,  1.90it/s]
+Collecting expert activation counts:  75%|███████▌  | 179/238 [01:35<00:31,  1.90it/s]
+Collecting expert activation counts:  76%|███████▌  | 180/238 [01:35<00:30,  1.91it/s]
+Collecting expert activation counts:  76%|███████▌  | 181/238 [01:36<00:29,  1.91it/s]
+Collecting expert activation counts:  76%|███████▋  | 182/238 [01:36<00:29,  1.91it/s]
+Collecting expert activation counts:  77%|███████▋  | 183/238 [01:37<00:29,  1.89it/s]
+Collecting expert activation counts:  77%|███████▋  | 184/238 [01:37<00:28,  1.90it/s]
+Collecting expert activation counts:  78%|███████▊  | 185/238 [01:38<00:27,  1.91it/s]
+Collecting expert activation counts:  78%|███████▊  | 186/238 [01:38<00:27,  1.91it/s]
+Collecting expert activation counts:  79%|███████▊  | 187/238 [01:39<00:27,  1.89it/s]
+Collecting expert activation counts:  79%|███████▉  | 188/238 [01:39<00:26,  1.88it/s]
+Collecting expert activation counts:  79%|███████▉  | 189/238 [01:40<00:26,  1.88it/s]
+Collecting expert activation counts:  80%|███████▉  | 190/238 [01:40<00:25,  1.88it/s]
+Collecting expert activation counts:  80%|████████  | 191/238 [01:41<00:24,  1.89it/s]
+Collecting expert activation counts:  81%|████████  | 192/238 [01:41<00:24,  1.90it/s]
+Collecting expert activation counts:  81%|████████  | 193/238 [01:42<00:23,  1.89it/s]
+Collecting expert activation counts:  82%|████████▏ | 194/238 [01:43<00:23,  1.88it/s]
+Collecting expert activation counts:  82%|████████▏ | 195/238 [01:43<00:22,  1.88it/s]
+Collecting expert activation counts:  82%|████████▏ | 196/238 [01:44<00:22,  1.88it/s]
+Collecting expert activation counts:  83%|████████▎ | 197/238 [01:44<00:21,  1.88it/s]
+Collecting expert activation counts:  83%|████████▎ | 198/238 [01:45<00:21,  1.88it/s]
+Collecting expert activation counts:  84%|████████▎ | 199/238 [01:45<00:20,  1.88it/s]
+Collecting expert activation counts:  84%|████████▍ | 200/238 [01:46<00:20,  1.89it/s]
+Collecting expert activation counts:  84%|████████▍ | 201/238 [01:46<00:19,  1.90it/s]
+Collecting expert activation counts:  85%|████████▍ | 202/238 [01:47<00:18,  1.90it/s]
+Collecting expert activation counts:  85%|████████▌ | 203/238 [01:47<00:18,  1.90it/s]
+Collecting expert activation counts:  86%|████████▌ | 204/238 [01:48<00:17,  1.90it/s]
+Collecting expert activation counts:  86%|████████▌ | 205/238 [01:48<00:17,  1.90it/s]
+Collecting expert activation counts:  87%|████████▋ | 206/238 [01:49<00:16,  1.90it/s]
+Collecting expert activation counts:  87%|████████▋ | 207/238 [01:49<00:16,  1.90it/s]
+Collecting expert activation counts:  87%|████████▋ | 208/238 [01:50<00:15,  1.89it/s]
+Collecting expert activation counts:  88%|████████▊ | 209/238 [01:50<00:15,  1.89it/s]
+Collecting expert activation counts:  88%|████████▊ | 210/238 [01:51<00:14,  1.91it/s]
+Collecting expert activation counts:  89%|████████▊ | 211/238 [01:51<00:14,  1.92it/s]
+Collecting expert activation counts:  89%|████████▉ | 212/238 [01:52<00:13,  1.91it/s]
+Collecting expert activation counts:  89%|████████▉ | 213/238 [01:53<00:13,  1.90it/s]
+Collecting expert activation counts:  90%|████████▉ | 214/238 [01:53<00:12,  1.90it/s]
+Collecting expert activation counts:  90%|█████████ | 215/238 [01:54<00:12,  1.88it/s]
+Collecting expert activation counts:  91%|█████████ | 216/238 [01:54<00:11,  1.87it/s]
+Collecting expert activation counts:  91%|█████████ | 217/238 [01:55<00:11,  1.87it/s]
+Collecting expert activation counts:  92%|█████████▏| 218/238 [01:55<00:10,  1.84it/s]
+Collecting expert activation counts:  92%|█████████▏| 219/238 [01:56<00:10,  1.85it/s]
+Collecting expert activation counts:  92%|█████████▏| 220/238 [01:56<00:09,  1.86it/s]
+Collecting expert activation counts:  93%|█████████▎| 221/238 [01:57<00:09,  1.87it/s]
+Collecting expert activation counts:  93%|█████████▎| 222/238 [01:57<00:08,  1.87it/s]
+Collecting expert activation counts:  94%|█████████▎| 223/238 [01:58<00:08,  1.87it/s]
+Collecting expert activation counts:  94%|█████████▍| 224/238 [01:58<00:07,  1.88it/s]
+Collecting expert activation counts:  95%|█████████▍| 225/238 [01:59<00:06,  1.88it/s]
+Collecting expert activation counts:  95%|█████████▍| 226/238 [02:00<00:06,  1.88it/s]
+Collecting expert activation counts:  95%|█████████▌| 227/238 [02:00<00:05,  1.89it/s]
+Collecting expert activation counts:  96%|█████████▌| 228/238 [02:01<00:05,  1.90it/s]
+Collecting expert activation counts:  96%|█████████▌| 229/238 [02:01<00:04,  1.89it/s]
+Collecting expert activation counts:  97%|█████████▋| 230/238 [02:02<00:04,  1.90it/s]
+Collecting expert activation counts:  97%|█████████▋| 231/238 [02:02<00:03,  1.92it/s]
+Collecting expert activation counts:  97%|█████████▋| 232/238 [02:03<00:03,  1.91it/s]
+Collecting expert activation counts:  98%|█████████▊| 233/238 [02:03<00:02,  1.91it/s]
+Collecting expert activation counts:  98%|█████████▊| 234/238 [02:04<00:02,  1.92it/s]
+Collecting expert activation counts:  99%|█████████▊| 235/238 [02:04<00:01,  1.90it/s]
+Collecting expert activation counts:  99%|█████████▉| 236/238 [02:05<00:01,  1.86it/s]
+Collecting expert activation counts: 100%|█████████▉| 237/238 [02:05<00:00,  1.87it/s]
+Collecting expert activation counts: 100%|██████████| 238/238 [02:06<00:00,  1.87it/s]
+Collecting expert activation counts: 100%|██████████| 238/238 [02:06<00:00,  1.88it/s]
+[qwen15-res] get_expert_freq: 165.13s peak(alloc/reserved) gpu0:13.782/13.844GiB gpu1:13.954/14.0GiB cpu_rss_peak=1.493GiB
+[qwen15-freq] wrote results/qwen/phase1/swahili_only/seed1/qwen_wikitext_2000_expert_frequencies.json: 67916 token positions counted per layer, zero-freq experts: {}
+[qwen15-followup 2026-09-18T11:23:46Z] + python -u qwen15_fisher.py --condition swahili_only --seed 1
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.25s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.08s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.02s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.11s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.04s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.01s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.03s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.30it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.06it/s]
+[qwen15-res] load: 12.92s peak(alloc/reserved) gpu0:11.246/11.254GiB gpu1:15.513/15.531GiB cpu_rss_peak=2.503GiB
+[qwen15-fisher] condition=swahili_only seed=1 64 windows calib_text_hash=217a14cd2c6a layers=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+[qwen15-res] fisher_layer_0: 95.2s peak(alloc/reserved) gpu0:12.54/12.881GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.024GiB
+[qwen15-fisher] layer 0: done in 95.2s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_1: 92.38s peak(alloc/reserved) gpu0:12.54/12.85GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 1: done in 92.38s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_2: 89.2s peak(alloc/reserved) gpu0:12.54/12.816GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 2: done in 89.2s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_3: 87.78s peak(alloc/reserved) gpu0:12.54/12.785GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 3: done in 87.78s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_4: 85.79s peak(alloc/reserved) gpu0:12.54/12.752GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 4: done in 85.79s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_5: 85.34s peak(alloc/reserved) gpu0:12.54/12.719GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 5: done in 85.34s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_6: 83.88s peak(alloc/reserved) gpu0:12.54/12.689GiB gpu1:17.323/17.66GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 6: done in 83.88s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_7: 82.04s peak(alloc/reserved) gpu0:12.54/12.658GiB gpu1:17.323/17.66GiB cpu_rss_peak=3.848GiB
+[qwen15-fisher] layer 7: done in 82.04s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_8: 80.52s peak(alloc/reserved) gpu0:12.54/12.633GiB gpu1:17.323/17.66GiB cpu_rss_peak=4.605GiB
+[qwen15-fisher] layer 8: done in 80.52s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_9: 78.35s peak(alloc/reserved) gpu0:12.54/12.602GiB gpu1:17.323/17.66GiB cpu_rss_peak=4.605GiB
+[qwen15-fisher] layer 9: done in 78.35s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_10: 76.84s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:17.295/17.627GiB cpu_rss_peak=4.605GiB
+[qwen15-fisher] layer 10: done in 76.84s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_11: 75.99s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:17.229/17.559GiB cpu_rss_peak=4.605GiB
+[qwen15-fisher] layer 11: done in 75.99s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_12: 74.31s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:17.163/17.369GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 12: done in 74.31s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_13: 73.08s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:17.097/17.416GiB cpu_rss_peak=3.735GiB
+[qwen15-fisher] layer 13: done in 73.08s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_14: 71.4s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:17.031/17.09GiB cpu_rss_peak=5.045GiB
+[qwen15-fisher] layer 14: done in 71.4s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_15: 69.41s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.965/17.02GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 15: done in 69.41s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_16: 68.64s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.899/16.969GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 16: done in 68.64s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_17: 66.42s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.833/16.898GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 17: done in 66.42s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_18: 63.79s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.767/16.945GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 18: done in 63.79s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_19: 64.05s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.701/16.883GiB cpu_rss_peak=5.051GiB
+[qwen15-fisher] layer 19: done in 64.05s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_20: 61.62s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.635/16.818GiB cpu_rss_peak=5.045GiB
+[qwen15-fisher] layer 20: done in 61.62s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_21: 61.0s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.569/16.641GiB cpu_rss_peak=4.981GiB
+[qwen15-fisher] layer 21: done in 61.0s dead=[] loss_mean=3.0587
+[qwen15-res] fisher_layer_22: 59.04s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.517/16.609GiB cpu_rss_peak=5.04GiB
+[qwen15-fisher] layer 22: done in 59.04s dead=[] loss_mean=3.0587
+[qwen15-fisher] layer 23 expert 54: 0/64 samples routed, F=0
+[qwen15-res] fisher_layer_23: 57.64s peak(alloc/reserved) gpu0:11.842/11.885GiB gpu1:16.517/16.584GiB cpu_rss_peak=5.051GiB
+[qwen15-fisher] layer 23: done in 57.64s dead=[54] loss_mean=3.0587
+[qwen15-fisher] wrote results/qwen/phase1/swahili_only/seed1/fisher_run_meta.json (status=ok)
+[qwen15-followup 2026-09-18T11:54:16Z] + python -u qwen15_svd_scale.py --condition swahili_only --seed 1
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.23s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.07s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.02s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.08s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.03s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.00s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.02s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.31it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.07it/s]
+[qwen15-res] load: 13.03s peak(alloc/reserved) gpu0:11.246/11.254GiB gpu1:15.513/15.531GiB cpu_rss_peak=1.516GiB
+[qwen15-svd-scale] condition=swahili_only seed=1 64 windows calib_text_hash=217a14cd2c6a
+[qwen15-res] svd_scale_layer_0: 221.2s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.384GiB
+[qwen15-svd-scale] layer 0: done in 221.2s dead=[] clamped=104/180 min_eig=-2.402e-05
+[qwen15-res] svd_scale_layer_1: 263.39s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.615GiB
+[qwen15-svd-scale] layer 1: done in 263.39s dead=[] clamped=113/180 min_eig=-1.794e-04
+[qwen15-res] svd_scale_layer_2: 216.31s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.701GiB
+[qwen15-svd-scale] layer 2: done in 216.31s dead=[] clamped=109/180 min_eig=-4.872e-04
+[qwen15-res] svd_scale_layer_3: 217.19s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.701GiB
+[qwen15-svd-scale] layer 3: done in 217.19s dead=[] clamped=122/180 min_eig=-3.946e-04
+[qwen15-res] svd_scale_layer_4: 219.26s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.748GiB
+[qwen15-svd-scale] layer 4: done in 219.26s dead=[] clamped=134/180 min_eig=-2.935e-04
+[qwen15-res] svd_scale_layer_5: 222.65s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.795GiB
+[qwen15-svd-scale] layer 5: done in 222.65s dead=[] clamped=130/180 min_eig=-3.601e-04
+[qwen15-res] svd_scale_layer_6: 218.69s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.788GiB
+[qwen15-svd-scale] layer 6: done in 218.69s dead=[] clamped=131/180 min_eig=-3.547e-04
+[qwen15-res] svd_scale_layer_7: 218.23s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.788GiB
+[qwen15-svd-scale] layer 7: done in 218.23s dead=[] clamped=116/180 min_eig=-5.157e-04
+[qwen15-res] svd_scale_layer_8: 217.49s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.788GiB
+[qwen15-svd-scale] layer 8: done in 217.49s dead=[] clamped=120/180 min_eig=-1.382e-03
+[qwen15-res] svd_scale_layer_9: 217.7s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.788GiB
+[qwen15-svd-scale] layer 9: done in 217.7s dead=[] clamped=98/180 min_eig=-5.716e-04
+[qwen15-res] svd_scale_layer_10: 222.44s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=7.827GiB
+[qwen15-svd-scale] layer 10: done in 222.44s dead=[] clamped=128/180 min_eig=-3.224e-04
+[qwen15-res] svd_scale_layer_11: 220.54s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 11: done in 220.54s dead=[] clamped=114/180 min_eig=-9.981e-04
+[qwen15-res] svd_scale_layer_12: 219.63s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 12: done in 219.63s dead=[] clamped=127/180 min_eig=-1.079e-03
+[qwen15-res] svd_scale_layer_13: 217.7s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 13: done in 217.7s dead=[] clamped=116/180 min_eig=-1.163e-03
+[qwen15-res] svd_scale_layer_14: 222.75s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 14: done in 222.75s dead=[] clamped=122/180 min_eig=-8.070e-04
+[qwen15-res] svd_scale_layer_15: 219.47s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 15: done in 219.47s dead=[] clamped=128/180 min_eig=-6.579e-04
+[qwen15-res] svd_scale_layer_16: 219.72s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 16: done in 219.72s dead=[] clamped=117/180 min_eig=-9.133e-04
+[qwen15-res] svd_scale_layer_17: 218.54s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 17: done in 218.54s dead=[] clamped=132/180 min_eig=-1.465e-03
+[qwen15-res] svd_scale_layer_18: 225.67s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 18: done in 225.67s dead=[] clamped=135/180 min_eig=-9.703e-04
+[qwen15-res] svd_scale_layer_19: 197.29s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.765GiB
+[qwen15-svd-scale] layer 19: done in 197.29s dead=[] clamped=141/180 min_eig=-5.929e-04
+[qwen15-res] svd_scale_layer_20: 198.54s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 20: done in 198.54s dead=[] clamped=133/180 min_eig=-9.534e-04
+[qwen15-res] svd_scale_layer_21: 204.45s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 21: done in 204.45s dead=[] clamped=135/180 min_eig=-1.164e-03
+[qwen15-res] svd_scale_layer_22: 191.86s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.734GiB
+[qwen15-svd-scale] layer 22: done in 191.86s dead=[] clamped=125/180 min_eig=-9.940e-04
+[qwen15-svd-scale] layer 23 expert 54: never routed -> identity (no whitening)
+[qwen15-res] svd_scale_layer_23: 191.18s peak(alloc/reserved) gpu0:11.544/11.572GiB gpu1:15.957/15.986GiB cpu_rss_peak=8.715GiB
+[qwen15-svd-scale] layer 23: done in 191.18s dead=[54] clamped=139/180 min_eig=-1.489e-03
+[qwen15-svd-scale] wrote results/qwen/phase1/swahili_only/seed1/svd_scale_run_meta.json (status=ok)
+[qwen15-followup 2026-09-18T13:21:25Z] + python -u qwen15_merge_eval.py --condition swahili_only --seed 1 --save-compressed
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.25s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.09s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.05s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.11s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.06s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.04s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.06s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.25it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.03it/s]
+[qwen15-res] load: 13.28s peak(alloc/reserved) gpu0:11.246/11.254GiB gpu1:15.513/15.531GiB cpu_rss_peak=4.337GiB
+[qwen15-merge] layer 0: merged in 48.6s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 1: merged in 47.95s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 2: merged in 48.08s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 3: merged in 48.48s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 4: merged in 48.54s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 5: merged in 48.28s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 6: merged in 48.35s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 7: merged in 47.61s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 8: merged in 48.43s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 9: merged in 48.2s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 10: merged in 47.92s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 11: merged in 47.94s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 12: merged in 47.93s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 13: merged in 48.66s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 14: merged in 48.45s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 15: merged in 48.86s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 16: merged in 48.98s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 17: merged in 48.12s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 18: merged in 48.26s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 19: merged in 48.08s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 20: merged in 47.91s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 21: merged in 48.32s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 22: merged in 47.3s rank=667 routed params 519045120 -> 423578112
+[qwen15-merge] layer 23: merged in 47.87s rank=667 routed params 519045120 -> 423578112
+[qwen15-res] merge: 1157.28s peak(alloc/reserved) gpu0:13.346/13.365GiB gpu1:17.612/17.625GiB cpu_rss_peak=6.969GiB
+[qwen15-merge] params 14315784192 -> 12024576000 (16.005% of the model; 18.393% of routed-expert params)
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[qwen15-eval] English: bpb=0.947020 (eos-prefixed 1.215911) over 8666 bytes, 1752 scored tokens
+[qwen15-eval] Korean: bpb=1.887577 (eos-prefixed 2.229360) over 10222 bytes, 2919 scored tokens
+[qwen15-eval] Chinese: bpb=1.176698 (eos-prefixed 1.426731) over 8157 bytes, 1865 scored tokens
+[qwen15-eval] Swahili: bpb=1.832387 (eos-prefixed 2.520888) over 9104 bytes, 3437 scored tokens
+[qwen15-eval] Bengali: bpb=1.170989 (eos-prefixed 1.739066) over 23314 bytes, 9323 scored tokens
+[qwen15-res] eval_flores: 93.04s peak(alloc/reserved) gpu0:14.038/16.232GiB gpu1:15.504/17.078GiB cpu_rss_peak=6.975GiB
+[qwen15-eval] wrote results/qwen/phase1/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl.json
+[qwen15-res] save_compressed: 51.53s peak(alloc/reserved) gpu0:9.476/16.232GiB gpu1:13.032/17.078GiB cpu_rss_peak=6.975GiB
+[qwen15-merge] saved compressed model: 20.33 GB
+[qwen15-merge] wrote results/qwen/phase1/swahili_only/seed1/scale_swahili_only_seed1/merge_eval_run_meta.json (status=ok)
+[qwen15-followup 2026-09-18T13:43:26Z] + python -u qwen15_merge_eval.py --condition swahili_only --seed 1 --reload-eval
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.10s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.02s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.06s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.08s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.03s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.05s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.03s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.29it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.06it/s]
+[qwen15-res] load: 12.99s peak(alloc/reserved) gpu0:11.246/11.254GiB gpu1:15.513/15.531GiB cpu_rss_peak=2.504GiB
+[qwen15-res] reload_compressed: 116.62s peak(alloc/reserved) gpu0:12.824/12.836GiB gpu1:17.091/17.094GiB cpu_rss_peak=2.155GiB
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[qwen15-eval] English: bpb=0.947020 (eos-prefixed 1.215911) over 8666 bytes, 1752 scored tokens
+[qwen15-eval] Korean: bpb=1.887577 (eos-prefixed 2.229360) over 10222 bytes, 2919 scored tokens
+[qwen15-eval] Chinese: bpb=1.176698 (eos-prefixed 1.426731) over 8157 bytes, 1865 scored tokens
+[qwen15-eval] Swahili: bpb=1.832387 (eos-prefixed 2.520888) over 9104 bytes, 3437 scored tokens
+[qwen15-eval] Bengali: bpb=1.170989 (eos-prefixed 1.739066) over 23314 bytes, 9323 scored tokens
+[qwen15-res] eval_flores: 93.08s peak(alloc/reserved) gpu0:14.038/16.057GiB gpu1:15.504/15.867GiB cpu_rss_peak=2.042GiB
+[qwen15-eval] wrote results/qwen/phase1/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl_reloaded.json
+[qwen15-eval] reload identical for all languages: True
+[qwen15-merge] wrote results/qwen/phase1/swahili_only/seed1/scale_swahili_only_seed1/reload_eval_run_meta.json (status=ok)

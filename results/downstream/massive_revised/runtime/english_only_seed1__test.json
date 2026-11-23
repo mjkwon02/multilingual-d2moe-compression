@@ -1,0 +1,63 @@
+{
+  "model": "english_only_seed1",
+  "split": "test",
+  "prompt": "P0",
+  "mode": "shared_prefix",
+  "microbatch": 12,
+  "inference_signature": "d96e8c49fbb07aa2face666abfd277069b60176b01c9744b48855d86f67164f5",
+  "protocol_hash": "061288e567daa234313351482e209ff7679fea77b0acc07af96f46cac3570215",
+  "started_utc": "2026-09-17T07:28:43Z",
+  "seconds_wait_for_lock": 0.00011563301086425781,
+  "seconds_merge": 1458.0506653785706,
+  "seconds_load": 65.82649254798889,
+  "seconds_eval_per_lang": {
+    "EN": {
+      "seconds": 582.4318723678589,
+      "n_scored": 200,
+      "items_per_second": 0.34338780119794293
+    },
+    "ZH": {
+      "seconds": 580.547262430191,
+      "n_scored": 200,
+      "items_per_second": 0.3445025288084092
+    },
+    "KO": {
+      "seconds": 591.8894708156586,
+      "n_scored": 200,
+      "items_per_second": 0.3379009255298767
+    },
+    "SW": {
+      "seconds": 575.3537092208862,
+      "n_scored": 200,
+      "items_per_second": 0.3476122545048497
+    },
+    "BN": {
+      "seconds": 588.2653987407684,
+      "n_scored": 200,
+      "items_per_second": 0.3399826004183092
+    }
+  },
+  "failures": [],
+  "device_map_unique": [
+    0,
+    1
+  ],
+  "visible_devices": "2,3",
+  "expert_freq_file": {
+    "available": [
+      "deepseek_wikitext_2000_expert_frequencies.json"
+    ],
+    "used_by_glob_order": "deepseek_wikitext_2000_expert_frequencies.json"
+  },
+  "stats_sha_prefix": {
+    "fisher_processed.pt": "1040bacaaf45721d",
+    "svd_scale_processed.pt": "2ef926e5072f36f0"
+  },
+  "peak_gpu_bytes": {
+    "0": 17125423616,
+    "1": 20488752640
+  },
+  "peak_host_rss_bytes": 69125681152,
+  "stopped_early": null,
+  "finished_utc": "2026-09-17T08:42:47Z"
+}

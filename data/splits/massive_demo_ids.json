@@ -1,0 +1,75 @@
+{
+  "seed": 42,
+  "lang": "EN",
+  "split": "train",
+  "max_words": 20,
+  "n": 8,
+  "ids": [
+    "13590",
+    "17033",
+    "4646",
+    "13233",
+    "9717",
+    "1438",
+    "12220",
+    "7088"
+  ],
+  "demonstrations": [
+    {
+      "order": 0,
+      "id": "13590",
+      "intent": "qa_factoid",
+      "surface": "qa factoid",
+      "utt": "what is the temperature right now in new york"
+    },
+    {
+      "order": 1,
+      "id": "17033",
+      "intent": "email_sendemail",
+      "surface": "email sendemail",
+      "utt": "respond to the mail of ash in morning"
+    },
+    {
+      "order": 2,
+      "id": "4646",
+      "intent": "takeaway_query",
+      "surface": "takeaway query",
+      "utt": "will the pizza be here soon"
+    },
+    {
+      "order": 3,
+      "id": "13233",
+      "intent": "qa_maths",
+      "surface": "qa maths",
+      "utt": "can you add up thirteen plus five plus nine for me"
+    },
+    {
+      "order": 4,
+      "id": "9717",
+      "intent": "play_audiobook",
+      "surface": "play audiobook",
+      "utt": "play animal farm"
+    },
+    {
+      "order": 5,
+      "id": "1438",
+      "intent": "alarm_query",
+      "surface": "alarm query",
+      "utt": "what alarms do i have"
+    },
+    {
+      "order": 6,
+      "id": "12220",
+      "intent": "transport_query",
+      "surface": "transport query",
+      "utt": "tell me how to get from here to the chimes in covington"
+    },
+    {
+      "order": 7,
+      "id": "7088",
+      "intent": "calendar_set",
+      "surface": "calendar set",
+      "utt": "open calendar"
+    }
+  ]
+}

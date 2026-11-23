@@ -1,0 +1,35 @@
+# Table 4 final -- structured pruning extra damage ddbpb%% (ON - OFF), pp_ratio=0.2, 5 conditions x 5 eval langs
+# metric: 100*(bpb_ON - bpb_OFF)/bpb_baseline  (phase1_pruning_gate.py definition, unchanged)
+# provenance: {cond}/seed{0,1,2}/[pp_ratio_0.2/]eval_ppl.json + baseline/eval_ppl.json under results/deepseek
+# chinese_only recomputed here (absent from results/table4_pruning_lang.json); other 4 rows reproduce that json to <1e-9
+condition,eval_lang,seed0,seed1,seed2,mean_raw,mean_2dp,sign_consistent
+english_only,EN,0.143194,0.530612,0.192108,0.288638,0.29,True
+english_only,KO,0.570883,0.746225,0.814612,0.710573,0.71,True
+english_only,ZH,0.375903,0.221847,0.327432,0.308394,0.31,True
+english_only,SW,0.115243,0.917084,0.800048,0.610792,0.61,True
+english_only,BN,0.917825,1.202223,1.383375,1.167808,1.17,True
+english_only,VULN_MEAN,0.534650,0.955178,0.999345,0.829724,0.83,
+chinese_only,EN,0.647821,0.742595,0.617019,0.669145,0.67,True
+chinese_only,KO,1.244340,1.099957,1.241355,1.195218,1.20,True
+chinese_only,ZH,0.412697,0.258710,0.473870,0.381759,0.38,True
+chinese_only,SW,1.560352,0.843842,1.108712,1.170969,1.17,True
+chinese_only,BN,2.073853,2.246545,2.010511,2.110303,2.11,True
+chinese_only,VULN_MEAN,1.626182,1.396781,1.453526,1.492163,1.49,
+korean_only,EN,0.079211,-0.090181,-1.576277,-0.529083,-0.53,False
+korean_only,KO,2.256406,2.183601,1.919592,2.119866,2.12,True
+korean_only,ZH,0.959181,0.961273,0.812641,0.911032,0.91,True
+korean_only,SW,1.200902,0.721990,0.351008,0.757967,0.76,True
+korean_only,BN,4.695501,4.417142,4.122910,4.411851,4.41,True
+korean_only,VULN_MEAN,2.717603,2.440911,2.131170,2.429895,2.43,
+swahili_only,EN,2.018280,1.858124,2.036298,1.970901,1.97,True
+swahili_only,KO,3.457121,3.568021,3.509373,3.511505,3.51,True
+swahili_only,ZH,1.409451,1.530650,1.726008,1.555370,1.56,True
+swahili_only,SW,1.602790,1.942340,1.910055,1.818395,1.82,True
+swahili_only,BN,5.321175,5.719052,6.049742,5.696656,5.70,True
+swahili_only,VULN_MEAN,3.460362,3.743138,3.823057,3.675519,3.68,
+bengali_only,EN,2.425951,2.284753,2.407655,2.372786,2.37,True
+bengali_only,KO,5.482087,5.045109,5.374450,5.300548,5.30,True
+bengali_only,ZH,2.141233,1.664859,1.928007,1.911367,1.91,True
+bengali_only,SW,1.795315,2.031802,2.261004,2.029374,2.03,True
+bengali_only,BN,3.914565,3.856947,3.993236,3.921583,3.92,True
+bengali_only,VULN_MEAN,3.730656,3.644619,3.876230,3.750502,3.75,

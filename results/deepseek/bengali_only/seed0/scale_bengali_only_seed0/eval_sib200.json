@@ -1,0 +1,859 @@
+{
+  "protocol": "sib200_natural_continuation_v1",
+  "num_fewshot": 14,
+  "demo_seed": 42,
+  "limit": null,
+  "langs": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "results": {
+    "eng_Latn": {
+      "name": "English",
+      "acc": 0.4068627450980392,
+      "acc_unnormalized": 0.4068627450980392,
+      "n_samples": 204,
+      "pred_distribution": {
+        "science/technology": 9,
+        "travel": 76,
+        "politics": 3,
+        "sports": 14,
+        "health": 5,
+        "entertainment": 88,
+        "geography": 9
+      },
+      "_sample_items": [
+        {
+          "text": "Mutation adds new genetic variation, and selection removes it from the pool of expressed variation.",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.6559542417526245,
+            "travel": -1.6559542417526245,
+            "politics": -2.280954360961914,
+            "sports": -1.9059542417526245,
+            "health": -1.9059542417526245,
+            "entertainment": -2.280954360961914,
+            "geography": -2.905954360961914
+          }
+        },
+        {
+          "text": "The fission bomb works on the principle that it takes energy to put together a nucleus with many protons and neutrons.",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.3408241271972656,
+            "travel": -1.5908241271972656,
+            "politics": -2.5908241271972656,
+            "sports": -1.9658241271972656,
+            "health": -2.2158241271972656,
+            "entertainment": -2.0908241271972656,
+            "geography": -3.7158241271972656
+          }
+        },
+        {
+          "text": "The nucleus consists of two particles - neutrons and protons.",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -0.8776280879974365,
+            "travel": -2.1276280879974365,
+            "politics": -2.6276280879974365,
+            "sports": -2.2526280879974365,
+            "health": -2.3776280879974365,
+            "entertainment": -2.5026280879974365,
+            "geography": -3.7526280879974365
+          }
+        },
+        {
+          "text": "This has allowed zoom lenses to produce pictures of a quality comparable to that achieved by lenses with fixed focal length.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.20394229888916,
+            "travel": -1.0789422988891602,
+            "politics": -2.95394229888916,
+            "sports": -2.07894229888916,
+            "health": -2.70394229888916,
+            "entertainment": -1.5789422988891602,
+            "geography": -2.95394229888916
+          }
+        },
+        {
+          "text": "They are superior to web proxies for several reasons: They re-route all Internet traffic, not only http.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.6267282962799072,
+            "travel": -1.1267282962799072,
+            "politics": -2.5017282962799072,
+            "sports": -1.7517282962799072,
+            "health": -2.7517282962799072,
+            "entertainment": -1.6267282962799072,
+            "geography": -3.1267282962799072
+          }
+        },
+        {
+          "text": "Interactive design requires that you re-assess your assumptions about media production and learn to think in a non-linear ways.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.642652750015259,
+            "travel": -1.6426527500152588,
+            "politics": -2.642652750015259,
+            "sports": -2.267652750015259,
+            "health": -2.892652750015259,
+            "entertainment": -0.8926527500152588,
+            "geography": -2.892652750015259
+          }
+        },
+        {
+          "text": "This became common practice, but the iron caused more wear on the wooden wheels of the wagons.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -3.1237080097198486,
+            "travel": -1.1237080097198486,
+            "politics": -2.9987080097198486,
+            "sports": -1.7487080097198486,
+            "health": -2.9987080097198486,
+            "entertainment": -1.4987080097198486,
+            "geography": -3.1237080097198486
+          }
+        },
+        {
+          "text": "Prides are made up of one to three related adult males, along with as many as thirty females and cubs.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.472201347351074,
+            "travel": -1.7222013473510742,
+            "politics": -2.972201347351074,
+            "sports": -1.3472013473510742,
+            "health": -3.097201347351074,
+            "entertainment": -1.0972013473510742,
+            "geography": -3.347201347351074
+          }
+        },
+        {
+          "text": "Although AI has a strong connotation of science fiction, AI forms a very important branch of computer science, dealing with behavior, learning and intelligent adaptation in a machine.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -1.4879153966903687,
+            "travel": -1.9879153966903687,
+            "politics": -2.362915515899658,
+            "sports": -1.9879153966903687,
+            "health": -3.112915515899658,
+            "entertainment": -1.2379153966903687,
+            "geography": -4.112915515899658
+          }
+        },
+        {
+          "text": "The aspect ratio of this format (dividing by twelve to obtain the simplest whole-number ratio) is therefore said to be 3:2.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.5367839336395264,
+            "travel": -1.7867839336395264,
+            "politics": -3.5367839336395264,
+            "sports": -2.2867839336395264,
+            "health": -3.1617839336395264,
+            "entertainment": -0.7867839336395264,
+            "geography": -2.5367839336395264
+          }
+        }
+      ]
+    },
+    "kor_Hang": {
+      "name": "Korean",
+      "acc": 0.35784313725490197,
+      "acc_unnormalized": 0.35784313725490197,
+      "n_samples": 204,
+      "pred_distribution": {
+        "science/technology": 6,
+        "travel": 69,
+        "politics": 4,
+        "sports": 3,
+        "health": 2,
+        "entertainment": 90,
+        "geography": 30
+      },
+      "_sample_items": [
+        {
+          "text": "\ub3cc\uc5f0\ubcc0\uc774\ub294 \uc0c8\ub85c\uc6b4 \uc885\uc758 \uc720\uc804\uc790\ub97c \ub9cc\ub4e4\uc5b4\ub0b4\uba70, \uc120\ud0dd\uc740 \ubc1c\ud604\ub41c \uc720\uc804\uc790\ub97c \ud480\uc5d0\uc11c \uc81c\uac70\ud569\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -1.9478375911712646,
+            "travel": -1.4478375911712646,
+            "politics": -2.5728375911712646,
+            "sports": -2.4478375911712646,
+            "health": -1.6978375911712646,
+            "entertainment": -1.9478375911712646,
+            "geography": -2.5728375911712646
+          }
+        },
+        {
+          "text": "\ud575\ubd84\uc5f4 \ud3ed\ud0c4\uc740 \ub9ce\uc740 \uc591\uc131\uc790\uc640 \uc911\uc131\uc790\ub97c \uac00\uc9c4 \ud575\uc744 \ud569\uce58\uae30 \uc704\ud574\uc11c\ub294 \ub9ce\uc740 \uc5d0\ub108\uc9c0\uac00 \ud544\uc694\ud558\ub2e4\ub294 \uc6d0\ub9ac\uc5d0 \uae30\ubc18\ud558\ub2e4.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -1.528418779373169,
+            "travel": -1.403418779373169,
+            "politics": -2.778418779373169,
+            "sports": -2.653418779373169,
+            "health": -2.278418779373169,
+            "entertainment": -1.778418779373169,
+            "geography": -2.653418779373169
+          }
+        },
+        {
+          "text": "\ud575\uc740 \uc911\uc131\uc790\uc640 \uc591\uc131\uc790\ub77c\ub294 2\uac1c\uc758 \uc785\uc790\ub85c \uad6c\uc131\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.1561554670333862,
+            "travel": -1.7811554670333862,
+            "politics": -3.156155586242676,
+            "sports": -2.781155586242676,
+            "health": -2.281155586242676,
+            "entertainment": -2.031155586242676,
+            "geography": -2.156155586242676
+          }
+        },
+        {
+          "text": "\uc774\ub97c \ud1b5\ud574 \uc90c \ub80c\uc988\ub294 \ucd08\uc810 \uae38\uc774\uac00 \uace0\uc815\ub41c \ub80c\uc988\uc5d0 \uc758\ud574 \ub2ec\uc131\ub41c \ud488\uc9c8\uacfc \ube44\uc2b7\ud55c \ud488\uc9c8\uc758 \uc0ac\uc9c4\uc744 \uc81c\uc791\ud560 \uc218 \uc788\uac8c \ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.476907968521118,
+            "travel": -1.4769079685211182,
+            "politics": -3.976907968521118,
+            "sports": -2.976907968521118,
+            "health": -2.851907968521118,
+            "entertainment": -0.8519080281257629,
+            "geography": -2.351907968521118
+          }
+        },
+        {
+          "text": "\uc774\uac83\uc740 http\ubfd0\ub9cc \uc544\ub2c8\ub77c \ubaa8\ub4e0 \uc778\ud130\ub137 \ud2b8\ub798\ud53d\uc744 \uc7ac \uacbd\ub85c \ubcc0\uacbd \ud560 \uc218 \uc788\ub2e4\ub294 \uc774\uc720\uc5d0\uc11c \uc6f9 \ud504\ub85d\uc2dc\ubcf4\ub2e4 \ub6f0\uc5b4\ub098\ub2e4.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.8769779205322266,
+            "travel": -1.0019780397415161,
+            "politics": -3.1269779205322266,
+            "sports": -2.6269779205322266,
+            "health": -3.0019779205322266,
+            "entertainment": -1.3769780397415161,
+            "geography": -2.1269779205322266
+          }
+        },
+        {
+          "text": "\uc30d\ubc29\ud5a5 \ub514\uc790\uc778\uc5d0\uc11c\ub294 \ubbf8\ub514\uc5b4 \uc81c\uc791\uc5d0 \ub300\ud55c \uac00\uc815\uc744 \uc7ac\ud3c9\uac00\ud574\uc57c \ud558\uba70, \uc5f0\uc18d\uc801\uc774\uc9c0 \uc54a\uc740 \ubc29\uc2dd\uc73c\ub85c \uc0dd\uac01\ud558\ub294 \ubc95\uc744 \ubc30\uc6cc\uc57c \ud569\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.6426730155944824,
+            "travel": -1.5176730155944824,
+            "politics": -2.8926730155944824,
+            "sports": -2.6426730155944824,
+            "health": -3.0176730155944824,
+            "entertainment": -1.0176730155944824,
+            "geography": -2.0176730155944824
+          }
+        },
+        {
+          "text": "\uc774\uac83\uc740 \uc77c\ubc18\uc801\uc778 \uad00\ud589\uc774 \ub418\uc5c8\uc9c0\ub9cc, \ucca0\uc740 \ub9c8\ucc28\uc758 \ub098\ubb34 \ubc14\ud034\ub97c \ub354 \ub9ce\uc774 \ub9c8\ubaa8\ub418\uac8c \ud558\uc600\uc2b5\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.0203237533569336,
+            "travel": -1.3953237533569336,
+            "politics": -2.7703237533569336,
+            "sports": -2.6453237533569336,
+            "health": -3.1453237533569336,
+            "entertainment": -1.2703237533569336,
+            "geography": -1.6453237533569336
+          }
+        },
+        {
+          "text": "\ubb34\ub9ac\ub294 1~3\ub9c8\ub9ac\uc758 \ub3d9\uc871 \uc131\uc778 \uc218\ucef7\uacfc \ubb34\ub824 30\ub9c8\ub9ac\uc5d0 \uc774\ub974\ub294 \uc554\ucef7\uacfc \uc0c8\ub07c\ub85c \uad6c\uc131\ub429\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.6800456047058105,
+            "travel": -1.555045485496521,
+            "politics": -3.0550456047058105,
+            "sports": -2.6800456047058105,
+            "health": -3.0550456047058105,
+            "entertainment": -1.430045485496521,
+            "geography": -1.430045485496521
+          }
+        },
+        {
+          "text": "AI\ub294 \uacf5\uc0c1 \uacfc\ud559\uc744 \uac15\ub825\ud788 \ub5a0\uc62c\ub9ac\uac8c \ud558\uc9c0\ub9cc, \ucef4\ud4e8\ud130\uc758 \ud589\ub3d9, \ud559\uc2b5 \ubc0f \uc9c0\ub2a5\uc801 \uc801\uc751\uc744 \ub2e4\ub8e8\ub294 \ucef4\ud4e8\ud130 \uacfc\ud559\uc5d0\uc11c \ub9e4\uc6b0 \uc911\uc694\ud55c \ubd84\uc57c\ub97c \uc774\ub8e8\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -1.6299036741256714,
+            "travel": -1.7549036741256714,
+            "politics": -2.879903793334961,
+            "sports": -2.629903793334961,
+            "health": -2.754903793334961,
+            "entertainment": -1.2549036741256714,
+            "geography": -2.254903793334961
+          }
+        },
+        {
+          "text": "\ub530\ub77c\uc11c \uc774 \ud615\uc2dd\uc758 \uc885\ud6a1\ube44(\uac00\uc7a5 \uac04\ub2e8\ud55c \uc815\uc218 \ube44\uc728\uc744 \uc5bb\uae30 \uc704\ud574 12\ub85c \ub098\ub214)\ub294 3:2\ub77c\uace0 \ud569\ub2c8\ub2e4.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.113135814666748,
+            "travel": -1.6131356954574585,
+            "politics": -3.488135814666748,
+            "sports": -2.738135814666748,
+            "health": -2.863135814666748,
+            "entertainment": -1.2381356954574585,
+            "geography": -1.7381356954574585
+          }
+        }
+      ]
+    },
+    "zho_Hans": {
+      "name": "Chinese",
+      "acc": 0.5637254901960784,
+      "acc_unnormalized": 0.5637254901960784,
+      "n_samples": 204,
+      "pred_distribution": {
+        "science/technology": 17,
+        "travel": 53,
+        "politics": 20,
+        "sports": 20,
+        "health": 10,
+        "entertainment": 49,
+        "geography": 35
+      },
+      "_sample_items": [
+        {
+          "text": "\u7a81\u53d8\u4f1a\u6dfb\u52a0\u65b0\u7684\u57fa\u56e0\u53d8\u5f02\uff0c\u800c\u9009\u62e9\u5219\u4f1a\u4ece\u8868\u8fbe\u7684\u57fa\u56e0\u53d8\u5f02\u6c60\u4e2d\u628a\u53d8\u5f02\u79fb\u9664\u3002",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.4463139772415161,
+            "travel": -1.6963139772415161,
+            "politics": -2.6963138580322266,
+            "sports": -2.1963138580322266,
+            "health": -1.9463139772415161,
+            "entertainment": -2.4463138580322266,
+            "geography": -2.3213138580322266
+          }
+        },
+        {
+          "text": "\u88c2\u53d8\u539f\u5b50\u5f39\u7684\u5de5\u4f5c\u539f\u7406\u5982\u4e0b\uff1a\u628a\u4e00\u4e2a\u539f\u5b50\u6838\u548c\u8bb8\u591a\u8d28\u5b50\u53ca\u4e2d\u5b50\u805a\u5728\u4e00\u8d77\u9700\u8981\u80fd\u91cf\u3002",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.0605835914611816,
+            "travel": -1.8105835914611816,
+            "politics": -2.9355835914611816,
+            "sports": -2.0605835914611816,
+            "health": -2.4355835914611816,
+            "entertainment": -2.1855835914611816,
+            "geography": -3.1855835914611816
+          }
+        },
+        {
+          "text": "\u539f\u5b50\u6838\u7531\u4e2d\u5b50\u548c\u8d28\u5b50\u8fd9\u4e24\u79cd\u7c92\u5b50\u7ec4\u6210\u3002",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -0.48994189500808716,
+            "travel": -2.7399418354034424,
+            "politics": -3.1149418354034424,
+            "sports": -3.3649418354034424,
+            "health": -2.6149418354034424,
+            "entertainment": -3.8649418354034424,
+            "geography": -2.8649418354034424
+          }
+        },
+        {
+          "text": "\u8fd9\u4f7f\u5f97\u53d8\u7126\u955c\u5934\u53ef\u4ee5\u62cd\u51fa\u4e0e\u56fa\u5b9a\u7126\u8ddd\u955c\u5934\u8d28\u91cf\u76f8\u5ab2\u7f8e\u7684\u7167\u7247\u3002",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -1.9464688301086426,
+            "travel": -1.5714688301086426,
+            "politics": -2.9464688301086426,
+            "sports": -2.0714688301086426,
+            "health": -2.5714688301086426,
+            "entertainment": -1.4464688301086426,
+            "geography": -2.3214688301086426
+          }
+        },
+        {
+          "text": "\u5b83\u4eec\u4f18\u4e8e\u7f51\u9875\u4ee3\u7406\u7684\u539f\u56e0\u5982\u4e0b\uff1a\u5b83\u4eec\u91cd\u65b0\u8def\u7531\u6240\u6709\u4e92\u8054\u7f51\u6d41\u91cf\uff0c\u800c\u4e0d\u4ec5\u4ec5\u662f\u8d85\u6587\u672c\u4f20\u9001\u534f\u8bae (http) \u5185\u5bb9\u3002",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.360405921936035,
+            "travel": -1.2354060411453247,
+            "politics": -2.485405921936035,
+            "sports": -2.110405921936035,
+            "health": -2.985405921936035,
+            "entertainment": -1.8604060411453247,
+            "geography": -1.8604060411453247
+          }
+        },
+        {
+          "text": "\u4ea4\u4e92\u8bbe\u8ba1\u8981\u6c42\u4f60\u91cd\u65b0\u8bc4\u4f30\u6709\u5173\u5a92\u4f53\u5236\u4f5c\u7684\u5047\u8bbe\uff0c\u5e76\u5b66\u4f1a\u975e\u7ebf\u6027\u601d\u8003\u3002",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.519205331802368,
+            "travel": -1.8942053318023682,
+            "politics": -2.644205331802368,
+            "sports": -2.519205331802368,
+            "health": -3.019205331802368,
+            "entertainment": -0.7692052721977234,
+            "geography": -2.894205331802368
+          }
+        },
+        {
+          "text": "\u8fd9\u6210\u4e86\u666e\u904d\u505a\u6cd5\uff0c\u4f46\u94c1\u7247\u4f1a\u4f7f\u6728\u5236\u7684\u9a6c\u8f66\u8f6e\u5b50\u78e8\u635f\u66f4\u4e25\u91cd\u3002",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.712179183959961,
+            "travel": -1.7121793031692505,
+            "politics": -2.837179183959961,
+            "sports": -1.5871793031692505,
+            "health": -3.337179183959961,
+            "entertainment": -1.3371793031692505,
+            "geography": -2.212179183959961
+          }
+        },
+        {
+          "text": "\u72ee\u7fa4\u7531\u4e00\u5230\u4e09\u53ea\u6709\u4eb2\u5c5e\u5173\u7cfb\u7684\u6210\u5e74\u96c4\u6027\uff0c\u4ee5\u53ca\u53ef\u591a\u8fbe\u4e09\u5341\u53ea\u7684\u96cc\u6027\u548c\u5e7c\u5d3d\u7ec4\u6210\u3002",
+          "gold": "science/technology",
+          "pred": "geography",
+          "logprobs": {
+            "science/technology": -2.8850035667419434,
+            "travel": -1.7600034475326538,
+            "politics": -3.5100035667419434,
+            "sports": -2.2600035667419434,
+            "health": -3.5100035667419434,
+            "entertainment": -1.3850034475326538,
+            "geography": -1.2600034475326538
+          }
+        },
+        {
+          "text": "\u4eba\u5de5\u667a\u80fd\u6709\u5f88\u5f3a\u7684\u79d1\u5e7b\u8272\u5f69\uff0c\u4f46\u5b83\u5176\u5b9e\u662f\u8ba1\u7b97\u673a\u79d1\u5b66\u975e\u5e38\u91cd\u8981\u7684\u4e00\u4e2a\u5206\u652f\uff0c\u7814\u7a76\u7684\u662f\u673a\u5668\u7684\u884c\u4e3a\u3001\u5b66\u4e60\u548c\u667a\u80fd\u9002\u5e94\u3002",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -0.93491530418396,
+            "travel": -2.43491530418396,
+            "politics": -2.68491530418396,
+            "sports": -2.55991530418396,
+            "health": -3.80991530418396,
+            "entertainment": -1.30991530418396,
+            "geography": -3.68491530418396
+          }
+        },
+        {
+          "text": "\u56e0\u6b64\uff0c\u8fd9\u79cd\u683c\u5f0f\u7684\u5bbd\u9ad8\u6bd4\uff08\u9664\u4ee5 12 \u5f97\u5230\u6700\u7b80\u5355\u7684\u6574\u6570\u6bd4\uff09\u4fbf\u662f 3:2\u3002",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.1446714401245117,
+            "travel": -1.7696714401245117,
+            "politics": -3.2696714401245117,
+            "sports": -2.1446714401245117,
+            "health": -3.3946714401245117,
+            "entertainment": -1.0196714401245117,
+            "geography": -2.8946714401245117
+          }
+        }
+      ]
+    },
+    "swh_Latn": {
+      "name": "Swahili",
+      "acc": 0.19117647058823528,
+      "acc_unnormalized": 0.19117647058823528,
+      "n_samples": 204,
+      "pred_distribution": {
+        "science/technology": 1,
+        "travel": 13,
+        "politics": 0,
+        "sports": 1,
+        "health": 0,
+        "entertainment": 134,
+        "geography": 55
+      },
+      "_sample_items": [
+        {
+          "text": "Mabadiliko huongeza tofauti za kimaumbile, na uchaguzi huyaondoa katika mkusanyiko wa tofauti zilizoonyeshwa.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.0842528343200684,
+            "travel": -1.8342527151107788,
+            "politics": -2.4592528343200684,
+            "sports": -2.3342528343200684,
+            "health": -2.7092528343200684,
+            "entertainment": -1.0842527151107788,
+            "geography": -1.8342527151107788
+          }
+        },
+        {
+          "text": "Bomu hii gawanyiki hufanya kazi kwa kanuni kwamba nguvu huhitajika katika uundaji wa viini vyenye protoni na nutroni nyingi.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -1.9612603187561035,
+            "travel": -1.9612603187561035,
+            "politics": -2.3362603187561035,
+            "sports": -2.9612603187561035,
+            "health": -2.0862603187561035,
+            "entertainment": -1.5862603187561035,
+            "geography": -1.8362603187561035
+          }
+        },
+        {
+          "text": "Nyuklia ina chembe mbili - nyutroni na protoni.",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.3164831399917603,
+            "travel": -2.3164830207824707,
+            "politics": -2.3164830207824707,
+            "sports": -3.0664830207824707,
+            "health": -2.4414830207824707,
+            "entertainment": -2.5664830207824707,
+            "geography": -1.6914831399917603
+          }
+        },
+        {
+          "text": "Hii imewezesha lenzi za kukuza kutoa picha zenye ubora unaoweza kulinganishwa na ule unaofikiwa na lenzi zenye urefu msingi usiobadilika.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.115952491760254,
+            "travel": -2.115952491760254,
+            "politics": -2.865952491760254,
+            "sports": -2.365952491760254,
+            "health": -2.615952491760254,
+            "entertainment": -0.8659524917602539,
+            "geography": -1.990952491760254
+          }
+        },
+        {
+          "text": "Ni bora kuliko wakala wa tovuti kwa sababu kadhaa: Huelekeza upya trafiki yote ya intaneti, si http pekee.",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.5619397163391113,
+            "travel": -1.0619397163391113,
+            "politics": -2.6869397163391113,
+            "sports": -2.1869397163391113,
+            "health": -2.6869397163391113,
+            "entertainment": -1.6869397163391113,
+            "geography": -2.5619397163391113
+          }
+        },
+        {
+          "text": "Ubunifu wenye maingiliano huhitaji kwamba ukague tena dhana zako kuhusu uzalishaji wa midia na ujifunze kufikiria kwa njia zisizo nyoofu.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.1345324516296387,
+            "travel": -1.8845324516296387,
+            "politics": -2.7595324516296387,
+            "sports": -2.7595324516296387,
+            "health": -2.8845324516296387,
+            "entertainment": -1.1345324516296387,
+            "geography": -1.3845324516296387
+          }
+        },
+        {
+          "text": "Hii ilikuja kuwa desturi, lakini chuma kilisababisha kuharibika kwa magurudumu ya mbao ya magari ya kukokotwa.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.424006223678589,
+            "travel": -2.049006223678589,
+            "politics": -2.549006223678589,
+            "sports": -2.299006223678589,
+            "health": -2.674006223678589,
+            "entertainment": -1.0490062236785889,
+            "geography": -1.6740062236785889
+          }
+        },
+        {
+          "text": "Makundi ya simba yanatengenezwa na waume kati ya mmoja na watatu wazima wanaohusiana, pamoja na wengi wa kike kama thelathini na mashibli.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -3.620699167251587,
+            "travel": -2.120699167251587,
+            "politics": -2.745699167251587,
+            "sports": -2.620699167251587,
+            "health": -2.995699167251587,
+            "entertainment": -0.9956991672515869,
+            "geography": -1.370699167251587
+          }
+        },
+        {
+          "text": "Ingawa Akili Bandia inahusishwa sana na tungo za kisayansi, Akili Bandia huunda sehemu muhimu sana ya tawi la sayansi ya kompyuta, kushughulikia tabia, mafunzo na marekebisho ya akili kwa mashine.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.8773765563964844,
+            "travel": -1.7523765563964844,
+            "politics": -2.6273765563964844,
+            "sports": -2.8773765563964844,
+            "health": -2.7523765563964844,
+            "entertainment": -1.0023765563964844,
+            "geography": -1.8773765563964844
+          }
+        },
+        {
+          "text": "Uwiano-vipimo wa muundo huu (kugawa na kumi na mbili ili kupata uwiano rahisi zaidi wa namba kamili) basi husemekana kuwa 3:2.",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.1750147342681885,
+            "travel": -2.1750147342681885,
+            "politics": -2.4250147342681885,
+            "sports": -2.3000147342681885,
+            "health": -2.3000147342681885,
+            "entertainment": -1.4250147342681885,
+            "geography": -1.8000147342681885
+          }
+        }
+      ]
+    },
+    "ben_Beng": {
+      "name": "Bengali",
+      "acc": 0.2696078431372549,
+      "acc_unnormalized": 0.2696078431372549,
+      "n_samples": 204,
+      "pred_distribution": {
+        "science/technology": 4,
+        "travel": 85,
+        "politics": 0,
+        "sports": 0,
+        "health": 0,
+        "entertainment": 55,
+        "geography": 60
+      },
+      "_sample_items": [
+        {
+          "text": "\u09ae\u09bf\u0989\u099f\u09c7\u09b6\u09a8 \u09a8\u09a4\u09c1\u09a8 \u099c\u09bf\u09a8\u0997\u09a4 \u09aa\u09cd\u09b0\u0995\u09b0\u09a3 \u09af\u09c1\u0995\u09cd\u09a4 \u0995\u09b0\u09c7 \u098f\u09ac\u0982 \u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09a8 \u098f\u099f\u09bf\u0995\u09c7 \u09aa\u09cd\u09b0\u0995\u09be\u09b6\u09bf\u09a4 \u09aa\u09cd\u09b0\u0995\u09b0\u09a3\u09c7\u09b0 \u09ae\u09a7\u09cd\u09af\u09c7 \u09a5\u09c7\u0995\u09c7 \u09b8\u09b0\u09bf\u09af\u09bc\u09c7 \u09a6\u09c7\u09af\u09bc\u0964",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.5015869140625,
+            "travel": -1.5015867948532104,
+            "politics": -3.5015869140625,
+            "sports": -2.5015869140625,
+            "health": -3.1265869140625,
+            "entertainment": -1.0015867948532104,
+            "geography": -2.0015869140625
+          }
+        },
+        {
+          "text": "\u0985\u09a8\u09c7\u0995 \u09aa\u09cd\u09b0\u09cb\u099f\u09a8 \u098f\u09ac\u0982 \u09a8\u09bf\u0989\u099f\u09cd\u09b0\u09a8\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7 \u09a8\u09bf\u0989\u0995\u09cd\u09b2\u09bf\u09af\u09bc\u09be\u09b8\u0995\u09c7 \u099c\u09c1\u09dc\u09a4\u09c7 \u09af\u09c7 \u09b6\u0995\u09cd\u09a4\u09bf \u09aa\u09cd\u09b0\u09df\u09cb\u099c\u09a8 \u09b9\u09df \u09b8\u09c7\u0987 \u09a8\u09c0\u09a4\u09bf\u09a4\u09c7 \u09ab\u09bf\u0989\u09b6\u09a8 \u09ac\u09cb\u09ae\u09be \u0995\u09be\u099c \u0995\u09b0\u09c7\u0964",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.858156204223633,
+            "travel": -1.3581562042236328,
+            "politics": -3.108156204223633,
+            "sports": -2.483156204223633,
+            "health": -2.983156204223633,
+            "entertainment": -1.2331562042236328,
+            "geography": -1.7331562042236328
+          }
+        },
+        {
+          "text": "\u09a8\u09bf\u0989\u0995\u09cd\u09b2\u09bf\u09df\u09be\u09b8 \u09a6\u09c1\u099f\u09bf \u0995\u09a3\u09be \u09a8\u09bf\u09df\u09c7 \u0997\u09a0\u09bf\u09a4- \u09a8\u09bf\u0989\u099f\u09cd\u09b0\u09a8 \u098f\u09ac\u0982 \u09aa\u09cd\u09b0\u09cb\u099f\u09a8\u0964",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -1.8669947385787964,
+            "travel": -1.1169947385787964,
+            "politics": -3.366994857788086,
+            "sports": -2.366994857788086,
+            "health": -2.241994857788086,
+            "entertainment": -1.9919947385787964,
+            "geography": -2.491994857788086
+          }
+        },
+        {
+          "text": "\u098f\u099f\u09bf \u099c\u09c1\u09ae \u09b2\u09c7\u09a8\u09cd\u09b8\u0997\u09c1\u09b2\u09cb\u0995\u09c7 \u09a8\u09bf\u09b0\u09cd\u09a6\u09bf\u09b7\u09cd\u099f \u09ab\u09cb\u0995\u09be\u09b2 \u09a6\u09c2\u09b0\u09a4\u09cd\u09ac\u09c7\u09b0 \u09b2\u09c7\u09a8\u09cd\u09b8\u09c7\u09b0 \u09a4\u09c1\u09b2\u09a8\u09be\u09ae\u09c2\u09b2\u0995 \u09ae\u09be\u09a8\u09c7\u09b0 \u099b\u09ac\u09bf\u09a4\u09c8\u09b0\u09bf \u0995\u09b0\u09a4\u09c7 \u09a6\u09bf\u09af\u09bc\u09c7\u099b\u09c7\u0964",
+          "gold": "science/technology",
+          "pred": "geography",
+          "logprobs": {
+            "science/technology": -3.21085524559021,
+            "travel": -1.33585524559021,
+            "politics": -4.085855484008789,
+            "sports": -3.08585524559021,
+            "health": -3.21085524559021,
+            "entertainment": -1.33585524559021,
+            "geography": -1.21085524559021
+          }
+        },
+        {
+          "text": "\u09ac\u09bf\u09ad\u09bf\u09a8\u09cd\u09a8 \u0995\u09be\u09b0\u09a3\u09c7 \u09a4\u09be\u09b0\u09be \u0993\u09af\u09bc\u09c7\u09ac \u09aa\u09cd\u09b0\u0995\u09cd\u09b8\u09bf\u0997\u09c1\u09b2\u09bf\u09b0 \u09a4\u09c1\u09b2\u09a8\u09be\u09af\u09bc \u09b6\u09cd\u09b0\u09c7\u09af\u09bc: \u09a4\u09be\u09b0\u09be \u0995\u09c7\u09ac\u09b2\u09ae\u09be\u09a4\u09cd\u09b0 http \u09a8\u09af\u09bc \u09b8\u09ae\u09b8\u09cd\u09a4 \u0987\u09a8\u09cd\u099f\u09be\u09b0\u09a8\u09c7\u099f \u099f\u09cd\u09b0\u09cd\u09af\u09be\u09ab\u09bf\u0995\u0995\u09c7 \u09aa\u09c1\u09a8\u09b0\u09be\u09af\u09bc \u09b0\u09c1\u099f \u0995\u09b0\u09c7\u0964",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -2.658677816390991,
+            "travel": -1.1586778163909912,
+            "politics": -3.533677816390991,
+            "sports": -2.533677816390991,
+            "health": -2.783677816390991,
+            "entertainment": -1.2836778163909912,
+            "geography": -2.033677816390991
+          }
+        },
+        {
+          "text": "\u09ae\u09bf\u09a5\u09b7\u09cd\u0995\u09cd\u09b0\u09bf\u09af\u09bc \u09a8\u0995\u09be\u09b6\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u09ae\u09bf\u09a1\u09bf\u09af\u09bc\u09be \u09aa\u09cd\u09b0\u0995\u09be\u09b6\u09a8\u09be \u09b8\u09ae\u09cd\u09aa\u09b0\u09cd\u0995\u09c7 \u0986\u09aa\u09a8\u09be\u09b0 \u0985\u09a8\u09c1\u09ae\u09be\u09a8\u0997\u09c1\u09b2\u09bf \u09aa\u09c1\u09a8\u09b0\u09be\u09af\u09bc \u09ae\u09c2\u09b2\u09cd\u09af\u09be\u09af\u09bc\u09a8 \u0995\u09b0\u09a4\u09c7 \u09b9\u09ac\u09c7 \u098f\u09ac\u0982 \u09ac\u09cd\u09af\u09a4\u09bf\u0995\u09cd\u09b0\u09ae\u09c0 \u0989\u09aa\u09be\u09af\u09bc\u09c7 \u099a\u09bf\u09a8\u09cd\u09a4\u09be \u0995\u09b0\u09a4\u09c7 \u09b6\u09bf\u0996\u09a4\u09c7 \u09b9\u09ac\u09c7\u0964",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.3581056594848633,
+            "travel": -1.6081056594848633,
+            "politics": -2.8581056594848633,
+            "sports": -2.9831056594848633,
+            "health": -2.9831056594848633,
+            "entertainment": -1.2331056594848633,
+            "geography": -1.6081056594848633
+          }
+        },
+        {
+          "text": "\u098f\u099f\u09bf \u09b8\u09be\u09a7\u09be\u09b0\u09a3 \u0985\u09ad\u09cd\u09af\u09be\u09b8 \u09b9\u09df\u09c7 \u0989\u09a0\u09c7\u099b\u09bf\u09b2, \u09a4\u09ac\u09c7 \u09b2\u09cb\u09b9\u09be\u099f\u09bf \u09ae\u09be\u09b2\u0997\u09be\u09a1\u09bc\u09bf\u09b0 \u0995\u09be\u09a0\u09c7\u09b0 \u099a\u09be\u0995\u09be\u09b0 \u0989\u09aa\u09b0 \u098f\u0981\u099f\u09c7 \u09ac\u09b8\u09c7\u099b\u09bf\u09b2\u0964",
+          "gold": "science/technology",
+          "pred": "travel",
+          "logprobs": {
+            "science/technology": -3.4721016883850098,
+            "travel": -1.2221018075942993,
+            "politics": -3.4721016883850098,
+            "sports": -2.4721016883850098,
+            "health": -3.3471016883850098,
+            "entertainment": -1.3471018075942993,
+            "geography": -1.4721018075942993
+          }
+        },
+        {
+          "text": "\u09aa\u09cd\u09b0\u09be\u0987\u09a1\u0997\u09c1\u09b2\u09cb \u098f\u0995 \u09a5\u09c7\u0995\u09c7 \u09a4\u09bf\u09a8\u099c\u09a8 \u09aa\u09cd\u09b0\u09be\u09aa\u09cd\u09a4 \u09ac\u09af\u09bc\u09b8\u09cd\u0995 \u09aa\u09c1\u09b0\u09c1\u09b7\u09c7\u09b0 \u09aa\u09be\u09b6\u09be\u09aa\u09be\u09b6\u09bf \u09a4\u09cd\u09b0\u09bf\u09b6 \u099c\u09a8 \u09ae\u09b9\u09bf\u09b2\u09be \u098f\u09ac\u0982 \u09b6\u09be\u09ac\u0995\u09c7\u09b0 \u09b8\u09ae\u09a8\u09cd\u09ac\u09af\u09bc\u09c7 \u0997\u09a0\u09bf\u09a4 \u09b9\u09af\u09bc\u0964",
+          "gold": "science/technology",
+          "pred": "entertainment",
+          "logprobs": {
+            "science/technology": -2.9120023250579834,
+            "travel": -1.5370023250579834,
+            "politics": -2.7870023250579834,
+            "sports": -3.0370023250579834,
+            "health": -2.9120023250579834,
+            "entertainment": -1.0370023250579834,
+            "geography": -1.7870023250579834
+          }
+        },
+        {
+          "text": "\u09af\u09a6\u09bf\u0993 AI \u098f\u09b0 \u09ac\u09bf\u099c\u09cd\u099e\u09be\u09a8\u09c7\u09b0 \u0995\u09a5\u09be\u09b8\u09be\u09b9\u09bf\u09a4\u09cd\u09af\u09c7 \u09a6\u09c3\u09dc \u0985\u09ad\u09bf\u09aa\u09cd\u09b0\u09be\u09df \u09b0\u09af\u09bc\u09c7\u099b\u09c7, AI \u0995\u09ae\u09cd\u09aa\u09bf\u0989\u099f\u09be\u09b0 \u09ac\u09bf\u099c\u09cd\u099e\u09be\u09a8\u09c7\u09b0 \u098f\u0995\u099f\u09bf \u0996\u09c1\u09ac \u0997\u09c1\u09b0\u09c1\u09a4\u09cd\u09ac\u09aa\u09c2\u09b0\u09cd\u09a3 \u09b6\u09be\u0996\u09be \u0997\u09a0\u09a8 \u0995\u09b0\u09c7 \u09af\u09be \u0995\u09cb\u09a8\u0993 \u09af\u09a8\u09cd\u09a4\u09cd\u09b0\u09c7\u09b0 \u0986\u099a\u09b0\u09a3, \u09b6\u09c7\u0996\u09be\u09b0 \u098f\u09ac\u0982 \u09ac\u09c1\u09a6\u09cd\u09a7\u09bf\u09b0 \u0985\u09ad\u09bf\u09af\u09cb\u099c\u09a8 \u09a8\u09bf\u09af\u09bc\u09c7 \u0995\u09be\u099c \u0995\u09b0\u09c7\u0964",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.3926180601119995,
+            "travel": -1.6426180601119995,
+            "politics": -2.767618179321289,
+            "sports": -2.767618179321289,
+            "health": -2.892618179321289,
+            "entertainment": -1.7676180601119995,
+            "geography": -1.8926180601119995
+          }
+        },
+        {
+          "text": "\u09b8\u09c7\u0987 \u0995\u09be\u09b0\u09a3\u09c7 \u098f\u0987 \u09ac\u09bf\u09a8\u09cd\u09af\u09be\u09b8\u099f\u09bf\u09b0 \u0986\u09a8\u09c1\u09ae\u09be\u09a8\u09bf\u0995 \u0985\u09a8\u09c1\u09aa\u09be\u09a4 (\u09e7\u09e8 \u09a6\u09bf\u09df\u09c7 \u09ad\u09be\u0997 \u0995\u09b0\u09c7 \u09b8\u09b9\u099c \u09aa\u09c2\u09b0\u09cd\u09a8 -\u09b8\u0982\u0996\u09cd\u09af\u09be\u09b0 \u0997\u09be\u09a3\u09bf\u09a4\u09bf\u0995 \u0985\u09a8\u09c1\u09aa\u09be\u09a4 \u09aa\u09be\u0993\u09df\u09be \u09af\u09be\u09df) \u09a7\u09b0\u09be \u09b9\u09df \u09e9\u0983\u09e8\u0964",
+          "gold": "science/technology",
+          "pred": "science/technology",
+          "logprobs": {
+            "science/technology": -1.5266246795654297,
+            "travel": -1.9016246795654297,
+            "politics": -3.2766246795654297,
+            "sports": -2.9016246795654297,
+            "health": -2.6516246795654297,
+            "entertainment": -1.7766246795654297,
+            "geography": -1.5266246795654297
+          }
+        }
+      ]
+    },
+    "_demonstrations": [
+      {
+        "text": "In 1957 Luxembourg became a founding member of the organization which is today known as the European Union.",
+        "category": "politics"
+      },
+      {
+        "text": "In summer, especially, you'll need to watch out for mosquitoes if you decide to hike through the rainforest.",
+        "category": "health"
+      },
+      {
+        "text": "For example, one might say that the motor car necessarily leads to the development of roads.",
+        "category": "science/technology"
+      },
+      {
+        "text": "Take a look at what trips the agent is promoting, whether on a website or in a shop window.",
+        "category": "travel"
+      },
+      {
+        "text": "In fact, region codes have absolutely no effect on illegal copying; a bit-for-bit copy of a disk will play just fine on any device where the original will.",
+        "category": "science/technology"
+      },
+      {
+        "text": "The archipelago lies 120 km north of the Peninsula. The largest is King George Island with the settlement of Villa Las Estrellas.",
+        "category": "geography"
+      },
+      {
+        "text": "Most of the temples do have an Annual festival starting from November end to Mid of May, which varies according to each temple's annual calendar.",
+        "category": "entertainment"
+      },
+      {
+        "text": "Murray lost the first set in a tie break after both men held each and every serve in the set.",
+        "category": "sports"
+      },
+      {
+        "text": "2004 Olympic silver medallist Amir Khan said, \"Deep down I think women shouldn\u2019t fight. That\u2019s my opinion.\"",
+        "category": "sports"
+      },
+      {
+        "text": "The Oyapock River Bridge is a cable-stayed bridge. It spans the Oyapock River to link the cities of Oiapoque in Brazil and Saint-Georges de l'Oyapock in French Guiana.",
+        "category": "geography"
+      },
+      {
+        "text": "After initial military setbacks, Ethelred was able to agree to terms with Olaf, who returned to Norway to try to gain his kingdom with mixed success.",
+        "category": "politics"
+      },
+      {
+        "text": "In the archipelagos and lakes you do not necessarily need a yacht.",
+        "category": "entertainment"
+      },
+      {
+        "text": "The best indication of internal poisoning may be the presence of an open container of medication or toxic household chemicals.",
+        "category": "health"
+      },
+      {
+        "text": "There are infinite variations possible, but this remains what most people mean when they talk of \"going to Disney World\".",
+        "category": "travel"
+      }
+    ],
+    "_demo_seed": 42
+  }
+}

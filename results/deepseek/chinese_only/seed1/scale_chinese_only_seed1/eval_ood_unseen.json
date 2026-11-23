@@ -1,0 +1,4907 @@
+{
+  "_purpose": "E2 (OOD bpb) + E3 (unseen-language bpb), campaign E1-E5",
+  "_registration": "logs/E1E5_PREREG.log (2026-08-03T04:45Z; confirmed values 05:35Z)",
+  "run": {
+    "baseline": false,
+    "condition": "chinese_only",
+    "seed": 1,
+    "scale_condition": "chinese_only",
+    "scale_seed": 1,
+    "delta_ratio": 0.8
+  },
+  "eval_batch_size": 8,
+  "segmentation": {
+    "max_chars": 288,
+    "rule": "split on newline into paragraphs; oversized paragraphs split at the last space before max_chars (character boundary if no space). No tokenizer truncation -- scored bytes == counted bytes."
+  },
+  "e2_ood": {
+    "corpus_id": "csebuetnlp/xlsum:v2.0:test",
+    "dataset": "csebuetnlp/xlsum",
+    "version": "v2.0",
+    "split": "test",
+    "bytes_budget_per_lang": 51200,
+    "sampling_rule": "equal BYTES per language; whole documents only (never truncated); documents that would exceed the budget are skipped, not cut; body text field only (no title/summary); fixed shuffle seed",
+    "results": {
+      "eng_Latn": {
+        "bits_per_byte": 1.0143822724086593,
+        "ppl": 27.954496383666992,
+        "n_segments": 188,
+        "n_tokens_scored": 10729,
+        "n_bytes_scored": 50822,
+        "per_segment": [
+          {
+            "seg": 0,
+            "nll_nats": 170.80801391601562,
+            "n_tokens": 56,
+            "n_bytes": 284,
+            "doc_index": 0
+          },
+          {
+            "seg": 1,
+            "nll_nats": 169.06993103027344,
+            "n_tokens": 51,
+            "n_bytes": 284,
+            "doc_index": 0
+          },
+          {
+            "seg": 2,
+            "nll_nats": 186.39694213867188,
+            "n_tokens": 56,
+            "n_bytes": 284,
+            "doc_index": 0
+          },
+          {
+            "seg": 3,
+            "nll_nats": 198.52015686035156,
+            "n_tokens": 48,
+            "n_bytes": 286,
+            "doc_index": 0
+          },
+          {
+            "seg": 4,
+            "nll_nats": 194.89437866210938,
+            "n_tokens": 54,
+            "n_bytes": 285,
+            "doc_index": 0
+          },
+          {
+            "seg": 5,
+            "nll_nats": 199.62652587890625,
+            "n_tokens": 50,
+            "n_bytes": 283,
+            "doc_index": 0
+          },
+          {
+            "seg": 6,
+            "nll_nats": 137.4542236328125,
+            "n_tokens": 47,
+            "n_bytes": 279,
+            "doc_index": 0
+          },
+          {
+            "seg": 7,
+            "nll_nats": 184.25225830078125,
+            "n_tokens": 54,
+            "n_bytes": 282,
+            "doc_index": 0
+          },
+          {
+            "seg": 8,
+            "nll_nats": 147.35354614257812,
+            "n_tokens": 47,
+            "n_bytes": 286,
+            "doc_index": 0
+          },
+          {
+            "seg": 9,
+            "nll_nats": 193.52774047851562,
+            "n_tokens": 51,
+            "n_bytes": 285,
+            "doc_index": 0
+          },
+          {
+            "seg": 10,
+            "nll_nats": 170.137451171875,
+            "n_tokens": 53,
+            "n_bytes": 286,
+            "doc_index": 0
+          },
+          {
+            "seg": 11,
+            "nll_nats": 113.38845825195312,
+            "n_tokens": 24,
+            "n_bytes": 119,
+            "doc_index": 0
+          },
+          {
+            "seg": 12,
+            "nll_nats": 176.7941436767578,
+            "n_tokens": 58,
+            "n_bytes": 285,
+            "doc_index": 1
+          },
+          {
+            "seg": 13,
+            "nll_nats": 178.99990844726562,
+            "n_tokens": 60,
+            "n_bytes": 281,
+            "doc_index": 1
+          },
+          {
+            "seg": 14,
+            "nll_nats": 202.09434509277344,
+            "n_tokens": 68,
+            "n_bytes": 287,
+            "doc_index": 1
+          },
+          {
+            "seg": 15,
+            "nll_nats": 231.6487274169922,
+            "n_tokens": 69,
+            "n_bytes": 284,
+            "doc_index": 1
+          },
+          {
+            "seg": 16,
+            "nll_nats": 190.4558563232422,
+            "n_tokens": 56,
+            "n_bytes": 286,
+            "doc_index": 1
+          },
+          {
+            "seg": 17,
+            "nll_nats": 209.12710571289062,
+            "n_tokens": 63,
+            "n_bytes": 285,
+            "doc_index": 1
+          },
+          {
+            "seg": 18,
+            "nll_nats": 183.75167846679688,
+            "n_tokens": 56,
+            "n_bytes": 279,
+            "doc_index": 1
+          },
+          {
+            "seg": 19,
+            "nll_nats": 156.39259338378906,
+            "n_tokens": 59,
+            "n_bytes": 282,
+            "doc_index": 1
+          },
+          {
+            "seg": 20,
+            "nll_nats": 210.20309448242188,
+            "n_tokens": 60,
+            "n_bytes": 287,
+            "doc_index": 1
+          },
+          {
+            "seg": 21,
+            "nll_nats": 198.5277099609375,
+            "n_tokens": 65,
+            "n_bytes": 284,
+            "doc_index": 1
+          },
+          {
+            "seg": 22,
+            "nll_nats": 153.06228637695312,
+            "n_tokens": 49,
+            "n_bytes": 282,
+            "doc_index": 1
+          },
+          {
+            "seg": 23,
+            "nll_nats": 217.31390380859375,
+            "n_tokens": 75,
+            "n_bytes": 286,
+            "doc_index": 1
+          },
+          {
+            "seg": 24,
+            "nll_nats": 213.8302459716797,
+            "n_tokens": 63,
+            "n_bytes": 282,
+            "doc_index": 1
+          },
+          {
+            "seg": 25,
+            "nll_nats": 177.28842163085938,
+            "n_tokens": 55,
+            "n_bytes": 283,
+            "doc_index": 1
+          },
+          {
+            "seg": 26,
+            "nll_nats": 173.0294952392578,
+            "n_tokens": 58,
+            "n_bytes": 286,
+            "doc_index": 1
+          },
+          {
+            "seg": 27,
+            "nll_nats": 195.47341918945312,
+            "n_tokens": 62,
+            "n_bytes": 282,
+            "doc_index": 1
+          },
+          {
+            "seg": 28,
+            "nll_nats": 178.7816162109375,
+            "n_tokens": 62,
+            "n_bytes": 287,
+            "doc_index": 1
+          },
+          {
+            "seg": 29,
+            "nll_nats": 47.53606414794922,
+            "n_tokens": 9,
+            "n_bytes": 41,
+            "doc_index": 1
+          },
+          {
+            "seg": 30,
+            "nll_nats": 162.45193481445312,
+            "n_tokens": 58,
+            "n_bytes": 281,
+            "doc_index": 2
+          },
+          {
+            "seg": 31,
+            "nll_nats": 225.00473022460938,
+            "n_tokens": 58,
+            "n_bytes": 287,
+            "doc_index": 2
+          },
+          {
+            "seg": 32,
+            "nll_nats": 215.4319610595703,
+            "n_tokens": 66,
+            "n_bytes": 284,
+            "doc_index": 2
+          },
+          {
+            "seg": 33,
+            "nll_nats": 228.4508056640625,
+            "n_tokens": 65,
+            "n_bytes": 282,
+            "doc_index": 2
+          },
+          {
+            "seg": 34,
+            "nll_nats": 218.51666259765625,
+            "n_tokens": 66,
+            "n_bytes": 285,
+            "doc_index": 2
+          },
+          {
+            "seg": 35,
+            "nll_nats": 131.94317626953125,
+            "n_tokens": 45,
+            "n_bytes": 186,
+            "doc_index": 2
+          },
+          {
+            "seg": 36,
+            "nll_nats": 209.783935546875,
+            "n_tokens": 66,
+            "n_bytes": 286,
+            "doc_index": 3
+          },
+          {
+            "seg": 37,
+            "nll_nats": 206.8918914794922,
+            "n_tokens": 64,
+            "n_bytes": 282,
+            "doc_index": 3
+          },
+          {
+            "seg": 38,
+            "nll_nats": 209.5237579345703,
+            "n_tokens": 55,
+            "n_bytes": 286,
+            "doc_index": 3
+          },
+          {
+            "seg": 39,
+            "nll_nats": 132.1111602783203,
+            "n_tokens": 35,
+            "n_bytes": 166,
+            "doc_index": 3
+          },
+          {
+            "seg": 40,
+            "nll_nats": 163.04644775390625,
+            "n_tokens": 55,
+            "n_bytes": 286,
+            "doc_index": 4
+          },
+          {
+            "seg": 41,
+            "nll_nats": 133.9346466064453,
+            "n_tokens": 49,
+            "n_bytes": 286,
+            "doc_index": 4
+          },
+          {
+            "seg": 42,
+            "nll_nats": 146.59646606445312,
+            "n_tokens": 48,
+            "n_bytes": 279,
+            "doc_index": 4
+          },
+          {
+            "seg": 43,
+            "nll_nats": 158.277587890625,
+            "n_tokens": 52,
+            "n_bytes": 281,
+            "doc_index": 4
+          },
+          {
+            "seg": 44,
+            "nll_nats": 184.3572235107422,
+            "n_tokens": 49,
+            "n_bytes": 286,
+            "doc_index": 4
+          },
+          {
+            "seg": 45,
+            "nll_nats": 207.27175903320312,
+            "n_tokens": 54,
+            "n_bytes": 286,
+            "doc_index": 4
+          },
+          {
+            "seg": 46,
+            "nll_nats": 160.60231018066406,
+            "n_tokens": 53,
+            "n_bytes": 261,
+            "doc_index": 4
+          },
+          {
+            "seg": 47,
+            "nll_nats": 190.6595458984375,
+            "n_tokens": 59,
+            "n_bytes": 286,
+            "doc_index": 5
+          },
+          {
+            "seg": 48,
+            "nll_nats": 189.1295928955078,
+            "n_tokens": 67,
+            "n_bytes": 285,
+            "doc_index": 5
+          },
+          {
+            "seg": 49,
+            "nll_nats": 163.6715545654297,
+            "n_tokens": 57,
+            "n_bytes": 284,
+            "doc_index": 5
+          },
+          {
+            "seg": 50,
+            "nll_nats": 21.48700714111328,
+            "n_tokens": 5,
+            "n_bytes": 15,
+            "doc_index": 5
+          },
+          {
+            "seg": 51,
+            "nll_nats": 181.7179718017578,
+            "n_tokens": 57,
+            "n_bytes": 286,
+            "doc_index": 6
+          },
+          {
+            "seg": 52,
+            "nll_nats": 199.59117126464844,
+            "n_tokens": 69,
+            "n_bytes": 286,
+            "doc_index": 6
+          },
+          {
+            "seg": 53,
+            "nll_nats": 159.47659301757812,
+            "n_tokens": 48,
+            "n_bytes": 278,
+            "doc_index": 6
+          },
+          {
+            "seg": 54,
+            "nll_nats": 201.27313232421875,
+            "n_tokens": 59,
+            "n_bytes": 279,
+            "doc_index": 6
+          },
+          {
+            "seg": 55,
+            "nll_nats": 191.23495483398438,
+            "n_tokens": 58,
+            "n_bytes": 285,
+            "doc_index": 6
+          },
+          {
+            "seg": 56,
+            "nll_nats": 201.5048828125,
+            "n_tokens": 66,
+            "n_bytes": 281,
+            "doc_index": 6
+          },
+          {
+            "seg": 57,
+            "nll_nats": 136.97653198242188,
+            "n_tokens": 46,
+            "n_bytes": 207,
+            "doc_index": 6
+          },
+          {
+            "seg": 58,
+            "nll_nats": 213.1710662841797,
+            "n_tokens": 64,
+            "n_bytes": 287,
+            "doc_index": 7
+          },
+          {
+            "seg": 59,
+            "nll_nats": 195.9792022705078,
+            "n_tokens": 58,
+            "n_bytes": 283,
+            "doc_index": 7
+          },
+          {
+            "seg": 60,
+            "nll_nats": 225.83999633789062,
+            "n_tokens": 70,
+            "n_bytes": 287,
+            "doc_index": 7
+          },
+          {
+            "seg": 61,
+            "nll_nats": 203.40863037109375,
+            "n_tokens": 56,
+            "n_bytes": 283,
+            "doc_index": 7
+          },
+          {
+            "seg": 62,
+            "nll_nats": 212.75027465820312,
+            "n_tokens": 75,
+            "n_bytes": 287,
+            "doc_index": 7
+          },
+          {
+            "seg": 63,
+            "nll_nats": 202.3102264404297,
+            "n_tokens": 60,
+            "n_bytes": 280,
+            "doc_index": 7
+          },
+          {
+            "seg": 64,
+            "nll_nats": 252.40835571289062,
+            "n_tokens": 56,
+            "n_bytes": 282,
+            "doc_index": 7
+          },
+          {
+            "seg": 65,
+            "nll_nats": 226.61387634277344,
+            "n_tokens": 70,
+            "n_bytes": 287,
+            "doc_index": 7
+          },
+          {
+            "seg": 66,
+            "nll_nats": 165.71136474609375,
+            "n_tokens": 52,
+            "n_bytes": 266,
+            "doc_index": 7
+          },
+          {
+            "seg": 67,
+            "nll_nats": 262.8034973144531,
+            "n_tokens": 67,
+            "n_bytes": 286,
+            "doc_index": 8
+          },
+          {
+            "seg": 68,
+            "nll_nats": 204.95700073242188,
+            "n_tokens": 67,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 69,
+            "nll_nats": 210.57574462890625,
+            "n_tokens": 59,
+            "n_bytes": 285,
+            "doc_index": 8
+          },
+          {
+            "seg": 70,
+            "nll_nats": 206.4484405517578,
+            "n_tokens": 63,
+            "n_bytes": 284,
+            "doc_index": 8
+          },
+          {
+            "seg": 71,
+            "nll_nats": 206.90121459960938,
+            "n_tokens": 65,
+            "n_bytes": 276,
+            "doc_index": 8
+          },
+          {
+            "seg": 72,
+            "nll_nats": 226.09329223632812,
+            "n_tokens": 66,
+            "n_bytes": 284,
+            "doc_index": 8
+          },
+          {
+            "seg": 73,
+            "nll_nats": 212.81393432617188,
+            "n_tokens": 61,
+            "n_bytes": 283,
+            "doc_index": 8
+          },
+          {
+            "seg": 74,
+            "nll_nats": 200.6562042236328,
+            "n_tokens": 60,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 75,
+            "nll_nats": 205.79116821289062,
+            "n_tokens": 63,
+            "n_bytes": 286,
+            "doc_index": 8
+          },
+          {
+            "seg": 76,
+            "nll_nats": 192.62632751464844,
+            "n_tokens": 62,
+            "n_bytes": 282,
+            "doc_index": 8
+          },
+          {
+            "seg": 77,
+            "nll_nats": 201.21905517578125,
+            "n_tokens": 61,
+            "n_bytes": 286,
+            "doc_index": 8
+          },
+          {
+            "seg": 78,
+            "nll_nats": 220.63119506835938,
+            "n_tokens": 68,
+            "n_bytes": 283,
+            "doc_index": 8
+          },
+          {
+            "seg": 79,
+            "nll_nats": 136.4312744140625,
+            "n_tokens": 38,
+            "n_bytes": 194,
+            "doc_index": 8
+          },
+          {
+            "seg": 80,
+            "nll_nats": 235.52874755859375,
+            "n_tokens": 71,
+            "n_bytes": 282,
+            "doc_index": 9
+          },
+          {
+            "seg": 81,
+            "nll_nats": 180.75584411621094,
+            "n_tokens": 54,
+            "n_bytes": 287,
+            "doc_index": 9
+          },
+          {
+            "seg": 82,
+            "nll_nats": 214.81387329101562,
+            "n_tokens": 73,
+            "n_bytes": 287,
+            "doc_index": 9
+          },
+          {
+            "seg": 83,
+            "nll_nats": 174.67816162109375,
+            "n_tokens": 59,
+            "n_bytes": 275,
+            "doc_index": 9
+          },
+          {
+            "seg": 84,
+            "nll_nats": 205.14605712890625,
+            "n_tokens": 64,
+            "n_bytes": 284,
+            "doc_index": 10
+          },
+          {
+            "seg": 85,
+            "nll_nats": 244.1708221435547,
+            "n_tokens": 69,
+            "n_bytes": 286,
+            "doc_index": 10
+          },
+          {
+            "seg": 86,
+            "nll_nats": 223.5120391845703,
+            "n_tokens": 65,
+            "n_bytes": 284,
+            "doc_index": 10
+          },
+          {
+            "seg": 87,
+            "nll_nats": 236.33734130859375,
+            "n_tokens": 70,
+            "n_bytes": 286,
+            "doc_index": 10
+          },
+          {
+            "seg": 88,
+            "nll_nats": 89.58767700195312,
+            "n_tokens": 24,
+            "n_bytes": 75,
+            "doc_index": 10
+          },
+          {
+            "seg": 89,
+            "nll_nats": 184.574462890625,
+            "n_tokens": 55,
+            "n_bytes": 287,
+            "doc_index": 11
+          },
+          {
+            "seg": 90,
+            "nll_nats": 163.69967651367188,
+            "n_tokens": 64,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 91,
+            "nll_nats": 181.7786865234375,
+            "n_tokens": 59,
+            "n_bytes": 287,
+            "doc_index": 11
+          },
+          {
+            "seg": 92,
+            "nll_nats": 236.99578857421875,
+            "n_tokens": 59,
+            "n_bytes": 286,
+            "doc_index": 11
+          },
+          {
+            "seg": 93,
+            "nll_nats": 212.18246459960938,
+            "n_tokens": 74,
+            "n_bytes": 286,
+            "doc_index": 11
+          },
+          {
+            "seg": 94,
+            "nll_nats": 233.3738250732422,
+            "n_tokens": 65,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 95,
+            "nll_nats": 172.85032653808594,
+            "n_tokens": 52,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 96,
+            "nll_nats": 195.87588500976562,
+            "n_tokens": 56,
+            "n_bytes": 283,
+            "doc_index": 11
+          },
+          {
+            "seg": 97,
+            "nll_nats": 188.93777465820312,
+            "n_tokens": 59,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 98,
+            "nll_nats": 199.57101440429688,
+            "n_tokens": 61,
+            "n_bytes": 286,
+            "doc_index": 11
+          },
+          {
+            "seg": 99,
+            "nll_nats": 178.6111297607422,
+            "n_tokens": 50,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 100,
+            "nll_nats": 197.77056884765625,
+            "n_tokens": 55,
+            "n_bytes": 283,
+            "doc_index": 11
+          },
+          {
+            "seg": 101,
+            "nll_nats": 169.64242553710938,
+            "n_tokens": 48,
+            "n_bytes": 285,
+            "doc_index": 11
+          },
+          {
+            "seg": 102,
+            "nll_nats": 151.691650390625,
+            "n_tokens": 54,
+            "n_bytes": 286,
+            "doc_index": 11
+          },
+          {
+            "seg": 103,
+            "nll_nats": 187.62625122070312,
+            "n_tokens": 52,
+            "n_bytes": 276,
+            "doc_index": 11
+          },
+          {
+            "seg": 104,
+            "nll_nats": 224.18560791015625,
+            "n_tokens": 56,
+            "n_bytes": 286,
+            "doc_index": 11
+          },
+          {
+            "seg": 105,
+            "nll_nats": 214.27232360839844,
+            "n_tokens": 59,
+            "n_bytes": 278,
+            "doc_index": 11
+          },
+          {
+            "seg": 106,
+            "nll_nats": 196.3690185546875,
+            "n_tokens": 59,
+            "n_bytes": 280,
+            "doc_index": 11
+          },
+          {
+            "seg": 107,
+            "nll_nats": 203.68577575683594,
+            "n_tokens": 66,
+            "n_bytes": 284,
+            "doc_index": 11
+          },
+          {
+            "seg": 108,
+            "nll_nats": 29.09087371826172,
+            "n_tokens": 3,
+            "n_bytes": 19,
+            "doc_index": 11
+          },
+          {
+            "seg": 109,
+            "nll_nats": 181.00758361816406,
+            "n_tokens": 84,
+            "n_bytes": 285,
+            "doc_index": 12
+          },
+          {
+            "seg": 110,
+            "nll_nats": 190.35971069335938,
+            "n_tokens": 62,
+            "n_bytes": 284,
+            "doc_index": 12
+          },
+          {
+            "seg": 111,
+            "nll_nats": 199.07740783691406,
+            "n_tokens": 62,
+            "n_bytes": 287,
+            "doc_index": 12
+          },
+          {
+            "seg": 112,
+            "nll_nats": 160.74356079101562,
+            "n_tokens": 56,
+            "n_bytes": 284,
+            "doc_index": 12
+          },
+          {
+            "seg": 113,
+            "nll_nats": 217.16607666015625,
+            "n_tokens": 57,
+            "n_bytes": 287,
+            "doc_index": 12
+          },
+          {
+            "seg": 114,
+            "nll_nats": 206.84420776367188,
+            "n_tokens": 52,
+            "n_bytes": 200,
+            "doc_index": 12
+          },
+          {
+            "seg": 115,
+            "nll_nats": 211.75042724609375,
+            "n_tokens": 59,
+            "n_bytes": 285,
+            "doc_index": 13
+          },
+          {
+            "seg": 116,
+            "nll_nats": 179.0562744140625,
+            "n_tokens": 47,
+            "n_bytes": 286,
+            "doc_index": 13
+          },
+          {
+            "seg": 117,
+            "nll_nats": 236.15098571777344,
+            "n_tokens": 57,
+            "n_bytes": 287,
+            "doc_index": 13
+          },
+          {
+            "seg": 118,
+            "nll_nats": 202.7230224609375,
+            "n_tokens": 77,
+            "n_bytes": 285,
+            "doc_index": 13
+          },
+          {
+            "seg": 119,
+            "nll_nats": 221.68936157226562,
+            "n_tokens": 57,
+            "n_bytes": 287,
+            "doc_index": 13
+          },
+          {
+            "seg": 120,
+            "nll_nats": 203.5142822265625,
+            "n_tokens": 70,
+            "n_bytes": 285,
+            "doc_index": 13
+          },
+          {
+            "seg": 121,
+            "nll_nats": 190.1156768798828,
+            "n_tokens": 53,
+            "n_bytes": 287,
+            "doc_index": 13
+          },
+          {
+            "seg": 122,
+            "nll_nats": 196.65689086914062,
+            "n_tokens": 53,
+            "n_bytes": 287,
+            "doc_index": 13
+          },
+          {
+            "seg": 123,
+            "nll_nats": 217.35745239257812,
+            "n_tokens": 62,
+            "n_bytes": 284,
+            "doc_index": 13
+          },
+          {
+            "seg": 124,
+            "nll_nats": 198.5473175048828,
+            "n_tokens": 60,
+            "n_bytes": 284,
+            "doc_index": 13
+          },
+          {
+            "seg": 125,
+            "nll_nats": 178.8873291015625,
+            "n_tokens": 58,
+            "n_bytes": 264,
+            "doc_index": 13
+          },
+          {
+            "seg": 126,
+            "nll_nats": 190.52639770507812,
+            "n_tokens": 56,
+            "n_bytes": 286,
+            "doc_index": 14
+          },
+          {
+            "seg": 127,
+            "nll_nats": 255.85044860839844,
+            "n_tokens": 58,
+            "n_bytes": 283,
+            "doc_index": 14
+          },
+          {
+            "seg": 128,
+            "nll_nats": 202.2906494140625,
+            "n_tokens": 55,
+            "n_bytes": 286,
+            "doc_index": 14
+          },
+          {
+            "seg": 129,
+            "nll_nats": 150.66432189941406,
+            "n_tokens": 49,
+            "n_bytes": 202,
+            "doc_index": 14
+          },
+          {
+            "seg": 130,
+            "nll_nats": 200.90292358398438,
+            "n_tokens": 57,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 131,
+            "nll_nats": 197.04034423828125,
+            "n_tokens": 57,
+            "n_bytes": 285,
+            "doc_index": 15
+          },
+          {
+            "seg": 132,
+            "nll_nats": 174.9247589111328,
+            "n_tokens": 66,
+            "n_bytes": 283,
+            "doc_index": 15
+          },
+          {
+            "seg": 133,
+            "nll_nats": 191.2279052734375,
+            "n_tokens": 75,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 134,
+            "nll_nats": 169.83624267578125,
+            "n_tokens": 64,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 135,
+            "nll_nats": 228.01507568359375,
+            "n_tokens": 64,
+            "n_bytes": 284,
+            "doc_index": 15
+          },
+          {
+            "seg": 136,
+            "nll_nats": 214.34010314941406,
+            "n_tokens": 56,
+            "n_bytes": 285,
+            "doc_index": 15
+          },
+          {
+            "seg": 137,
+            "nll_nats": 236.701904296875,
+            "n_tokens": 61,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 138,
+            "nll_nats": 228.2897186279297,
+            "n_tokens": 57,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 139,
+            "nll_nats": 199.622802734375,
+            "n_tokens": 55,
+            "n_bytes": 285,
+            "doc_index": 15
+          },
+          {
+            "seg": 140,
+            "nll_nats": 202.681640625,
+            "n_tokens": 53,
+            "n_bytes": 276,
+            "doc_index": 15
+          },
+          {
+            "seg": 141,
+            "nll_nats": 207.70260620117188,
+            "n_tokens": 65,
+            "n_bytes": 286,
+            "doc_index": 15
+          },
+          {
+            "seg": 142,
+            "nll_nats": 176.82130432128906,
+            "n_tokens": 56,
+            "n_bytes": 284,
+            "doc_index": 15
+          },
+          {
+            "seg": 143,
+            "nll_nats": 205.28509521484375,
+            "n_tokens": 57,
+            "n_bytes": 279,
+            "doc_index": 15
+          },
+          {
+            "seg": 144,
+            "nll_nats": 203.47698974609375,
+            "n_tokens": 57,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 145,
+            "nll_nats": 211.45513916015625,
+            "n_tokens": 68,
+            "n_bytes": 285,
+            "doc_index": 15
+          },
+          {
+            "seg": 146,
+            "nll_nats": 206.89288330078125,
+            "n_tokens": 70,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 147,
+            "nll_nats": 175.69012451171875,
+            "n_tokens": 59,
+            "n_bytes": 283,
+            "doc_index": 15
+          },
+          {
+            "seg": 148,
+            "nll_nats": 225.9518280029297,
+            "n_tokens": 64,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 149,
+            "nll_nats": 156.66986083984375,
+            "n_tokens": 36,
+            "n_bytes": 164,
+            "doc_index": 15
+          },
+          {
+            "seg": 150,
+            "nll_nats": 194.44712829589844,
+            "n_tokens": 56,
+            "n_bytes": 284,
+            "doc_index": 16
+          },
+          {
+            "seg": 151,
+            "nll_nats": 183.66978454589844,
+            "n_tokens": 62,
+            "n_bytes": 287,
+            "doc_index": 16
+          },
+          {
+            "seg": 152,
+            "nll_nats": 137.48141479492188,
+            "n_tokens": 56,
+            "n_bytes": 286,
+            "doc_index": 16
+          },
+          {
+            "seg": 153,
+            "nll_nats": 157.78561401367188,
+            "n_tokens": 51,
+            "n_bytes": 282,
+            "doc_index": 16
+          },
+          {
+            "seg": 154,
+            "nll_nats": 200.44439697265625,
+            "n_tokens": 61,
+            "n_bytes": 286,
+            "doc_index": 16
+          },
+          {
+            "seg": 155,
+            "nll_nats": 199.72412109375,
+            "n_tokens": 56,
+            "n_bytes": 285,
+            "doc_index": 16
+          },
+          {
+            "seg": 156,
+            "nll_nats": 230.28160095214844,
+            "n_tokens": 56,
+            "n_bytes": 285,
+            "doc_index": 16
+          },
+          {
+            "seg": 157,
+            "nll_nats": 157.22232055664062,
+            "n_tokens": 45,
+            "n_bytes": 225,
+            "doc_index": 16
+          },
+          {
+            "seg": 158,
+            "nll_nats": 217.97354125976562,
+            "n_tokens": 64,
+            "n_bytes": 281,
+            "doc_index": 17
+          },
+          {
+            "seg": 159,
+            "nll_nats": 197.9725341796875,
+            "n_tokens": 68,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 160,
+            "nll_nats": 177.52670288085938,
+            "n_tokens": 56,
+            "n_bytes": 283,
+            "doc_index": 17
+          },
+          {
+            "seg": 161,
+            "nll_nats": 207.11480712890625,
+            "n_tokens": 60,
+            "n_bytes": 272,
+            "doc_index": 17
+          },
+          {
+            "seg": 162,
+            "nll_nats": 188.00421142578125,
+            "n_tokens": 59,
+            "n_bytes": 284,
+            "doc_index": 17
+          },
+          {
+            "seg": 163,
+            "nll_nats": 230.8664093017578,
+            "n_tokens": 68,
+            "n_bytes": 279,
+            "doc_index": 17
+          },
+          {
+            "seg": 164,
+            "nll_nats": 275.37701416015625,
+            "n_tokens": 64,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 165,
+            "nll_nats": 207.48623657226562,
+            "n_tokens": 59,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 166,
+            "nll_nats": 247.47482299804688,
+            "n_tokens": 71,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 167,
+            "nll_nats": 221.80294799804688,
+            "n_tokens": 62,
+            "n_bytes": 275,
+            "doc_index": 17
+          },
+          {
+            "seg": 168,
+            "nll_nats": 180.15615844726562,
+            "n_tokens": 51,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 169,
+            "nll_nats": 211.21633911132812,
+            "n_tokens": 57,
+            "n_bytes": 283,
+            "doc_index": 17
+          },
+          {
+            "seg": 170,
+            "nll_nats": 198.62559509277344,
+            "n_tokens": 60,
+            "n_bytes": 287,
+            "doc_index": 17
+          },
+          {
+            "seg": 171,
+            "nll_nats": 169.41461181640625,
+            "n_tokens": 50,
+            "n_bytes": 286,
+            "doc_index": 17
+          },
+          {
+            "seg": 172,
+            "nll_nats": 212.65493774414062,
+            "n_tokens": 60,
+            "n_bytes": 286,
+            "doc_index": 17
+          },
+          {
+            "seg": 173,
+            "nll_nats": 218.1465301513672,
+            "n_tokens": 54,
+            "n_bytes": 282,
+            "doc_index": 17
+          },
+          {
+            "seg": 174,
+            "nll_nats": 184.25466918945312,
+            "n_tokens": 53,
+            "n_bytes": 278,
+            "doc_index": 17
+          },
+          {
+            "seg": 175,
+            "nll_nats": 212.52249145507812,
+            "n_tokens": 60,
+            "n_bytes": 287,
+            "doc_index": 17
+          },
+          {
+            "seg": 176,
+            "nll_nats": 55.565643310546875,
+            "n_tokens": 10,
+            "n_bytes": 50,
+            "doc_index": 17
+          },
+          {
+            "seg": 177,
+            "nll_nats": 207.12680053710938,
+            "n_tokens": 74,
+            "n_bytes": 279,
+            "doc_index": 18
+          },
+          {
+            "seg": 178,
+            "nll_nats": 189.68038940429688,
+            "n_tokens": 63,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 179,
+            "nll_nats": 164.62770080566406,
+            "n_tokens": 50,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 180,
+            "nll_nats": 199.49581909179688,
+            "n_tokens": 58,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 181,
+            "nll_nats": 184.13455200195312,
+            "n_tokens": 65,
+            "n_bytes": 286,
+            "doc_index": 18
+          },
+          {
+            "seg": 182,
+            "nll_nats": 177.66439819335938,
+            "n_tokens": 55,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 183,
+            "nll_nats": 88.28744506835938,
+            "n_tokens": 30,
+            "n_bytes": 122,
+            "doc_index": 18
+          },
+          {
+            "seg": 184,
+            "nll_nats": 173.85446166992188,
+            "n_tokens": 58,
+            "n_bytes": 283,
+            "doc_index": 19
+          },
+          {
+            "seg": 185,
+            "nll_nats": 194.8091278076172,
+            "n_tokens": 53,
+            "n_bytes": 287,
+            "doc_index": 19
+          },
+          {
+            "seg": 186,
+            "nll_nats": 227.45501708984375,
+            "n_tokens": 61,
+            "n_bytes": 285,
+            "doc_index": 19
+          },
+          {
+            "seg": 187,
+            "nll_nats": 42.798126220703125,
+            "n_tokens": 9,
+            "n_bytes": 35,
+            "doc_index": 19
+          }
+        ],
+        "per_document": [
+          {
+            "doc_index": 0,
+            "nll_nats": 2065.4296264648438,
+            "n_tokens": 591,
+            "n_bytes": 3243,
+            "n_segments": 12
+          },
+          {
+            "doc_index": 1,
+            "nll_nats": 3294.310615539551,
+            "n_tokens": 1047,
+            "n_bytes": 4869,
+            "n_segments": 18
+          },
+          {
+            "doc_index": 2,
+            "nll_nats": 1181.7992706298828,
+            "n_tokens": 358,
+            "n_bytes": 1605,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 3,
+            "nll_nats": 758.3107452392578,
+            "n_tokens": 220,
+            "n_bytes": 1020,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 4,
+            "nll_nats": 1154.086441040039,
+            "n_tokens": 360,
+            "n_bytes": 1965,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 5,
+            "nll_nats": 564.9477005004883,
+            "n_tokens": 188,
+            "n_bytes": 870,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 6,
+            "nll_nats": 1271.7752380371094,
+            "n_tokens": 403,
+            "n_bytes": 1902,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 7,
+            "nll_nats": 1898.1929931640625,
+            "n_tokens": 561,
+            "n_bytes": 2542,
+            "n_segments": 9
+          },
+          {
+            "doc_index": 8,
+            "nll_nats": 2687.9483489990234,
+            "n_tokens": 800,
+            "n_bytes": 3603,
+            "n_segments": 13
+          },
+          {
+            "doc_index": 9,
+            "nll_nats": 805.7766265869141,
+            "n_tokens": 257,
+            "n_bytes": 1131,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 10,
+            "nll_nats": 998.7539367675781,
+            "n_tokens": 292,
+            "n_bytes": 1215,
+            "n_segments": 5
+          },
+          {
+            "doc_index": 11,
+            "nll_nats": 3722.785530090332,
+            "n_tokens": 1106,
+            "n_bytes": 5412,
+            "n_segments": 20
+          },
+          {
+            "doc_index": 12,
+            "nll_nats": 1155.1985473632812,
+            "n_tokens": 373,
+            "n_bytes": 1627,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 13,
+            "nll_nats": 2236.449020385742,
+            "n_tokens": 653,
+            "n_bytes": 3121,
+            "n_segments": 11
+          },
+          {
+            "doc_index": 14,
+            "nll_nats": 799.3318176269531,
+            "n_tokens": 218,
+            "n_bytes": 1057,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 15,
+            "nll_nats": 4013.529251098633,
+            "n_tokens": 1197,
+            "n_bytes": 5557,
+            "n_segments": 20
+          },
+          {
+            "doc_index": 16,
+            "nll_nats": 1461.056381225586,
+            "n_tokens": 443,
+            "n_bytes": 2220,
+            "n_segments": 8
+          },
+          {
+            "doc_index": 17,
+            "nll_nats": 3814.156204223633,
+            "n_tokens": 1086,
+            "n_bytes": 5138,
+            "n_segments": 19
+          },
+          {
+            "doc_index": 18,
+            "nll_nats": 1211.017105102539,
+            "n_tokens": 395,
+            "n_bytes": 1835,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 19,
+            "nll_nats": 638.9167327880859,
+            "n_tokens": 181,
+            "n_bytes": 890,
+            "n_segments": 4
+          }
+        ],
+        "name": "eng_Latn",
+        "docs_sampled": 20,
+        "corpus_bytes_on_disk": 50990
+      },
+      "kor_Hang": {
+        "bits_per_byte": 2.2575497074951727,
+        "ppl": 9.438512802124023,
+        "n_segments": 80,
+        "n_tokens_scored": 35506,
+        "n_bytes_scored": 50935,
+        "per_segment": [
+          {
+            "seg": 0,
+            "nll_nats": 1024.0655517578125,
+            "n_tokens": 496,
+            "n_bytes": 691,
+            "doc_index": 0
+          },
+          {
+            "seg": 1,
+            "nll_nats": 986.55419921875,
+            "n_tokens": 484,
+            "n_bytes": 691,
+            "doc_index": 0
+          },
+          {
+            "seg": 2,
+            "nll_nats": 1158.2481689453125,
+            "n_tokens": 481,
+            "n_bytes": 694,
+            "doc_index": 0
+          },
+          {
+            "seg": 3,
+            "nll_nats": 1087.904541015625,
+            "n_tokens": 484,
+            "n_bytes": 688,
+            "doc_index": 0
+          },
+          {
+            "seg": 4,
+            "nll_nats": 1001.146484375,
+            "n_tokens": 473,
+            "n_bytes": 696,
+            "doc_index": 0
+          },
+          {
+            "seg": 5,
+            "nll_nats": 1033.572998046875,
+            "n_tokens": 475,
+            "n_bytes": 701,
+            "doc_index": 0
+          },
+          {
+            "seg": 6,
+            "nll_nats": 1032.938720703125,
+            "n_tokens": 466,
+            "n_bytes": 682,
+            "doc_index": 0
+          },
+          {
+            "seg": 7,
+            "nll_nats": 1051.3974609375,
+            "n_tokens": 480,
+            "n_bytes": 709,
+            "doc_index": 0
+          },
+          {
+            "seg": 8,
+            "nll_nats": 639.0713500976562,
+            "n_tokens": 266,
+            "n_bytes": 392,
+            "doc_index": 0
+          },
+          {
+            "seg": 9,
+            "nll_nats": 809.8848266601562,
+            "n_tokens": 426,
+            "n_bytes": 619,
+            "doc_index": 1
+          },
+          {
+            "seg": 10,
+            "nll_nats": 1026.48046875,
+            "n_tokens": 479,
+            "n_bytes": 664,
+            "doc_index": 1
+          },
+          {
+            "seg": 11,
+            "nll_nats": 1068.6256103515625,
+            "n_tokens": 470,
+            "n_bytes": 690,
+            "doc_index": 1
+          },
+          {
+            "seg": 12,
+            "nll_nats": 974.8103637695312,
+            "n_tokens": 428,
+            "n_bytes": 612,
+            "doc_index": 1
+          },
+          {
+            "seg": 13,
+            "nll_nats": 1186.1180419921875,
+            "n_tokens": 473,
+            "n_bytes": 680,
+            "doc_index": 2
+          },
+          {
+            "seg": 14,
+            "nll_nats": 1132.8870849609375,
+            "n_tokens": 455,
+            "n_bytes": 671,
+            "doc_index": 2
+          },
+          {
+            "seg": 15,
+            "nll_nats": 1133.630126953125,
+            "n_tokens": 460,
+            "n_bytes": 673,
+            "doc_index": 2
+          },
+          {
+            "seg": 16,
+            "nll_nats": 1118.6331787109375,
+            "n_tokens": 470,
+            "n_bytes": 698,
+            "doc_index": 2
+          },
+          {
+            "seg": 17,
+            "nll_nats": 1166.0048828125,
+            "n_tokens": 458,
+            "n_bytes": 683,
+            "doc_index": 2
+          },
+          {
+            "seg": 18,
+            "nll_nats": 1134.29541015625,
+            "n_tokens": 482,
+            "n_bytes": 684,
+            "doc_index": 2
+          },
+          {
+            "seg": 19,
+            "nll_nats": 686.8594360351562,
+            "n_tokens": 300,
+            "n_bytes": 441,
+            "doc_index": 2
+          },
+          {
+            "seg": 20,
+            "nll_nats": 1042.3876953125,
+            "n_tokens": 493,
+            "n_bytes": 680,
+            "doc_index": 3
+          },
+          {
+            "seg": 21,
+            "nll_nats": 965.5497436523438,
+            "n_tokens": 440,
+            "n_bytes": 640,
+            "doc_index": 3
+          },
+          {
+            "seg": 22,
+            "nll_nats": 1039.4825439453125,
+            "n_tokens": 463,
+            "n_bytes": 644,
+            "doc_index": 3
+          },
+          {
+            "seg": 23,
+            "nll_nats": 1080.017822265625,
+            "n_tokens": 506,
+            "n_bytes": 707,
+            "doc_index": 3
+          },
+          {
+            "seg": 24,
+            "nll_nats": 1171.135009765625,
+            "n_tokens": 477,
+            "n_bytes": 703,
+            "doc_index": 3
+          },
+          {
+            "seg": 25,
+            "nll_nats": 902.8847045898438,
+            "n_tokens": 414,
+            "n_bytes": 599,
+            "doc_index": 3
+          },
+          {
+            "seg": 26,
+            "nll_nats": 781.8836059570312,
+            "n_tokens": 485,
+            "n_bytes": 683,
+            "doc_index": 4
+          },
+          {
+            "seg": 27,
+            "nll_nats": 1080.390869140625,
+            "n_tokens": 488,
+            "n_bytes": 697,
+            "doc_index": 4
+          },
+          {
+            "seg": 28,
+            "nll_nats": 1178.8013916015625,
+            "n_tokens": 495,
+            "n_bytes": 717,
+            "doc_index": 4
+          },
+          {
+            "seg": 29,
+            "nll_nats": 1159.345703125,
+            "n_tokens": 513,
+            "n_bytes": 704,
+            "doc_index": 4
+          },
+          {
+            "seg": 30,
+            "nll_nats": 1116.844970703125,
+            "n_tokens": 501,
+            "n_bytes": 714,
+            "doc_index": 4
+          },
+          {
+            "seg": 31,
+            "nll_nats": 1091.791748046875,
+            "n_tokens": 457,
+            "n_bytes": 677,
+            "doc_index": 4
+          },
+          {
+            "seg": 32,
+            "nll_nats": 1101.6845703125,
+            "n_tokens": 468,
+            "n_bytes": 670,
+            "doc_index": 4
+          },
+          {
+            "seg": 33,
+            "nll_nats": 1090.907470703125,
+            "n_tokens": 479,
+            "n_bytes": 682,
+            "doc_index": 4
+          },
+          {
+            "seg": 34,
+            "nll_nats": 1125.42333984375,
+            "n_tokens": 478,
+            "n_bytes": 687,
+            "doc_index": 4
+          },
+          {
+            "seg": 35,
+            "nll_nats": 1112.15771484375,
+            "n_tokens": 477,
+            "n_bytes": 683,
+            "doc_index": 4
+          },
+          {
+            "seg": 36,
+            "nll_nats": 240.2586669921875,
+            "n_tokens": 104,
+            "n_bytes": 147,
+            "doc_index": 4
+          },
+          {
+            "seg": 37,
+            "nll_nats": 1083.434814453125,
+            "n_tokens": 502,
+            "n_bytes": 681,
+            "doc_index": 5
+          },
+          {
+            "seg": 38,
+            "nll_nats": 1219.698974609375,
+            "n_tokens": 494,
+            "n_bytes": 689,
+            "doc_index": 5
+          },
+          {
+            "seg": 39,
+            "nll_nats": 1140.040771484375,
+            "n_tokens": 508,
+            "n_bytes": 705,
+            "doc_index": 5
+          },
+          {
+            "seg": 40,
+            "nll_nats": 854.992919921875,
+            "n_tokens": 332,
+            "n_bytes": 446,
+            "doc_index": 5
+          },
+          {
+            "seg": 41,
+            "nll_nats": 998.8191528320312,
+            "n_tokens": 418,
+            "n_bytes": 617,
+            "doc_index": 6
+          },
+          {
+            "seg": 42,
+            "nll_nats": 1109.020751953125,
+            "n_tokens": 468,
+            "n_bytes": 665,
+            "doc_index": 6
+          },
+          {
+            "seg": 43,
+            "nll_nats": 1013.5345458984375,
+            "n_tokens": 466,
+            "n_bytes": 670,
+            "doc_index": 6
+          },
+          {
+            "seg": 44,
+            "nll_nats": 312.94708251953125,
+            "n_tokens": 129,
+            "n_bytes": 185,
+            "doc_index": 6
+          },
+          {
+            "seg": 45,
+            "nll_nats": 850.42431640625,
+            "n_tokens": 464,
+            "n_bytes": 677,
+            "doc_index": 7
+          },
+          {
+            "seg": 46,
+            "nll_nats": 1092.1966552734375,
+            "n_tokens": 466,
+            "n_bytes": 684,
+            "doc_index": 7
+          },
+          {
+            "seg": 47,
+            "nll_nats": 1044.58544921875,
+            "n_tokens": 493,
+            "n_bytes": 688,
+            "doc_index": 7
+          },
+          {
+            "seg": 48,
+            "nll_nats": 1049.8115234375,
+            "n_tokens": 485,
+            "n_bytes": 687,
+            "doc_index": 7
+          },
+          {
+            "seg": 49,
+            "nll_nats": 1114.988525390625,
+            "n_tokens": 498,
+            "n_bytes": 713,
+            "doc_index": 7
+          },
+          {
+            "seg": 50,
+            "nll_nats": 1087.0570068359375,
+            "n_tokens": 448,
+            "n_bytes": 675,
+            "doc_index": 7
+          },
+          {
+            "seg": 51,
+            "nll_nats": 1188.2745361328125,
+            "n_tokens": 483,
+            "n_bytes": 701,
+            "doc_index": 7
+          },
+          {
+            "seg": 52,
+            "nll_nats": 1121.8865966796875,
+            "n_tokens": 474,
+            "n_bytes": 673,
+            "doc_index": 7
+          },
+          {
+            "seg": 53,
+            "nll_nats": 1064.89306640625,
+            "n_tokens": 457,
+            "n_bytes": 646,
+            "doc_index": 7
+          },
+          {
+            "seg": 54,
+            "nll_nats": 1146.03515625,
+            "n_tokens": 503,
+            "n_bytes": 706,
+            "doc_index": 7
+          },
+          {
+            "seg": 55,
+            "nll_nats": 1192.1146240234375,
+            "n_tokens": 486,
+            "n_bytes": 696,
+            "doc_index": 7
+          },
+          {
+            "seg": 56,
+            "nll_nats": 967.9264526367188,
+            "n_tokens": 438,
+            "n_bytes": 659,
+            "doc_index": 7
+          },
+          {
+            "seg": 57,
+            "nll_nats": 193.33126831054688,
+            "n_tokens": 66,
+            "n_bytes": 95,
+            "doc_index": 7
+          },
+          {
+            "seg": 58,
+            "nll_nats": 1038.32177734375,
+            "n_tokens": 469,
+            "n_bytes": 703,
+            "doc_index": 8
+          },
+          {
+            "seg": 59,
+            "nll_nats": 1085.5513916015625,
+            "n_tokens": 470,
+            "n_bytes": 669,
+            "doc_index": 8
+          },
+          {
+            "seg": 60,
+            "nll_nats": 986.604736328125,
+            "n_tokens": 487,
+            "n_bytes": 691,
+            "doc_index": 8
+          },
+          {
+            "seg": 61,
+            "nll_nats": 1143.136474609375,
+            "n_tokens": 496,
+            "n_bytes": 694,
+            "doc_index": 8
+          },
+          {
+            "seg": 62,
+            "nll_nats": 1135.8641357421875,
+            "n_tokens": 467,
+            "n_bytes": 692,
+            "doc_index": 8
+          },
+          {
+            "seg": 63,
+            "nll_nats": 1047.33154296875,
+            "n_tokens": 486,
+            "n_bytes": 715,
+            "doc_index": 8
+          },
+          {
+            "seg": 64,
+            "nll_nats": 1056.7774658203125,
+            "n_tokens": 491,
+            "n_bytes": 707,
+            "doc_index": 8
+          },
+          {
+            "seg": 65,
+            "nll_nats": 1188.4091796875,
+            "n_tokens": 504,
+            "n_bytes": 702,
+            "doc_index": 8
+          },
+          {
+            "seg": 66,
+            "nll_nats": 1050.43896484375,
+            "n_tokens": 465,
+            "n_bytes": 678,
+            "doc_index": 8
+          },
+          {
+            "seg": 67,
+            "nll_nats": 1074.575927734375,
+            "n_tokens": 479,
+            "n_bytes": 686,
+            "doc_index": 8
+          },
+          {
+            "seg": 68,
+            "nll_nats": 1020.6024780273438,
+            "n_tokens": 505,
+            "n_bytes": 699,
+            "doc_index": 8
+          },
+          {
+            "seg": 69,
+            "nll_nats": 1143.698486328125,
+            "n_tokens": 477,
+            "n_bytes": 686,
+            "doc_index": 8
+          },
+          {
+            "seg": 70,
+            "nll_nats": 1010.3682861328125,
+            "n_tokens": 472,
+            "n_bytes": 685,
+            "doc_index": 8
+          },
+          {
+            "seg": 71,
+            "nll_nats": 46.50883483886719,
+            "n_tokens": 11,
+            "n_bytes": 21,
+            "doc_index": 8
+          },
+          {
+            "seg": 72,
+            "nll_nats": 884.101318359375,
+            "n_tokens": 473,
+            "n_bytes": 668,
+            "doc_index": 9
+          },
+          {
+            "seg": 73,
+            "nll_nats": 801.9069213867188,
+            "n_tokens": 468,
+            "n_bytes": 654,
+            "doc_index": 9
+          },
+          {
+            "seg": 74,
+            "nll_nats": 918.0504150390625,
+            "n_tokens": 476,
+            "n_bytes": 673,
+            "doc_index": 9
+          },
+          {
+            "seg": 75,
+            "nll_nats": 1007.36376953125,
+            "n_tokens": 474,
+            "n_bytes": 675,
+            "doc_index": 9
+          },
+          {
+            "seg": 76,
+            "nll_nats": 947.1196899414062,
+            "n_tokens": 411,
+            "n_bytes": 578,
+            "doc_index": 9
+          },
+          {
+            "seg": 77,
+            "nll_nats": 1020.7962646484375,
+            "n_tokens": 472,
+            "n_bytes": 696,
+            "doc_index": 10
+          },
+          {
+            "seg": 78,
+            "nll_nats": 1087.453125,
+            "n_tokens": 473,
+            "n_bytes": 691,
+            "doc_index": 10
+          },
+          {
+            "seg": 79,
+            "nll_nats": 428.74017333984375,
+            "n_tokens": 158,
+            "n_bytes": 221,
+            "doc_index": 10
+          }
+        ],
+        "per_document": [
+          {
+            "doc_index": 0,
+            "nll_nats": 9014.899475097656,
+            "n_tokens": 4105,
+            "n_bytes": 5944,
+            "n_segments": 9
+          },
+          {
+            "doc_index": 1,
+            "nll_nats": 3879.80126953125,
+            "n_tokens": 1803,
+            "n_bytes": 2585,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 2,
+            "nll_nats": 7558.428161621094,
+            "n_tokens": 3098,
+            "n_bytes": 4530,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 3,
+            "nll_nats": 6201.45751953125,
+            "n_tokens": 2793,
+            "n_bytes": 3973,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 4,
+            "nll_nats": 11079.490051269531,
+            "n_tokens": 4945,
+            "n_bytes": 7061,
+            "n_segments": 11
+          },
+          {
+            "doc_index": 5,
+            "nll_nats": 4298.16748046875,
+            "n_tokens": 1836,
+            "n_bytes": 2521,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 6,
+            "nll_nats": 3434.321533203125,
+            "n_tokens": 1481,
+            "n_bytes": 2137,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 7,
+            "nll_nats": 13113.525177001953,
+            "n_tokens": 5761,
+            "n_bytes": 8300,
+            "n_segments": 13
+          },
+          {
+            "doc_index": 8,
+            "nll_nats": 14028.189682006836,
+            "n_tokens": 6279,
+            "n_bytes": 9028,
+            "n_segments": 14
+          },
+          {
+            "doc_index": 9,
+            "nll_nats": 4558.5421142578125,
+            "n_tokens": 2302,
+            "n_bytes": 3248,
+            "n_segments": 5
+          },
+          {
+            "doc_index": 10,
+            "nll_nats": 2536.9895629882812,
+            "n_tokens": 1103,
+            "n_bytes": 1608,
+            "n_segments": 3
+          }
+        ],
+        "name": "kor_Hang",
+        "docs_sampled": 11,
+        "corpus_bytes_on_disk": 51004
+      },
+      "zho_Hans": {
+        "bits_per_byte": 1.0739432288061388,
+        "ppl": 23.19993019104004,
+        "n_segments": 78,
+        "n_tokens_scored": 12068,
+        "n_bytes_scored": 50972,
+        "per_segment": [
+          {
+            "seg": 0,
+            "nll_nats": 675.9237060546875,
+            "n_tokens": 195,
+            "n_bytes": 803,
+            "doc_index": 0
+          },
+          {
+            "seg": 1,
+            "nll_nats": 595.409912109375,
+            "n_tokens": 211,
+            "n_bytes": 844,
+            "doc_index": 0
+          },
+          {
+            "seg": 2,
+            "nll_nats": 607.2694091796875,
+            "n_tokens": 163,
+            "n_bytes": 706,
+            "doc_index": 0
+          },
+          {
+            "seg": 3,
+            "nll_nats": 754.4698486328125,
+            "n_tokens": 192,
+            "n_bytes": 817,
+            "doc_index": 0
+          },
+          {
+            "seg": 4,
+            "nll_nats": 423.7958679199219,
+            "n_tokens": 118,
+            "n_bytes": 510,
+            "doc_index": 0
+          },
+          {
+            "seg": 5,
+            "nll_nats": 498.5130615234375,
+            "n_tokens": 171,
+            "n_bytes": 714,
+            "doc_index": 1
+          },
+          {
+            "seg": 6,
+            "nll_nats": 465.60894775390625,
+            "n_tokens": 138,
+            "n_bytes": 617,
+            "doc_index": 1
+          },
+          {
+            "seg": 7,
+            "nll_nats": 576.288330078125,
+            "n_tokens": 174,
+            "n_bytes": 677,
+            "doc_index": 1
+          },
+          {
+            "seg": 8,
+            "nll_nats": 862.0040283203125,
+            "n_tokens": 322,
+            "n_bytes": 818,
+            "doc_index": 1
+          },
+          {
+            "seg": 9,
+            "nll_nats": 817.6038818359375,
+            "n_tokens": 296,
+            "n_bytes": 739,
+            "doc_index": 1
+          },
+          {
+            "seg": 10,
+            "nll_nats": 297.0347900390625,
+            "n_tokens": 71,
+            "n_bytes": 182,
+            "doc_index": 1
+          },
+          {
+            "seg": 11,
+            "nll_nats": 464.7430419921875,
+            "n_tokens": 171,
+            "n_bytes": 691,
+            "doc_index": 2
+          },
+          {
+            "seg": 12,
+            "nll_nats": 605.7647094726562,
+            "n_tokens": 198,
+            "n_bytes": 800,
+            "doc_index": 2
+          },
+          {
+            "seg": 13,
+            "nll_nats": 318.2071838378906,
+            "n_tokens": 107,
+            "n_bytes": 500,
+            "doc_index": 2
+          },
+          {
+            "seg": 14,
+            "nll_nats": 586.2683715820312,
+            "n_tokens": 191,
+            "n_bytes": 798,
+            "doc_index": 3
+          },
+          {
+            "seg": 15,
+            "nll_nats": 507.71185302734375,
+            "n_tokens": 148,
+            "n_bytes": 582,
+            "doc_index": 3
+          },
+          {
+            "seg": 16,
+            "nll_nats": 487.6480712890625,
+            "n_tokens": 157,
+            "n_bytes": 693,
+            "doc_index": 4
+          },
+          {
+            "seg": 17,
+            "nll_nats": 412.124755859375,
+            "n_tokens": 159,
+            "n_bytes": 734,
+            "doc_index": 4
+          },
+          {
+            "seg": 18,
+            "nll_nats": 368.16778564453125,
+            "n_tokens": 93,
+            "n_bytes": 466,
+            "doc_index": 4
+          },
+          {
+            "seg": 19,
+            "nll_nats": 333.5838623046875,
+            "n_tokens": 117,
+            "n_bytes": 522,
+            "doc_index": 4
+          },
+          {
+            "seg": 20,
+            "nll_nats": 559.1690673828125,
+            "n_tokens": 160,
+            "n_bytes": 759,
+            "doc_index": 4
+          },
+          {
+            "seg": 21,
+            "nll_nats": 554.164794921875,
+            "n_tokens": 166,
+            "n_bytes": 762,
+            "doc_index": 4
+          },
+          {
+            "seg": 22,
+            "nll_nats": 597.751220703125,
+            "n_tokens": 175,
+            "n_bytes": 769,
+            "doc_index": 4
+          },
+          {
+            "seg": 23,
+            "nll_nats": 499.0946960449219,
+            "n_tokens": 146,
+            "n_bytes": 711,
+            "doc_index": 4
+          },
+          {
+            "seg": 24,
+            "nll_nats": 405.009521484375,
+            "n_tokens": 143,
+            "n_bytes": 720,
+            "doc_index": 5
+          },
+          {
+            "seg": 25,
+            "nll_nats": 423.4881591796875,
+            "n_tokens": 131,
+            "n_bytes": 623,
+            "doc_index": 5
+          },
+          {
+            "seg": 26,
+            "nll_nats": 470.3724670410156,
+            "n_tokens": 149,
+            "n_bytes": 649,
+            "doc_index": 5
+          },
+          {
+            "seg": 27,
+            "nll_nats": 512.2330932617188,
+            "n_tokens": 141,
+            "n_bytes": 741,
+            "doc_index": 5
+          },
+          {
+            "seg": 28,
+            "nll_nats": 526.0574951171875,
+            "n_tokens": 162,
+            "n_bytes": 742,
+            "doc_index": 5
+          },
+          {
+            "seg": 29,
+            "nll_nats": 520.102294921875,
+            "n_tokens": 176,
+            "n_bytes": 824,
+            "doc_index": 5
+          },
+          {
+            "seg": 30,
+            "nll_nats": 320.1158752441406,
+            "n_tokens": 104,
+            "n_bytes": 455,
+            "doc_index": 5
+          },
+          {
+            "seg": 31,
+            "nll_nats": 448.56842041015625,
+            "n_tokens": 141,
+            "n_bytes": 647,
+            "doc_index": 6
+          },
+          {
+            "seg": 32,
+            "nll_nats": 478.5659484863281,
+            "n_tokens": 151,
+            "n_bytes": 714,
+            "doc_index": 6
+          },
+          {
+            "seg": 33,
+            "nll_nats": 529.3731689453125,
+            "n_tokens": 160,
+            "n_bytes": 767,
+            "doc_index": 6
+          },
+          {
+            "seg": 34,
+            "nll_nats": 534.6096801757812,
+            "n_tokens": 163,
+            "n_bytes": 747,
+            "doc_index": 6
+          },
+          {
+            "seg": 35,
+            "nll_nats": 514.400634765625,
+            "n_tokens": 161,
+            "n_bytes": 708,
+            "doc_index": 6
+          },
+          {
+            "seg": 36,
+            "nll_nats": 607.8924560546875,
+            "n_tokens": 189,
+            "n_bytes": 831,
+            "doc_index": 6
+          },
+          {
+            "seg": 37,
+            "nll_nats": 172.1862030029297,
+            "n_tokens": 44,
+            "n_bytes": 203,
+            "doc_index": 6
+          },
+          {
+            "seg": 38,
+            "nll_nats": 557.323974609375,
+            "n_tokens": 179,
+            "n_bytes": 799,
+            "doc_index": 7
+          },
+          {
+            "seg": 39,
+            "nll_nats": 601.7954711914062,
+            "n_tokens": 209,
+            "n_bytes": 825,
+            "doc_index": 7
+          },
+          {
+            "seg": 40,
+            "nll_nats": 495.20068359375,
+            "n_tokens": 148,
+            "n_bytes": 678,
+            "doc_index": 7
+          },
+          {
+            "seg": 41,
+            "nll_nats": 448.03936767578125,
+            "n_tokens": 159,
+            "n_bytes": 626,
+            "doc_index": 7
+          },
+          {
+            "seg": 42,
+            "nll_nats": 487.1201171875,
+            "n_tokens": 169,
+            "n_bytes": 743,
+            "doc_index": 7
+          },
+          {
+            "seg": 43,
+            "nll_nats": 552.6038818359375,
+            "n_tokens": 176,
+            "n_bytes": 753,
+            "doc_index": 7
+          },
+          {
+            "seg": 44,
+            "nll_nats": 321.6177978515625,
+            "n_tokens": 148,
+            "n_bytes": 716,
+            "doc_index": 8
+          },
+          {
+            "seg": 45,
+            "nll_nats": 450.71728515625,
+            "n_tokens": 175,
+            "n_bytes": 786,
+            "doc_index": 8
+          },
+          {
+            "seg": 46,
+            "nll_nats": 135.5443115234375,
+            "n_tokens": 30,
+            "n_bytes": 143,
+            "doc_index": 8
+          },
+          {
+            "seg": 47,
+            "nll_nats": 544.0076904296875,
+            "n_tokens": 168,
+            "n_bytes": 702,
+            "doc_index": 9
+          },
+          {
+            "seg": 48,
+            "nll_nats": 519.6190795898438,
+            "n_tokens": 143,
+            "n_bytes": 692,
+            "doc_index": 9
+          },
+          {
+            "seg": 49,
+            "nll_nats": 738.9259033203125,
+            "n_tokens": 191,
+            "n_bytes": 852,
+            "doc_index": 9
+          },
+          {
+            "seg": 50,
+            "nll_nats": 28.051557540893555,
+            "n_tokens": 6,
+            "n_bytes": 21,
+            "doc_index": 9
+          },
+          {
+            "seg": 51,
+            "nll_nats": 426.59002685546875,
+            "n_tokens": 193,
+            "n_bytes": 785,
+            "doc_index": 10
+          },
+          {
+            "seg": 52,
+            "nll_nats": 413.96929931640625,
+            "n_tokens": 146,
+            "n_bytes": 625,
+            "doc_index": 10
+          },
+          {
+            "seg": 53,
+            "nll_nats": 554.1554565429688,
+            "n_tokens": 162,
+            "n_bytes": 707,
+            "doc_index": 11
+          },
+          {
+            "seg": 54,
+            "nll_nats": 612.7403564453125,
+            "n_tokens": 160,
+            "n_bytes": 747,
+            "doc_index": 11
+          },
+          {
+            "seg": 55,
+            "nll_nats": 729.3499145507812,
+            "n_tokens": 163,
+            "n_bytes": 807,
+            "doc_index": 11
+          },
+          {
+            "seg": 56,
+            "nll_nats": 636.5043334960938,
+            "n_tokens": 151,
+            "n_bytes": 738,
+            "doc_index": 11
+          },
+          {
+            "seg": 57,
+            "nll_nats": 466.7318115234375,
+            "n_tokens": 182,
+            "n_bytes": 675,
+            "doc_index": 12
+          },
+          {
+            "seg": 58,
+            "nll_nats": 588.6199951171875,
+            "n_tokens": 152,
+            "n_bytes": 627,
+            "doc_index": 12
+          },
+          {
+            "seg": 59,
+            "nll_nats": 597.0654296875,
+            "n_tokens": 222,
+            "n_bytes": 828,
+            "doc_index": 12
+          },
+          {
+            "seg": 60,
+            "nll_nats": 518.694580078125,
+            "n_tokens": 140,
+            "n_bytes": 570,
+            "doc_index": 12
+          },
+          {
+            "seg": 61,
+            "nll_nats": 511.16412353515625,
+            "n_tokens": 153,
+            "n_bytes": 667,
+            "doc_index": 12
+          },
+          {
+            "seg": 62,
+            "nll_nats": 550.6582641601562,
+            "n_tokens": 150,
+            "n_bytes": 654,
+            "doc_index": 12
+          },
+          {
+            "seg": 63,
+            "nll_nats": 585.7515869140625,
+            "n_tokens": 144,
+            "n_bytes": 636,
+            "doc_index": 12
+          },
+          {
+            "seg": 64,
+            "nll_nats": 542.6214599609375,
+            "n_tokens": 188,
+            "n_bytes": 673,
+            "doc_index": 12
+          },
+          {
+            "seg": 65,
+            "nll_nats": 438.2119140625,
+            "n_tokens": 174,
+            "n_bytes": 712,
+            "doc_index": 13
+          },
+          {
+            "seg": 66,
+            "nll_nats": 195.0173797607422,
+            "n_tokens": 61,
+            "n_bytes": 276,
+            "doc_index": 13
+          },
+          {
+            "seg": 67,
+            "nll_nats": 506.22119140625,
+            "n_tokens": 193,
+            "n_bytes": 779,
+            "doc_index": 14
+          },
+          {
+            "seg": 68,
+            "nll_nats": 424.537841796875,
+            "n_tokens": 179,
+            "n_bytes": 602,
+            "doc_index": 14
+          },
+          {
+            "seg": 69,
+            "nll_nats": 453.85516357421875,
+            "n_tokens": 176,
+            "n_bytes": 681,
+            "doc_index": 15
+          },
+          {
+            "seg": 70,
+            "nll_nats": 592.0416870117188,
+            "n_tokens": 195,
+            "n_bytes": 788,
+            "doc_index": 15
+          },
+          {
+            "seg": 71,
+            "nll_nats": 442.136962890625,
+            "n_tokens": 201,
+            "n_bytes": 743,
+            "doc_index": 15
+          },
+          {
+            "seg": 72,
+            "nll_nats": 49.39771270751953,
+            "n_tokens": 12,
+            "n_bytes": 37,
+            "doc_index": 15
+          },
+          {
+            "seg": 73,
+            "nll_nats": 502.4905700683594,
+            "n_tokens": 155,
+            "n_bytes": 709,
+            "doc_index": 16
+          },
+          {
+            "seg": 74,
+            "nll_nats": 507.9424133300781,
+            "n_tokens": 178,
+            "n_bytes": 760,
+            "doc_index": 16
+          },
+          {
+            "seg": 75,
+            "nll_nats": 567.691162109375,
+            "n_tokens": 170,
+            "n_bytes": 794,
+            "doc_index": 16
+          },
+          {
+            "seg": 76,
+            "nll_nats": 54.242462158203125,
+            "n_tokens": 13,
+            "n_bytes": 40,
+            "doc_index": 16
+          },
+          {
+            "seg": 77,
+            "nll_nats": 263.32672119140625,
+            "n_tokens": 100,
+            "n_bytes": 391,
+            "doc_index": 17
+          }
+        ],
+        "per_document": [
+          {
+            "doc_index": 0,
+            "nll_nats": 3056.8687438964844,
+            "n_tokens": 879,
+            "n_bytes": 3680,
+            "n_segments": 5
+          },
+          {
+            "doc_index": 1,
+            "nll_nats": 3517.0530395507812,
+            "n_tokens": 1172,
+            "n_bytes": 3747,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 2,
+            "nll_nats": 1388.7149353027344,
+            "n_tokens": 476,
+            "n_bytes": 1991,
+            "n_segments": 3
+          },
+          {
+            "doc_index": 3,
+            "nll_nats": 1093.980224609375,
+            "n_tokens": 339,
+            "n_bytes": 1380,
+            "n_segments": 2
+          },
+          {
+            "doc_index": 4,
+            "nll_nats": 3811.7042541503906,
+            "n_tokens": 1173,
+            "n_bytes": 5416,
+            "n_segments": 8
+          },
+          {
+            "doc_index": 5,
+            "nll_nats": 3177.37890625,
+            "n_tokens": 1006,
+            "n_bytes": 4754,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 6,
+            "nll_nats": 3285.5965118408203,
+            "n_tokens": 1009,
+            "n_bytes": 4617,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 7,
+            "nll_nats": 3142.08349609375,
+            "n_tokens": 1040,
+            "n_bytes": 4424,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 8,
+            "nll_nats": 907.87939453125,
+            "n_tokens": 353,
+            "n_bytes": 1645,
+            "n_segments": 3
+          },
+          {
+            "doc_index": 9,
+            "nll_nats": 1830.6042308807373,
+            "n_tokens": 508,
+            "n_bytes": 2267,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 10,
+            "nll_nats": 840.559326171875,
+            "n_tokens": 339,
+            "n_bytes": 1410,
+            "n_segments": 2
+          },
+          {
+            "doc_index": 11,
+            "nll_nats": 2532.7500610351562,
+            "n_tokens": 636,
+            "n_bytes": 2999,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 12,
+            "nll_nats": 4361.3072509765625,
+            "n_tokens": 1331,
+            "n_bytes": 5330,
+            "n_segments": 8
+          },
+          {
+            "doc_index": 13,
+            "nll_nats": 633.2292938232422,
+            "n_tokens": 235,
+            "n_bytes": 988,
+            "n_segments": 2
+          },
+          {
+            "doc_index": 14,
+            "nll_nats": 930.759033203125,
+            "n_tokens": 372,
+            "n_bytes": 1381,
+            "n_segments": 2
+          },
+          {
+            "doc_index": 15,
+            "nll_nats": 1537.431526184082,
+            "n_tokens": 584,
+            "n_bytes": 2249,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 16,
+            "nll_nats": 1632.3666076660156,
+            "n_tokens": 516,
+            "n_bytes": 2303,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 17,
+            "nll_nats": 263.32672119140625,
+            "n_tokens": 100,
+            "n_bytes": 391,
+            "n_segments": 1
+          }
+        ],
+        "name": "zho_Hans",
+        "docs_sampled": 18,
+        "corpus_bytes_on_disk": 51032
+      },
+      "swh_Latn": {
+        "bits_per_byte": 2.9202857945060123,
+        "ppl": 193.29110717773438,
+        "n_segments": 190,
+        "n_tokens_scored": 19489,
+        "n_bytes_scored": 50684,
+        "per_segment": [
+          {
+            "seg": 0,
+            "nll_nats": 599.107177734375,
+            "n_tokens": 100,
+            "n_bytes": 287,
+            "doc_index": 0
+          },
+          {
+            "seg": 1,
+            "nll_nats": 590.6644897460938,
+            "n_tokens": 112,
+            "n_bytes": 286,
+            "doc_index": 0
+          },
+          {
+            "seg": 2,
+            "nll_nats": 556.0528564453125,
+            "n_tokens": 108,
+            "n_bytes": 285,
+            "doc_index": 0
+          },
+          {
+            "seg": 3,
+            "nll_nats": 497.8804931640625,
+            "n_tokens": 90,
+            "n_bytes": 239,
+            "doc_index": 0
+          },
+          {
+            "seg": 4,
+            "nll_nats": 527.8013916015625,
+            "n_tokens": 99,
+            "n_bytes": 286,
+            "doc_index": 1
+          },
+          {
+            "seg": 5,
+            "nll_nats": 623.60986328125,
+            "n_tokens": 127,
+            "n_bytes": 289,
+            "doc_index": 1
+          },
+          {
+            "seg": 6,
+            "nll_nats": 527.1668701171875,
+            "n_tokens": 104,
+            "n_bytes": 283,
+            "doc_index": 1
+          },
+          {
+            "seg": 7,
+            "nll_nats": 595.8817138671875,
+            "n_tokens": 113,
+            "n_bytes": 282,
+            "doc_index": 1
+          },
+          {
+            "seg": 8,
+            "nll_nats": 529.17724609375,
+            "n_tokens": 104,
+            "n_bytes": 281,
+            "doc_index": 1
+          },
+          {
+            "seg": 9,
+            "nll_nats": 551.5590209960938,
+            "n_tokens": 106,
+            "n_bytes": 281,
+            "doc_index": 1
+          },
+          {
+            "seg": 10,
+            "nll_nats": 563.0489501953125,
+            "n_tokens": 103,
+            "n_bytes": 283,
+            "doc_index": 1
+          },
+          {
+            "seg": 11,
+            "nll_nats": 532.9247436523438,
+            "n_tokens": 97,
+            "n_bytes": 285,
+            "doc_index": 1
+          },
+          {
+            "seg": 12,
+            "nll_nats": 554.0859375,
+            "n_tokens": 102,
+            "n_bytes": 285,
+            "doc_index": 1
+          },
+          {
+            "seg": 13,
+            "nll_nats": 544.0716552734375,
+            "n_tokens": 108,
+            "n_bytes": 280,
+            "doc_index": 1
+          },
+          {
+            "seg": 14,
+            "nll_nats": 477.5875244140625,
+            "n_tokens": 96,
+            "n_bytes": 279,
+            "doc_index": 1
+          },
+          {
+            "seg": 15,
+            "nll_nats": 553.77978515625,
+            "n_tokens": 108,
+            "n_bytes": 287,
+            "doc_index": 1
+          },
+          {
+            "seg": 16,
+            "nll_nats": 309.06268310546875,
+            "n_tokens": 50,
+            "n_bytes": 125,
+            "doc_index": 1
+          },
+          {
+            "seg": 17,
+            "nll_nats": 630.716064453125,
+            "n_tokens": 120,
+            "n_bytes": 286,
+            "doc_index": 2
+          },
+          {
+            "seg": 18,
+            "nll_nats": 617.6715087890625,
+            "n_tokens": 112,
+            "n_bytes": 284,
+            "doc_index": 2
+          },
+          {
+            "seg": 19,
+            "nll_nats": 591.74609375,
+            "n_tokens": 121,
+            "n_bytes": 282,
+            "doc_index": 2
+          },
+          {
+            "seg": 20,
+            "nll_nats": 588.5858154296875,
+            "n_tokens": 111,
+            "n_bytes": 283,
+            "doc_index": 2
+          },
+          {
+            "seg": 21,
+            "nll_nats": 600.7498779296875,
+            "n_tokens": 114,
+            "n_bytes": 283,
+            "doc_index": 2
+          },
+          {
+            "seg": 22,
+            "nll_nats": 649.439208984375,
+            "n_tokens": 108,
+            "n_bytes": 286,
+            "doc_index": 2
+          },
+          {
+            "seg": 23,
+            "nll_nats": 280.8328857421875,
+            "n_tokens": 50,
+            "n_bytes": 128,
+            "doc_index": 2
+          },
+          {
+            "seg": 24,
+            "nll_nats": 518.875244140625,
+            "n_tokens": 107,
+            "n_bytes": 283,
+            "doc_index": 3
+          },
+          {
+            "seg": 25,
+            "nll_nats": 566.0022583007812,
+            "n_tokens": 116,
+            "n_bytes": 287,
+            "doc_index": 3
+          },
+          {
+            "seg": 26,
+            "nll_nats": 579.345947265625,
+            "n_tokens": 106,
+            "n_bytes": 287,
+            "doc_index": 3
+          },
+          {
+            "seg": 27,
+            "nll_nats": 628.861572265625,
+            "n_tokens": 115,
+            "n_bytes": 287,
+            "doc_index": 3
+          },
+          {
+            "seg": 28,
+            "nll_nats": 544.2034912109375,
+            "n_tokens": 126,
+            "n_bytes": 287,
+            "doc_index": 3
+          },
+          {
+            "seg": 29,
+            "nll_nats": 518.4071044921875,
+            "n_tokens": 122,
+            "n_bytes": 284,
+            "doc_index": 3
+          },
+          {
+            "seg": 30,
+            "nll_nats": 341.81689453125,
+            "n_tokens": 63,
+            "n_bytes": 156,
+            "doc_index": 3
+          },
+          {
+            "seg": 31,
+            "nll_nats": 597.462646484375,
+            "n_tokens": 111,
+            "n_bytes": 287,
+            "doc_index": 4
+          },
+          {
+            "seg": 32,
+            "nll_nats": 653.9356079101562,
+            "n_tokens": 115,
+            "n_bytes": 280,
+            "doc_index": 4
+          },
+          {
+            "seg": 33,
+            "nll_nats": 228.79684448242188,
+            "n_tokens": 43,
+            "n_bytes": 108,
+            "doc_index": 4
+          },
+          {
+            "seg": 34,
+            "nll_nats": 594.4226684570312,
+            "n_tokens": 114,
+            "n_bytes": 282,
+            "doc_index": 5
+          },
+          {
+            "seg": 35,
+            "nll_nats": 614.384521484375,
+            "n_tokens": 109,
+            "n_bytes": 279,
+            "doc_index": 5
+          },
+          {
+            "seg": 36,
+            "nll_nats": 556.560791015625,
+            "n_tokens": 108,
+            "n_bytes": 284,
+            "doc_index": 5
+          },
+          {
+            "seg": 37,
+            "nll_nats": 606.3161010742188,
+            "n_tokens": 114,
+            "n_bytes": 286,
+            "doc_index": 5
+          },
+          {
+            "seg": 38,
+            "nll_nats": 570.4943237304688,
+            "n_tokens": 111,
+            "n_bytes": 282,
+            "doc_index": 5
+          },
+          {
+            "seg": 39,
+            "nll_nats": 572.6969604492188,
+            "n_tokens": 104,
+            "n_bytes": 284,
+            "doc_index": 5
+          },
+          {
+            "seg": 40,
+            "nll_nats": 158.7210693359375,
+            "n_tokens": 26,
+            "n_bytes": 65,
+            "doc_index": 5
+          },
+          {
+            "seg": 41,
+            "nll_nats": 527.3546142578125,
+            "n_tokens": 98,
+            "n_bytes": 281,
+            "doc_index": 6
+          },
+          {
+            "seg": 42,
+            "nll_nats": 472.1903076171875,
+            "n_tokens": 111,
+            "n_bytes": 286,
+            "doc_index": 6
+          },
+          {
+            "seg": 43,
+            "nll_nats": 552.2254028320312,
+            "n_tokens": 105,
+            "n_bytes": 286,
+            "doc_index": 6
+          },
+          {
+            "seg": 44,
+            "nll_nats": 473.8298034667969,
+            "n_tokens": 110,
+            "n_bytes": 275,
+            "doc_index": 6
+          },
+          {
+            "seg": 45,
+            "nll_nats": 500.9673767089844,
+            "n_tokens": 107,
+            "n_bytes": 282,
+            "doc_index": 6
+          },
+          {
+            "seg": 46,
+            "nll_nats": 605.86474609375,
+            "n_tokens": 114,
+            "n_bytes": 287,
+            "doc_index": 6
+          },
+          {
+            "seg": 47,
+            "nll_nats": 609.9891357421875,
+            "n_tokens": 106,
+            "n_bytes": 284,
+            "doc_index": 6
+          },
+          {
+            "seg": 48,
+            "nll_nats": 538.3997802734375,
+            "n_tokens": 102,
+            "n_bytes": 280,
+            "doc_index": 6
+          },
+          {
+            "seg": 49,
+            "nll_nats": 567.0205078125,
+            "n_tokens": 103,
+            "n_bytes": 287,
+            "doc_index": 6
+          },
+          {
+            "seg": 50,
+            "nll_nats": 615.0291748046875,
+            "n_tokens": 107,
+            "n_bytes": 285,
+            "doc_index": 6
+          },
+          {
+            "seg": 51,
+            "nll_nats": 565.5479736328125,
+            "n_tokens": 103,
+            "n_bytes": 281,
+            "doc_index": 6
+          },
+          {
+            "seg": 52,
+            "nll_nats": 586.6656494140625,
+            "n_tokens": 106,
+            "n_bytes": 287,
+            "doc_index": 6
+          },
+          {
+            "seg": 53,
+            "nll_nats": 536.2494506835938,
+            "n_tokens": 96,
+            "n_bytes": 280,
+            "doc_index": 6
+          },
+          {
+            "seg": 54,
+            "nll_nats": 190.24131774902344,
+            "n_tokens": 31,
+            "n_bytes": 78,
+            "doc_index": 6
+          },
+          {
+            "seg": 55,
+            "nll_nats": 530.8717651367188,
+            "n_tokens": 99,
+            "n_bytes": 276,
+            "doc_index": 7
+          },
+          {
+            "seg": 56,
+            "nll_nats": 559.6358642578125,
+            "n_tokens": 105,
+            "n_bytes": 280,
+            "doc_index": 7
+          },
+          {
+            "seg": 57,
+            "nll_nats": 591.567626953125,
+            "n_tokens": 122,
+            "n_bytes": 287,
+            "doc_index": 7
+          },
+          {
+            "seg": 58,
+            "nll_nats": 546.5936279296875,
+            "n_tokens": 120,
+            "n_bytes": 286,
+            "doc_index": 7
+          },
+          {
+            "seg": 59,
+            "nll_nats": 498.52117919921875,
+            "n_tokens": 89,
+            "n_bytes": 231,
+            "doc_index": 7
+          },
+          {
+            "seg": 60,
+            "nll_nats": 579.27978515625,
+            "n_tokens": 103,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 61,
+            "nll_nats": 557.103271484375,
+            "n_tokens": 100,
+            "n_bytes": 279,
+            "doc_index": 8
+          },
+          {
+            "seg": 62,
+            "nll_nats": 612.4573364257812,
+            "n_tokens": 117,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 63,
+            "nll_nats": 623.9462280273438,
+            "n_tokens": 111,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 64,
+            "nll_nats": 612.1176147460938,
+            "n_tokens": 106,
+            "n_bytes": 282,
+            "doc_index": 8
+          },
+          {
+            "seg": 65,
+            "nll_nats": 583.1705322265625,
+            "n_tokens": 111,
+            "n_bytes": 287,
+            "doc_index": 8
+          },
+          {
+            "seg": 66,
+            "nll_nats": 518.6676025390625,
+            "n_tokens": 99,
+            "n_bytes": 279,
+            "doc_index": 8
+          },
+          {
+            "seg": 67,
+            "nll_nats": 191.3893585205078,
+            "n_tokens": 36,
+            "n_bytes": 90,
+            "doc_index": 8
+          },
+          {
+            "seg": 68,
+            "nll_nats": 456.5117492675781,
+            "n_tokens": 98,
+            "n_bytes": 279,
+            "doc_index": 9
+          },
+          {
+            "seg": 69,
+            "nll_nats": 503.01690673828125,
+            "n_tokens": 94,
+            "n_bytes": 280,
+            "doc_index": 9
+          },
+          {
+            "seg": 70,
+            "nll_nats": 580.270263671875,
+            "n_tokens": 104,
+            "n_bytes": 285,
+            "doc_index": 9
+          },
+          {
+            "seg": 71,
+            "nll_nats": 523.7378540039062,
+            "n_tokens": 107,
+            "n_bytes": 286,
+            "doc_index": 9
+          },
+          {
+            "seg": 72,
+            "nll_nats": 560.307861328125,
+            "n_tokens": 103,
+            "n_bytes": 287,
+            "doc_index": 9
+          },
+          {
+            "seg": 73,
+            "nll_nats": 185.38339233398438,
+            "n_tokens": 28,
+            "n_bytes": 83,
+            "doc_index": 9
+          },
+          {
+            "seg": 74,
+            "nll_nats": 565.8930053710938,
+            "n_tokens": 110,
+            "n_bytes": 285,
+            "doc_index": 10
+          },
+          {
+            "seg": 75,
+            "nll_nats": 581.1103515625,
+            "n_tokens": 113,
+            "n_bytes": 282,
+            "doc_index": 10
+          },
+          {
+            "seg": 76,
+            "nll_nats": 565.705810546875,
+            "n_tokens": 119,
+            "n_bytes": 287,
+            "doc_index": 10
+          },
+          {
+            "seg": 77,
+            "nll_nats": 614.757080078125,
+            "n_tokens": 112,
+            "n_bytes": 287,
+            "doc_index": 10
+          },
+          {
+            "seg": 78,
+            "nll_nats": 619.216064453125,
+            "n_tokens": 111,
+            "n_bytes": 280,
+            "doc_index": 10
+          },
+          {
+            "seg": 79,
+            "nll_nats": 581.0723266601562,
+            "n_tokens": 113,
+            "n_bytes": 287,
+            "doc_index": 10
+          },
+          {
+            "seg": 80,
+            "nll_nats": 537.5281982421875,
+            "n_tokens": 107,
+            "n_bytes": 286,
+            "doc_index": 10
+          },
+          {
+            "seg": 81,
+            "nll_nats": 585.4524536132812,
+            "n_tokens": 104,
+            "n_bytes": 282,
+            "doc_index": 10
+          },
+          {
+            "seg": 82,
+            "nll_nats": 605.027587890625,
+            "n_tokens": 109,
+            "n_bytes": 282,
+            "doc_index": 10
+          },
+          {
+            "seg": 83,
+            "nll_nats": 345.92877197265625,
+            "n_tokens": 65,
+            "n_bytes": 163,
+            "doc_index": 10
+          },
+          {
+            "seg": 84,
+            "nll_nats": 609.2350463867188,
+            "n_tokens": 113,
+            "n_bytes": 287,
+            "doc_index": 11
+          },
+          {
+            "seg": 85,
+            "nll_nats": 640.9553833007812,
+            "n_tokens": 118,
+            "n_bytes": 285,
+            "doc_index": 11
+          },
+          {
+            "seg": 86,
+            "nll_nats": 608.9155883789062,
+            "n_tokens": 109,
+            "n_bytes": 279,
+            "doc_index": 11
+          },
+          {
+            "seg": 87,
+            "nll_nats": 530.6107788085938,
+            "n_tokens": 97,
+            "n_bytes": 254,
+            "doc_index": 11
+          },
+          {
+            "seg": 88,
+            "nll_nats": 543.7496948242188,
+            "n_tokens": 113,
+            "n_bytes": 283,
+            "doc_index": 12
+          },
+          {
+            "seg": 89,
+            "nll_nats": 627.969970703125,
+            "n_tokens": 112,
+            "n_bytes": 286,
+            "doc_index": 12
+          },
+          {
+            "seg": 90,
+            "nll_nats": 584.4403076171875,
+            "n_tokens": 114,
+            "n_bytes": 281,
+            "doc_index": 12
+          },
+          {
+            "seg": 91,
+            "nll_nats": 572.9541015625,
+            "n_tokens": 110,
+            "n_bytes": 286,
+            "doc_index": 12
+          },
+          {
+            "seg": 92,
+            "nll_nats": 568.7366333007812,
+            "n_tokens": 105,
+            "n_bytes": 281,
+            "doc_index": 12
+          },
+          {
+            "seg": 93,
+            "nll_nats": 571.148681640625,
+            "n_tokens": 115,
+            "n_bytes": 286,
+            "doc_index": 12
+          },
+          {
+            "seg": 94,
+            "nll_nats": 590.5450439453125,
+            "n_tokens": 109,
+            "n_bytes": 280,
+            "doc_index": 12
+          },
+          {
+            "seg": 95,
+            "nll_nats": 589.20654296875,
+            "n_tokens": 109,
+            "n_bytes": 285,
+            "doc_index": 12
+          },
+          {
+            "seg": 96,
+            "nll_nats": 421.79730224609375,
+            "n_tokens": 81,
+            "n_bytes": 196,
+            "doc_index": 12
+          },
+          {
+            "seg": 97,
+            "nll_nats": 639.8695678710938,
+            "n_tokens": 117,
+            "n_bytes": 286,
+            "doc_index": 13
+          },
+          {
+            "seg": 98,
+            "nll_nats": 694.6544799804688,
+            "n_tokens": 110,
+            "n_bytes": 284,
+            "doc_index": 13
+          },
+          {
+            "seg": 99,
+            "nll_nats": 522.8251342773438,
+            "n_tokens": 113,
+            "n_bytes": 287,
+            "doc_index": 13
+          },
+          {
+            "seg": 100,
+            "nll_nats": 614.82568359375,
+            "n_tokens": 115,
+            "n_bytes": 283,
+            "doc_index": 13
+          },
+          {
+            "seg": 101,
+            "nll_nats": 560.3924560546875,
+            "n_tokens": 105,
+            "n_bytes": 279,
+            "doc_index": 13
+          },
+          {
+            "seg": 102,
+            "nll_nats": 548.2315673828125,
+            "n_tokens": 100,
+            "n_bytes": 278,
+            "doc_index": 13
+          },
+          {
+            "seg": 103,
+            "nll_nats": 543.8734130859375,
+            "n_tokens": 109,
+            "n_bytes": 284,
+            "doc_index": 14
+          },
+          {
+            "seg": 104,
+            "nll_nats": 583.124755859375,
+            "n_tokens": 112,
+            "n_bytes": 275,
+            "doc_index": 14
+          },
+          {
+            "seg": 105,
+            "nll_nats": 572.6243896484375,
+            "n_tokens": 108,
+            "n_bytes": 279,
+            "doc_index": 14
+          },
+          {
+            "seg": 106,
+            "nll_nats": 594.038330078125,
+            "n_tokens": 100,
+            "n_bytes": 286,
+            "doc_index": 14
+          },
+          {
+            "seg": 107,
+            "nll_nats": 507.237548828125,
+            "n_tokens": 100,
+            "n_bytes": 286,
+            "doc_index": 14
+          },
+          {
+            "seg": 108,
+            "nll_nats": 524.6171875,
+            "n_tokens": 99,
+            "n_bytes": 282,
+            "doc_index": 14
+          },
+          {
+            "seg": 109,
+            "nll_nats": 546.3385009765625,
+            "n_tokens": 98,
+            "n_bytes": 280,
+            "doc_index": 14
+          },
+          {
+            "seg": 110,
+            "nll_nats": 561.9664916992188,
+            "n_tokens": 104,
+            "n_bytes": 286,
+            "doc_index": 14
+          },
+          {
+            "seg": 111,
+            "nll_nats": 561.5755615234375,
+            "n_tokens": 96,
+            "n_bytes": 282,
+            "doc_index": 14
+          },
+          {
+            "seg": 112,
+            "nll_nats": 287.4346923828125,
+            "n_tokens": 56,
+            "n_bytes": 139,
+            "doc_index": 14
+          },
+          {
+            "seg": 113,
+            "nll_nats": 560.1721801757812,
+            "n_tokens": 122,
+            "n_bytes": 283,
+            "doc_index": 15
+          },
+          {
+            "seg": 114,
+            "nll_nats": 595.5682983398438,
+            "n_tokens": 110,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 115,
+            "nll_nats": 595.0010375976562,
+            "n_tokens": 114,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 116,
+            "nll_nats": 585.7737426757812,
+            "n_tokens": 119,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 117,
+            "nll_nats": 564.6823120117188,
+            "n_tokens": 115,
+            "n_bytes": 283,
+            "doc_index": 15
+          },
+          {
+            "seg": 118,
+            "nll_nats": 620.92626953125,
+            "n_tokens": 112,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 119,
+            "nll_nats": 579.5701293945312,
+            "n_tokens": 112,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 120,
+            "nll_nats": 628.2763671875,
+            "n_tokens": 106,
+            "n_bytes": 279,
+            "doc_index": 15
+          },
+          {
+            "seg": 121,
+            "nll_nats": 576.692138671875,
+            "n_tokens": 123,
+            "n_bytes": 285,
+            "doc_index": 15
+          },
+          {
+            "seg": 122,
+            "nll_nats": 570.6143188476562,
+            "n_tokens": 114,
+            "n_bytes": 277,
+            "doc_index": 15
+          },
+          {
+            "seg": 123,
+            "nll_nats": 559.3953857421875,
+            "n_tokens": 108,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 124,
+            "nll_nats": 564.5885009765625,
+            "n_tokens": 104,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 125,
+            "nll_nats": 497.37188720703125,
+            "n_tokens": 107,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 126,
+            "nll_nats": 512.1708374023438,
+            "n_tokens": 106,
+            "n_bytes": 276,
+            "doc_index": 15
+          },
+          {
+            "seg": 127,
+            "nll_nats": 608.5003662109375,
+            "n_tokens": 109,
+            "n_bytes": 281,
+            "doc_index": 15
+          },
+          {
+            "seg": 128,
+            "nll_nats": 587.8214721679688,
+            "n_tokens": 114,
+            "n_bytes": 286,
+            "doc_index": 15
+          },
+          {
+            "seg": 129,
+            "nll_nats": 562.491943359375,
+            "n_tokens": 114,
+            "n_bytes": 282,
+            "doc_index": 15
+          },
+          {
+            "seg": 130,
+            "nll_nats": 587.5852661132812,
+            "n_tokens": 120,
+            "n_bytes": 287,
+            "doc_index": 15
+          },
+          {
+            "seg": 131,
+            "nll_nats": 646.5172119140625,
+            "n_tokens": 114,
+            "n_bytes": 283,
+            "doc_index": 15
+          },
+          {
+            "seg": 132,
+            "nll_nats": 176.134033203125,
+            "n_tokens": 30,
+            "n_bytes": 76,
+            "doc_index": 15
+          },
+          {
+            "seg": 133,
+            "nll_nats": 548.2597045898438,
+            "n_tokens": 109,
+            "n_bytes": 287,
+            "doc_index": 16
+          },
+          {
+            "seg": 134,
+            "nll_nats": 545.110595703125,
+            "n_tokens": 108,
+            "n_bytes": 285,
+            "doc_index": 16
+          },
+          {
+            "seg": 135,
+            "nll_nats": 622.8551025390625,
+            "n_tokens": 116,
+            "n_bytes": 281,
+            "doc_index": 16
+          },
+          {
+            "seg": 136,
+            "nll_nats": 96.85540771484375,
+            "n_tokens": 14,
+            "n_bytes": 32,
+            "doc_index": 16
+          },
+          {
+            "seg": 137,
+            "nll_nats": 517.1935424804688,
+            "n_tokens": 109,
+            "n_bytes": 287,
+            "doc_index": 17
+          },
+          {
+            "seg": 138,
+            "nll_nats": 601.834228515625,
+            "n_tokens": 106,
+            "n_bytes": 284,
+            "doc_index": 17
+          },
+          {
+            "seg": 139,
+            "nll_nats": 570.1890258789062,
+            "n_tokens": 110,
+            "n_bytes": 286,
+            "doc_index": 17
+          },
+          {
+            "seg": 140,
+            "nll_nats": 588.580078125,
+            "n_tokens": 106,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 141,
+            "nll_nats": 601.932861328125,
+            "n_tokens": 108,
+            "n_bytes": 287,
+            "doc_index": 17
+          },
+          {
+            "seg": 142,
+            "nll_nats": 621.9237060546875,
+            "n_tokens": 121,
+            "n_bytes": 284,
+            "doc_index": 17
+          },
+          {
+            "seg": 143,
+            "nll_nats": 597.630859375,
+            "n_tokens": 110,
+            "n_bytes": 280,
+            "doc_index": 17
+          },
+          {
+            "seg": 144,
+            "nll_nats": 611.7803955078125,
+            "n_tokens": 120,
+            "n_bytes": 286,
+            "doc_index": 17
+          },
+          {
+            "seg": 145,
+            "nll_nats": 567.986083984375,
+            "n_tokens": 103,
+            "n_bytes": 283,
+            "doc_index": 17
+          },
+          {
+            "seg": 146,
+            "nll_nats": 556.958251953125,
+            "n_tokens": 104,
+            "n_bytes": 283,
+            "doc_index": 17
+          },
+          {
+            "seg": 147,
+            "nll_nats": 391.5423583984375,
+            "n_tokens": 99,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 148,
+            "nll_nats": 569.2472534179688,
+            "n_tokens": 114,
+            "n_bytes": 280,
+            "doc_index": 17
+          },
+          {
+            "seg": 149,
+            "nll_nats": 587.1599731445312,
+            "n_tokens": 114,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 150,
+            "nll_nats": 570.9996337890625,
+            "n_tokens": 111,
+            "n_bytes": 285,
+            "doc_index": 17
+          },
+          {
+            "seg": 151,
+            "nll_nats": 510.60870361328125,
+            "n_tokens": 111,
+            "n_bytes": 284,
+            "doc_index": 17
+          },
+          {
+            "seg": 152,
+            "nll_nats": 560.646484375,
+            "n_tokens": 111,
+            "n_bytes": 281,
+            "doc_index": 17
+          },
+          {
+            "seg": 153,
+            "nll_nats": 615.42431640625,
+            "n_tokens": 114,
+            "n_bytes": 282,
+            "doc_index": 17
+          },
+          {
+            "seg": 154,
+            "nll_nats": 89.76960754394531,
+            "n_tokens": 15,
+            "n_bytes": 31,
+            "doc_index": 17
+          },
+          {
+            "seg": 155,
+            "nll_nats": 466.40106201171875,
+            "n_tokens": 88,
+            "n_bytes": 283,
+            "doc_index": 18
+          },
+          {
+            "seg": 156,
+            "nll_nats": 561.6441650390625,
+            "n_tokens": 103,
+            "n_bytes": 285,
+            "doc_index": 18
+          },
+          {
+            "seg": 157,
+            "nll_nats": 549.1467895507812,
+            "n_tokens": 113,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 158,
+            "nll_nats": 589.3760986328125,
+            "n_tokens": 112,
+            "n_bytes": 282,
+            "doc_index": 18
+          },
+          {
+            "seg": 159,
+            "nll_nats": 600.6536865234375,
+            "n_tokens": 108,
+            "n_bytes": 277,
+            "doc_index": 18
+          },
+          {
+            "seg": 160,
+            "nll_nats": 620.572509765625,
+            "n_tokens": 113,
+            "n_bytes": 286,
+            "doc_index": 18
+          },
+          {
+            "seg": 161,
+            "nll_nats": 589.1558837890625,
+            "n_tokens": 112,
+            "n_bytes": 281,
+            "doc_index": 18
+          },
+          {
+            "seg": 162,
+            "nll_nats": 566.7003173828125,
+            "n_tokens": 109,
+            "n_bytes": 285,
+            "doc_index": 18
+          },
+          {
+            "seg": 163,
+            "nll_nats": 615.50830078125,
+            "n_tokens": 107,
+            "n_bytes": 283,
+            "doc_index": 18
+          },
+          {
+            "seg": 164,
+            "nll_nats": 541.6085205078125,
+            "n_tokens": 111,
+            "n_bytes": 285,
+            "doc_index": 18
+          },
+          {
+            "seg": 165,
+            "nll_nats": 573.3929443359375,
+            "n_tokens": 101,
+            "n_bytes": 275,
+            "doc_index": 18
+          },
+          {
+            "seg": 166,
+            "nll_nats": 574.0673828125,
+            "n_tokens": 111,
+            "n_bytes": 279,
+            "doc_index": 18
+          },
+          {
+            "seg": 167,
+            "nll_nats": 633.1290283203125,
+            "n_tokens": 114,
+            "n_bytes": 287,
+            "doc_index": 18
+          },
+          {
+            "seg": 168,
+            "nll_nats": 105.80757141113281,
+            "n_tokens": 14,
+            "n_bytes": 38,
+            "doc_index": 18
+          },
+          {
+            "seg": 169,
+            "nll_nats": 501.120849609375,
+            "n_tokens": 104,
+            "n_bytes": 287,
+            "doc_index": 19
+          },
+          {
+            "seg": 170,
+            "nll_nats": 511.6727294921875,
+            "n_tokens": 95,
+            "n_bytes": 278,
+            "doc_index": 19
+          },
+          {
+            "seg": 171,
+            "nll_nats": 555.5233764648438,
+            "n_tokens": 97,
+            "n_bytes": 284,
+            "doc_index": 19
+          },
+          {
+            "seg": 172,
+            "nll_nats": 488.23004150390625,
+            "n_tokens": 109,
+            "n_bytes": 280,
+            "doc_index": 19
+          },
+          {
+            "seg": 173,
+            "nll_nats": 538.0531005859375,
+            "n_tokens": 97,
+            "n_bytes": 281,
+            "doc_index": 19
+          },
+          {
+            "seg": 174,
+            "nll_nats": 626.69580078125,
+            "n_tokens": 109,
+            "n_bytes": 284,
+            "doc_index": 19
+          },
+          {
+            "seg": 175,
+            "nll_nats": 566.601806640625,
+            "n_tokens": 109,
+            "n_bytes": 285,
+            "doc_index": 19
+          },
+          {
+            "seg": 176,
+            "nll_nats": 607.13818359375,
+            "n_tokens": 112,
+            "n_bytes": 281,
+            "doc_index": 19
+          },
+          {
+            "seg": 177,
+            "nll_nats": 265.257568359375,
+            "n_tokens": 48,
+            "n_bytes": 124,
+            "doc_index": 19
+          },
+          {
+            "seg": 178,
+            "nll_nats": 578.5266723632812,
+            "n_tokens": 105,
+            "n_bytes": 278,
+            "doc_index": 20
+          },
+          {
+            "seg": 179,
+            "nll_nats": 584.65576171875,
+            "n_tokens": 111,
+            "n_bytes": 286,
+            "doc_index": 20
+          },
+          {
+            "seg": 180,
+            "nll_nats": 564.6163330078125,
+            "n_tokens": 103,
+            "n_bytes": 281,
+            "doc_index": 20
+          },
+          {
+            "seg": 181,
+            "nll_nats": 517.53857421875,
+            "n_tokens": 116,
+            "n_bytes": 285,
+            "doc_index": 20
+          },
+          {
+            "seg": 182,
+            "nll_nats": 629.2911376953125,
+            "n_tokens": 111,
+            "n_bytes": 287,
+            "doc_index": 20
+          },
+          {
+            "seg": 183,
+            "nll_nats": 552.8720092773438,
+            "n_tokens": 105,
+            "n_bytes": 283,
+            "doc_index": 20
+          },
+          {
+            "seg": 184,
+            "nll_nats": 547.1494140625,
+            "n_tokens": 101,
+            "n_bytes": 283,
+            "doc_index": 20
+          },
+          {
+            "seg": 185,
+            "nll_nats": 626.62841796875,
+            "n_tokens": 110,
+            "n_bytes": 287,
+            "doc_index": 20
+          },
+          {
+            "seg": 186,
+            "nll_nats": 580.618408203125,
+            "n_tokens": 110,
+            "n_bytes": 286,
+            "doc_index": 20
+          },
+          {
+            "seg": 187,
+            "nll_nats": 562.60546875,
+            "n_tokens": 115,
+            "n_bytes": 283,
+            "doc_index": 20
+          },
+          {
+            "seg": 188,
+            "nll_nats": 563.0166625976562,
+            "n_tokens": 116,
+            "n_bytes": 287,
+            "doc_index": 20
+          },
+          {
+            "seg": 189,
+            "nll_nats": 288.39984130859375,
+            "n_tokens": 50,
+            "n_bytes": 130,
+            "doc_index": 20
+          }
+        ],
+        "per_document": [
+          {
+            "doc_index": 0,
+            "nll_nats": 2243.7050170898438,
+            "n_tokens": 410,
+            "n_bytes": 1097,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 1,
+            "nll_nats": 6889.757385253906,
+            "n_tokens": 1317,
+            "n_bytes": 3526,
+            "n_segments": 13
+          },
+          {
+            "doc_index": 2,
+            "nll_nats": 3959.741455078125,
+            "n_tokens": 736,
+            "n_bytes": 1832,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 3,
+            "nll_nats": 3697.5125122070312,
+            "n_tokens": 755,
+            "n_bytes": 1871,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 4,
+            "nll_nats": 1480.1950988769531,
+            "n_tokens": 269,
+            "n_bytes": 675,
+            "n_segments": 3
+          },
+          {
+            "doc_index": 5,
+            "nll_nats": 3673.596435546875,
+            "n_tokens": 686,
+            "n_bytes": 1762,
+            "n_segments": 7
+          },
+          {
+            "doc_index": 6,
+            "nll_nats": 7341.575241088867,
+            "n_tokens": 1399,
+            "n_bytes": 3759,
+            "n_segments": 14
+          },
+          {
+            "doc_index": 7,
+            "nll_nats": 2727.1900634765625,
+            "n_tokens": 535,
+            "n_bytes": 1360,
+            "n_segments": 5
+          },
+          {
+            "doc_index": 8,
+            "nll_nats": 4278.131729125977,
+            "n_tokens": 783,
+            "n_bytes": 2078,
+            "n_segments": 8
+          },
+          {
+            "doc_index": 9,
+            "nll_nats": 2809.22802734375,
+            "n_tokens": 534,
+            "n_bytes": 1500,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 10,
+            "nll_nats": 5601.691650390625,
+            "n_tokens": 1063,
+            "n_bytes": 2721,
+            "n_segments": 10
+          },
+          {
+            "doc_index": 11,
+            "nll_nats": 2389.716796875,
+            "n_tokens": 437,
+            "n_bytes": 1105,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 12,
+            "nll_nats": 5070.548278808594,
+            "n_tokens": 968,
+            "n_bytes": 2464,
+            "n_segments": 9
+          },
+          {
+            "doc_index": 13,
+            "nll_nats": 3580.7988891601562,
+            "n_tokens": 660,
+            "n_bytes": 1697,
+            "n_segments": 6
+          },
+          {
+            "doc_index": 14,
+            "nll_nats": 5282.830871582031,
+            "n_tokens": 982,
+            "n_bytes": 2679,
+            "n_segments": 10
+          },
+          {
+            "doc_index": 15,
+            "nll_nats": 11179.853698730469,
+            "n_tokens": 2173,
+            "n_bytes": 5462,
+            "n_segments": 20
+          },
+          {
+            "doc_index": 16,
+            "nll_nats": 1813.080810546875,
+            "n_tokens": 347,
+            "n_bytes": 885,
+            "n_segments": 4
+          },
+          {
+            "doc_index": 17,
+            "nll_nats": 9731.407363891602,
+            "n_tokens": 1886,
+            "n_bytes": 4858,
+            "n_segments": 18
+          },
+          {
+            "doc_index": 18,
+            "nll_nats": 7587.164260864258,
+            "n_tokens": 1416,
+            "n_bytes": 3713,
+            "n_segments": 14
+          },
+          {
+            "doc_index": 19,
+            "nll_nats": 4660.29345703125,
+            "n_tokens": 880,
+            "n_bytes": 2384,
+            "n_segments": 9
+          },
+          {
+            "doc_index": 20,
+            "nll_nats": 6595.918701171875,
+            "n_tokens": 1253,
+            "n_bytes": 3256,
+            "n_segments": 12
+          }
+        ],
+        "name": "swh_Latn",
+        "docs_sampled": 21,
+        "corpus_bytes_on_disk": 50853
+      },
+      "ben_Beng": {
+        "bits_per_byte": 1.5364348236973062,
+        "ppl": 4.732774257659912,
+        "n_segments": 69,
+        "n_tokens_scored": 34725,
+        "n_bytes_scored": 50687,
+        "per_segment": [
+          {
+            "seg": 0,
+            "nll_nats": 780.4056396484375,
+            "n_tokens": 529,
+            "n_bytes": 774,
+            "doc_index": 0
+          },
+          {
+            "seg": 1,
+            "nll_nats": 807.319091796875,
+            "n_tokens": 523,
+            "n_bytes": 760,
+            "doc_index": 0
+          },
+          {
+            "seg": 2,
+            "nll_nats": 772.0340576171875,
+            "n_tokens": 531,
+            "n_bytes": 776,
+            "doc_index": 0
+          },
+          {
+            "seg": 3,
+            "nll_nats": 844.5504150390625,
+            "n_tokens": 529,
+            "n_bytes": 772,
+            "doc_index": 0
+          },
+          {
+            "seg": 4,
+            "nll_nats": 815.828369140625,
+            "n_tokens": 521,
+            "n_bytes": 758,
+            "doc_index": 0
+          },
+          {
+            "seg": 5,
+            "nll_nats": 834.6135864257812,
+            "n_tokens": 516,
+            "n_bytes": 753,
+            "doc_index": 0
+          },
+          {
+            "seg": 6,
+            "nll_nats": 855.8818359375,
+            "n_tokens": 529,
+            "n_bytes": 773,
+            "doc_index": 0
+          },
+          {
+            "seg": 7,
+            "nll_nats": 654.158203125,
+            "n_tokens": 400,
+            "n_bytes": 585,
+            "doc_index": 0
+          },
+          {
+            "seg": 8,
+            "nll_nats": 810.3224487304688,
+            "n_tokens": 484,
+            "n_bytes": 716,
+            "doc_index": 1
+          },
+          {
+            "seg": 9,
+            "nll_nats": 815.960693359375,
+            "n_tokens": 517,
+            "n_bytes": 752,
+            "doc_index": 1
+          },
+          {
+            "seg": 10,
+            "nll_nats": 780.560791015625,
+            "n_tokens": 519,
+            "n_bytes": 756,
+            "doc_index": 1
+          },
+          {
+            "seg": 11,
+            "nll_nats": 868.466796875,
+            "n_tokens": 517,
+            "n_bytes": 751,
+            "doc_index": 1
+          },
+          {
+            "seg": 12,
+            "nll_nats": 837.1199951171875,
+            "n_tokens": 524,
+            "n_bytes": 764,
+            "doc_index": 1
+          },
+          {
+            "seg": 13,
+            "nll_nats": 849.972412109375,
+            "n_tokens": 521,
+            "n_bytes": 759,
+            "doc_index": 1
+          },
+          {
+            "seg": 14,
+            "nll_nats": 890.2611083984375,
+            "n_tokens": 526,
+            "n_bytes": 768,
+            "doc_index": 1
+          },
+          {
+            "seg": 15,
+            "nll_nats": 899.9945068359375,
+            "n_tokens": 529,
+            "n_bytes": 773,
+            "doc_index": 1
+          },
+          {
+            "seg": 16,
+            "nll_nats": 850.4158325195312,
+            "n_tokens": 523,
+            "n_bytes": 763,
+            "doc_index": 1
+          },
+          {
+            "seg": 17,
+            "nll_nats": 767.5851440429688,
+            "n_tokens": 530,
+            "n_bytes": 774,
+            "doc_index": 1
+          },
+          {
+            "seg": 18,
+            "nll_nats": 813.984375,
+            "n_tokens": 519,
+            "n_bytes": 757,
+            "doc_index": 1
+          },
+          {
+            "seg": 19,
+            "nll_nats": 761.884033203125,
+            "n_tokens": 521,
+            "n_bytes": 760,
+            "doc_index": 1
+          },
+          {
+            "seg": 20,
+            "nll_nats": 945.3174438476562,
+            "n_tokens": 527,
+            "n_bytes": 769,
+            "doc_index": 1
+          },
+          {
+            "seg": 21,
+            "nll_nats": 204.97406005859375,
+            "n_tokens": 114,
+            "n_bytes": 166,
+            "doc_index": 1
+          },
+          {
+            "seg": 22,
+            "nll_nats": 825.4532470703125,
+            "n_tokens": 526,
+            "n_bytes": 768,
+            "doc_index": 2
+          },
+          {
+            "seg": 23,
+            "nll_nats": 825.9348754882812,
+            "n_tokens": 532,
+            "n_bytes": 782,
+            "doc_index": 2
+          },
+          {
+            "seg": 24,
+            "nll_nats": 795.22607421875,
+            "n_tokens": 522,
+            "n_bytes": 761,
+            "doc_index": 2
+          },
+          {
+            "seg": 25,
+            "nll_nats": 759.760498046875,
+            "n_tokens": 528,
+            "n_bytes": 770,
+            "doc_index": 2
+          },
+          {
+            "seg": 26,
+            "nll_nats": 823.709716796875,
+            "n_tokens": 520,
+            "n_bytes": 762,
+            "doc_index": 2
+          },
+          {
+            "seg": 27,
+            "nll_nats": 746.6263427734375,
+            "n_tokens": 512,
+            "n_bytes": 749,
+            "doc_index": 2
+          },
+          {
+            "seg": 28,
+            "nll_nats": 859.87060546875,
+            "n_tokens": 526,
+            "n_bytes": 767,
+            "doc_index": 2
+          },
+          {
+            "seg": 29,
+            "nll_nats": 814.0836181640625,
+            "n_tokens": 527,
+            "n_bytes": 771,
+            "doc_index": 2
+          },
+          {
+            "seg": 30,
+            "nll_nats": 746.0958251953125,
+            "n_tokens": 532,
+            "n_bytes": 778,
+            "doc_index": 2
+          },
+          {
+            "seg": 31,
+            "nll_nats": 784.8422241210938,
+            "n_tokens": 528,
+            "n_bytes": 770,
+            "doc_index": 2
+          },
+          {
+            "seg": 32,
+            "nll_nats": 783.9102783203125,
+            "n_tokens": 520,
+            "n_bytes": 759,
+            "doc_index": 2
+          },
+          {
+            "seg": 33,
+            "nll_nats": 657.7855224609375,
+            "n_tokens": 524,
+            "n_bytes": 769,
+            "doc_index": 2
+          },
+          {
+            "seg": 34,
+            "nll_nats": 811.7891845703125,
+            "n_tokens": 531,
+            "n_bytes": 776,
+            "doc_index": 2
+          },
+          {
+            "seg": 35,
+            "nll_nats": 784.9017333984375,
+            "n_tokens": 533,
+            "n_bytes": 780,
+            "doc_index": 2
+          },
+          {
+            "seg": 36,
+            "nll_nats": 788.4550170898438,
+            "n_tokens": 527,
+            "n_bytes": 770,
+            "doc_index": 2
+          },
+          {
+            "seg": 37,
+            "nll_nats": 835.09912109375,
+            "n_tokens": 525,
+            "n_bytes": 768,
+            "doc_index": 2
+          },
+          {
+            "seg": 38,
+            "nll_nats": 747.2852783203125,
+            "n_tokens": 525,
+            "n_bytes": 766,
+            "doc_index": 2
+          },
+          {
+            "seg": 39,
+            "nll_nats": 830.2647705078125,
+            "n_tokens": 518,
+            "n_bytes": 757,
+            "doc_index": 2
+          },
+          {
+            "seg": 40,
+            "nll_nats": 732.8603515625,
+            "n_tokens": 485,
+            "n_bytes": 707,
+            "doc_index": 2
+          },
+          {
+            "seg": 41,
+            "nll_nats": 738.5791625976562,
+            "n_tokens": 525,
+            "n_bytes": 765,
+            "doc_index": 3
+          },
+          {
+            "seg": 42,
+            "nll_nats": 862.6375732421875,
+            "n_tokens": 512,
+            "n_bytes": 745,
+            "doc_index": 3
+          },
+          {
+            "seg": 43,
+            "nll_nats": 751.3626708984375,
+            "n_tokens": 517,
+            "n_bytes": 755,
+            "doc_index": 3
+          },
+          {
+            "seg": 44,
+            "nll_nats": 862.198974609375,
+            "n_tokens": 516,
+            "n_bytes": 754,
+            "doc_index": 3
+          },
+          {
+            "seg": 45,
+            "nll_nats": 800.7775268554688,
+            "n_tokens": 504,
+            "n_bytes": 733,
+            "doc_index": 3
+          },
+          {
+            "seg": 46,
+            "nll_nats": 583.6444091796875,
+            "n_tokens": 521,
+            "n_bytes": 759,
+            "doc_index": 3
+          },
+          {
+            "seg": 47,
+            "nll_nats": 876.4591064453125,
+            "n_tokens": 511,
+            "n_bytes": 745,
+            "doc_index": 3
+          },
+          {
+            "seg": 48,
+            "nll_nats": 912.736083984375,
+            "n_tokens": 513,
+            "n_bytes": 749,
+            "doc_index": 3
+          },
+          {
+            "seg": 49,
+            "nll_nats": 390.401123046875,
+            "n_tokens": 223,
+            "n_bytes": 326,
+            "doc_index": 3
+          },
+          {
+            "seg": 50,
+            "nll_nats": 799.925048828125,
+            "n_tokens": 524,
+            "n_bytes": 763,
+            "doc_index": 4
+          },
+          {
+            "seg": 51,
+            "nll_nats": 799.8255004882812,
+            "n_tokens": 531,
+            "n_bytes": 775,
+            "doc_index": 4
+          },
+          {
+            "seg": 52,
+            "nll_nats": 806.2430419921875,
+            "n_tokens": 522,
+            "n_bytes": 763,
+            "doc_index": 4
+          },
+          {
+            "seg": 53,
+            "nll_nats": 798.2612915039062,
+            "n_tokens": 525,
+            "n_bytes": 763,
+            "doc_index": 4
+          },
+          {
+            "seg": 54,
+            "nll_nats": 847.0391845703125,
+            "n_tokens": 526,
+            "n_bytes": 769,
+            "doc_index": 4
+          },
+          {
+            "seg": 55,
+            "nll_nats": 810.0657958984375,
+            "n_tokens": 515,
+            "n_bytes": 749,
+            "doc_index": 4
+          },
+          {
+            "seg": 56,
+            "nll_nats": 868.4658813476562,
+            "n_tokens": 524,
+            "n_bytes": 764,
+            "doc_index": 4
+          },
+          {
+            "seg": 57,
+            "nll_nats": 812.1703491210938,
+            "n_tokens": 522,
+            "n_bytes": 760,
+            "doc_index": 4
+          },
+          {
+            "seg": 58,
+            "nll_nats": 792.9487915039062,
+            "n_tokens": 514,
+            "n_bytes": 747,
+            "doc_index": 4
+          },
+          {
+            "seg": 59,
+            "nll_nats": 791.826171875,
+            "n_tokens": 513,
+            "n_bytes": 744,
+            "doc_index": 4
+          },
+          {
+            "seg": 60,
+            "nll_nats": 795.4901123046875,
+            "n_tokens": 515,
+            "n_bytes": 748,
+            "doc_index": 4
+          },
+          {
+            "seg": 61,
+            "nll_nats": 790.15478515625,
+            "n_tokens": 532,
+            "n_bytes": 777,
+            "doc_index": 4
+          },
+          {
+            "seg": 62,
+            "nll_nats": 835.6541748046875,
+            "n_tokens": 530,
+            "n_bytes": 775,
+            "doc_index": 4
+          },
+          {
+            "seg": 63,
+            "nll_nats": 724.4146728515625,
+            "n_tokens": 535,
+            "n_bytes": 783,
+            "doc_index": 4
+          },
+          {
+            "seg": 64,
+            "nll_nats": 813.1663818359375,
+            "n_tokens": 528,
+            "n_bytes": 773,
+            "doc_index": 4
+          },
+          {
+            "seg": 65,
+            "nll_nats": 894.520263671875,
+            "n_tokens": 518,
+            "n_bytes": 756,
+            "doc_index": 4
+          },
+          {
+            "seg": 66,
+            "nll_nats": 883.3065185546875,
+            "n_tokens": 524,
+            "n_bytes": 768,
+            "doc_index": 4
+          },
+          {
+            "seg": 67,
+            "nll_nats": 770.0018310546875,
+            "n_tokens": 517,
+            "n_bytes": 755,
+            "doc_index": 4
+          },
+          {
+            "seg": 68,
+            "nll_nats": 152.5699005126953,
+            "n_tokens": 78,
+            "n_bytes": 115,
+            "doc_index": 4
+          }
+        ],
+        "per_document": [
+          {
+            "doc_index": 0,
+            "nll_nats": 6364.791198730469,
+            "n_tokens": 4078,
+            "n_bytes": 5951,
+            "n_segments": 8
+          },
+          {
+            "doc_index": 1,
+            "nll_nats": 11096.819641113281,
+            "n_tokens": 6871,
+            "n_bytes": 10028,
+            "n_segments": 14
+          },
+          {
+            "doc_index": 2,
+            "nll_nats": 14953.954284667969,
+            "n_tokens": 9941,
+            "n_bytes": 14530,
+            "n_segments": 19
+          },
+          {
+            "doc_index": 3,
+            "nll_nats": 6778.796630859375,
+            "n_tokens": 4342,
+            "n_bytes": 6331,
+            "n_segments": 9
+          },
+          {
+            "doc_index": 4,
+            "nll_nats": 14786.049697875977,
+            "n_tokens": 9493,
+            "n_bytes": 13847,
+            "n_segments": 19
+          }
+        ],
+        "name": "ben_Beng",
+        "docs_sampled": 5,
+        "corpus_bytes_on_disk": 50751
+      }
+    }
+  },
+  "e3_unseen": {
+    "source": "israel/flores-parallel",
+    "split": "test",
+    "n_sentences": 60,
+    "languages": [
+      "arb_Arab",
+      "hin_Deva",
+      "tur_Latn",
+      "rus_Cyrl"
+    ],
+    "results": {
+      "arb_Arab": {
+        "bits_per_byte": 2.0070878414227695,
+        "ppl": 15.481488227844238,
+        "n_segments": 60,
+        "n_tokens_scored": 6961,
+        "n_bytes_scored": 13708,
+        "name": "Arabic",
+        "n_sentences": 60
+      },
+      "hin_Deva": {
+        "bits_per_byte": 1.3792569073903629,
+        "ppl": 7.142122268676758,
+        "n_segments": 60,
+        "n_tokens_scored": 10986,
+        "n_bytes_scored": 22592,
+        "name": "Hindi",
+        "n_sentences": 60
+      },
+      "tur_Latn": {
+        "bits_per_byte": 2.283382611724609,
+        "ppl": 37.361812591552734,
+        "n_segments": 60,
+        "n_tokens_scored": 4367,
+        "n_bytes_scored": 9990,
+        "name": "Turkish",
+        "n_sentences": 60
+      },
+      "rus_Cyrl": {
+        "bits_per_byte": 0.9328248131882587,
+        "ppl": 18.165964126586914,
+        "n_segments": 60,
+        "n_tokens_scored": 3912,
+        "n_bytes_scored": 17543,
+        "name": "Russian",
+        "n_sentences": 60
+      }
+    }
+  },
+  "elapsed_sec": 1611.0
+}

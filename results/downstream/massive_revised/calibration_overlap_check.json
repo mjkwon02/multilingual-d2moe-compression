@@ -1,0 +1,57 @@
+{
+  "scope": "light check only; the full audit in analysis/data_audit_0916/ was NOT re-run (see that tree for FLORES/SIB/Belebele/XL-Sum exposure)",
+  "audit_source": {
+    "dir": "analysis/data_audit_0916",
+    "files_cited": [
+      "artifact_manifest.json",
+      "data_audit_report.md",
+      "calibration_reconstruction.json",
+      "clean_eval_ids.json"
+    ]
+  },
+  "calibration_text_definition": "the FULL condition pool, because get_expert_freq.py consumes the entire single-language pool (audit finding), not only the 64 sampled 512-token windows",
+  "conditions_checked": {
+    "english_only/seed0": {
+      "n_sentences": 952,
+      "n_chars": 123313
+    },
+    "english_only/seed1": {
+      "n_sentences": 952,
+      "n_chars": 123313
+    },
+    "english_only/seed2": {
+      "n_sentences": 952,
+      "n_chars": 123313
+    },
+    "mixed_5lang/seed0": {
+      "n_sentences": 5863,
+      "n_chars": 474859
+    },
+    "mixed_5lang/seed1": {
+      "n_sentences": 5863,
+      "n_chars": 474859
+    },
+    "mixed_5lang/seed2": {
+      "n_sentences": 5863,
+      "n_chars": 474859
+    }
+  },
+  "id_join_possible": false,
+  "id_join_note": "MASSIVE (SLURP-derived) and FLORES-200 have unrelated provenance ID spaces",
+  "levels": [
+    "exact",
+    "NFC + whitespace-normalized"
+  ],
+  "n_items_scanned": 200,
+  "n_language_instances_scanned": 1000,
+  "hits": [],
+  "n_hits_total": 0,
+  "exclusion_rule": "an EXACT match longer than 5 words excludes that source ID in all five languages; replaced by the next ID in hash order that is itself clean",
+  "n_excluded": 0,
+  "excluded_ids": [],
+  "n_replacements": 0,
+  "replacement_ids": [],
+  "short_formulaic_flagged_not_excluded": [],
+  "final_n": 200,
+  "limits": "Passing this check does not establish document-level independence between MASSIVE and the calibration corpus, and establishes nothing about pretraining contamination."
+}

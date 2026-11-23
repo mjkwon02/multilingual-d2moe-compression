@@ -1,0 +1,29 @@
+{
+  "num_fewshot": 5,
+  "limit": 200,
+  "langs_evaluated": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans"
+  ],
+  "results": {
+    "eng_Latn": {
+      "task": "belebele_eng_Latn",
+      "acc": 0.305,
+      "acc_norm": 0.305,
+      "n_samples": 200
+    },
+    "kor_Hang": {
+      "task": "belebele_kor_Hang",
+      "acc": 0.24,
+      "acc_norm": 0.24,
+      "n_samples": 200
+    },
+    "zho_Hans": {
+      "task": "belebele_zho_Hans",
+      "acc": 0.33,
+      "acc_norm": 0.33,
+      "n_samples": 200
+    }
+  }
+}

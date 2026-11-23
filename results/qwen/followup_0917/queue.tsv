@@ -1,0 +1,21 @@
+# Qwen1.5-MoE-A2.7B follow-up queue, part 1 (read by qwen15_followup_run.sh at every unit boundary).
+# 2026-09-18 update: plan B (EN/KO/BN/Balanced-character x seeds 0,1), then Chinese and Swahili x seeds 0,1
+# = 6 calibration conditions x seeds 0,1 = 12 cells. Each cell: freq -> Fisher -> whitening -> merge + FLORES
+# bpb EN/ZH/KO/SW/BN + save -> reload bit-identity check. Completed cells are validated and skipped.
+# Part 2 (qwen15_followup2_run.sh) starts only after this queue FINISHES: Table-1 gate, MASSIVE on the
+# uncompressed model + these 12 models, MASSIVE gate, then seed 2 for the 6 conditions.
+# Not queued: EN-KO Fisher x whitening 2x2, placebo, XL-Sum / other downstream.
+# Earlier versions kept: queue.full_plan_20260917.tsv, queue.planB_20260917.tsv (not used).
+# kind<TAB>condition<TAB>seed
+cell	english_only	0
+cell	korean_only	0
+cell	mixed_5lang	0
+cell	bengali_only	0
+cell	english_only	1
+cell	korean_only	1
+cell	mixed_5lang	1
+cell	bengali_only	1
+cell	chinese_only	0
+cell	swahili_only	0
+cell	chinese_only	1
+cell	swahili_only	1

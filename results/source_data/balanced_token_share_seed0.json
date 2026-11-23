@@ -1,0 +1,530 @@
+{
+  "seed": 0,
+  "condition": "mixed_5lang",
+  "condition_paper_label": "Balanced",
+  "n_windows": 64,
+  "window_chars": 2048,
+  "seqlen_cap_tokens": 512,
+  "total_tokens": 32768,
+  "expected_total_tokens": 32768,
+  "total_tokens_matches_table_a1_budget": true,
+  "languages": {
+    "eng_Latn": {
+      "tokens": 1777,
+      "share_pct_of_all_tokens": 5.4229736328125,
+      "share_pct_of_language_attributed_tokens": 5.580854872648472,
+      "manifest_char_share_pct": 20.006359782588095
+    },
+    "swh_Latn": {
+      "tokens": 3567,
+      "share_pct_of_all_tokens": 10.8856201171875,
+      "share_pct_of_language_attributed_tokens": 11.202537608743445,
+      "manifest_char_share_pct": 20.007412726725196
+    },
+    "zho_Hans": {
+      "tokens": 4429,
+      "share_pct_of_all_tokens": 13.5162353515625,
+      "share_pct_of_language_attributed_tokens": 13.90973901573443,
+      "manifest_char_share_pct": 19.99625151887192
+    },
+    "kor_Hang": {
+      "tokens": 9922,
+      "share_pct_of_all_tokens": 30.279541015625,
+      "share_pct_of_language_attributed_tokens": 31.161081624320843,
+      "manifest_char_share_pct": 19.999831528938063
+    },
+    "ben_Beng": {
+      "tokens": 12146,
+      "share_pct_of_all_tokens": 37.066650390625,
+      "share_pct_of_language_attributed_tokens": 38.14578687855281,
+      "manifest_char_share_pct": 19.990144442876726
+    }
+  },
+  "boundary_tokens": {
+    "tokens": 0,
+    "share_pct_of_all_tokens": 0.0,
+    "cross_language": 0,
+    "language_to_separator": 0
+  },
+  "separator_only_tokens": {
+    "tokens": 863,
+    "share_pct_of_all_tokens": 2.6336669921875
+  },
+  "special_tokens": {
+    "tokens": 64,
+    "share_pct_of_all_tokens": 0.1953125
+  },
+  "language_attributed_tokens": 31841,
+  "share_sum_check_pct": 100.0,
+  "per_window_language_counts": [
+    {
+      "eng_Latn": 9,
+      "swh_Latn": 0,
+      "zho_Hans": 86,
+      "kor_Hang": 0,
+      "ben_Beng": 406
+    },
+    {
+      "eng_Latn": 19,
+      "swh_Latn": 124,
+      "zho_Hans": 61,
+      "kor_Hang": 243,
+      "ben_Beng": 48
+    },
+    {
+      "eng_Latn": 53,
+      "swh_Latn": 0,
+      "zho_Hans": 145,
+      "kor_Hang": 0,
+      "ben_Beng": 299
+    },
+    {
+      "eng_Latn": 41,
+      "swh_Latn": 113,
+      "zho_Hans": 82,
+      "kor_Hang": 257,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 16,
+      "swh_Latn": 0,
+      "zho_Hans": 36,
+      "kor_Hang": 445,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 56,
+      "zho_Hans": 46,
+      "kor_Hang": 46,
+      "ben_Beng": 353
+    },
+    {
+      "eng_Latn": 79,
+      "swh_Latn": 60,
+      "zho_Hans": 17,
+      "kor_Hang": 0,
+      "ben_Beng": 343
+    },
+    {
+      "eng_Latn": 25,
+      "swh_Latn": 0,
+      "zho_Hans": 107,
+      "kor_Hang": 71,
+      "ben_Beng": 292
+    },
+    {
+      "eng_Latn": 49,
+      "swh_Latn": 137,
+      "zho_Hans": 173,
+      "kor_Hang": 0,
+      "ben_Beng": 128
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 317,
+      "zho_Hans": 104,
+      "kor_Hang": 70,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 47,
+      "kor_Hang": 173,
+      "ben_Beng": 281
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 90,
+      "zho_Hans": 97,
+      "kor_Hang": 53,
+      "ben_Beng": 259
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 89,
+      "kor_Hang": 261,
+      "ben_Beng": 149
+    },
+    {
+      "eng_Latn": 46,
+      "swh_Latn": 44,
+      "zho_Hans": 143,
+      "kor_Hang": 258,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 101,
+      "swh_Latn": 71,
+      "zho_Hans": 79,
+      "kor_Hang": 240,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 48,
+      "swh_Latn": 0,
+      "zho_Hans": 65,
+      "kor_Hang": 0,
+      "ben_Beng": 386
+    },
+    {
+      "eng_Latn": 34,
+      "swh_Latn": 0,
+      "zho_Hans": 22,
+      "kor_Hang": 44,
+      "ben_Beng": 403
+    },
+    {
+      "eng_Latn": 62,
+      "swh_Latn": 108,
+      "zho_Hans": 121,
+      "kor_Hang": 202,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 18,
+      "swh_Latn": 106,
+      "zho_Hans": 90,
+      "kor_Hang": 254,
+      "ben_Beng": 25
+    },
+    {
+      "eng_Latn": 35,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 90,
+      "ben_Beng": 378
+    },
+    {
+      "eng_Latn": 62,
+      "swh_Latn": 53,
+      "zho_Hans": 149,
+      "kor_Hang": 227,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 13,
+      "kor_Hang": 5,
+      "ben_Beng": 487
+    },
+    {
+      "eng_Latn": 61,
+      "swh_Latn": 51,
+      "zho_Hans": 132,
+      "kor_Hang": 0,
+      "ben_Beng": 251
+    },
+    {
+      "eng_Latn": 38,
+      "swh_Latn": 53,
+      "zho_Hans": 53,
+      "kor_Hang": 351,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 94,
+      "zho_Hans": 165,
+      "kor_Hang": 234,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 81,
+      "swh_Latn": 65,
+      "zho_Hans": 110,
+      "kor_Hang": 228,
+      "ben_Beng": 3
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 18,
+      "kor_Hang": 209,
+      "ben_Beng": 276
+    },
+    {
+      "eng_Latn": 117,
+      "swh_Latn": 0,
+      "zho_Hans": 109,
+      "kor_Hang": 207,
+      "ben_Beng": 60
+    },
+    {
+      "eng_Latn": 46,
+      "swh_Latn": 77,
+      "zho_Hans": 42,
+      "kor_Hang": 163,
+      "ben_Beng": 167
+    },
+    {
+      "eng_Latn": 39,
+      "swh_Latn": 84,
+      "zho_Hans": 84,
+      "kor_Hang": 66,
+      "ben_Beng": 218
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 4,
+      "kor_Hang": 0,
+      "ben_Beng": 503
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 139,
+      "zho_Hans": 44,
+      "kor_Hang": 174,
+      "ben_Beng": 142
+    },
+    {
+      "eng_Latn": 22,
+      "swh_Latn": 90,
+      "zho_Hans": 165,
+      "kor_Hang": 216,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 29,
+      "zho_Hans": 81,
+      "kor_Hang": 166,
+      "ben_Beng": 219
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 28,
+      "zho_Hans": 55,
+      "kor_Hang": 177,
+      "ben_Beng": 241
+    },
+    {
+      "eng_Latn": 69,
+      "swh_Latn": 71,
+      "zho_Hans": 0,
+      "kor_Hang": 170,
+      "ben_Beng": 189
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 82,
+      "kor_Hang": 90,
+      "ben_Beng": 331
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 81,
+      "zho_Hans": 120,
+      "kor_Hang": 126,
+      "ben_Beng": 170
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 108,
+      "kor_Hang": 389,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 31,
+      "kor_Hang": 231,
+      "ben_Beng": 239
+    },
+    {
+      "eng_Latn": 50,
+      "swh_Latn": 0,
+      "zho_Hans": 90,
+      "kor_Hang": 158,
+      "ben_Beng": 197
+    },
+    {
+      "eng_Latn": 44,
+      "swh_Latn": 36,
+      "zho_Hans": 51,
+      "kor_Hang": 364,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 0,
+      "ben_Beng": 509
+    },
+    {
+      "eng_Latn": 33,
+      "swh_Latn": 49,
+      "zho_Hans": 22,
+      "kor_Hang": 118,
+      "ben_Beng": 281
+    },
+    {
+      "eng_Latn": 35,
+      "swh_Latn": 149,
+      "zho_Hans": 5,
+      "kor_Hang": 101,
+      "ben_Beng": 209
+    },
+    {
+      "eng_Latn": 55,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 0,
+      "ben_Beng": 449
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 82,
+      "zho_Hans": 63,
+      "kor_Hang": 0,
+      "ben_Beng": 327
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 124,
+      "zho_Hans": 23,
+      "kor_Hang": 0,
+      "ben_Beng": 354
+    },
+    {
+      "eng_Latn": 58,
+      "swh_Latn": 44,
+      "zho_Hans": 83,
+      "kor_Hang": 248,
+      "ben_Beng": 60
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 106,
+      "zho_Hans": 48,
+      "kor_Hang": 90,
+      "ben_Beng": 259
+    },
+    {
+      "eng_Latn": 38,
+      "swh_Latn": 47,
+      "zho_Hans": 50,
+      "kor_Hang": 364,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 23,
+      "swh_Latn": 68,
+      "zho_Hans": 82,
+      "kor_Hang": 322,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 16,
+      "swh_Latn": 0,
+      "zho_Hans": 13,
+      "kor_Hang": 470,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 34,
+      "swh_Latn": 0,
+      "zho_Hans": 23,
+      "kor_Hang": 440,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 49,
+      "swh_Latn": 91,
+      "zho_Hans": 127,
+      "kor_Hang": 0,
+      "ben_Beng": 226
+    },
+    {
+      "eng_Latn": 55,
+      "swh_Latn": 21,
+      "zho_Hans": 9,
+      "kor_Hang": 97,
+      "ben_Beng": 321
+    },
+    {
+      "eng_Latn": 12,
+      "swh_Latn": 75,
+      "zho_Hans": 38,
+      "kor_Hang": 0,
+      "ben_Beng": 378
+    },
+    {
+      "eng_Latn": 33,
+      "swh_Latn": 64,
+      "zho_Hans": 58,
+      "kor_Hang": 138,
+      "ben_Beng": 206
+    },
+    {
+      "eng_Latn": 16,
+      "swh_Latn": 73,
+      "zho_Hans": 91,
+      "kor_Hang": 209,
+      "ben_Beng": 104
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 29,
+      "kor_Hang": 180,
+      "ben_Beng": 296
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 54,
+      "kor_Hang": 104,
+      "ben_Beng": 343
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 310,
+      "zho_Hans": 111,
+      "kor_Hang": 70,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 27,
+      "swh_Latn": 31,
+      "zho_Hans": 140,
+      "kor_Hang": 95,
+      "ben_Beng": 202
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 56,
+      "zho_Hans": 44,
+      "kor_Hang": 218,
+      "ben_Beng": 179
+    }
+  ],
+  "provenance": {
+    "calib_text_hash_md5_12": "ebd1bc442250",
+    "first_sample_preview": " crash killed three people and wounded three more.\n\n伤员被送往医院后",
+    "window_char_offsets_reproduced": true,
+    "table_a1_published": {
+      "mean_raw_tokens": 1922.109375,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_measured": {
+      "mean_raw_tokens": 1922.109375,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_exact_match": {
+      "mean_raw_tokens": true,
+      "mean_realized_tokens": true,
+      "cap_hit_fraction": true
+    },
+    "table_a1_all_match": true
+  }
+}

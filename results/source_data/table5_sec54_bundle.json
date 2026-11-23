@@ -1,0 +1,149 @@
+{
+  "metric": "restoration gain (pp) = dpct_compressed - dpct_intervened",
+  "vulnerable": [
+    "kor_Hang",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "sec54_root": "results/deepseek/sec54",
+  "runs": {
+    "english_only seed0": {
+      "in_main_table": true,
+      "scale_condition": "english_only/seed0 (whitening ON, AMENDMENT 1)",
+      "path": "results/deepseek/sec54/step2_bundle.json",
+      "reference_check_bpb_diff": {
+        "eng_Latn": 0.0,
+        "kor_Hang": 0.0,
+        "zho_Hans": 0.0,
+        "swh_Latn": 0.0,
+        "ben_Beng": 0.0
+      },
+      "compressed_delta_bpb_pct": {
+        "eng_Latn": 7.690521426360671,
+        "kor_Hang": 88.68195771581392,
+        "zho_Hans": 13.791171056414761,
+        "swh_Latn": 34.776191722743086,
+        "ben_Beng": 89.73056747256616
+      },
+      "arms": {
+        "treatment": {
+          "gain_pp": {
+            "eng_Latn": 0.11419074687537467,
+            "kor_Hang": -0.011505818720536354,
+            "zho_Hans": 0.1715481827879337,
+            "swh_Latn": 1.0150579799108428,
+            "ben_Beng": 0.015640509849220052
+          },
+          "vulnerable_mean_pp": 0.33973089034650883
+        },
+        "control": {
+          "gain_pp": {
+            "eng_Latn": -0.070756687643172,
+            "kor_Hang": 0.8641929821760357,
+            "zho_Hans": 0.019514985012985875,
+            "swh_Latn": 0.026364653693256912,
+            "ben_Beng": 0.26037333480297775
+          },
+          "vulnerable_mean_pp": 0.3836436568907568
+        }
+      },
+      "P1": {
+        "difference_pp": -0.04391276654424797,
+        "direction_holds": false
+      },
+      "P3_english_control_diff_pp": 0.18494743451854667
+    },
+    "english_only seed1": {
+      "in_main_table": true,
+      "scale_condition": "english_only/seed1 (whitening ON, AMENDMENT 1)",
+      "path": "results/deepseek/sec54/seed1_repro/step2_bundle.json",
+      "reference_check_bpb_diff": {
+        "eng_Latn": 0.0,
+        "kor_Hang": 0.0,
+        "zho_Hans": 0.0,
+        "swh_Latn": 0.0,
+        "ben_Beng": 0.0
+      },
+      "compressed_delta_bpb_pct": {
+        "eng_Latn": 6.9149897837063605,
+        "kor_Hang": 85.38100815837835,
+        "zho_Hans": 12.925094116941438,
+        "swh_Latn": 30.248407952745364,
+        "ben_Beng": 87.09911376017759
+      },
+      "arms": {
+        "treatment": {
+          "gain_pp": {
+            "eng_Latn": 0.17446975316737134,
+            "kor_Hang": -0.11463154496603067,
+            "zho_Hans": 0.2093305852185452,
+            "swh_Latn": 0.47361073236810114,
+            "ben_Beng": -0.04733195208173413
+          },
+          "vulnerable_mean_pp": 0.10388241177344544
+        },
+        "control": {
+          "gain_pp": {
+            "eng_Latn": -0.0977988519185562,
+            "kor_Hang": 0.7326389837151766,
+            "zho_Hans": 0.0728332541711012,
+            "swh_Latn": 0.09593555079661442,
+            "ben_Beng": 0.12198194783557881
+          },
+          "vulnerable_mean_pp": 0.3168521607824566
+        }
+      },
+      "P1": {
+        "difference_pp": -0.21296974900901117,
+        "direction_holds": false
+      },
+      "P3_english_control_diff_pp": 0.27226860508592754
+    },
+    "korean_only seed0": {
+      "in_main_table": true,
+      "scale_condition": "korean_only/seed0 (whitening ON, AMENDMENT 1)",
+      "path": "results/deepseek/sec54/korean_only_repro/step2_bundle.json",
+      "reference_check_bpb_diff": {
+        "eng_Latn": 0.0,
+        "kor_Hang": 0.0,
+        "zho_Hans": 0.0,
+        "swh_Latn": 0.0,
+        "ben_Beng": 0.0
+      },
+      "compressed_delta_bpb_pct": {
+        "eng_Latn": 12.837890062177898,
+        "kor_Hang": 3.6593729839714504,
+        "zho_Hans": 13.006907027825514,
+        "swh_Latn": 39.83147205663776,
+        "ben_Beng": 25.5020535355569
+      },
+      "arms": {
+        "treatment": {
+          "gain_pp": {
+            "eng_Latn": 0.4166448692975617,
+            "kor_Hang": 0.04494538806778037,
+            "zho_Hans": 0.2548508368901512,
+            "swh_Latn": 1.6218336673405247,
+            "ben_Beng": -0.0892500578286679
+          },
+          "vulnerable_mean_pp": 0.5258429991932124
+        },
+        "control": {
+          "gain_pp": {
+            "eng_Latn": -0.05866809258572303,
+            "kor_Hang": 0.027093236559286193,
+            "zho_Hans": 0.10999362588503381,
+            "swh_Latn": 0.29436738664146134,
+            "ben_Beng": -0.044950275447131816
+          },
+          "vulnerable_mean_pp": 0.0921701159178719
+        }
+      },
+      "P1": {
+        "difference_pp": 0.43367288327534054,
+        "direction_holds": true
+      },
+      "P3_english_control_diff_pp": 0.47531296188328476
+    }
+  }
+}

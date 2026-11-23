@@ -1,0 +1,45 @@
+{
+  "pairs": [
+    0,
+    1
+  ],
+  "threshold_pp": 0.3,
+  "max_treatment_gain_pp": 0.10261266931259172,
+  "verdict": "BUNDLE_MODE",
+  "per_treatment": {
+    "T_L25E32": {
+      "eng_Latn": -0.021533181378578625,
+      "kor_Hang": -0.04677797646597526,
+      "zho_Hans": -0.002746326658801479,
+      "swh_Latn": 0.0018176646040970468,
+      "ben_Beng": -0.0021608479906802813
+    },
+    "T_L23E51": {
+      "eng_Latn": -0.023829442389981637,
+      "kor_Hang": 0.05332815729639151,
+      "zho_Hans": 0.06131939360431815,
+      "swh_Latn": 0.0016804233798453083,
+      "ben_Beng": 0.10261266931259172
+    }
+  },
+  "scale_condition": "english_only/seed0 (whitening ON, AMENDMENT 1)",
+  "reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+  },
+  "eval_seconds": {
+    "C_L25E45": 74.68852972984314,
+    "T_L23E51": 72.58797287940979,
+    "C_L23E62": 72.63563466072083
+  },
+  "compressed_delta_bpb_pct": {
+    "eng_Latn": 7.690521426360671,
+    "kor_Hang": 88.68195771581392,
+    "zho_Hans": 13.791171056414761,
+    "swh_Latn": 34.776191722743086,
+    "ben_Beng": 89.73056747256616
+  }
+}

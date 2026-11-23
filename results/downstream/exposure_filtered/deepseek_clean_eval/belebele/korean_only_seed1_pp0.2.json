@@ -1,0 +1,181 @@
+{
+  "task": "belebele",
+  "model": "korean_only_seed1_pp0.2",
+  "condition": "korean_only",
+  "seed": 1,
+  "pp_ratio": 0.2,
+  "limit": 200,
+  "num_fewshot": 5,
+  "batch_size": 1,
+  "langs": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "lm_eval_source": "<repo>/D2MoE/lm-evaluation-harness",
+  "clean_subset_source": "analysis/data_audit_0916/clean_eval_ids.json",
+  "clean_note": "audit clean = 549/900 over the FULL split; this cell evaluated limit=200, so the usable clean subset is the intersection (99 questions / 52 passages). Exposure removed at passage granularity.",
+  "stored_file_for_reproduction_check": "results/deepseek/korean_only/seed1/scale_korean_only_seed1/pp_ratio_0.2/fewshot_5/eval_belebele.json",
+  "seconds_eval": 1040.5557186603546,
+  "seconds_load": 90.16623544692993,
+  "seconds_merge": 1518.8918566703796,
+  "results": {
+    "eng_Latn": {
+      "full": {
+        "n": 200,
+        "acc": 0.315,
+        "n_passages": 112,
+        "gold_distribution": {
+          "1": 51,
+          "2": 50,
+          "3": 55,
+          "4": 44
+        }
+      },
+      "clean": {
+        "n": 99,
+        "acc": 0.31313131313131315,
+        "n_passages": 52,
+        "gold_distribution": {
+          "1": 26,
+          "2": 28,
+          "3": 26,
+          "4": 19
+        }
+      },
+      "reported_acc_from_harness": 0.315,
+      "reproduction_check": {
+        "stored_acc": 0.315,
+        "rerun_full_acc": 0.315,
+        "abs_diff": 0.0,
+        "reproduced": true
+      }
+    },
+    "kor_Hang": {
+      "full": {
+        "n": 200,
+        "acc": 0.235,
+        "n_passages": 107,
+        "gold_distribution": {
+          "1": 48,
+          "2": 59,
+          "3": 52,
+          "4": 41
+        }
+      },
+      "clean": {
+        "n": 113,
+        "acc": 0.23893805309734514,
+        "n_passages": 59,
+        "gold_distribution": {
+          "1": 29,
+          "2": 33,
+          "3": 26,
+          "4": 25
+        }
+      },
+      "reported_acc_from_harness": 0.235,
+      "reproduction_check": {
+        "stored_acc": 0.235,
+        "rerun_full_acc": 0.235,
+        "abs_diff": 0.0,
+        "reproduced": true
+      }
+    },
+    "zho_Hans": {
+      "full": {
+        "n": 200,
+        "acc": 0.31,
+        "n_passages": 112,
+        "gold_distribution": {
+          "1": 51,
+          "2": 50,
+          "3": 55,
+          "4": 44
+        }
+      },
+      "clean": {
+        "n": 99,
+        "acc": 0.32323232323232326,
+        "n_passages": 52,
+        "gold_distribution": {
+          "1": 26,
+          "2": 28,
+          "3": 26,
+          "4": 19
+        }
+      },
+      "reported_acc_from_harness": 0.31,
+      "reproduction_check": {
+        "stored_acc": 0.31,
+        "rerun_full_acc": 0.31,
+        "abs_diff": 0.0,
+        "reproduced": true
+      }
+    },
+    "swh_Latn": {
+      "full": {
+        "n": 200,
+        "acc": 0.225,
+        "n_passages": 112,
+        "gold_distribution": {
+          "1": 51,
+          "2": 50,
+          "3": 55,
+          "4": 44
+        }
+      },
+      "clean": {
+        "n": 99,
+        "acc": 0.20202020202020202,
+        "n_passages": 52,
+        "gold_distribution": {
+          "1": 26,
+          "2": 28,
+          "3": 26,
+          "4": 19
+        }
+      },
+      "reported_acc_from_harness": 0.225,
+      "reproduction_check": {
+        "stored_acc": 0.225,
+        "rerun_full_acc": 0.225,
+        "abs_diff": 0.0,
+        "reproduced": true
+      }
+    },
+    "ben_Beng": {
+      "full": {
+        "n": 200,
+        "acc": 0.29,
+        "n_passages": 106,
+        "gold_distribution": {
+          "1": 47,
+          "2": 61,
+          "3": 56,
+          "4": 36
+        }
+      },
+      "clean": {
+        "n": 125,
+        "acc": 0.248,
+        "n_passages": 65,
+        "gold_distribution": {
+          "1": 31,
+          "2": 37,
+          "3": 36,
+          "4": 21
+        }
+      },
+      "reported_acc_from_harness": 0.29,
+      "reproduction_check": {
+        "stored_acc": 0.29,
+        "rerun_full_acc": 0.29,
+        "abs_diff": 0.0,
+        "reproduced": true
+      }
+    }
+  }
+}

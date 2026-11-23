@@ -1,0 +1,1047 @@
+{
+ "provenance": {
+  "generated_utc": "2026-08-02",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "sources": {
+   "bpb_grid": "results/deepseek/phase1_41_headline_gate_result.json",
+   "sib200": "results/deepseek/sib200_extended/SIB_EXTENDED_REPORT.md",
+   "belebele": [
+    "results/deepseek/phase1_belebele_gate_mixed_5lang_offonly_result.json",
+    "results/deepseek/phase1_belebele_gate_english_only_offonly_result.json",
+    "results/deepseek/phase1_belebele_gate_chinese_only_offonly_result.json",
+    "results/deepseek/phase1_belebele_gate_korean_only_result.json"
+   ]
+  },
+  "definitions": {
+   "regret": "dbpb%(cond,lang) - min_over_6_conditions dbpb%(.,lang); units %p",
+   "collapse": "top-label fraction > 0.9 OR acc < 0.25  (SIB_EXTENDED_REPORT.md)",
+   "belebele_macro": "mean retention over non-flagged languages (phase1_belebele_gate.py)"
+  }
+ },
+ "axis1_bpb_regret": {
+  "column_min_dbpb_pct": {
+   "eng_Latn": 7.279221153917681,
+   "kor_Hang": 3.864778410745906,
+   "zho_Hans": 4.239829630509595,
+   "swh_Latn": -0.047477827102608096,
+   "ben_Beng": 1.3297961228923016
+  },
+  "column_min_condition": {
+   "eng_Latn": "english_only",
+   "kor_Hang": "korean_only",
+   "zho_Hans": "chinese_only",
+   "swh_Latn": "swahili_only",
+   "ben_Beng": "bengali_only"
+  },
+  "per_condition": {
+   "english_only": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 7.279221153917681,
+     "kor_Hang": 88.75596603296026,
+     "zho_Hans": 13.7966620610014,
+     "swh_Latn": 33.092587250163206,
+     "ben_Beng": 89.01620175164878
+    },
+    "regret_pp": {
+     "eng_Latn": 0.0,
+     "kor_Hang": 84.89118762221435,
+     "zho_Hans": 9.556832430491806,
+     "swh_Latn": 33.14006507726582,
+     "ben_Beng": 87.68640562875648
+    },
+    "regret_pp_2dp": {
+     "EN": 0.0,
+     "KO": 84.89,
+     "ZH": 9.56,
+     "SW": 33.14,
+     "BN": 87.69
+    },
+    "max_regret_pp": 87.68640562875648,
+    "max_regret_lang": "BN",
+    "mean_regret_pp": 43.05489815174569
+   },
+   "korean_only": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 12.677010597787882,
+     "kor_Hang": 3.864778410745906,
+     "zho_Hans": 12.684218466388868,
+     "swh_Latn": 38.52135263185432,
+     "ben_Beng": 25.2379662499327
+    },
+    "regret_pp": {
+     "eng_Latn": 5.397789443870201,
+     "kor_Hang": 0.0,
+     "zho_Hans": 8.444388835879273,
+     "swh_Latn": 38.56883045895693,
+     "ben_Beng": 23.9081701270404
+    },
+    "regret_pp_2dp": {
+     "EN": 5.4,
+     "KO": 0.0,
+     "ZH": 8.44,
+     "SW": 38.57,
+     "BN": 23.91
+    },
+    "max_regret_pp": 38.56883045895693,
+    "max_regret_lang": "SW",
+    "mean_regret_pp": 15.263835773149362
+   },
+   "chinese_only": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 10.286903761204506,
+     "kor_Hang": 79.27884764252475,
+     "zho_Hans": 4.239829630509595,
+     "swh_Latn": 35.09971550257169,
+     "ben_Beng": 87.41046704600272
+    },
+    "regret_pp": {
+     "eng_Latn": 3.0076826072868252,
+     "kor_Hang": 75.41406923177885,
+     "zho_Hans": 0.0,
+     "swh_Latn": 35.1471933296743,
+     "ben_Beng": 86.08067092311042
+    },
+    "regret_pp_2dp": {
+     "EN": 3.01,
+     "KO": 75.41,
+     "ZH": 0.0,
+     "SW": 35.15,
+     "BN": 86.08
+    },
+    "max_regret_pp": 86.08067092311042,
+    "max_regret_lang": "BN",
+    "mean_regret_pp": 39.92992321837008
+   },
+   "swahili_only": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 12.829926386732422,
+     "kor_Hang": 66.65154619422803,
+     "zho_Hans": 15.199759541227934,
+     "swh_Latn": -0.047477827102608096,
+     "ben_Beng": 75.05539292159922
+    },
+    "regret_pp": {
+     "eng_Latn": 5.5507052328147415,
+     "kor_Hang": 62.78676778348213,
+     "zho_Hans": 10.959929910718339,
+     "swh_Latn": 0.0,
+     "ben_Beng": 73.72559679870692
+    },
+    "regret_pp_2dp": {
+     "EN": 5.55,
+     "KO": 62.79,
+     "ZH": 10.96,
+     "SW": 0.0,
+     "BN": 73.73
+    },
+    "max_regret_pp": 73.72559679870692,
+    "max_regret_lang": "BN",
+    "mean_regret_pp": 30.60459994514442
+   },
+   "bengali_only": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 17.17309482483455,
+     "kor_Hang": 23.907642247989543,
+     "zho_Hans": 18.312821318961664,
+     "swh_Latn": 35.2996364003093,
+     "ben_Beng": 1.3297961228923016
+    },
+    "regret_pp": {
+     "eng_Latn": 9.893873670916868,
+     "kor_Hang": 20.042863837243637,
+     "zho_Hans": 14.072991688452069,
+     "swh_Latn": 35.347114227411915,
+     "ben_Beng": 0.0
+    },
+    "regret_pp_2dp": {
+     "EN": 9.89,
+     "KO": 20.04,
+     "ZH": 14.07,
+     "SW": 35.35,
+     "BN": 0.0
+    },
+    "max_regret_pp": 35.347114227411915,
+    "max_regret_lang": "SW",
+    "mean_regret_pp": 15.871368684804898
+   },
+   "mixed_5lang": {
+    "dbpb_pct_mean": {
+     "eng_Latn": 9.293662186686399,
+     "kor_Hang": 5.364425566922523,
+     "zho_Hans": 7.101541515916783,
+     "swh_Latn": 2.8339159070573348,
+     "ben_Beng": 2.897246596800455
+    },
+    "regret_pp": {
+     "eng_Latn": 2.014441032768718,
+     "kor_Hang": 1.499647156176617,
+     "zho_Hans": 2.861711885407188,
+     "swh_Latn": 2.8813937341599427,
+     "ben_Beng": 1.5674504739081532
+    },
+    "regret_pp_2dp": {
+     "EN": 2.01,
+     "KO": 1.5,
+     "ZH": 2.86,
+     "SW": 2.88,
+     "BN": 1.57
+    },
+    "max_regret_pp": 2.8813937341599427,
+    "max_regret_lang": "SW",
+    "mean_regret_pp": 2.164928856484124
+   }
+  },
+  "balanced_row_check_vs_body": {
+   "EN": {
+    "body": 2.01,
+    "computed_2dp": 2.01,
+    "computed_raw": 2.014441032768718,
+    "match": true
+   },
+   "KO": {
+    "body": 1.5,
+    "computed_2dp": 1.5,
+    "computed_raw": 1.499647156176617,
+    "match": true
+   },
+   "ZH": {
+    "body": 2.86,
+    "computed_2dp": 2.86,
+    "computed_raw": 2.861711885407188,
+    "match": true
+   },
+   "SW": {
+    "body": 2.88,
+    "computed_2dp": 2.88,
+    "computed_raw": 2.8813937341599427,
+    "match": true
+   },
+   "BN": {
+    "body": 1.57,
+    "computed_2dp": 1.57,
+    "computed_raw": 1.5674504739081532,
+    "match": true
+   }
+  },
+  "balanced_row_all_match": true
+ },
+ "axis2_worst_language": {
+  "english_only": {
+   "worst_lang": "BN",
+   "worst_dbpb_pct": 89.01620175164878,
+   "worst_dbpb_pct_2dp": 89.02,
+   "per_seed_worst_lang": [
+    "BN",
+    "BN",
+    "KO"
+   ],
+   "worst_lang_seed_consistent": false,
+   "per_seed_worst_value": [
+    89.73056747256616,
+    87.09911376017759,
+    92.20493222468855
+   ]
+  },
+  "korean_only": {
+   "worst_lang": "SW",
+   "worst_dbpb_pct": 38.52135263185432,
+   "worst_dbpb_pct_2dp": 38.52,
+   "per_seed_worst_lang": [
+    "SW",
+    "SW",
+    "SW"
+   ],
+   "worst_lang_seed_consistent": true,
+   "per_seed_worst_value": [
+    39.83147205663775,
+    37.29916819463153,
+    38.43341764429369
+   ]
+  },
+  "chinese_only": {
+   "worst_lang": "BN",
+   "worst_dbpb_pct": 87.41046704600272,
+   "worst_dbpb_pct_2dp": 87.41,
+   "per_seed_worst_lang": [
+    "BN",
+    "BN",
+    "BN"
+   ],
+   "worst_lang_seed_consistent": true,
+   "per_seed_worst_value": [
+    83.70417563315755,
+    88.46890877487219,
+    90.05831672997842
+   ]
+  },
+  "swahili_only": {
+   "worst_lang": "BN",
+   "worst_dbpb_pct": 75.05539292159922,
+   "worst_dbpb_pct_2dp": 75.06,
+   "per_seed_worst_lang": [
+    "BN",
+    "BN",
+    "BN"
+   ],
+   "worst_lang_seed_consistent": true,
+   "per_seed_worst_value": [
+    73.43053494220963,
+    74.9973300015353,
+    76.73831382105276
+   ]
+  },
+  "bengali_only": {
+   "worst_lang": "SW",
+   "worst_dbpb_pct": 35.2996364003093,
+   "worst_dbpb_pct_2dp": 35.3,
+   "per_seed_worst_lang": [
+    "SW",
+    "SW",
+    "SW"
+   ],
+   "worst_lang_seed_consistent": true,
+   "per_seed_worst_value": [
+    35.4283186271869,
+    34.80363775750461,
+    35.666952816236396
+   ]
+  },
+  "mixed_5lang": {
+   "worst_lang": "EN",
+   "worst_dbpb_pct": 9.293662186686399,
+   "worst_dbpb_pct_2dp": 9.29,
+   "per_seed_worst_lang": [
+    "EN",
+    "EN",
+    "EN"
+   ],
+   "worst_lang_seed_consistent": true,
+   "per_seed_worst_value": [
+    8.63081153427807,
+    9.715640763276912,
+    9.534534262504213
+   ]
+  }
+ },
+ "axis3_sib200_collapse": {
+  "note": "18 runs = 6 conditions x 3 seeds; 30 condition-language cells; 90 condition-language-seed cells. The request's '18 cells' figure corresponds to the 18 RUNS, not to cells -- the cell grid is 30 (or 90 counting seeds). Both counts are given below so the author can pick.",
+  "totals": {
+   "runs": 18,
+   "condition_language_cells": 30,
+   "condition_language_seed_cells": 90
+  },
+  "rule": "top-label fraction > 0.9 OR acc < 0.25",
+  "rule_selfcheck_all_agree": true,
+  "per_condition": {
+   "english_only": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.784,
+       0.799,
+       0.721
+      ],
+      "per_seed_top_label_frac": [
+       0.24,
+       0.26,
+       0.3
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.387,
+       0.5,
+       0.377
+      ],
+      "per_seed_top_label_frac": [
+       0.54,
+       0.33,
+       0.54
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.794,
+       0.809,
+       0.721
+      ],
+      "per_seed_top_label_frac": [
+       0.21,
+       0.28,
+       0.32
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.25,
+       0.363,
+       0.25
+      ],
+      "per_seed_top_label_frac": [
+       0.49,
+       0.34,
+       0.56
+      ],
+      "cell_class": "clean"
+     },
+     "BN": {
+      "n_collapsed_seeds": 3,
+      "of": 3,
+      "label": "3/3",
+      "per_seed_acc": [
+       0.093,
+       0.108,
+       0.186
+      ],
+      "per_seed_top_label_frac": [
+       0.94,
+       0.88,
+       0.55
+      ],
+      "cell_class": "full"
+     }
+    },
+    "n_full_collapse_cells": 1,
+    "n_partial_collapse_cells": 0,
+    "n_clean_cells": 4,
+    "n_collapsed_seed_cells_of_15": 3
+   },
+   "korean_only": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.618,
+       0.608,
+       0.657
+      ],
+      "per_seed_top_label_frac": [
+       0.49,
+       0.5,
+       0.42
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.51,
+       0.515,
+       0.549
+      ],
+      "per_seed_top_label_frac": [
+       0.61,
+       0.6,
+       0.57
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.686,
+       0.711,
+       0.701
+      ],
+      "per_seed_top_label_frac": [
+       0.42,
+       0.35,
+       0.34
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 1,
+      "of": 3,
+      "label": "1/3",
+      "per_seed_acc": [
+       0.299,
+       0.24,
+       0.275
+      ],
+      "per_seed_top_label_frac": [
+       0.75,
+       0.48,
+       0.45
+      ],
+      "cell_class": "partial"
+     },
+     "BN": {
+      "n_collapsed_seeds": 1,
+      "of": 3,
+      "label": "1/3",
+      "per_seed_acc": [
+       0.289,
+       0.27,
+       0.23
+      ],
+      "per_seed_top_label_frac": [
+       0.72,
+       0.78,
+       0.93
+      ],
+      "cell_class": "partial"
+     }
+    },
+    "n_full_collapse_cells": 0,
+    "n_partial_collapse_cells": 2,
+    "n_clean_cells": 3,
+    "n_collapsed_seed_cells_of_15": 2
+   },
+   "chinese_only": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.721,
+       0.775,
+       0.735
+      ],
+      "per_seed_top_label_frac": [
+       0.2,
+       0.21,
+       0.36
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.397,
+       0.402,
+       0.373
+      ],
+      "per_seed_top_label_frac": [
+       0.55,
+       0.49,
+       0.6
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.77,
+       0.779,
+       0.74
+      ],
+      "per_seed_top_label_frac": [
+       0.22,
+       0.28,
+       0.35
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 2,
+      "of": 3,
+      "label": "2/3",
+      "per_seed_acc": [
+       0.186,
+       0.27,
+       0.23
+      ],
+      "per_seed_top_label_frac": [
+       0.75,
+       0.53,
+       0.57
+      ],
+      "cell_class": "partial"
+     },
+     "BN": {
+      "n_collapsed_seeds": 3,
+      "of": 3,
+      "label": "3/3",
+      "per_seed_acc": [
+       0.088,
+       0.108,
+       0.221
+      ],
+      "per_seed_top_label_frac": [
+       0.99,
+       0.95,
+       0.77
+      ],
+      "cell_class": "full"
+     }
+    },
+    "n_full_collapse_cells": 1,
+    "n_partial_collapse_cells": 1,
+    "n_clean_cells": 3,
+    "n_collapsed_seed_cells_of_15": 5
+   },
+   "swahili_only": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.623,
+       0.681,
+       0.554
+      ],
+      "per_seed_top_label_frac": [
+       0.31,
+       0.21,
+       0.42
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.377,
+       0.461,
+       0.328
+      ],
+      "per_seed_top_label_frac": [
+       0.37,
+       0.37,
+       0.47
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.598,
+       0.706,
+       0.667
+      ],
+      "per_seed_top_label_frac": [
+       0.27,
+       0.18,
+       0.2
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.338,
+       0.328,
+       0.368
+      ],
+      "per_seed_top_label_frac": [
+       0.32,
+       0.45,
+       0.5
+      ],
+      "cell_class": "clean"
+     },
+     "BN": {
+      "n_collapsed_seeds": 3,
+      "of": 3,
+      "label": "3/3",
+      "per_seed_acc": [
+       0.088,
+       0.123,
+       0.093
+      ],
+      "per_seed_top_label_frac": [
+       0.96,
+       0.93,
+       0.99
+      ],
+      "cell_class": "full"
+     }
+    },
+    "n_full_collapse_cells": 1,
+    "n_partial_collapse_cells": 0,
+    "n_clean_cells": 4,
+    "n_collapsed_seed_cells_of_15": 3
+   },
+   "bengali_only": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.407,
+       0.681,
+       0.505
+      ],
+      "per_seed_top_label_frac": [
+       0.43,
+       0.22,
+       0.51
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.358,
+       0.652,
+       0.534
+      ],
+      "per_seed_top_label_frac": [
+       0.44,
+       0.18,
+       0.38
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.564,
+       0.765,
+       0.603
+      ],
+      "per_seed_top_label_frac": [
+       0.26,
+       0.26,
+       0.32
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 2,
+      "of": 3,
+      "label": "2/3",
+      "per_seed_acc": [
+       0.191,
+       0.255,
+       0.225
+      ],
+      "per_seed_top_label_frac": [
+       0.66,
+       0.61,
+       0.73
+      ],
+      "cell_class": "partial"
+     },
+     "BN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.27,
+       0.52,
+       0.392
+      ],
+      "per_seed_top_label_frac": [
+       0.42,
+       0.34,
+       0.41
+      ],
+      "cell_class": "clean"
+     }
+    },
+    "n_full_collapse_cells": 0,
+    "n_partial_collapse_cells": 1,
+    "n_clean_cells": 4,
+    "n_collapsed_seed_cells_of_15": 2
+   },
+   "mixed_5lang": {
+    "per_lang": {
+     "EN": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.681,
+       0.637,
+       0.662
+      ],
+      "per_seed_top_label_frac": [
+       0.35,
+       0.35,
+       0.34
+      ],
+      "cell_class": "clean"
+     },
+     "KO": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.574,
+       0.598,
+       0.623
+      ],
+      "per_seed_top_label_frac": [
+       0.32,
+       0.25,
+       0.26
+      ],
+      "cell_class": "clean"
+     },
+     "ZH": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.721,
+       0.652,
+       0.696
+      ],
+      "per_seed_top_label_frac": [
+       0.26,
+       0.3,
+       0.26
+      ],
+      "cell_class": "clean"
+     },
+     "SW": {
+      "n_collapsed_seeds": 0,
+      "of": 3,
+      "label": "0/3",
+      "per_seed_acc": [
+       0.368,
+       0.377,
+       0.363
+      ],
+      "per_seed_top_label_frac": [
+       0.33,
+       0.43,
+       0.49
+      ],
+      "cell_class": "clean"
+     },
+     "BN": {
+      "n_collapsed_seeds": 1,
+      "of": 3,
+      "label": "1/3",
+      "per_seed_acc": [
+       0.221,
+       0.324,
+       0.328
+      ],
+      "per_seed_top_label_frac": [
+       0.72,
+       0.54,
+       0.52
+      ],
+      "cell_class": "partial"
+     }
+    },
+    "n_full_collapse_cells": 0,
+    "n_partial_collapse_cells": 1,
+    "n_clean_cells": 4,
+    "n_collapsed_seed_cells_of_15": 1
+   }
+  }
+ },
+ "axis4_belebele_macro_retention": {
+  "note": "Belebele coverage is INCOMPLETE: only 4 of 6 conditions exist, and 3 of those 4 are OFF-only (no pruning arm) and evaluated on EN/KO/ZH only. SW/BN are excluded for two different reasons -- in korean_only they were run and flagged at chance by phase1_belebele_floor_check.py; in the three off-only runs they were never evaluated at all.",
+  "exclusion_rule": "macro = mean over non-flagged languages. korean_only: swh_Latn and ben_Beng flagged at chance (retention 0.906 / 0.977 against a 25% chance floor) and dropped. mixed_5lang / english_only / chinese_only: only eng_Latn, kor_Hang, zho_Hans present.",
+  "comparability_warning": "korean_only's macro is over 3 non-flagged of 5 evaluated languages; the other three are over 3 of 3 evaluated. The macro values are on the same EN/KO/ZH language set, so they ARE comparable -- but korean_only is the only row with a pruning-ON column.",
+  "per_condition": {
+   "mixed_5lang": {
+    "status": "present",
+    "path": "results/deepseek/phase1_belebele_gate_mixed_5lang_offonly_result.json",
+    "pp_ratio": null,
+    "off_only": true,
+    "langs_evaluated": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "langs_flagged_at_chance_excluded": [],
+    "langs_in_macro": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "per_language_retention_off": {
+     "eng_Latn": 0.7015873015873016,
+     "kor_Hang": 0.888888888888889,
+     "zho_Hans": 0.7801418439716312
+    },
+    "per_language_retention_on": {
+     "eng_Latn": null,
+     "kor_Hang": null,
+     "zho_Hans": null
+    },
+    "macro_off": 0.7902060114826073,
+    "macro_on": null,
+    "macro_off_3dp": 0.79,
+    "worst_off": 0.7015873015873016,
+    "worst_on": null,
+    "n_seeds": {
+     "eng_Latn": 3,
+     "kor_Hang": 3,
+     "zho_Hans": 3
+    }
+   },
+   "english_only": {
+    "status": "present",
+    "path": "results/deepseek/phase1_belebele_gate_english_only_offonly_result.json",
+    "pp_ratio": null,
+    "off_only": true,
+    "langs_evaluated": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "langs_flagged_at_chance_excluded": [],
+    "langs_in_macro": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "per_language_retention_off": {
+     "eng_Latn": 0.6793650793650793,
+     "kor_Hang": 0.6759259259259259,
+     "zho_Hans": 0.7517730496453902
+    },
+    "per_language_retention_on": {
+     "eng_Latn": null,
+     "kor_Hang": null,
+     "zho_Hans": null
+    },
+    "macro_off": 0.7023546849787984,
+    "macro_on": null,
+    "macro_off_3dp": 0.702,
+    "worst_off": 0.6759259259259259,
+    "worst_on": null,
+    "n_seeds": {
+     "eng_Latn": 3,
+     "kor_Hang": 3,
+     "zho_Hans": 3
+    }
+   },
+   "chinese_only": {
+    "status": "present",
+    "path": "results/deepseek/phase1_belebele_gate_chinese_only_offonly_result.json",
+    "pp_ratio": null,
+    "off_only": true,
+    "langs_evaluated": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "langs_flagged_at_chance_excluded": [],
+    "langs_in_macro": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "per_language_retention_off": {
+     "eng_Latn": 0.6158730158730158,
+     "kor_Hang": 0.6620370370370371,
+     "zho_Hans": 0.6950354609929078
+    },
+    "per_language_retention_on": {
+     "eng_Latn": null,
+     "kor_Hang": null,
+     "zho_Hans": null
+    },
+    "macro_off": 0.6576485046343202,
+    "macro_on": null,
+    "macro_off_3dp": 0.658,
+    "worst_off": 0.6158730158730158,
+    "worst_on": null,
+    "n_seeds": {
+     "eng_Latn": 3,
+     "kor_Hang": 3,
+     "zho_Hans": 3
+    }
+   },
+   "korean_only": {
+    "status": "present",
+    "path": "results/deepseek/phase1_belebele_gate_korean_only_result.json",
+    "pp_ratio": 0.2,
+    "off_only": false,
+    "langs_evaluated": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans",
+     "swh_Latn",
+     "ben_Beng"
+    ],
+    "langs_flagged_at_chance_excluded": [
+     "swh_Latn",
+     "ben_Beng"
+    ],
+    "langs_in_macro": [
+     "eng_Latn",
+     "kor_Hang",
+     "zho_Hans"
+    ],
+    "per_language_retention_off": {
+     "eng_Latn": 0.6253968253968254,
+     "kor_Hang": 0.8194444444444445,
+     "zho_Hans": 0.6631205673758865,
+     "swh_Latn": 0.9064327485380118,
+     "ben_Beng": 0.976608187134503
+    },
+    "per_language_retention_on": {
+     "eng_Latn": 0.6031746031746031,
+     "kor_Hang": 0.7083333333333334,
+     "zho_Hans": 0.6595744680851064,
+     "swh_Latn": 0.8479532163742691,
+     "ben_Beng": 0.9649122807017544
+    },
+    "macro_off": 0.7026539457390522,
+    "macro_on": 0.657027468197681,
+    "macro_off_3dp": 0.703,
+    "worst_off": 0.6253968253968254,
+    "worst_on": 0.6031746031746031,
+    "n_seeds": {
+     "eng_Latn": 3,
+     "kor_Hang": 3,
+     "zho_Hans": 3,
+     "swh_Latn": 3,
+     "ben_Beng": 3
+    }
+   },
+   "swahili_only": {
+    "status": "MISSING",
+    "note": "no Belebele gate result for this condition; Belebele was never run for it"
+   },
+   "bengali_only": {
+    "status": "MISSING",
+    "note": "no Belebele gate result for this condition; Belebele was never run for it"
+   }
+  },
+  "best_condition_by_macro_off": "mixed_5lang",
+  "balanced_is_best": true,
+  "balanced_macro_off": 0.7902060114826073
+ }
+}

@@ -1,0 +1,85 @@
+{
+  "metric": "dbpb_pct = 100 * (bpb / baseline_bpb - 1); effects in %p",
+  "registration": "logs/stage2x2_sw_0802.log MINI-PREREGISTRATION, fixed 2026-08-02T06:03:27Z",
+  "design": "Fisher x Scale 2x2 on EN/SW, whitening ON, delta_ratio=0.8, merge=fisher, FLORES devtest 60 sentences x 5 langs, batch=8, seeds 0/1/2",
+  "noise_floor": null,
+  "noise_floor_note": "placebo Fisher artefacts deleted 2026-08-02 (logs/item09_placebo_0802.log STEP 3); no equivalent floor is computable for this pair. The headline Swahili 0.91%p floor is from a DIFFERENT level of analysis and is not a floor for this 2x2.",
+  "primary_swh_Latn": {
+    "lang": "swh_Latn",
+    "cells_dbpb_pct": {
+      "fisher=english_only,scale=english_only,seed0": 34.776191722743086,
+      "fisher=english_only,scale=english_only,seed1": 30.24840795274537,
+      "fisher=english_only,scale=english_only,seed2": 34.25316207500116,
+      "fisher=english_only,scale=swahili_only,seed0": 0.7603720119919943,
+      "fisher=english_only,scale=swahili_only,seed1": 0.992635804088704,
+      "fisher=english_only,scale=swahili_only,seed2": 0.5645916916931393,
+      "fisher=swahili_only,scale=english_only,seed0": 15.85191769793206,
+      "fisher=swahili_only,scale=english_only,seed1": 14.977445725456695,
+      "fisher=swahili_only,scale=english_only,seed2": 15.196059621822577,
+      "fisher=swahili_only,scale=swahili_only,seed0": 0.017746379170624493,
+      "fisher=swahili_only,scale=swahili_only,seed1": 0.06420603738439556,
+      "fisher=swahili_only,scale=swahili_only,seed2": -0.22438589786284435
+    },
+    "per_seed_scale_effect_pp": [
+      24.92499551475626,
+      22.084505918364485,
+      24.55450795149672
+    ],
+    "per_seed_fisher_effect_pp": [
+      9.833449828816198,
+      8.099695996996491,
+      9.923040021367282
+    ],
+    "scale_effect_pp": 23.85466979487249,
+    "fisher_effect_pp": 9.285395282393324,
+    "scale_effect_sign_consistent": true,
+    "fisher_effect_sign_consistent": true,
+    "ratio_scale_over_fisher": 2.5690526972077286,
+    "per_cell_seed_spread_pp": {
+      "fisher=english_only,scale=english_only": 4.527783769997715,
+      "fisher=english_only,scale=swahili_only": 0.4280441123955647,
+      "fisher=swahili_only,scale=english_only": 0.8744719724753658,
+      "fisher=swahili_only,scale=swahili_only": 0.2885919352472399
+    },
+    "verdict": "MIXED"
+  },
+  "secondary_eng_Latn": {
+    "lang": "eng_Latn",
+    "cells_dbpb_pct": {
+      "fisher=english_only,scale=english_only,seed0": 7.690521426360664,
+      "fisher=english_only,scale=english_only,seed1": 6.914989783706371,
+      "fisher=english_only,scale=english_only,seed2": 7.232152251686008,
+      "fisher=english_only,scale=swahili_only,seed0": 10.416386209771545,
+      "fisher=english_only,scale=swahili_only,seed1": 10.567923866766904,
+      "fisher=english_only,scale=swahili_only,seed2": 10.289106511001457,
+      "fisher=swahili_only,scale=english_only,seed0": 8.598307026866681,
+      "fisher=swahili_only,scale=english_only,seed1": 8.002048754713421,
+      "fisher=swahili_only,scale=english_only,seed2": 8.330719010237143,
+      "fisher=swahili_only,scale=swahili_only,seed0": 12.702831462971087,
+      "fisher=swahili_only,scale=swahili_only,seed1": 13.05426470209139,
+      "fisher=swahili_only,scale=swahili_only,seed2": 12.732682995134791
+    },
+    "per_seed_scale_effect_pp": [
+      -3.4151946097576436,
+      -4.352575015219251,
+      -3.7294591221065483
+    ],
+    "per_seed_fisher_effect_pp": [
+      -1.5971154268527799,
+      -1.7866999031657675,
+      -1.7710716213422346
+    ],
+    "scale_effect_pp": -3.8324095823611475,
+    "fisher_effect_pp": -1.7182956504535938,
+    "scale_effect_sign_consistent": true,
+    "fisher_effect_sign_consistent": true,
+    "ratio_scale_over_fisher": 2.2303551669641206,
+    "per_cell_seed_spread_pp": {
+      "fisher=english_only,scale=english_only": 0.7755316426542924,
+      "fisher=english_only,scale=swahili_only": 0.2788173557654474,
+      "fisher=swahili_only,scale=english_only": 0.5962582721532605,
+      "fisher=swahili_only,scale=swahili_only": 0.35143323912030233
+    },
+    "verdict": "MIXED"
+  }
+}

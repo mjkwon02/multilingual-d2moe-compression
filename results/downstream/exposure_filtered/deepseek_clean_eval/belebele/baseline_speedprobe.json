@@ -1,0 +1,53 @@
+{
+  "task": "belebele",
+  "model": "baseline",
+  "condition": "baseline",
+  "seed": null,
+  "pp_ratio": null,
+  "limit": 200,
+  "num_fewshot": 5,
+  "batch_size": 1,
+  "langs": [
+    "eng_Latn"
+  ],
+  "lm_eval_source": "<repo>/D2MoE/lm-evaluation-harness",
+  "clean_subset_source": "analysis/data_audit_0916/clean_eval_ids.json",
+  "clean_note": "audit clean = 549/900 over the FULL split; this cell evaluated limit=200, so the usable clean subset is the intersection (99 questions / 52 passages). Exposure removed at passage granularity.",
+  "stored_file_for_reproduction_check": "results/deepseek/baseline/fewshot_5/eval_belebele.json",
+  "seconds_eval": 134.22024202346802,
+  "seconds_load": 42.82302951812744,
+  "seconds_merge": 0.0,
+  "results": {
+    "eng_Latn": {
+      "full": {
+        "n": 200,
+        "acc": 0.53,
+        "n_passages": 112,
+        "gold_distribution": {
+          "1": 51,
+          "2": 50,
+          "3": 55,
+          "4": 44
+        }
+      },
+      "clean": {
+        "n": 99,
+        "acc": 0.5656565656565656,
+        "n_passages": 52,
+        "gold_distribution": {
+          "1": 26,
+          "2": 28,
+          "3": 26,
+          "4": 19
+        }
+      },
+      "reported_acc_from_harness": 0.53,
+      "reproduction_check": {
+        "stored_acc": 0.525,
+        "rerun_full_acc": 0.53,
+        "abs_diff": 0.0050000000000000044,
+        "reproduced": false
+      }
+    }
+  }
+}

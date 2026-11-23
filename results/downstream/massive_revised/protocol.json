@@ -1,0 +1,233 @@
+{
+  "protocol_id": "massive_intent60_base_lm_revised200_v1",
+  "revision_date": "2026-09-16",
+  "supersedes": "massive_intent60_base_lm_v1",
+  "question": "Does Balanced-character calibration show the same performance preservation and per-language trade-off against English-only on MASSIVE, a downstream source independent of FLORES?",
+  "dataset": {
+    "dataset": "MASSIVE (FitzGerald et al. 2022, arXiv:2204.08582)",
+    "source_url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz",
+    "tarball_sha256": "4cba5faa11c71437928e17cb1b9b3d8b8e727e7ea363a3a9a8045e19c0491577",
+    "version": "1.1",
+    "license": "CC BY 4.0",
+    "homepage": "https://github.com/alexa/massive",
+    "label_set_provenance": "massive.py::_INTENTS @ AmazonScience/massive ff6bd8e4b27c3543e4f8fe2108f32bb95a6f8740"
+  },
+  "languages": {
+    "EN": {
+      "locale": "en-US",
+      "flores_code": "eng_Latn",
+      "own_language_condition": "english_only"
+    },
+    "ZH": {
+      "locale": "zh-CN",
+      "flores_code": "zho_Hans",
+      "own_language_condition": "chinese_only"
+    },
+    "KO": {
+      "locale": "ko-KR",
+      "flores_code": "kor_Hang",
+      "own_language_condition": "korean_only"
+    },
+    "SW": {
+      "locale": "sw-KE",
+      "flores_code": "swh_Latn",
+      "own_language_condition": "swahili_only"
+    },
+    "BN": {
+      "locale": "bn-BD",
+      "flores_code": "ben_Beng",
+      "own_language_condition": "bengali_only"
+    }
+  },
+  "language_order": [
+    "EN",
+    "ZH",
+    "KO",
+    "SW",
+    "BN"
+  ],
+  "labels": {
+    "n": 60,
+    "order": [
+      "alarm_query",
+      "alarm_remove",
+      "alarm_set",
+      "audio_volume_down",
+      "audio_volume_mute",
+      "audio_volume_other",
+      "audio_volume_up",
+      "calendar_query",
+      "calendar_remove",
+      "calendar_set",
+      "cooking_query",
+      "cooking_recipe",
+      "datetime_convert",
+      "datetime_query",
+      "email_addcontact",
+      "email_query",
+      "email_querycontact",
+      "email_sendemail",
+      "general_greet",
+      "general_joke",
+      "general_quirky",
+      "iot_cleaning",
+      "iot_coffee",
+      "iot_hue_lightchange",
+      "iot_hue_lightdim",
+      "iot_hue_lightoff",
+      "iot_hue_lighton",
+      "iot_hue_lightup",
+      "iot_wemo_off",
+      "iot_wemo_on",
+      "lists_createoradd",
+      "lists_query",
+      "lists_remove",
+      "music_dislikeness",
+      "music_likeness",
+      "music_query",
+      "music_settings",
+      "news_query",
+      "play_audiobook",
+      "play_game",
+      "play_music",
+      "play_podcasts",
+      "play_radio",
+      "qa_currency",
+      "qa_definition",
+      "qa_factoid",
+      "qa_maths",
+      "qa_stock",
+      "recommendation_events",
+      "recommendation_locations",
+      "recommendation_movies",
+      "social_post",
+      "social_query",
+      "takeaway_order",
+      "takeaway_query",
+      "transport_query",
+      "transport_taxi",
+      "transport_ticket",
+      "transport_traffic",
+      "weather_query"
+    ],
+    "surface_transform": "intent.replace('_', ' ')  [pre-registered; injective; no generated definitions]",
+    "all_candidates_scored": true
+  },
+  "label_surface_map_sha256": "6fce48286e075a6917e40c1d1e9b03832be21387590fc113f92b4accd543a385",
+  "prompts": {
+    "candidates": [
+      "P0",
+      "P8"
+    ],
+    "order": "P0 evaluated first; P8 only if P0 fails the baseline gate",
+    "P0_shared_prefix_sha256": "485dcb3ba8197a783cc55360483836fe7805b885d730b5e59b34f5e97f4ec3f2",
+    "P8_shared_prefix_sha256": "59c57c9766fc25c56329d1124cc87371033f29a36f6626880ffcd9ee6160c4ee",
+    "chat_template_applied": false
+  },
+  "scoring": {
+    "primary": "mean_token_logprob",
+    "primary_definition": "token-averaged conditional log-likelihood of the label completion, i.e. sum_t log p(c_t | prompt, c_<t) / n_completion_tokens",
+    "also_recorded": [
+      "sum_token_logprob",
+      "n_completion_tokens"
+    ],
+    "eos_policy": "EOS is NOT scored and is not appended to any candidate completion",
+    "context_tokens_scored": false,
+    "prediction_rule": "argmax over all 60 candidates of the primary score",
+    "frozen_note": "mean is the pre-registered primary. sum is recorded for transparency only and must not be promoted to primary after seeing results."
+  },
+  "grid": {
+    "baseline": "DeepSeek-MoE-16B base, uncompressed, once per language",
+    "conditions": {
+      "english_only": "English",
+      "mixed_5lang": "Balanced-character"
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "eval_languages": [
+      "EN",
+      "ZH",
+      "KO",
+      "SW",
+      "BN"
+    ],
+    "model_loads": "1 baseline + 6 compressed = 7",
+    "test_items_per_language": 200,
+    "total_item_scorings": 7000,
+    "compression": {
+      "delta_ratio": 0.8,
+      "share_ratio": 1.0,
+      "merge_method": "fisher",
+      "svd_scale": "own condition/seed (whitened SVD)",
+      "structured_pruning": "OFF",
+      "source": "existing Phase-1 stats only; no new calibration/Fisher/whitening"
+    },
+    "execution_order": [
+      "baseline",
+      "seed0: english_only -> mixed_5lang",
+      "seed1: english_only -> mixed_5lang",
+      "seed2: english_only -> mixed_5lang"
+    ],
+    "not_in_this_run": [
+      "Balanced-token",
+      "ZH/KO/SW/BN own-language",
+      "placebo arms",
+      "Qwen1.5-MoE",
+      "other delta_ratio",
+      "structured pruning on",
+      "new compression algorithms"
+    ]
+  },
+  "resources": {
+    "physical_gpus": [
+      2,
+      3
+    ],
+    "streams": 1,
+    "four_gpu_use": false,
+    "merge_serialized_by": "/tmp/phase1_merge_eval.lock (global; ~62GB CPU RAM per merge)"
+  },
+  "budget": {
+    "wall_clock_hours": 12,
+    "excludes": "time waiting for exclusive resources",
+    "validation_probe_pilot_hours_max": 2,
+    "gpu_hours_cap_equivalent": 24
+  },
+  "primary_metrics": {
+    "absolute_accuracy_pct": "per language x condition x seed",
+    "primary_contrast": "Balanced-character MINUS English, same seed, in pp",
+    "not_reported": "Balanced minus own-language (those models are not evaluated in this run)",
+    "macro_accuracy_and_worst_language": "over the same five languages, baseline in the same table",
+    "drop_pp_vs_baseline": true
+  },
+  "uncertainty": {
+    "paired_bootstrap_replicates": 2000,
+    "bootstrap_seed": 42,
+    "resampling_unit": "source IDs, resampled jointly across the 3 calibration seeds AND the 5 languages, preserving translation correspondence and model pairing",
+    "ci_meaning": "test-sampling uncertainty conditional on the three observed calibration seeds",
+    "seed_variability_reported_separately": "sample std (ddof=1) over 3 seeds",
+    "no_equivalence_claims": "a wide CI is reported as uncertain, never as equivalence"
+  },
+  "gate": {
+    "margin_over_majority_pp": 5.0,
+    "floor_risk_langs_to_hold": 3,
+    "uniform_chance": 0.016666666666666666,
+    "note": "operational cost-control criterion, not a significance test"
+  },
+  "secondary": [
+    "macro_f1_support",
+    "macro_f1_fixed60",
+    "label_support",
+    "top_label_share",
+    "predicted_label_entropy",
+    "confusion_matrix",
+    "retention (limited interpretation)"
+  ],
+  "explicitly_not_imported": [
+    "SIB-200 collapse threshold (7-way, ~25% floor)",
+    "FLORES placebo-derived noise floor (the audit shows the placebo non-overlap premise does not hold)"
+  ]
+}

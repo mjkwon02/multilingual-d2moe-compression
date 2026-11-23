@@ -1,0 +1,183 @@
+{
+  "flores": {
+    "eng_Latn": {
+      "n": 60,
+      "tokens": 1812,
+      "bytes": 8666,
+      "tokens_per_byte": 0.2090930071543965,
+      "scored_tokens_default": 1752,
+      "max_tokens": 74,
+      "max_batch_padded_len": 74,
+      "max_batch_fp32_logits_gib": 0.33507537841796875,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.3396034240722656,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "kor_Hang": {
+      "n": 60,
+      "tokens": 2979,
+      "bytes": 10222,
+      "tokens_per_byte": 0.29143024848366267,
+      "scored_tokens_default": 2919,
+      "max_tokens": 105,
+      "max_batch_padded_len": 105,
+      "max_batch_fp32_logits_gib": 0.4754447937011719,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.47997283935546875,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "zho_Hans": {
+      "n": 60,
+      "tokens": 1925,
+      "bytes": 8157,
+      "tokens_per_byte": 0.23599362510726982,
+      "scored_tokens_default": 1865,
+      "max_tokens": 75,
+      "max_batch_padded_len": 75,
+      "max_batch_fp32_logits_gib": 0.3396034240722656,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.3441314697265625,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "swh_Latn": {
+      "n": 60,
+      "tokens": 3497,
+      "bytes": 9104,
+      "tokens_per_byte": 0.3841168717047452,
+      "scored_tokens_default": 3437,
+      "max_tokens": 130,
+      "max_batch_padded_len": 130,
+      "max_batch_fp32_logits_gib": 0.5886459350585938,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.5931739807128906,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "ben_Beng": {
+      "n": 60,
+      "tokens": 9383,
+      "bytes": 23314,
+      "tokens_per_byte": 0.4024620399759801,
+      "scored_tokens_default": 9323,
+      "max_tokens": 321,
+      "max_batch_padded_len": 321,
+      "max_batch_fp32_logits_gib": 1.4535026550292969,
+      "max_batch_fp32_logits_gib_bos_prefixed": 1.4580307006835938,
+      "bos_id_used_for_sensitivity": 151643
+    }
+  },
+  "xlsum_ood": {
+    "eng_Latn": {
+      "n": 188,
+      "tokens": 10559,
+      "bytes": 50822,
+      "tokens_per_byte": 0.20776435401991264,
+      "scored_tokens_default": 10371,
+      "max_tokens": 83,
+      "max_batch_padded_len": 83,
+      "max_batch_fp32_logits_gib": 0.3758277893066406,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.3803558349609375,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "kor_Hang": {
+      "n": 80,
+      "tokens": 14420,
+      "bytes": 50935,
+      "tokens_per_byte": 0.28310591930892315,
+      "scored_tokens_default": 14340,
+      "max_tokens": 215,
+      "max_batch_padded_len": 215,
+      "max_batch_fp32_logits_gib": 0.9735298156738281,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.978057861328125,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "zho_Hans": {
+      "n": 78,
+      "tokens": 11919,
+      "bytes": 50972,
+      "tokens_per_byte": 0.23383426194773602,
+      "scored_tokens_default": 11841,
+      "max_tokens": 244,
+      "max_batch_padded_len": 244,
+      "max_batch_fp32_logits_gib": 1.1048431396484375,
+      "max_batch_fp32_logits_gib_bos_prefixed": 1.1093711853027344,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "swh_Latn": {
+      "n": 190,
+      "tokens": 18932,
+      "bytes": 50684,
+      "tokens_per_byte": 0.373530108120906,
+      "scored_tokens_default": 18742,
+      "max_tokens": 122,
+      "max_batch_padded_len": 122,
+      "max_batch_fp32_logits_gib": 0.5524215698242188,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.5569496154785156,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "ben_Beng": {
+      "n": 69,
+      "tokens": 20254,
+      "bytes": 50687,
+      "tokens_per_byte": 0.3995896383688125,
+      "scored_tokens_default": 20185,
+      "max_tokens": 324,
+      "max_batch_padded_len": 324,
+      "max_batch_fp32_logits_gib": 1.4670867919921875,
+      "max_batch_fp32_logits_gib_bos_prefixed": 1.4716148376464844,
+      "bos_id_used_for_sensitivity": 151643
+    }
+  },
+  "unseen": {
+    "arb_Arab": {
+      "n": 60,
+      "tokens": 2996,
+      "bytes": 13708,
+      "tokens_per_byte": 0.21855850598190837,
+      "scored_tokens_default": 2936,
+      "max_tokens": 113,
+      "max_batch_padded_len": 113,
+      "max_batch_fp32_logits_gib": 0.5116691589355469,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.5161972045898438,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "hin_Deva": {
+      "n": 60,
+      "tokens": 8139,
+      "bytes": 22592,
+      "tokens_per_byte": 0.360260269121813,
+      "scored_tokens_default": 8079,
+      "max_tokens": 271,
+      "max_batch_padded_len": 271,
+      "max_batch_fp32_logits_gib": 1.2271003723144531,
+      "max_batch_fp32_logits_gib_bos_prefixed": 1.23162841796875,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "tur_Latn": {
+      "n": 60,
+      "tokens": 2979,
+      "bytes": 9990,
+      "tokens_per_byte": 0.2981981981981982,
+      "scored_tokens_default": 2919,
+      "max_tokens": 103,
+      "max_batch_padded_len": 103,
+      "max_batch_fp32_logits_gib": 0.4663887023925781,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.470916748046875,
+      "bos_id_used_for_sensitivity": 151643
+    },
+    "rus_Cyrl": {
+      "n": 60,
+      "tokens": 3378,
+      "bytes": 17543,
+      "tokens_per_byte": 0.1925554352163256,
+      "scored_tokens_default": 3318,
+      "max_tokens": 144,
+      "max_batch_padded_len": 144,
+      "max_batch_fp32_logits_gib": 0.65203857421875,
+      "max_batch_fp32_logits_gib_bos_prefixed": 0.6565666198730469,
+      "bos_id_used_for_sensitivity": 151643
+    }
+  },
+  "tokenizer": {
+    "class": "Qwen2Tokenizer",
+    "bos_token": null,
+    "eos_token": "<|endoftext|>",
+    "pad_token": "<|endoftext|>",
+    "padding_side": "right"
+  }
+}

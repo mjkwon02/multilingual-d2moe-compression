@@ -1,0 +1,17 @@
+# Qwen1.5-MoE-A2.7B follow-up queue -- reduced plan B (user instruction 2026-09-17 ~18:10 KST).
+# 4 calibration conditions x seeds 0,1 = 8 cells: English, Korean, Bengali, Balanced-character.
+# Bengali chosen over Swahili for the low-resource slot; to use Swahili instead, replace
+# bengali_only with swahili_only below before that cell starts (re-read at every unit boundary).
+# Each cell = qwen15_run_condition.sh stages: FLORES bpb EN/ZH/KO/SW/BN (+ save + reload bit-identity check).
+# Excluded from this automatic run: seed 2, chinese_only/swahili_only, placebo (15 cells), downstream (19 units), 2x2.
+# english_only seed0 is already complete and validated -> reused, not re-run.
+# Previous full-plan queue kept as queue.full_plan_20260917.tsv (not used).
+# kind<TAB>condition<TAB>seed
+cell	english_only	0
+cell	korean_only	0
+cell	mixed_5lang	0
+cell	bengali_only	0
+cell	english_only	1
+cell	korean_only	1
+cell	mixed_5lang	1
+cell	bengali_only	1

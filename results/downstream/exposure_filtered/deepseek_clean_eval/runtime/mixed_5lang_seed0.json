@@ -1,0 +1,46 @@
+{
+  "model": "mixed_5lang_seed0",
+  "config": {
+    "condition": "mixed_5lang",
+    "seed": 0,
+    "dir": "results/deepseek/mixed_5lang/seed0",
+    "delta_ratio": 0.8,
+    "structured_pruning": "OFF at merge time",
+    "scale_condition": "mixed_5lang",
+    "scale_seed": 0,
+    "fisher_processed.pt_head_sha256": "658c6d8f73d60b89",
+    "fisher_processed.pt_bytes": 29898689570,
+    "svd_scale_processed.pt_head_sha256": "3ecae188a0654054",
+    "svd_scale_processed.pt_bytes": 35844132530,
+    "expert_freq_available": [
+      "deepseek_wikitext_2000_expert_frequencies.json"
+    ],
+    "expert_freq_used_by_glob_order": "deepseek_wikitext_2000_expert_frequencies.json"
+  },
+  "tasks_requested": {
+    "sib": true,
+    "belebele": true,
+    "belebele_pruned": false
+  },
+  "already_done_skipped": {
+    "sib": false,
+    "belebele": false,
+    "belebele_pruned": false
+  },
+  "started_utc": "2026-09-16T07:37:28Z",
+  "seconds_load": 146.37897086143494,
+  "device_map_unique": [
+    0,
+    1
+  ],
+  "seconds_wait_for_lock": 4.601478576660156e-05,
+  "seconds_merge": 1401.0795431137085,
+  "seconds_sib": 399.31304693222046,
+  "seconds_belebele": 569.9439225196838,
+  "finished_utc": "2026-09-16T08:19:25Z",
+  "peak_gpu_bytes": {
+    "0": 17249639936,
+    "1": 20488752640
+  },
+  "peak_host_rss_bytes": 68919259136
+}

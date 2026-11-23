@@ -1,0 +1,27 @@
+legacy_path	public_path	note
+<legacy-repo>/<project>/scripts/*.py (분석·평가·압축·figure 107개)	scripts/{calibration,compression,evaluation,analysis,figures,infra}/	역할별 분류
+<legacy-repo>/<project>/scripts/{data_utils,figure_style,moe_hooks,disagreement_common,00_config}.py	src/multilingual_d2moe/	00_config→toy_config
+<legacy-repo>/<project>/scripts/*.sh + run drivers(비공개)	(private) run_scripts/	호스트 종속 큐 로직
+<legacy-repo>/<project>/configs/, data/*.yaml	configs/	environment.txt→requirements/environment.md(호스트명 제거)
+<legacy-repo>/<project>/data/ood_xlsum/	data/ood_xlsum/	SHA256 manifest 포함
+<legacy-repo>/<project>/analysis/data_audit_0916/clean_eval_ids.json	data/splits/	
+<legacy-repo>/<project>/results/massive/massive_demo_ids.json	data/splits/	
+/mnt/HDD/.../d2moe_results/phase1/ 소형 431파일	results/deepseek/	텐서 제외 미러; *_only_b→*_only_placebo
+/mnt/HDD/.../d2moe_results/{scan_disagreement_experts,fisher_pilot_a,deepseek}/ 소형	results/deepseek/aux/	
+/mnt/HDD/.../d2moe_results/qwen15_moe_a2.7b/ 소형 314파일	results/qwen/	텐서·safetensors 제외
+<legacy-repo>/<project>/paper_fill/20260802/	results/source_data/tables_main_submission/	
+<legacy-repo>/<project>/paper_fill/20260916_table2_accuracy/	results/downstream/exposure_filtered/sib200_accuracy_tables/	
+<legacy-repo>/<project>/paper_fill/20260917_belebele_clean/	results/downstream/exposure_filtered/belebele_tables/	
+<legacy-repo>/<project>/analysis/clean_eval_0916/	results/downstream/exposure_filtered/deepseek_clean_eval/	
+<legacy-repo>/<project>/analysis/massive_0916_revised/	results/downstream/massive_revised/	RESUME.md는 private으로
+<legacy-repo>/<project>/analysis/fisher_damage_pairs_0916/	results/source_data/fisher_damage_pairs/	
+<legacy-repo>/<project>/analysis/data_audit_0916/	results/source_data/data_exposure_audit/	overlap_evidence.jsonl→.gz(104MB→4.7MB); rebuttal 문단 초안은 private
+<legacy-repo>/<project>/results/ KEEP 목록(whitening/table/placebo/calib_token 등)	results/source_data/	placebo 4종은 유일본(provenance 문서 참조)
+<project>/results/synthetic_sweep/idea1_diagnosis/{mass_diagnosis,relfrob_mixed_vs_lang}.csv	results/source_data/	git 커밋 a51215d로도 보존
+agg_matrices/*.pt (5.3GB, REVIEW 유지)	results/source_data/agg_covariance_spectra.npz (25MB 신규 추출)	전체 고유값+top16 고유벡터; Panel-B 상수 재현 검증됨
+<legacy-repo>/<project>/figures/	figures/	재생성 검증됨
+<legacy-repo>/<project>/00_docs/, 01_plans/, 02_prompt/, 03_experiment_prompt/, logs/, RUN_STATE.md, 0726_results/	(private) audit_memos/	공개 문서는 docs/에 신규 작성
+<legacy-repo>/<project>/D2MoE (clone+126파일 수정)	patches/ + docs/provenance/d2moe_patch_manifest.md	클론 자체는 미이관(재클론 안내)
+hf_cache 내 수동패치 modeling_deepseek.py ×2	patches/deepseek_sdpa_fallback.patch	원본 revision 대비 diff로 변환·적용 검증
+<legacy-repo>/tools/{gpu_log,gpu_status}.py	scripts/infra/	
+<legacy-repo>/.git 상태·diff·untracked 목록	(private) legacy_git/	새 트리에는 .git 미생성(지시)

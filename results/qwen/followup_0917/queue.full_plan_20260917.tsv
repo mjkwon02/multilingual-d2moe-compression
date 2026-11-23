@@ -1,0 +1,58 @@
+# Qwen1.5-MoE-A2.7B follow-up queue -- order of qwen15_sweep_plan.sh.
+# Re-read before every unit: edits take effect at the next unit boundary.
+# Completed units are validated and skipped, never re-run or overwritten.
+# kind<TAB>condition<TAB>seed
+# downstream = qwen15_sweep_plan.sh section 3 (--from-saved --tasks sib200 xlsum), run after each main cell.
+# Section 4 (optional EN-KO 2x2) is not queued.
+downstream_baseline	baseline	-
+cell	english_only	0
+downstream	english_only	0
+cell	chinese_only	0
+downstream	chinese_only	0
+cell	korean_only	0
+downstream	korean_only	0
+cell	swahili_only	0
+downstream	swahili_only	0
+cell	bengali_only	0
+downstream	bengali_only	0
+cell	mixed_5lang	0
+downstream	mixed_5lang	0
+cell	english_only	1
+downstream	english_only	1
+cell	chinese_only	1
+downstream	chinese_only	1
+cell	korean_only	1
+downstream	korean_only	1
+cell	swahili_only	1
+downstream	swahili_only	1
+cell	bengali_only	1
+downstream	bengali_only	1
+cell	mixed_5lang	1
+downstream	mixed_5lang	1
+cell	english_only	2
+downstream	english_only	2
+cell	chinese_only	2
+downstream	chinese_only	2
+cell	korean_only	2
+downstream	korean_only	2
+cell	swahili_only	2
+downstream	swahili_only	2
+cell	bengali_only	2
+downstream	bengali_only	2
+cell	mixed_5lang	2
+downstream	mixed_5lang	2
+cell	english_only_b	0
+cell	chinese_only_b	0
+cell	korean_only_b	0
+cell	swahili_only_b	0
+cell	bengali_only_b	0
+cell	english_only_b	1
+cell	chinese_only_b	1
+cell	korean_only_b	1
+cell	swahili_only_b	1
+cell	bengali_only_b	1
+cell	english_only_b	2
+cell	chinese_only_b	2
+cell	korean_only_b	2
+cell	swahili_only_b	2
+cell	bengali_only_b	2

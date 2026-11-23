@@ -1,0 +1,13 @@
+# Table 5 -- bundle restoration gain (pp). gain = dbpb%_compressed - dbpb%_intervened; positive = recovery.
+# provenance: results/table5_sec54_bundle.json <- sec54/{,seed1_repro/,korean_only_repro/}step2_bundle.json
+# vulnerable_mean = mean(KO,SW,BN) over RAW gains. Values at 6 dp; paper rounding is 3 dp.
+compression_condition,seed,row,EN,KO,ZH,SW,BN,vulnerable_mean
+english_only,0,treatment bundle (12 pairs),0.114191,-0.011506,0.171548,1.015058,0.015641,0.339731
+english_only,0,control bundle (12 pairs),-0.070757,0.864193,0.019515,0.026365,0.260373,0.383644
+english_only,0,difference (treatment - control),0.184947,-0.875699,0.152033,0.988693,-0.244733,-0.043913
+english_only,1,treatment bundle (12 pairs),0.174470,-0.114632,0.209331,0.473611,-0.047332,0.103882
+english_only,1,control bundle (12 pairs),-0.097799,0.732639,0.072833,0.095936,0.121982,0.316852
+english_only,1,difference (treatment - control),0.272269,-0.847271,0.136497,0.377675,-0.169314,-0.212970
+korean_only,0,treatment bundle (12 pairs),0.416645,0.044945,0.254851,1.621834,-0.089250,0.525843
+korean_only,0,control bundle (12 pairs),-0.058668,0.027093,0.109994,0.294367,-0.044950,0.092170
+korean_only,0,difference (treatment - control),0.475313,0.017852,0.144857,1.327466,-0.044300,0.433673

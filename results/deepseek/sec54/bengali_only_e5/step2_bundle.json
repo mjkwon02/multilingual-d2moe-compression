@@ -1,0 +1,68 @@
+{
+  "mode": "bundle",
+  "pairs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "n_restored_per_arm": 12,
+  "condition": "bengali_only/seed0",
+  "scale_condition": "bengali_only/seed0 (whitening ON, AMENDMENT 1)",
+  "reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+  },
+  "compressed_delta_bpb_pct": {
+    "eng_Latn": 17.53871815905525,
+    "kor_Hang": 24.573392528215805,
+    "zho_Hans": 17.834287818963244,
+    "swh_Latn": 35.42831862718689,
+    "ben_Beng": 1.3902030353399775
+  },
+  "gains_pp": {
+    "treatment": {
+      "eng_Latn": 0.2379203327033217,
+      "kor_Hang": 0.02274222469854692,
+      "zho_Hans": 0.3910363073437608,
+      "swh_Latn": 0.41747012347491363,
+      "ben_Beng": 0.029808615532375127
+    },
+    "control": {
+      "eng_Latn": 0.020956405319967786,
+      "kor_Hang": -0.05029645814198247,
+      "zho_Hans": -0.029118175083517883,
+      "swh_Latn": 0.07074774329662858,
+      "ben_Beng": -0.0024325796891266904
+    }
+  },
+  "P1_vulnerable_bundle": {
+    "treatment_vuln_mean_pp": 0.1566736545686119,
+    "control_vuln_mean_pp": 0.006006235155173141,
+    "difference_pp": 0.15066741941343875,
+    "direction_holds": true
+  },
+  "P3_english_control": {
+    "treatment_en_pp": 0.2379203327033217,
+    "control_en_pp": 0.020956405319967786,
+    "difference_pp": 0.2169639273833539
+  },
+  "P2": "dropped -- prereg \u00a75 bundle-mode fallback",
+  "additivity_vs_step1": null,
+  "eval_seconds": {
+    "compressed": 73.98820161819458,
+    "bundle_T": 71.86553311347961,
+    "bundle_C": 72.01210451126099
+  }
+}

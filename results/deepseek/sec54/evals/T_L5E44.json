@@ -1,0 +1,56 @@
+{
+  "eng_Latn": {
+    "name": "English",
+    "ppl": 25.13826560974121,
+    "n_sentences": 60,
+    "n_tokens": 1834,
+    "n_bytes": 8666,
+    "bits_per_byte": 0.9844709740425578
+  },
+  "kor_Hang": {
+    "name": "Korean",
+    "ppl": 12.839057922363281,
+    "n_sentences": 60,
+    "n_tokens": 7174,
+    "n_bytes": 10222,
+    "bits_per_byte": 2.5844277568257286
+  },
+  "zho_Hans": {
+    "name": "Chinese",
+    "ppl": 35.385276794433594,
+    "n_sentences": 60,
+    "n_tokens": 1944,
+    "n_bytes": 8157,
+    "bits_per_byte": 1.2261897912467172
+  },
+  "swh_Latn": {
+    "name": "Swahili",
+    "ppl": 207.13844299316406,
+    "n_sentences": 60,
+    "n_tokens": 3577,
+    "n_bytes": 9104,
+    "bits_per_byte": 3.023182382161424
+  },
+  "ben_Beng": {
+    "name": "Bengali",
+    "ppl": 5.467407703399658,
+    "n_sentences": 60,
+    "n_tokens": 15979,
+    "n_bytes": 23314,
+    "bits_per_byte": 1.6797736410660515
+  },
+  "_meta": {
+    "batch_used": {
+      "eng_Latn": 8,
+      "kor_Hang": 8,
+      "zho_Hans": 8,
+      "swh_Latn": 8,
+      "ben_Beng": 8
+    },
+    "batch_requested": 8,
+    "oom_fallback": {
+      "ben_Beng": 2
+    },
+    "pytorch_cuda_alloc_conf": "expandable_segments:True"
+  }
+}

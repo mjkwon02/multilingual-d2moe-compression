@@ -1,0 +1,53 @@
+{
+  "model": "baseline",
+  "split": "test",
+  "prompt": "P0",
+  "mode": "shared_prefix",
+  "microbatch": 12,
+  "inference_signature": "d96e8c49fbb07aa2face666abfd277069b60176b01c9744b48855d86f67164f5",
+  "protocol_hash": "061288e567daa234313351482e209ff7679fea77b0acc07af96f46cac3570215",
+  "started_utc": "2026-09-17T04:36:15Z",
+  "seconds_wait_for_lock": 0.0,
+  "seconds_merge": 0.0,
+  "seconds_load": 44.03211712837219,
+  "seconds_eval_per_lang": {
+    "EN": {
+      "seconds": 276.86326360702515,
+      "n_scored": 200,
+      "items_per_second": 0.7223782505283058
+    },
+    "ZH": {
+      "seconds": 272.33097195625305,
+      "n_scored": 200,
+      "items_per_second": 0.7344004927655742
+    },
+    "KO": {
+      "seconds": 292.6952452659607,
+      "n_scored": 200,
+      "items_per_second": 0.6833045744158497
+    },
+    "SW": {
+      "seconds": 275.9333486557007,
+      "n_scored": 200,
+      "items_per_second": 0.7248127164562211
+    },
+    "BN": {
+      "seconds": 303.5690071582794,
+      "n_scored": 200,
+      "items_per_second": 0.6588287845067167
+    }
+  },
+  "failures": [],
+  "device_map_unique": [
+    0,
+    1
+  ],
+  "visible_devices": "2,3",
+  "peak_gpu_bytes": {
+    "0": 15529563136,
+    "1": 18978510336
+  },
+  "peak_host_rss_bytes": 6076420096,
+  "stopped_early": null,
+  "finished_utc": "2026-09-17T05:00:42Z"
+}

@@ -1,0 +1,925 @@
+{
+  "design": {
+    "compressed_model": "english_only seed0 (max cross-damage condition)",
+    "eval": "FLORES devtest 60 sentences x 5 langs, delta-bpb%",
+    "dispersion_metric": "disagreement_common.normalize_layer(minmax,clip=2)+rank_by_disagreement (row-wise cross-language variance)",
+    "n_treatment": 12,
+    "n_control": 12,
+    "late_band": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "early_band": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "lang_conditions": [
+    "english_only",
+    "chinese_only",
+    "korean_only",
+    "swahili_only",
+    "bengali_only"
+  ],
+  "pairs": [
+    {
+      "layer": 25,
+      "treatment_expert": 32,
+      "control_expert": 45,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.2009124694537933,
+      "c_disagreement_var": 6.84370847291441e-05
+    },
+    {
+      "layer": 23,
+      "treatment_expert": 51,
+      "control_expert": 62,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.1439249271136011,
+      "c_disagreement_var": 0.0002107423592759454
+    },
+    {
+      "layer": 23,
+      "treatment_expert": 58,
+      "control_expert": 14,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.14304787434769187,
+      "c_disagreement_var": 0.0007644930147839087
+    },
+    {
+      "layer": 24,
+      "treatment_expert": 28,
+      "control_expert": 34,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.11514183375609269,
+      "c_disagreement_var": 0.001830336051547603
+    },
+    {
+      "layer": 24,
+      "treatment_expert": 1,
+      "control_expert": 53,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.10677075249007202,
+      "c_disagreement_var": 0.00020751174248586425
+    },
+    {
+      "layer": 24,
+      "treatment_expert": 48,
+      "control_expert": 32,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.09963334049881781,
+      "c_disagreement_var": 0.002417976601009765
+    },
+    {
+      "layer": 22,
+      "treatment_expert": 46,
+      "control_expert": 62,
+      "band": "late",
+      "e1_lang": "swh_Latn",
+      "t_disagreement_var": 0.09688713791073708,
+      "c_disagreement_var": 4.124726081108874e-05
+    },
+    {
+      "layer": 27,
+      "treatment_expert": 60,
+      "control_expert": 36,
+      "band": "late",
+      "e1_lang": "ben_Beng",
+      "t_disagreement_var": 0.008414268806641877,
+      "c_disagreement_var": 1.276653976651501e-07
+    },
+    {
+      "layer": 1,
+      "treatment_expert": 31,
+      "control_expert": 6,
+      "band": "early",
+      "e1_lang": "ben_Beng",
+      "t_disagreement_var": 0.20102721297581944,
+      "c_disagreement_var": 0.0017145915017293962
+    },
+    {
+      "layer": 1,
+      "treatment_expert": 24,
+      "control_expert": 1,
+      "band": "early",
+      "e1_lang": "ben_Beng",
+      "t_disagreement_var": 0.1062669445767016,
+      "c_disagreement_var": 4.353481365399e-05
+    },
+    {
+      "layer": 5,
+      "treatment_expert": 44,
+      "control_expert": 37,
+      "band": "early",
+      "e1_lang": "ben_Beng",
+      "t_disagreement_var": 0.06601848769296978,
+      "c_disagreement_var": 0.0018241903760541204
+    },
+    {
+      "layer": 3,
+      "treatment_expert": 13,
+      "control_expert": 26,
+      "band": "early",
+      "e1_lang": "ben_Beng",
+      "t_disagreement_var": 0.050216855903072635,
+      "c_disagreement_var": 4.4863224885204e-05
+    }
+  ],
+  "treatment": [
+    {
+      "layer": 25,
+      "expert": 32,
+      "role": "other",
+      "disagreement_var": 0.2009124694537933,
+      "total_hits": 37386,
+      "hit_count_by_lang": {
+        "english_only": 7649,
+        "chinese_only": 19773,
+        "korean_only": 7683,
+        "swahili_only": 17,
+        "bengali_only": 2264
+      },
+      "proxy_by_lang": {
+        "english_only": 1290536.0439453125,
+        "chinese_only": 1961302.322265625,
+        "korean_only": 257523.0556640625,
+        "swahili_only": 40.13852822780609,
+        "bengali_only": 20246.973384857178
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 1.0,
+        "chinese_only": 1.0,
+        "korean_only": 0.350698856374942,
+        "swahili_only": 1.5687703909860796e-06,
+        "bengali_only": 0.014285206656045504
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 23,
+      "expert": 51,
+      "role": "other",
+      "disagreement_var": 0.1439249271136011,
+      "total_hits": 25146,
+      "hit_count_by_lang": {
+        "english_only": 4822,
+        "chinese_only": 9087,
+        "korean_only": 5650,
+        "swahili_only": 117,
+        "bengali_only": 5470
+      },
+      "proxy_by_lang": {
+        "english_only": 4137.355216026306,
+        "chinese_only": 571039.7338256836,
+        "korean_only": 32146.10620880127,
+        "swahili_only": 120.57774371653795,
+        "bengali_only": 6195.587356567383
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.0,
+        "chinese_only": 0.9722411868997324,
+        "korean_only": 0.07570609055994514,
+        "swahili_only": 6.122492680497308e-05,
+        "bengali_only": 0.029567324426399182
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 23,
+      "expert": 58,
+      "role": "other",
+      "disagreement_var": 0.14304787434769187,
+      "total_hits": 32128,
+      "hit_count_by_lang": {
+        "english_only": 5322,
+        "chinese_only": 8623,
+        "korean_only": 9040,
+        "swahili_only": 128,
+        "bengali_only": 9015
+      },
+      "proxy_by_lang": {
+        "english_only": 19654.987823486328,
+        "chinese_only": 366763.53216552734,
+        "korean_only": 169094.173828125,
+        "swahili_only": 77.74191743135452,
+        "bengali_only": 232512.78256225586
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.01900235087388792,
+        "chinese_only": 0.6218920629728216,
+        "korean_only": 0.449943934519385,
+        "swahili_only": 0.0,
+        "bengali_only": 1.0
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 24,
+      "expert": 28,
+      "role": "sensitive",
+      "disagreement_var": 0.11514183375609269,
+      "total_hits": 22765,
+      "hit_count_by_lang": {
+        "english_only": 7637,
+        "chinese_only": 6016,
+        "korean_only": 4980,
+        "swahili_only": 75,
+        "bengali_only": 4057
+      },
+      "proxy_by_lang": {
+        "english_only": 555281.3779296875,
+        "chinese_only": 4024.1312561035156,
+        "korean_only": 5941.320753097534,
+        "swahili_only": 306.92306983470917,
+        "bengali_only": 3427.8919534683228
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.8494475436682396,
+        "chinese_only": 0.00044122081397203266,
+        "korean_only": 0.0009045001850497061,
+        "swahili_only": 2.4898165349137927e-05,
+        "bengali_only": 0.0031815334046224448
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 24,
+      "expert": 1,
+      "role": "sensitive",
+      "disagreement_var": 0.10677075249007202,
+      "total_hits": 19886,
+      "hit_count_by_lang": {
+        "english_only": 7617,
+        "chinese_only": 4250,
+        "korean_only": 5022,
+        "swahili_only": 70,
+        "bengali_only": 2927
+      },
+      "proxy_by_lang": {
+        "english_only": 535323.6928710938,
+        "chinese_only": 2760.6172914505005,
+        "korean_only": 9266.368898391724,
+        "swahili_only": 310.58961594104767,
+        "bengali_only": 2930.842437505722
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.818786391604865,
+        "chinese_only": 0.0,
+        "korean_only": 0.005083649580895155,
+        "swahili_only": 2.522474453814804e-05,
+        "bengali_only": 0.002511241455602713
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 24,
+      "expert": 48,
+      "role": "sensitive",
+      "disagreement_var": 0.09963334049881781,
+      "total_hits": 25552,
+      "hit_count_by_lang": {
+        "english_only": 4487,
+        "chinese_only": 9942,
+        "korean_only": 5124,
+        "swahili_only": 94,
+        "bengali_only": 5905
+      },
+      "proxy_by_lang": {
+        "english_only": 3478.55362701416,
+        "chinese_only": 778911.2152099609,
+        "korean_only": 141445.14672851562,
+        "swahili_only": 147.9446257352829,
+        "bengali_only": 10064.221675872803
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.0017084268682886028,
+        "chinese_only": 0.818652439403801,
+        "korean_only": 0.1712150363682218,
+        "swahili_only": 1.0737958484610703e-05,
+        "bengali_only": 0.012130900099716005
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 22,
+      "expert": 46,
+      "role": "other",
+      "disagreement_var": 0.09688713791073708,
+      "total_hits": 27429,
+      "hit_count_by_lang": {
+        "english_only": 4665,
+        "chinese_only": 9944,
+        "korean_only": 5581,
+        "swahili_only": 76,
+        "bengali_only": 7163
+      },
+      "proxy_by_lang": {
+        "english_only": 3676.873908996582,
+        "chinese_only": 564888.1480712891,
+        "korean_only": 37002.0743598938,
+        "swahili_only": 36.60409137606621,
+        "bengali_only": 8772.504270553589
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.00042856927773580154,
+        "chinese_only": 0.781559831360931,
+        "korean_only": 0.008415526139481575,
+        "swahili_only": 0.0,
+        "bengali_only": 0.004878685788265895
+      },
+      "in_flagged_set": true,
+      "e1_lang": "swh_Latn",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 27,
+      "expert": 60,
+      "role": "final",
+      "disagreement_var": 0.008414268806641877,
+      "total_hits": 31042,
+      "hit_count_by_lang": {
+        "english_only": 3106,
+        "chinese_only": 11915,
+        "korean_only": 2521,
+        "swahili_only": 13370,
+        "bengali_only": 130
+      },
+      "proxy_by_lang": {
+        "english_only": 159615.09214019775,
+        "chinese_only": 2424965.2514648438,
+        "korean_only": 13179.009655594826,
+        "swahili_only": 132437.42700195312,
+        "bengali_only": 953.4416706115007
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.011846638485852828,
+        "chinese_only": 0.2332361016189857,
+        "korean_only": 0.0007360380634351078,
+        "swahili_only": 0.0038990739133862302,
+        "bengali_only": 0.00012046513457943018
+      },
+      "in_flagged_set": true,
+      "e1_lang": "ben_Beng",
+      "band": "late",
+      "arm": "treatment"
+    },
+    {
+      "layer": 1,
+      "expert": 31,
+      "role": "other",
+      "disagreement_var": 0.20102721297581944,
+      "total_hits": 41889,
+      "hit_count_by_lang": {
+        "english_only": 3554,
+        "chinese_only": 5681,
+        "korean_only": 1762,
+        "swahili_only": 30875,
+        "bengali_only": 17
+      },
+      "proxy_by_lang": {
+        "english_only": 8297.467380523682,
+        "chinese_only": 3515.7550933659077,
+        "korean_only": 589.1838085055351,
+        "swahili_only": 98318.88555908203,
+        "bengali_only": 12.97361490316689
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.9999999999999999,
+        "chinese_only": 0.39930835313910573,
+        "korean_only": 0.0030497321073136175,
+        "swahili_only": 1.0,
+        "bengali_only": 5.778238796899621e-05
+      },
+      "in_flagged_set": true,
+      "e1_lang": "ben_Beng",
+      "band": "early",
+      "arm": "treatment"
+    },
+    {
+      "layer": 1,
+      "expert": 24,
+      "role": "other",
+      "disagreement_var": 0.1062669445767016,
+      "total_hits": 42946,
+      "hit_count_by_lang": {
+        "english_only": 4327,
+        "chinese_only": 5326,
+        "korean_only": 4414,
+        "swahili_only": 28855,
+        "bengali_only": 24
+      },
+      "proxy_by_lang": {
+        "english_only": 3032.406821489334,
+        "chinese_only": 1849.5454597473145,
+        "korean_only": 716.2876818180084,
+        "swahili_only": 82559.45346069336,
+        "bengali_only": 31.668323582038283
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.40929314036930303,
+        "chinese_only": 0.20092015747220424,
+        "korean_only": 0.003862736937627739,
+        "swahili_only": 0.8761828057675644,
+        "bengali_only": 0.00015438276071757907
+      },
+      "in_flagged_set": true,
+      "e1_lang": "ben_Beng",
+      "band": "early",
+      "arm": "treatment"
+    },
+    {
+      "layer": 5,
+      "expert": 44,
+      "role": "other",
+      "disagreement_var": 0.06601848769296978,
+      "total_hits": 22715,
+      "hit_count_by_lang": {
+        "english_only": 7545,
+        "chinese_only": 9262,
+        "korean_only": 4133,
+        "swahili_only": 1579,
+        "bengali_only": 196
+      },
+      "proxy_by_lang": {
+        "english_only": 14461.753936767578,
+        "chinese_only": 15357.519065856934,
+        "korean_only": 6230.0403089523315,
+        "swahili_only": 929.6228793859482,
+        "bengali_only": 33.07660943083465
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.5581357171361712,
+        "chinese_only": 0.5866946594019028,
+        "korean_only": 0.18601603789409768,
+        "swahili_only": 0.01147879336960083,
+        "bengali_only": 0.0
+      },
+      "in_flagged_set": true,
+      "e1_lang": "ben_Beng",
+      "band": "early",
+      "arm": "treatment"
+    },
+    {
+      "layer": 3,
+      "expert": 13,
+      "role": "other",
+      "disagreement_var": 0.050216855903072635,
+      "total_hits": 24861,
+      "hit_count_by_lang": {
+        "english_only": 6262,
+        "chinese_only": 4863,
+        "korean_only": 5736,
+        "swahili_only": 7858,
+        "bengali_only": 142
+      },
+      "proxy_by_lang": {
+        "english_only": 11660.953987121582,
+        "chinese_only": 1409.799830198288,
+        "korean_only": 1143.919828414917,
+        "swahili_only": 2686.1140608787537,
+        "bengali_only": 7.326762604992837
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.5733534354310333,
+        "chinese_only": 0.03150489460958476,
+        "korean_only": 0.005972957056546,
+        "swahili_only": 0.017612492845839607,
+        "bengali_only": 0.0
+      },
+      "in_flagged_set": true,
+      "e1_lang": "ben_Beng",
+      "band": "early",
+      "arm": "treatment"
+    }
+  ],
+  "control": [
+    {
+      "layer": 25,
+      "expert": 45,
+      "role": "other",
+      "disagreement_var": 6.84370847291441e-05,
+      "total_hits": 25887,
+      "hit_count_by_lang": {
+        "english_only": 3994,
+        "chinese_only": 3208,
+        "korean_only": 5391,
+        "swahili_only": 443,
+        "bengali_only": 12851
+      },
+      "proxy_by_lang": {
+        "english_only": 35031.865577697754,
+        "chinese_only": 16284.955121994019,
+        "korean_only": 16981.030239105225,
+        "swahili_only": 563.9345433712006,
+        "bengali_only": 18798.540588378906
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.025503341274556723,
+        "chinese_only": 0.008685773141936581,
+        "korean_only": 0.014506292161343358,
+        "swahili_only": 8.576868196065153e-05,
+        "bengali_only": 0.013184768928793429
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 32,
+      "e1_lang": null
+    },
+    {
+      "layer": 23,
+      "expert": 62,
+      "role": "other",
+      "disagreement_var": 0.0002107423592759454,
+      "total_hits": 32332,
+      "hit_count_by_lang": {
+        "english_only": 2939,
+        "chinese_only": 3970,
+        "korean_only": 4139,
+        "swahili_only": 16728,
+        "bengali_only": 4556
+      },
+      "proxy_by_lang": {
+        "english_only": 14749.94169807434,
+        "chinese_only": 4086.3075299263,
+        "korean_only": 8153.750398635864,
+        "swahili_only": 16728.62787246704,
+        "bengali_only": 8438.556804656982
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.012991328405181433,
+        "chinese_only": 0.0,
+        "korean_only": 0.01014220443880135,
+        "swahili_only": 0.026403990088453302,
+        "bengali_only": 0.04193082137638446
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 51,
+      "e1_lang": null
+    },
+    {
+      "layer": 23,
+      "expert": 14,
+      "role": "other",
+      "disagreement_var": 0.0007644930147839087,
+      "total_hits": 48982,
+      "hit_count_by_lang": {
+        "english_only": 2903,
+        "chinese_only": 4473,
+        "korean_only": 5017,
+        "swahili_only": 29023,
+        "bengali_only": 7566
+      },
+      "proxy_by_lang": {
+        "english_only": 43921.377458810806,
+        "chinese_only": 63547.109139442444,
+        "korean_only": 17883.605253219604,
+        "swahili_only": 66885.7275390625,
+        "bengali_only": 14160.58498764038
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.04874025946900231,
+        "chinese_only": 0.10185298204173757,
+        "korean_only": 0.036730968823118326,
+        "swahili_only": 0.10596039119897424,
+        "bengali_only": 0.07347127684192813
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 58,
+      "e1_lang": null
+    },
+    {
+      "layer": 24,
+      "expert": 34,
+      "role": "sensitive",
+      "disagreement_var": 0.001830336051547603,
+      "total_hits": 36981,
+      "hit_count_by_lang": {
+        "english_only": 4244,
+        "chinese_only": 4358,
+        "korean_only": 3061,
+        "swahili_only": 24676,
+        "bengali_only": 642
+      },
+      "proxy_by_lang": {
+        "english_only": 76222.49572563171,
+        "chinese_only": 69611.72199249268,
+        "korean_only": 13428.817346572876,
+        "swahili_only": 200442.46240234375,
+        "bengali_only": 1718.3217943310738
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.1134655301508969,
+        "chinese_only": 0.0696958304881572,
+        "korean_only": 0.010315301321659646,
+        "swahili_only": 0.017850966686435387,
+        "bengali_only": 0.0008761069286809598
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 28,
+      "e1_lang": null
+    },
+    {
+      "layer": 24,
+      "expert": 53,
+      "role": "sensitive",
+      "disagreement_var": 0.00020751174248586425,
+      "total_hits": 29339,
+      "hit_count_by_lang": {
+        "english_only": 2866,
+        "chinese_only": 915,
+        "korean_only": 6308,
+        "swahili_only": 149,
+        "bengali_only": 19101
+      },
+      "proxy_by_lang": {
+        "english_only": 1532.4127404689789,
+        "chinese_only": 5873.002735793591,
+        "korean_only": 22609.017932891846,
+        "swahili_only": 170.66786634922028,
+        "bengali_only": 27522.85743713379
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.0,
+        "chinese_only": 0.002393463169973514,
+        "korean_only": 0.021853609357395026,
+        "swahili_only": 1.2761917075654312e-05,
+        "bengali_only": 0.03567459668491041
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 1,
+      "e1_lang": null
+    },
+    {
+      "layer": 24,
+      "expert": 32,
+      "role": "sensitive",
+      "disagreement_var": 0.002417976601009765,
+      "total_hits": 42899,
+      "hit_count_by_lang": {
+        "english_only": 4286,
+        "chinese_only": 5463,
+        "korean_only": 9751,
+        "swahili_only": 17315,
+        "bengali_only": 6084
+      },
+      "proxy_by_lang": {
+        "english_only": 99285.42276763916,
+        "chinese_only": 68036.07206726074,
+        "korean_only": 94960.09661102295,
+        "swahili_only": 54561.71961975098,
+        "bengali_only": 43982.94394493103
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.14889729044701466,
+        "chinese_only": 0.06803208557345714,
+        "korean_only": 0.11278942548216447,
+        "swahili_only": 0.004857371818564523,
+        "bengali_only": 0.05787170806319603
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 48,
+      "e1_lang": null
+    },
+    {
+      "layer": 22,
+      "expert": 62,
+      "role": "other",
+      "disagreement_var": 4.124726081108874e-05,
+      "total_hits": 35299,
+      "hit_count_by_lang": {
+        "english_only": 1383,
+        "chinese_only": 3208,
+        "korean_only": 4229,
+        "swahili_only": 14397,
+        "bengali_only": 12082
+      },
+      "proxy_by_lang": {
+        "english_only": 7019.3086810112,
+        "chinese_only": 2363.908221244812,
+        "korean_only": 6814.225357055664,
+        "swahili_only": 29934.945182800293,
+        "bengali_only": 24807.605361938477
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.004692162396956015,
+        "chinese_only": 0.0,
+        "korean_only": 0.000947337040525543,
+        "swahili_only": 0.014008826708130546,
+        "bengali_only": 0.015133958991788751
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 46,
+      "e1_lang": null
+    },
+    {
+      "layer": 27,
+      "expert": 36,
+      "role": "final",
+      "disagreement_var": 1.276653976651501e-07,
+      "total_hits": 28428,
+      "hit_count_by_lang": {
+        "english_only": 4169,
+        "chinese_only": 2986,
+        "korean_only": 9772,
+        "swahili_only": 3538,
+        "bengali_only": 7963
+      },
+      "proxy_by_lang": {
+        "english_only": 874.265065073967,
+        "chinese_only": 11195.073645591736,
+        "korean_only": 9170.913776397705,
+        "swahili_only": 1419.3979065418243,
+        "bengali_only": 3389.730990409851
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 1.2626437055036536e-05,
+        "chinese_only": 0.000983490634194019,
+        "korean_only": 0.0005041063730409043,
+        "swahili_only": 4.15837319240489e-05,
+        "bengali_only": 0.0004935815420461298
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "late",
+      "matched_treatment_expert": 60,
+      "e1_lang": null
+    },
+    {
+      "layer": 1,
+      "expert": 6,
+      "role": "other",
+      "disagreement_var": 0.0017145915017293962,
+      "total_hits": 28405,
+      "hit_count_by_lang": {
+        "english_only": 4835,
+        "chinese_only": 7464,
+        "korean_only": 8005,
+        "swahili_only": 2873,
+        "bengali_only": 5228
+      },
+      "proxy_by_lang": {
+        "english_only": 583.8224608898163,
+        "chinese_only": 1013.2019505500793,
+        "korean_only": 507.6254929304123,
+        "swahili_only": 588.8645284175873,
+        "bengali_only": 193.4752648472786
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.06841778377743976,
+        "chinese_only": 0.10134044289149714,
+        "korean_only": 0.0025280540279064866,
+        "swahili_only": 0.005887320240654261,
+        "bengali_only": 0.0009904808838830852
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "early",
+      "matched_treatment_expert": 31,
+      "e1_lang": null
+    },
+    {
+      "layer": 1,
+      "expert": 1,
+      "role": "other",
+      "disagreement_var": 4.353481365399e-05,
+      "total_hits": 29324,
+      "hit_count_by_lang": {
+        "english_only": 3311,
+        "chinese_only": 3942,
+        "korean_only": 4272,
+        "swahili_only": 5273,
+        "bengali_only": 12526
+      },
+      "proxy_by_lang": {
+        "english_only": 228.55692572891712,
+        "chinese_only": 220.52782008051872,
+        "korean_only": 193.3391591310501,
+        "swahili_only": 279.40240544080734,
+        "bengali_only": 610.7944195270538
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.018960118388643483,
+        "chinese_only": 0.006960247673106375,
+        "korean_only": 0.0005177588195737373,
+        "swahili_only": 0.002601708997934259,
+        "bengali_only": 0.003146876396092988
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "early",
+      "matched_treatment_expert": 24,
+      "e1_lang": null
+    },
+    {
+      "layer": 5,
+      "expert": 37,
+      "role": "other",
+      "disagreement_var": 0.0018241903760541204,
+      "total_hits": 40599,
+      "hit_count_by_lang": {
+        "english_only": 7740,
+        "chinese_only": 9438,
+        "korean_only": 8071,
+        "swahili_only": 9854,
+        "bengali_only": 5496
+      },
+      "proxy_by_lang": {
+        "english_only": 3114.413412094116,
+        "chinese_only": 5567.514764785767,
+        "korean_only": 4236.54691028595,
+        "swahili_only": 8617.091501235962,
+        "bengali_only": 3789.172166824341
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.05039442712703369,
+        "chinese_only": 0.175030164690225,
+        "korean_only": 0.11716302705266686,
+        "swahili_only": 0.12138290769346878,
+        "bengali_only": 0.07565077628356105
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "early",
+      "matched_treatment_expert": 44,
+      "e1_lang": null
+    },
+    {
+      "layer": 3,
+      "expert": 26,
+      "role": "other",
+      "disagreement_var": 4.4863224885204e-05,
+      "total_hits": 31330,
+      "hit_count_by_lang": {
+        "english_only": 5188,
+        "chinese_only": 5462,
+        "korean_only": 6338,
+        "swahili_only": 5761,
+        "bengali_only": 8581
+      },
+      "proxy_by_lang": {
+        "english_only": 1182.9017205238342,
+        "chinese_only": 1063.4318628311157,
+        "korean_only": 1113.0598826408386,
+        "swahili_only": 1148.0559711456299,
+        "bengali_only": 1213.3298535346985
+      },
+      "norm_proxy_by_lang": {
+        "english_only": 0.020841156368954124,
+        "chinese_only": 0.017964014098977653,
+        "korean_only": 0.005723180368970881,
+        "swahili_only": 0.007380021940555221,
+        "bengali_only": 0.004787404799453808
+      },
+      "in_flagged_set": false,
+      "arm": "control",
+      "band": "early",
+      "matched_treatment_expert": 13,
+      "e1_lang": null
+    }
+  ]
+}

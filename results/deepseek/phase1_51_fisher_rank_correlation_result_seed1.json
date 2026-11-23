@@ -1,0 +1,1769 @@
+{
+  "seed": 1,
+  "layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "lang_conditions": [
+    "english_only",
+    "korean_only",
+    "chinese_only",
+    "swahili_only",
+    "bengali_only"
+  ],
+  "placebo_of": {
+    "english_only": "english_only_b",
+    "korean_only": "korean_only_b",
+    "swahili_only": "swahili_only_b"
+  },
+  "per_layer": {
+    "1": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.03154761904761905,
+          "p": 0.8045458235287635
+        },
+        "english_only|chinese_only": {
+          "rho": 0.1592032967032967,
+          "p": 0.2089143481946316
+        },
+        "english_only|swahili_only": {
+          "rho": 0.45260989010989006,
+          "p": 0.0001733067030745502
+        },
+        "english_only|bengali_only": {
+          "rho": -0.12934981684981686,
+          "p": 0.30834975040229035
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.6130036630036629,
+          "p": 7.269395061335886e-08
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.3777930402930402,
+          "p": 0.0020860084192453362
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7113095238095237,
+          "p": 4.48877869105249e-11
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.33672161172161164,
+          "p": 0.006515922421717601
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.476602564102564,
+          "p": 6.856613020671509e-05
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.11900183150183148,
+          "p": 0.3489720847828782
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.952701465201465,
+          "p": 9.001981359197642e-34
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.8938186813186811,
+          "p": 2.857810287932786e-23
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9772893772893773,
+          "p": 1.7176275034545073e-43
+        }
+      },
+      "mean_lang_rho": 0.3148443223443223,
+      "mean_placebo_rho": 0.9412698412698411
+    },
+    "2": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 4.578754578754578e-05,
+          "p": 0.9997134950356072
+        },
+        "english_only|chinese_only": {
+          "rho": 0.1647435897435897,
+          "p": 0.1932988335801897
+        },
+        "english_only|swahili_only": {
+          "rho": 0.35508241758241754,
+          "p": 0.003987684562291083
+        },
+        "english_only|bengali_only": {
+          "rho": -0.06607142857142856,
+          "p": 0.6039552496085936
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.45109890109890105,
+          "p": 0.00018331267594292675
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.39423076923076916,
+          "p": 0.0012672012564984292
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7353479853479853,
+          "p": 4.527159823610999e-12
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.038782051282051276,
+          "p": 0.7609328736081516
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.2342032967032967,
+          "p": 0.0625049216415075
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.42380952380952375,
+          "p": 0.00048360030077230105
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.954532967032967,
+          "p": 2.7193855291632102e-34
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9573260073260073,
+          "p": 3.9713365402244653e-35
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9830128205128205,
+          "p": 2.3016983301127744e-47
+        }
+      },
+      "mean_lang_rho": 0.2731272893772893,
+      "mean_placebo_rho": 0.964957264957265
+    },
+    "3": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.07893772893772892,
+          "p": 0.5352419083884814
+        },
+        "english_only|chinese_only": {
+          "rho": 0.5754578754578754,
+          "p": 6.551551180713674e-07
+        },
+        "english_only|swahili_only": {
+          "rho": 0.475595238095238,
+          "p": 7.138789379485714e-05
+        },
+        "english_only|bengali_only": {
+          "rho": 0.027655677655677655,
+          "p": 0.8282657775966061
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5596611721611721,
+          "p": 1.5261301264037682e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.3247710622710622,
+          "p": 0.008835553118161844
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7500915750915751,
+          "p": 9.768817944054304e-13
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.3507783882783882,
+          "p": 0.004485674010131754
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.4690476190476191,
+          "p": 9.250178104050232e-05
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.43076923076923074,
+          "p": 0.00038052311103635444
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9418956043956044,
+          "p": 4.514526983506776e-31
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9773809523809522,
+          "p": 1.5174576322987849e-43
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9501373626373624,
+          "p": 4.4517691657102965e-33
+        }
+      },
+      "mean_lang_rho": 0.4042765567765567,
+      "mean_placebo_rho": 0.9564713064713063
+    },
+    "4": {
+      "role": "early",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.19322344322344318,
+          "p": 0.12607179822231965
+        },
+        "english_only|chinese_only": {
+          "rho": 0.5689102564102563,
+          "p": 9.351569229631967e-07
+        },
+        "english_only|swahili_only": {
+          "rho": 0.28713369963369956,
+          "p": 0.021421588203027944
+        },
+        "english_only|bengali_only": {
+          "rho": 0.038278388278388274,
+          "p": 0.7639470447193725
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.6011446886446885,
+          "p": 1.5009211840532136e-07
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.5227564102564102,
+          "p": 9.368402013842398e-06
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.8089285714285712,
+          "p": 6.161686300633894e-16
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.39711538461538454,
+          "p": 0.0011579952279822995
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.5069139194139194,
+          "p": 1.916774262108922e-05
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.48699633699633693,
+          "p": 4.489069626832568e-05
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8352106227106226,
+          "p": 9.514165627995567e-18
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9716117216117215,
+          "p": 1.5954117314083039e-40
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9913919413919412,
+          "p": 1.8346373204841982e-56
+        }
+      },
+      "mean_lang_rho": 0.44114010989010977,
+      "mean_placebo_rho": 0.9327380952380951
+    },
+    "5": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.29262820512820514,
+          "p": 0.018950480085897045
+        },
+        "english_only|chinese_only": {
+          "rho": 0.5929029304029304,
+          "p": 2.4421312359573557e-07
+        },
+        "english_only|swahili_only": {
+          "rho": 0.18804945054945052,
+          "p": 0.13673606251289513
+        },
+        "english_only|bengali_only": {
+          "rho": -0.11662087912087911,
+          "p": 0.3587677463282144
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5272893772893772,
+          "p": 7.582378054426772e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.38704212454212444,
+          "p": 0.0015807891408867244
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6449633699633698,
+          "p": 8.804421888858067e-09
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.21565934065934061,
+          "p": 0.08699362591377331
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.12847985347985347,
+          "p": 0.31164235571560833
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5548076923076922,
+          "p": 1.9618470200541427e-06
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8428113553113551,
+          "p": 2.480277618634709e-18
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.960576923076923,
+          "p": 3.5732288527362744e-36
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9845695970695969,
+          "p": 1.1964214583205785e-48
+        }
+      },
+      "mean_lang_rho": 0.34152014652014645,
+      "mean_placebo_rho": 0.9293192918192917
+    },
+    "6": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.35828754578754574,
+          "p": 0.0036493030024049434
+        },
+        "english_only|chinese_only": {
+          "rho": 0.6877289377289376,
+          "p": 3.4369732509144573e-10
+        },
+        "english_only|swahili_only": {
+          "rho": 0.28708791208791207,
+          "p": 0.021443278785646763
+        },
+        "english_only|bengali_only": {
+          "rho": 0.026968864468864463,
+          "p": 0.8324682058854712
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.6461996336996336,
+          "p": 8.073814050266593e-09
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.33489010989010987,
+          "p": 0.00683241958122096
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.5648351648351648,
+          "p": 1.1625110434679345e-06
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.2858058608058608,
+          "p": 0.022058233729961508
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.23988095238095233,
+          "p": 0.05623595056595327
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5762820512820512,
+          "p": 6.261137179433561e-07
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9138278388278388,
+          "p": 5.986374075024636e-26
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9560897435897433,
+          "p": 9.450532665512188e-35
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9816849816849815,
+          "p": 2.3273783516299566e-46
+        }
+      },
+      "mean_lang_rho": 0.40079670329670325,
+      "mean_placebo_rho": 0.9505341880341879
+    },
+    "7": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.33104395604395603,
+          "p": 0.007541222061495056
+        },
+        "english_only|chinese_only": {
+          "rho": 0.7544413919413919,
+          "p": 6.088146784863566e-13
+        },
+        "english_only|swahili_only": {
+          "rho": 0.4117216117216117,
+          "p": 0.0007245721061790094
+        },
+        "english_only|bengali_only": {
+          "rho": -0.1871336996336996,
+          "p": 0.1386922433693577
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5692307692307692,
+          "p": 9.191725788423321e-07
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.2690018315018315,
+          "p": 0.031603453109484245
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.5798992673992673,
+          "p": 5.123794037880911e-07
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.3659340659340659,
+          "p": 0.0029427491122030885
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.04336080586080586,
+          "p": 0.733698638139596
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.32641941391941387,
+          "p": 0.008477950277208985
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.898580586080586,
+          "p": 7.411160592615402e-24
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9573717948717947,
+          "p": 3.843955837129641e-35
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9778388278388278,
+          "p": 8.104154350041086e-44
+        }
+      },
+      "mean_lang_rho": 0.34639194139194135,
+      "mean_placebo_rho": 0.9445970695970695
+    },
+    "8": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.576007326007326,
+          "p": 6.356570096481525e-07
+        },
+        "english_only|chinese_only": {
+          "rho": 0.7812728937728937,
+          "p": 2.6096576745064306e-14
+        },
+        "english_only|swahili_only": {
+          "rho": 0.4619047619047619,
+          "p": 0.00012199311071843683
+        },
+        "english_only|bengali_only": {
+          "rho": 0.10146520146520144,
+          "p": 0.4249951378156135
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.7298534798534798,
+          "p": 7.813742737367329e-12
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.4891483516483516,
+          "p": 4.105077567267329e-05
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.5933608058608058,
+          "p": 2.377817333434683e-07
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.40155677655677646,
+          "p": 0.0010063718800792517
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.1983058608058608,
+          "p": 0.11622353985180925
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5631868131868132,
+          "p": 1.2684382895866932e-06
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9266483516483517,
+          "p": 4.926636029996996e-28
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.91753663003663,
+          "p": 1.6190162114763042e-26
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9793040293040292,
+          "p": 9.934220103502947e-45
+        }
+      },
+      "mean_lang_rho": 0.48960622710622703,
+      "mean_placebo_rho": 0.9411630036630036
+    },
+    "9": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.5152014652014651,
+          "p": 1.3239355494513433e-05
+        },
+        "english_only|chinese_only": {
+          "rho": 0.7940934065934065,
+          "p": 4.934063525448375e-15
+        },
+        "english_only|swahili_only": {
+          "rho": 0.43086080586080583,
+          "p": 0.0003793117601382238
+        },
+        "english_only|bengali_only": {
+          "rho": 0.09693223443223442,
+          "p": 0.4460772478082876
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5825091575091574,
+          "p": 4.427112617578135e-07
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.4271520146520146,
+          "p": 0.00043128748761285
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.55503663003663,
+          "p": 1.9389149679140705e-06
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.3436355311355311,
+          "p": 0.0054340692675042546
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.13095238095238093,
+          "p": 0.3023434074312
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.46323260073260064,
+          "p": 0.00011592933130521866
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9157051282051281,
+          "p": 3.1114603209340073e-26
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9161630036630036,
+          "p": 2.646328919528726e-26
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9652472527472526,
+          "p": 7.681658488653709e-38
+        }
+      },
+      "mean_lang_rho": 0.4339606227106227,
+      "mean_placebo_rho": 0.9323717948717948
+    },
+    "10": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.38044871794871793,
+          "p": 0.0019279127620283963
+        },
+        "english_only|chinese_only": {
+          "rho": 0.8302655677655676,
+          "p": 2.2007673363977688e-17
+        },
+        "english_only|swahili_only": {
+          "rho": 0.41744505494505485,
+          "p": 0.0005994527089383338
+        },
+        "english_only|bengali_only": {
+          "rho": 0.1472069597069597,
+          "p": 0.2457306341384627
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5702380952380951,
+          "p": 8.705898391432899e-07
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.5472527472527472,
+          "p": 2.877847436165051e-06
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7862179487179486,
+          "p": 1.3913227070935564e-14
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.4107600732600732,
+          "p": 0.0007477742903259144
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.2563186813186813,
+          "p": 0.04091141683977554
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.6147893772893773,
+          "p": 6.500675172932539e-08
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8671703296703295,
+          "p": 1.961226577049954e-20
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9346611721611721,
+          "p": 1.5396648038688867e-29
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9664835164835164,
+          "p": 2.545262554758673e-38
+        }
+      },
+      "mean_lang_rho": 0.49609432234432227,
+      "mean_placebo_rho": 0.9227716727716727
+    },
+    "11": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.22394688644688643,
+          "p": 0.07525055843709175
+        },
+        "english_only|chinese_only": {
+          "rho": 0.7289835164835163,
+          "p": 8.508680458714418e-12
+        },
+        "english_only|swahili_only": {
+          "rho": 0.48315018315018315,
+          "p": 5.259201128218464e-05
+        },
+        "english_only|bengali_only": {
+          "rho": 0.06785714285714285,
+          "p": 0.5941910036585432
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.45068681318681314,
+          "p": 0.00018613203855652436
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.42802197802197794,
+          "p": 0.0004185448291779927
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7753663003663003,
+          "p": 5.416782792838741e-14
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.4616300366300366,
+          "p": 0.00012328353665671372
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.2588827838827839,
+          "p": 0.038866133177967235
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5685439560439559,
+          "p": 9.537441590141553e-07
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9203296703296703,
+          "p": 5.803323623982192e-27
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9617216117216115,
+          "p": 1.4578609181477527e-36
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9795787545787544,
+          "p": 6.591338214487216e-45
+        }
+      },
+      "mean_lang_rho": 0.4447069597069596,
+      "mean_placebo_rho": 0.9538766788766787
+    },
+    "12": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.4685897435897435,
+          "p": 9.417466587433207e-05
+        },
+        "english_only|chinese_only": {
+          "rho": 0.8163919413919414,
+          "p": 2.0179066752221509e-16
+        },
+        "english_only|swahili_only": {
+          "rho": 0.4884157509157509,
+          "p": 4.232246740415748e-05
+        },
+        "english_only|bengali_only": {
+          "rho": 0.2960164835164835,
+          "p": 0.01755124803264978
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5457417582417582,
+          "p": 3.1035841046902846e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.4523809523809523,
+          "p": 0.000174789832283518
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7467948717948717,
+          "p": 1.3890210855586954e-12
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.4137820512820512,
+          "p": 0.0006770351043865335
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.31634615384615383,
+          "p": 0.010875997739885884
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5978937728937729,
+          "p": 1.8216140575255105e-07
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8595695970695971,
+          "p": 9.78195734220113e-20
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.940613553113553,
+          "p": 8.712057323419945e-31
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9664835164835164,
+          "p": 2.545262554758673e-38
+        }
+      },
+      "mean_lang_rho": 0.514235347985348,
+      "mean_placebo_rho": 0.9222222222222222
+    },
+    "13": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.3442765567765567,
+          "p": 0.005342277499686328
+        },
+        "english_only|chinese_only": {
+          "rho": 0.8191849816849817,
+          "p": 1.3115849271823883e-16
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5027014652014652,
+          "p": 2.304972498421722e-05
+        },
+        "english_only|bengali_only": {
+          "rho": 0.343543956043956,
+          "p": 0.005447295110821754
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5016941391941391,
+          "p": 2.4080348730187075e-05
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.6081043956043956,
+          "p": 9.843230773162669e-08
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.8800366300366299,
+          "p": 1.0167202019949222e-21
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.4771520146520146,
+          "p": 6.707072174841096e-05
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.39766483516483514,
+          "p": 0.001138182929619053
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.6534798534798534,
+          "p": 4.8086817833055875e-09
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8061813186813186,
+          "p": 9.180008360107116e-16
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9478479853479852,
+          "p": 1.730218859470252e-32
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.967032967032967,
+          "p": 1.53715981414491e-38
+        }
+      },
+      "mean_lang_rho": 0.5527838827838828,
+      "mean_placebo_rho": 0.9070207570207569
+    },
+    "14": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.23456959706959704,
+          "p": 0.06208415118502039
+        },
+        "english_only|chinese_only": {
+          "rho": 0.5705128205128204,
+          "p": 8.577646394025713e-07
+        },
+        "english_only|swahili_only": {
+          "rho": 0.3213369963369963,
+          "p": 0.009623003791772118
+        },
+        "english_only|bengali_only": {
+          "rho": 0.15018315018315015,
+          "p": 0.23620824758835168
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.4900641025641025,
+          "p": 3.9510890823244895e-05
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.5025641025641024,
+          "p": 2.3187812489815167e-05
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7763736263736262,
+          "p": 4.789979087386273e-14
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.3444597069597069,
+          "p": 0.005316303408856445
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.2852564102564102,
+          "p": 0.022326330824003423
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5417582417582416,
+          "p": 3.7806294162190442e-06
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.7728021978021976,
+          "p": 7.386790624186771e-14
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9302655677655678,
+          "p": 1.0847536092421832e-28
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9702838827838827,
+          "p": 6.453869061622386e-40
+        }
+      },
+      "mean_lang_rho": 0.4217078754578754,
+      "mean_placebo_rho": 0.8911172161172161
+    },
+    "15": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.3417582417582417,
+          "p": 0.005710926123220981
+        },
+        "english_only|chinese_only": {
+          "rho": 0.5665750915750916,
+          "p": 1.05973707690767e-06
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5597985347985347,
+          "p": 1.5152329781086393e-06
+        },
+        "english_only|bengali_only": {
+          "rho": 0.2906593406593406,
+          "p": 0.01980644297815649
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5067307692307692,
+          "p": 1.9323037233887168e-05
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.5403846153846154,
+          "p": 4.044478755728761e-06
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6954670329670328,
+          "p": 1.8004332077430853e-10
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.40169413919413915,
+          "p": 0.001001982469363879
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.254029304029304,
+          "p": 0.04281198569054337
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.5884615384615385,
+          "p": 3.156978911965297e-07
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.7836538461538459,
+          "p": 1.9317626602175948e-14
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9524725274725272,
+          "p": 1.0420015824057237e-33
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9802197802197802,
+          "p": 2.475558279632387e-45
+        }
+      },
+      "mean_lang_rho": 0.47455586080586076,
+      "mean_placebo_rho": 0.9054487179487177
+    },
+    "16": {
+      "role": "transition",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.15013736263736263,
+          "p": 0.23635278956218267
+        },
+        "english_only|chinese_only": {
+          "rho": 0.4106227106227106,
+          "p": 0.0007511432647669513
+        },
+        "english_only|swahili_only": {
+          "rho": 0.39487179487179486,
+          "p": 0.0012421620297083428
+        },
+        "english_only|bengali_only": {
+          "rho": 0.01955128205128205,
+          "p": 0.878128465194896
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5363553113553113,
+          "p": 4.921122017621348e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.5588827838827839,
+          "p": 1.5892813179049694e-06
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6828754578754578,
+          "p": 5.104250770594809e-10
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.35,
+          "p": 0.00458138289500798
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.1576465201465201,
+          "p": 0.21345831566507814
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.6064560439560439,
+          "p": 1.0887517188299305e-07
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8840201465201465,
+          "p": 3.7945843862361456e-22
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9531593406593406,
+          "p": 6.703903361680675e-34
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9842948717948719,
+          "p": 2.0593418665195574e-48
+        }
+      },
+      "mean_lang_rho": 0.38673992673992674,
+      "mean_placebo_rho": 0.940491452991453
+    },
+    "17": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.14775641025641026,
+          "p": 0.24395318200216262
+        },
+        "english_only|chinese_only": {
+          "rho": 0.32614468864468865,
+          "p": 0.008536659219027597
+        },
+        "english_only|swahili_only": {
+          "rho": 0.6,
+          "p": 1.6072242908090692e-07
+        },
+        "english_only|bengali_only": {
+          "rho": 0.03681318681318681,
+          "p": 0.7727352556189538
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5510531135531135,
+          "p": 2.3761334622045005e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.28186813186813187,
+          "p": 0.024041396710313957
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7880036630036629,
+          "p": 1.1041126140942094e-14
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.17999084249084246,
+          "p": 0.15467827664603043
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.3027930402930402,
+          "p": 0.015016114259969564
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.38347069597069594,
+          "p": 0.0017611325176281323
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8922161172161172,
+          "p": 4.4367235139058745e-23
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9755952380952378,
+          "p": 1.5585805653034765e-42
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9873168498168498,
+          "p": 2.855505549747923e-51
+        }
+      },
+      "mean_lang_rho": 0.3597893772893773,
+      "mean_placebo_rho": 0.9517094017094015
+    },
+    "18": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.05563186813186813,
+          "p": 0.6623857401558595
+        },
+        "english_only|chinese_only": {
+          "rho": 0.1369047619047619,
+          "p": 0.2807032641651748
+        },
+        "english_only|swahili_only": {
+          "rho": 0.36300366300366294,
+          "p": 0.0031976731375028466
+        },
+        "english_only|bengali_only": {
+          "rho": -0.07147435897435897,
+          "p": 0.5746313117601525
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.39349816849816843,
+          "p": 0.0012963733440272093
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.299587912087912,
+          "p": 0.01617297115914259
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.75,
+          "p": 9.86552537425161e-13
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.01652930402930403,
+          "p": 0.8968536198103003
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.11913919413919412,
+          "p": 0.3484120546422578
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.46492673992673983,
+          "p": 0.00010859532290767735
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9176739926739926,
+          "p": 1.5406648427781572e-26
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9592490842490841,
+          "p": 9.783913378922909e-36
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9847527472527472,
+          "p": 8.285004307577352e-49
+        }
+      },
+      "mean_lang_rho": 0.24946886446886446,
+      "mean_placebo_rho": 0.9538919413919413
+    },
+    "19": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.139514652014652,
+          "p": 0.2715468698952045
+        },
+        "english_only|chinese_only": {
+          "rho": -0.14065934065934063,
+          "p": 0.2675945902841592
+        },
+        "english_only|swahili_only": {
+          "rho": 0.49665750915750906,
+          "p": 2.9905800339859736e-05
+        },
+        "english_only|bengali_only": {
+          "rho": -0.02495421245421245,
+          "p": 0.8448218812770616
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5627289377289376,
+          "p": 1.299430885234233e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.15082417582417582,
+          "p": 0.23419106207039125
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.744139194139194,
+          "p": 1.837212096775119e-12
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.1138278388278388,
+          "p": 0.3704714209361296
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.3485347985347985,
+          "p": 0.004766445484396518
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.2897435897435897,
+          "p": 0.020215652135140424
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.8489010989010989,
+          "p": 8.016176701984164e-19
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9722069597069596,
+          "p": 8.344235907541161e-41
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9342948717948716,
+          "p": 1.8209870897254455e-29
+        }
+      },
+      "mean_lang_rho": 0.21736721611721607,
+      "mean_placebo_rho": 0.9184676434676433
+    },
+    "20": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.06579670329670328,
+          "p": 0.6054636603270509
+        },
+        "english_only|chinese_only": {
+          "rho": 0.005815018315018314,
+          "p": 0.9636261689062925
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5816849816849816,
+          "p": 4.6368582782240567e-07
+        },
+        "english_only|bengali_only": {
+          "rho": 0.09377289377289376,
+          "p": 0.4611077921458431
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.27165750915750914,
+          "p": 0.029897828194666007
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.3507783882783882,
+          "p": 0.004485674010131754
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7913003663003662,
+          "p": 7.162766263135553e-15
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.032600732600732596,
+          "p": 0.7981565936369064
+        },
+        "chinese_only|bengali_only": {
+          "rho": -0.03182234432234432,
+          "p": 0.8028778213224903
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.47413003663003656,
+          "p": 7.568389824773772e-05
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9139194139194139,
+          "p": 5.800310692145761e-26
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9657051282051281,
+          "p": 5.126648631239074e-38
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9867673992673991,
+          "p": 1.0547621295191769e-50
+        }
+      },
+      "mean_lang_rho": 0.25705128205128197,
+      "mean_placebo_rho": 0.9554639804639803
+    },
+    "21": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.032921245421245415,
+          "p": 0.7962146395056429
+        },
+        "english_only|chinese_only": {
+          "rho": -0.27820512820512816,
+          "p": 0.02601958815303262
+        },
+        "english_only|swahili_only": {
+          "rho": 0.6727106227106227,
+          "p": 1.1408664403484665e-09
+        },
+        "english_only|bengali_only": {
+          "rho": 0.11130952380952379,
+          "p": 0.38121973940115805
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5298534798534797,
+          "p": 6.7182419873311664e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.31007326007326,
+          "p": 0.012649579069124095
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6682692307692307,
+          "p": 1.6054703027489548e-09
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.14239926739926737,
+          "p": 0.2616613413334085
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.12138278388278387,
+          "p": 0.33934389164589185
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.510576923076923,
+          "p": 1.6295125293884225e-05
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.927197802197802,
+          "p": 3.934723441678033e-28
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9247252747252745,
+          "p": 1.0675633921615922e-27
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9742673992673992,
+          "p": 7.89826674179564e-42
+        }
+      },
+      "mean_lang_rho": 0.24706501831501831,
+      "mean_placebo_rho": 0.9420634920634919
+    },
+    "22": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.04473443223443223,
+          "p": 0.7255899874893605
+        },
+        "english_only|chinese_only": {
+          "rho": -0.04336080586080586,
+          "p": 0.733698638139596
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5528846153846153,
+          "p": 2.1647572946074263e-06
+        },
+        "english_only|bengali_only": {
+          "rho": -0.008012820512820512,
+          "p": 0.949893803693118
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.47847985347985345,
+          "p": 6.358021038712677e-05
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.2869505494505494,
+          "p": 0.021508462496074625
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.813598901098901,
+          "p": 3.082212398331443e-16
+        },
+        "chinese_only|swahili_only": {
+          "rho": 0.04839743589743589,
+          "p": 0.7041152843589176
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.35750915750915746,
+          "p": 0.003729050696491751
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.3880494505494505,
+          "p": 0.0015330147328310084
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9092948717948717,
+          "p": 2.7385982968795574e-25
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9231227106227106,
+          "p": 2.0022613955856627e-27
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9630952380952379,
+          "p": 4.79217313811549e-37
+        }
+      },
+      "mean_lang_rho": 0.2829761904761904,
+      "mean_placebo_rho": 0.9318376068376066
+    },
+    "23": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.2759157509157509,
+          "p": 0.027324343229178837
+        },
+        "english_only|chinese_only": {
+          "rho": -0.2573260073260073,
+          "p": 0.04009754766571859
+        },
+        "english_only|swahili_only": {
+          "rho": 0.6481227106227105,
+          "p": 7.050433245196337e-09
+        },
+        "english_only|bengali_only": {
+          "rho": 0.0008241758241758241,
+          "p": 0.9948429455629484
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5559523809523809,
+          "p": 1.8496741843348738e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": -0.027976190476190474,
+          "p": 0.8263062768116788
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6304029304029304,
+          "p": 2.3732546379318148e-08
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.20146520146520144,
+          "p": 0.11040578491655531
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.061355311355311346,
+          "p": 0.6300741003886818
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.3024725274725274,
+          "p": 0.01512850660300302
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.909478021978022,
+          "p": 2.579428681082001e-25
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9476648351648351,
+          "p": 1.9235957617687423e-32
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9899267399267396,
+          "p": 2.3467808099118475e-54
+        }
+      },
+      "mean_lang_rho": 0.14364468864468863,
+      "mean_placebo_rho": 0.9490231990231989
+    },
+    "24": {
+      "role": "sensitive",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.2844322344322344,
+          "p": 0.02273365575445783
+        },
+        "english_only|chinese_only": {
+          "rho": -0.421565934065934,
+          "p": 0.0005218842530415376
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5173992673992674,
+          "p": 1.1982321798759231e-05
+        },
+        "english_only|bengali_only": {
+          "rho": 0.029304029304029304,
+          "p": 0.8181997099280509
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5772435897435896,
+          "p": 5.937618834993913e-07
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.09217032967032966,
+          "p": 0.46883622911947864
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7200091575091574,
+          "p": 2.011270018041724e-11
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.1633241758241758,
+          "p": 0.1972173721817751
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.16108058608058604,
+          "p": 0.20352633405485843
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.24304029304029304,
+          "p": 0.05297500567892589
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.961080586080586,
+          "p": 2.4165067205753414e-36
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9543498168498167,
+          "p": 3.0719409274059144e-34
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9908882783882783,
+          "p": 1.0614765917743853e-55
+        }
+      },
+      "mean_lang_rho": 0.14709249084249082,
+      "mean_placebo_rho": 0.9687728937728936
+    },
+    "25": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.2730311355311355,
+          "p": 0.029046339590725053
+        },
+        "english_only|chinese_only": {
+          "rho": -0.3258241758241758,
+          "p": 0.008605600844865504
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5244505494505494,
+          "p": 8.659412630997526e-06
+        },
+        "english_only|bengali_only": {
+          "rho": 0.06291208791208791,
+          "p": 0.6214002363031002
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5545787545787546,
+          "p": 1.9850329486216427e-06
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.2237179487179487,
+          "p": 0.07555705518617908
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6007326007326006,
+          "p": 1.538402487137263e-07
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.12518315018315018,
+          "p": 0.32432398918582717
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.03012820512820513,
+          "p": 0.8131775122673969
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.3882326007326007,
+          "p": 0.001524469177847088
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9549450549450548,
+          "p": 2.0632377973550265e-34
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9603021978021976,
+          "p": 4.4135551084959514e-36
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9830128205128205,
+          "p": 2.3016983301127744e-47
+        }
+      },
+      "mean_lang_rho": 0.16607142857142856,
+      "mean_placebo_rho": 0.9660866910866909
+    },
+    "26": {
+      "role": "other",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": -0.32216117216117207,
+          "p": 0.009428650651276904
+        },
+        "english_only|chinese_only": {
+          "rho": -0.30618131868131865,
+          "p": 0.013871180891108743
+        },
+        "english_only|swahili_only": {
+          "rho": 0.43713369963369964,
+          "p": 0.000304233535604505
+        },
+        "english_only|bengali_only": {
+          "rho": -0.02509157509157509,
+          "p": 0.8439783661055795
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.5089285714285714,
+          "p": 1.7534326265129797e-05
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.30366300366300364,
+          "p": 0.01471465908005285
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.6077838827838827,
+          "p": 1.0038576207819373e-07
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.0819139194139194,
+          "p": 0.5199137078854374
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.10695970695970694,
+          "p": 0.40021913684868116
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.3788461538461538,
+          "p": 0.0020219781306480738
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9663919413919413,
+          "p": 2.7661756257753135e-38
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9652472527472526,
+          "p": 7.681658488653709e-38
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.993131868131868,
+          "p": 1.7159572246391697e-59
+        }
+      },
+      "mean_lang_rho": 0.1607967032967033,
+      "mean_placebo_rho": 0.9749236874236873
+    },
+    "27": {
+      "role": "final",
+      "lang_pairs": {
+        "english_only|korean_only": {
+          "rho": 0.11611721611721611,
+          "p": 0.36086130915288717
+        },
+        "english_only|chinese_only": {
+          "rho": -0.36927655677655674,
+          "p": 0.002674191254972458
+        },
+        "english_only|swahili_only": {
+          "rho": 0.5848901098901098,
+          "p": 3.8701908193636717e-07
+        },
+        "english_only|bengali_only": {
+          "rho": -0.044963369963369956,
+          "p": 0.7242414307812999
+        },
+        "korean_only|chinese_only": {
+          "rho": 0.12939560439560438,
+          "p": 0.30817707951522494
+        },
+        "korean_only|swahili_only": {
+          "rho": 0.6867216117216116,
+          "p": 3.7333218135714596e-10
+        },
+        "korean_only|bengali_only": {
+          "rho": 0.7911172161172161,
+          "p": 7.338540058549076e-15
+        },
+        "chinese_only|swahili_only": {
+          "rho": -0.14958791208791206,
+          "p": 0.2380920535231318
+        },
+        "chinese_only|bengali_only": {
+          "rho": 0.22834249084249084,
+          "p": 0.06955554095365589
+        },
+        "swahili_only|bengali_only": {
+          "rho": 0.4185897435897436,
+          "p": 0.0005769187013653457
+        }
+      },
+      "placebo_pairs": {
+        "english_only|english_only_b": {
+          "rho": 0.9789835164835163,
+          "p": 1.592182347321778e-44
+        },
+        "korean_only|korean_only_b": {
+          "rho": 0.9574633699633699,
+          "p": 3.600933772115232e-35
+        },
+        "swahili_only|swahili_only_b": {
+          "rho": 0.9726190476190475,
+          "p": 5.283341222042578e-41
+        }
+      },
+      "mean_lang_rho": 0.2391346153846154,
+      "mean_placebo_rho": 0.9696886446886447
+    }
+  },
+  "summary": {
+    "overall": {
+      "layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "mean_lang_rho": 0.3409979989146656,
+      "mean_placebo_rho": 0.9414185094740648
+    },
+    "front_half": {
+      "layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "mean_lang_rho": 0.41949880247957166,
+      "mean_placebo_rho": 0.9384087066779372
+    },
+    "back_half": {
+      "layers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "mean_lang_rho": 0.2681043956043956,
+      "mean_placebo_rho": 0.9442133263561833
+    },
+    "min_lang_rho_layer": 23,
+    "max_gap_layer": 24
+  }
+}

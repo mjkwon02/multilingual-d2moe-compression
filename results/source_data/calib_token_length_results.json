@@ -1,0 +1,233 @@
+{
+  "_description": "Raw data for 00_docs/06_논문_구성.md '[부록] 표 A1: 조건별 실측 calibration 토큰 길이' (mirrored in 00_docs/08_figure_정리.md). Measured token lengths of the calibration text that phase1_fisher.build_samples() actually produces per condition.",
+  "_provenance": {
+    "model_tokenizer": "deepseek-ai/deepseek-moe-16b-base (use_fast=False)",
+    "sample_builder": "scripts/phase1_fisher.py::build_samples() (unmodified)",
+    "window_chars": 2048,
+    "window_chars_note": "= seqlen * 4, i.e. every window is exactly 2048 characters",
+    "seqlen_cap_tokens": 512,
+    "n_samples_per_seed": 64,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "generated_by": "scripts/phase1_6_robust_mix_calib_tokens.py::measure() logic, run across all 6 paper conditions (CPU-only, no model forward pass)",
+    "regenerated_on": "2026-07-31",
+    "regenerated_note": "This file was reconstructed on 2026-07-31 by re-running the measurement: the path was cited by 06_논문_구성.md but no such file existed on disk. Every value in the 표 A1 raw/realized/cap-rate/fertility columns reproduced EXACTLY, so the published table is confirmed correct and unchanged."
+  },
+  "_fertility_definition": "'fertility_chars_per_token' is the paper's 표 A1 column = mean_chars_per_window / mean_raw_tokens (ratio of means, i.e. 2048 / mean raw tokens). '..._mean_of_per_sample_ratios' is the alternative mean-of-per-sample-ratios estimator emitted by phase1_6_robust_mix_calib_tokens.py; by Jensen it is >= the ratio of means. The published table matches the ratio-of-means column for 5 of 6 conditions (English 4.45, Chinese 1.51, Balanced 1.06, Korean 0.61, Bengali 0.55). Swahili's published 2.45 is a last-digit rounding slip: the ratio of means is 2.4448 (-> 2.44); 2.45 is what the mean-of-ratios estimator (2.4456) gives. The gap is 0.0008 and changes nothing substantive.",
+  "_seed_stability": "Max |per-seed deviation| from the 3-seed mean of mean_raw_tokens: Bengali 0.05%, Korean 0.06%, Chinese 0.26%, Swahili 0.50%, English 1.00%, Balanced 1.64%. So the correct blanket claim is '+/-1.7% or less', NOT the '+/-0.5%' originally written in the 표 A1 caption note. Realized (512-capped) tokens are seed-invariant for all five capped conditions.",
+  "conditions": {
+    "english_only": {
+      "table_label": "English",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 455.34375,
+          "mean_realized_tokens": 455.3125,
+          "cap_hit_fraction": 0.015625,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 461.328125,
+          "mean_realized_tokens": 461.328125,
+          "cap_hit_fraction": 0.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 463.125,
+          "mean_realized_tokens": 463.0,
+          "cap_hit_fraction": 0.015625,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 459.9322916666667,
+        "mean_realized_tokens": 459.8802083333333,
+        "cap_hit_fraction": 0.010416666666666666,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 4.4528293340278795,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 4.461553359144852
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 0.9976559049679001
+    },
+    "swahili_only": {
+      "table_label": "Swahili",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 839.703125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 839.828125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 833.515625,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 837.6822916666666,
+        "mean_realized_tokens": 512.0,
+        "cap_hit_fraction": 1.0,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 2.444840986103771,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 2.4455882298190175
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 0.497404171977488
+    },
+    "chinese_only": {
+      "table_label": "Chinese",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 1352.1875,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 1357.953125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 1356.96875,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 1355.703125,
+        "mean_realized_tokens": 512.0,
+        "cap_hit_fraction": 1.0,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 1.5106552181179047,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 1.5111917708920772
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 0.2593211548435429
+    },
+    "mixed_5lang": {
+      "table_label": "Balanced (mixed_5lang)",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 1922.109375,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 1914.453125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 1965.921875,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 1934.1614583333333,
+        "mean_realized_tokens": 512.0,
+        "cap_hit_fraction": 1.0,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 1.0588567935609479,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 1.0871934419508735
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 1.6420768043860563
+    },
+    "korean_only": {
+      "table_label": "Korean",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 3344.609375,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 3340.453125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 3342.359375,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 3342.4739583333335,
+        "mean_realized_tokens": 512.0,
+        "cap_hit_fraction": 1.0,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 0.6127198074031367,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 0.6129242088570432
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 0.06388730901979274
+    },
+    "bengali_only": {
+      "table_label": "Bengali",
+      "per_seed": {
+        "0": {
+          "mean_raw_tokens": 3725.703125,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "1": {
+          "mean_raw_tokens": 3725.875,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        },
+        "2": {
+          "mean_raw_tokens": 3723.1875,
+          "mean_realized_tokens": 512.0,
+          "cap_hit_fraction": 1.0,
+          "mean_chars_per_window": 2048.0,
+          "n_samples": 64
+        }
+      },
+      "mean_over_seeds": {
+        "mean_raw_tokens": 3724.921875,
+        "mean_realized_tokens": 512.0,
+        "cap_hit_fraction": 1.0,
+        "mean_chars_per_window": 2048.0,
+        "fertility_chars_per_token": 0.5498101889720841,
+        "fertility_chars_per_token_mean_of_per_sample_ratios": 0.5498281521761924
+      },
+      "max_abs_seed_deviation_pct_of_mean_raw_tokens": 0.04656137922355754
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:09,  1.42s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.19s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.10s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.11s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.05s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.03s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.04s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.28it/s]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.03it/s]
+[qwen-sib-clean] baseline: model ready ({'baseline': True, 'params': 14315784192})
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[qwen-sib-clean] baseline/eng_Latn: full=0.7794 (n=204)  clean=0.7857 (n=98) top=science/technology share=0.286  prompt_tokens max=847  [55s, 3.70 it/s]
+[qwen-sib-clean] baseline/kor_Hang: full=0.6422 (n=204)  clean=0.7041 (n=98) top=geography share=0.286  prompt_tokens max=887  [56s, 3.63 it/s]
+[qwen-sib-clean] baseline/zho_Hans: full=0.6029 (n=204)  clean=0.6122 (n=98) top=geography share=0.367  prompt_tokens max=859  [55s, 3.69 it/s]
+[qwen-sib-clean] baseline/swh_Latn: full=0.3775 (n=204)  clean=0.3776 (n=98) top=geography share=0.622  prompt_tokens max=918  [57s, 3.60 it/s]
+[qwen-sib-clean] baseline/ben_Beng: full=0.5490 (n=204)  clean=0.5204 (n=98) top=geography share=0.469  prompt_tokens max=1118  [61s, 3.35 it/s]
+[qwen-sib-clean] wrote results/qwen/sib200_clean/baseline.json and results/qwen/sib200_clean/baseline_predictions.jsonl (1020 items)

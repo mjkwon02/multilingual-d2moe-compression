@@ -1,0 +1,134 @@
+{
+  "stage": "freq",
+  "condition": "korean_only",
+  "seed": 1,
+  "argv": [
+    "--base_model_path=$HF_HOME/hub/models--Qwen--Qwen1.5-MoE-A2.7B/snapshots/1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+    "--save_path=results/qwen/phase1/korean_only/seed1",
+    "--model_type=qwen",
+    "--dataset_name=wikitext",
+    "--split=train",
+    "--seed=1",
+    "--max_samples=2000",
+    "--batch_size=4"
+  ],
+  "env": {
+    "host": "<redacted-host>",
+    "python": "3.10.20",
+    "prefix": "<conda>/envs/d2moe_env",
+    "torch": "2.3.1+cu121",
+    "cuda": "12.1",
+    "transformers": "4.42.4",
+    "accelerate": "0.29.2",
+    "CUDA_VISIBLE_DEVICES": "2,3",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "HF_HOME": "$HF_HOME",
+    "gpus": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+    "attn_implementation": "sdpa",
+    "device_map_strategy": "sequential",
+    "gpu_mem_caps_gib": [
+      13,
+      22
+    ],
+    "utc": "2026-09-17T21:42:23Z"
+  },
+  "status": "ok",
+  "attn_implementation_used": "sdpa",
+  "model_class": "Qwen2MoeForCausalLM",
+  "device_map": {
+    "hf_device_map": {
+      "model.embed_tokens": 0,
+      "model.layers.0": 0,
+      "model.layers.1": 0,
+      "model.layers.2": 0,
+      "model.layers.3": 0,
+      "model.layers.4": 0,
+      "model.layers.5": 0,
+      "model.layers.6": 0,
+      "model.layers.7": 0,
+      "model.layers.8": 0,
+      "model.layers.9": 0,
+      "model.layers.10": 0,
+      "model.layers.11": 0,
+      "model.layers.12": 1,
+      "model.layers.13": 1,
+      "model.layers.14": 1,
+      "model.layers.15": 1,
+      "model.layers.16": 1,
+      "model.layers.17": 1,
+      "model.layers.18": 1,
+      "model.layers.19": 1,
+      "model.layers.20": 1,
+      "model.layers.21": 1,
+      "model.layers.22": 1,
+      "model.layers.23": 1,
+      "model.norm": 1,
+      "lm_head": 1
+    },
+    "modules_per_device": {
+      "0": 13,
+      "1": 14
+    }
+  },
+  "validation": {
+    "per_layer_selection_total": 233680.0,
+    "token_positions_counted": 58420.0,
+    "zero_freq_experts": {},
+    "min_freq": 30.0,
+    "max_freq": 43839.0
+  },
+  "resources": {
+    "stages": [
+      {
+        "name": "get_expert_freq",
+        "seconds": 165.11,
+        "gpu": {
+          "0": {
+            "peak_allocated_gib": 13.761,
+            "peak_reserved_gib": 13.824,
+            "now_allocated_gib": 13.387
+          },
+          "1": {
+            "peak_allocated_gib": 13.924,
+            "peak_reserved_gib": 13.98,
+            "now_allocated_gib": 13.387
+          }
+        },
+        "cpu_rss_peak_gib_sampled": 1.732,
+        "cpu_rss_peak_gib_lifetime": 4.573,
+        "nvidia_smi_after": [
+          {
+            "index": "0",
+            "uuid": "GPU-9db24f70-d549-0747-f93b-410201bf45d5",
+            "used_mib": "1",
+            "total_mib": "24576"
+          },
+          {
+            "index": "1",
+            "uuid": "GPU-4b735cc7-8589-b256-47aa-9ecbcd53940d",
+            "used_mib": "1",
+            "total_mib": "24576"
+          },
+          {
+            "index": "2",
+            "uuid": "GPU-5dedb5fe-b0e1-070f-e190-b1c711773125",
+            "used_mib": "14044",
+            "total_mib": "24576"
+          },
+          {
+            "index": "3",
+            "uuid": "GPU-ee4099f5-b352-fbb3-1c5b-12b224aeb076",
+            "used_mib": "14052",
+            "total_mib": "24576"
+          }
+        ]
+      }
+    ],
+    "total_seconds": 166.2
+  }
+}

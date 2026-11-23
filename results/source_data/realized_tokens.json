@@ -1,0 +1,98 @@
+{
+  "english_only": {
+    "fisher": {
+      "n_samples": 16,
+      "seqlen": 256,
+      "n_used": 16,
+      "total_tokens": 3669,
+      "mean_tokens_per_sample": 229.3125
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 29140,
+      "mean_tokens_per_sample": 455.3125
+    }
+  },
+  "korean_only": {
+    "fisher": {
+      "n_samples": 16,
+      "seqlen": 256,
+      "n_used": 16,
+      "total_tokens": 4096,
+      "mean_tokens_per_sample": 256.0
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    }
+  },
+  "chinese_only": {
+    "fisher": {
+      "n_samples": 16,
+      "seqlen": 256,
+      "n_used": 16,
+      "total_tokens": 4096,
+      "mean_tokens_per_sample": 256.0
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    }
+  },
+  "swahili_only": {
+    "fisher": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    }
+  },
+  "bengali_only": {
+    "fisher": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    }
+  },
+  "mixed_5lang": {
+    "fisher": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    },
+    "svd": {
+      "n_samples": 64,
+      "seqlen": 512,
+      "n_used": 64,
+      "total_tokens": 32768,
+      "mean_tokens_per_sample": 512.0
+    }
+  }
+}

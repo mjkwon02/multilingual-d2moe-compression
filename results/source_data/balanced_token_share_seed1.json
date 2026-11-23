@@ -1,0 +1,530 @@
+{
+  "seed": 1,
+  "condition": "mixed_5lang",
+  "condition_paper_label": "Balanced",
+  "n_windows": 64,
+  "window_chars": 2048,
+  "seqlen_cap_tokens": 512,
+  "total_tokens": 32768,
+  "expected_total_tokens": 32768,
+  "total_tokens_matches_table_a1_budget": true,
+  "languages": {
+    "eng_Latn": {
+      "tokens": 1281,
+      "share_pct_of_all_tokens": 3.9093017578125,
+      "share_pct_of_language_attributed_tokens": 4.017563117453348,
+      "manifest_char_share_pct": 20.006359782588095
+    },
+    "swh_Latn": {
+      "tokens": 2625,
+      "share_pct_of_all_tokens": 8.0108642578125,
+      "share_pct_of_language_attributed_tokens": 8.23271130625686,
+      "manifest_char_share_pct": 20.007412726725196
+    },
+    "zho_Hans": {
+      "tokens": 3864,
+      "share_pct_of_all_tokens": 11.7919921875,
+      "share_pct_of_language_attributed_tokens": 12.118551042810099,
+      "manifest_char_share_pct": 19.99625151887192
+    },
+    "kor_Hang": {
+      "tokens": 12344,
+      "share_pct_of_all_tokens": 37.6708984375,
+      "share_pct_of_language_attributed_tokens": 38.71412890073702,
+      "manifest_char_share_pct": 19.999831528938063
+    },
+    "ben_Beng": {
+      "tokens": 11771,
+      "share_pct_of_all_tokens": 35.9222412109375,
+      "share_pct_of_language_attributed_tokens": 36.91704563274267,
+      "manifest_char_share_pct": 19.990144442876726
+    }
+  },
+  "boundary_tokens": {
+    "tokens": 0,
+    "share_pct_of_all_tokens": 0.0,
+    "cross_language": 0,
+    "language_to_separator": 0
+  },
+  "separator_only_tokens": {
+    "tokens": 819,
+    "share_pct_of_all_tokens": 2.4993896484375
+  },
+  "special_tokens": {
+    "tokens": 64,
+    "share_pct_of_all_tokens": 0.1953125
+  },
+  "language_attributed_tokens": 31885,
+  "share_sum_check_pct": 100.0,
+  "per_window_language_counts": [
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 30,
+      "kor_Hang": 307,
+      "ben_Beng": 166
+    },
+    {
+      "eng_Latn": 4,
+      "swh_Latn": 0,
+      "zho_Hans": 34,
+      "kor_Hang": 58,
+      "ben_Beng": 407
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 67,
+      "zho_Hans": 32,
+      "kor_Hang": 320,
+      "ben_Beng": 84
+    },
+    {
+      "eng_Latn": 56,
+      "swh_Latn": 88,
+      "zho_Hans": 105,
+      "kor_Hang": 240,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 51,
+      "swh_Latn": 28,
+      "zho_Hans": 155,
+      "kor_Hang": 73,
+      "ben_Beng": 182
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 37,
+      "zho_Hans": 33,
+      "kor_Hang": 245,
+      "ben_Beng": 186
+    },
+    {
+      "eng_Latn": 12,
+      "swh_Latn": 0,
+      "zho_Hans": 140,
+      "kor_Hang": 188,
+      "ben_Beng": 157
+    },
+    {
+      "eng_Latn": 52,
+      "swh_Latn": 0,
+      "zho_Hans": 107,
+      "kor_Hang": 246,
+      "ben_Beng": 90
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 29,
+      "zho_Hans": 113,
+      "kor_Hang": 128,
+      "ben_Beng": 190
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 52,
+      "zho_Hans": 109,
+      "kor_Hang": 231,
+      "ben_Beng": 104
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 21,
+      "kor_Hang": 214,
+      "ben_Beng": 268
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 41,
+      "zho_Hans": 41,
+      "kor_Hang": 419,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 30,
+      "swh_Latn": 19,
+      "zho_Hans": 131,
+      "kor_Hang": 313,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 164,
+      "zho_Hans": 103,
+      "kor_Hang": 226,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 109,
+      "zho_Hans": 34,
+      "kor_Hang": 138,
+      "ben_Beng": 218
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 52,
+      "zho_Hans": 126,
+      "kor_Hang": 46,
+      "ben_Beng": 271
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 32,
+      "zho_Hans": 92,
+      "kor_Hang": 369,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 39,
+      "kor_Hang": 0,
+      "ben_Beng": 466
+    },
+    {
+      "eng_Latn": 13,
+      "swh_Latn": 0,
+      "zho_Hans": 2,
+      "kor_Hang": 441,
+      "ben_Beng": 47
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 107,
+      "zho_Hans": 0,
+      "kor_Hang": 352,
+      "ben_Beng": 42
+    },
+    {
+      "eng_Latn": 6,
+      "swh_Latn": 42,
+      "zho_Hans": 62,
+      "kor_Hang": 197,
+      "ben_Beng": 190
+    },
+    {
+      "eng_Latn": 13,
+      "swh_Latn": 100,
+      "zho_Hans": 0,
+      "kor_Hang": 126,
+      "ben_Beng": 264
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 45,
+      "zho_Hans": 59,
+      "kor_Hang": 190,
+      "ben_Beng": 207
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 91,
+      "zho_Hans": 42,
+      "kor_Hang": 0,
+      "ben_Beng": 370
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 43,
+      "zho_Hans": 33,
+      "kor_Hang": 227,
+      "ben_Beng": 198
+    },
+    {
+      "eng_Latn": 44,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 85,
+      "ben_Beng": 372
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 90,
+      "zho_Hans": 21,
+      "kor_Hang": 206,
+      "ben_Beng": 182
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 25,
+      "kor_Hang": 161,
+      "ben_Beng": 317
+    },
+    {
+      "eng_Latn": 21,
+      "swh_Latn": 55,
+      "zho_Hans": 153,
+      "kor_Hang": 77,
+      "ben_Beng": 187
+    },
+    {
+      "eng_Latn": 17,
+      "swh_Latn": 74,
+      "zho_Hans": 54,
+      "kor_Hang": 188,
+      "ben_Beng": 166
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 95,
+      "kor_Hang": 73,
+      "ben_Beng": 333
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 4,
+      "kor_Hang": 372,
+      "ben_Beng": 129
+    },
+    {
+      "eng_Latn": 20,
+      "swh_Latn": 0,
+      "zho_Hans": 8,
+      "kor_Hang": 296,
+      "ben_Beng": 177
+    },
+    {
+      "eng_Latn": 167,
+      "swh_Latn": 9,
+      "zho_Hans": 0,
+      "kor_Hang": 97,
+      "ben_Beng": 226
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 47,
+      "zho_Hans": 57,
+      "kor_Hang": 73,
+      "ben_Beng": 322
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 221,
+      "ben_Beng": 284
+    },
+    {
+      "eng_Latn": 39,
+      "swh_Latn": 3,
+      "zho_Hans": 64,
+      "kor_Hang": 90,
+      "ben_Beng": 299
+    },
+    {
+      "eng_Latn": 31,
+      "swh_Latn": 0,
+      "zho_Hans": 115,
+      "kor_Hang": 349,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 2,
+      "kor_Hang": 0,
+      "ben_Beng": 507
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 138,
+      "zho_Hans": 91,
+      "kor_Hang": 94,
+      "ben_Beng": 176
+    },
+    {
+      "eng_Latn": 32,
+      "swh_Latn": 144,
+      "zho_Hans": 97,
+      "kor_Hang": 218,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 43,
+      "zho_Hans": 98,
+      "kor_Hang": 354,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 31,
+      "swh_Latn": 0,
+      "zho_Hans": 33,
+      "kor_Hang": 435,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 0,
+      "zho_Hans": 51,
+      "kor_Hang": 196,
+      "ben_Beng": 223
+    },
+    {
+      "eng_Latn": 66,
+      "swh_Latn": 66,
+      "zho_Hans": 178,
+      "kor_Hang": 179,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 23,
+      "swh_Latn": 142,
+      "zho_Hans": 92,
+      "kor_Hang": 238,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 38,
+      "swh_Latn": 74,
+      "zho_Hans": 84,
+      "kor_Hang": 14,
+      "ben_Beng": 285
+    },
+    {
+      "eng_Latn": 52,
+      "swh_Latn": 61,
+      "zho_Hans": 25,
+      "kor_Hang": 357,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 26,
+      "kor_Hang": 221,
+      "ben_Beng": 256
+    },
+    {
+      "eng_Latn": 76,
+      "swh_Latn": 0,
+      "zho_Hans": 29,
+      "kor_Hang": 246,
+      "ben_Beng": 144
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 79,
+      "zho_Hans": 44,
+      "kor_Hang": 270,
+      "ben_Beng": 106
+    },
+    {
+      "eng_Latn": 96,
+      "swh_Latn": 73,
+      "zho_Hans": 75,
+      "kor_Hang": 196,
+      "ben_Beng": 51
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 6,
+      "kor_Hang": 26,
+      "ben_Beng": 475
+    },
+    {
+      "eng_Latn": 20,
+      "swh_Latn": 101,
+      "zho_Hans": 95,
+      "kor_Hang": 260,
+      "ben_Beng": 13
+    },
+    {
+      "eng_Latn": 29,
+      "swh_Latn": 69,
+      "zho_Hans": 148,
+      "kor_Hang": 233,
+      "ben_Beng": 8
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 150,
+      "zho_Hans": 146,
+      "kor_Hang": 24,
+      "ben_Beng": 171
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 40,
+      "kor_Hang": 110,
+      "ben_Beng": 353
+    },
+    {
+      "eng_Latn": 6,
+      "swh_Latn": 0,
+      "zho_Hans": 40,
+      "kor_Hang": 156,
+      "ben_Beng": 299
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 34,
+      "kor_Hang": 80,
+      "ben_Beng": 391
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 6,
+      "kor_Hang": 287,
+      "ben_Beng": 208
+    },
+    {
+      "eng_Latn": 0,
+      "swh_Latn": 0,
+      "zho_Hans": 29,
+      "kor_Hang": 96,
+      "ben_Beng": 382
+    },
+    {
+      "eng_Latn": 99,
+      "swh_Latn": 61,
+      "zho_Hans": 86,
+      "kor_Hang": 241,
+      "ben_Beng": 0
+    },
+    {
+      "eng_Latn": 74,
+      "swh_Latn": 0,
+      "zho_Hans": 0,
+      "kor_Hang": 149,
+      "ben_Beng": 280
+    },
+    {
+      "eng_Latn": 5,
+      "swh_Latn": 0,
+      "zho_Hans": 70,
+      "kor_Hang": 82,
+      "ben_Beng": 342
+    }
+  ],
+  "provenance": {
+    "calib_text_hash_md5_12": "034b0d770f48",
+    "first_sample_preview": "কে পর্যটকদের আরও ভাল ধারণা দিতে কমপ্লেক্সের কিনারার বেশিরভাগ",
+    "window_char_offsets_reproduced": true,
+    "table_a1_published": {
+      "mean_raw_tokens": 1914.453125,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_measured": {
+      "mean_raw_tokens": 1914.453125,
+      "mean_realized_tokens": 512.0,
+      "cap_hit_fraction": 1.0
+    },
+    "table_a1_exact_match": {
+      "mean_raw_tokens": true,
+      "mean_realized_tokens": true,
+      "cap_hit_fraction": true
+    },
+    "table_a1_all_match": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "condition": "korean_only",
+  "pp_ratio": 0.2,
+  "metric": "acc",
+  "per_language": {
+    "eng_Latn": {
+      "retention_off": 0.6253968253968254,
+      "retention_on": 0.6031746031746031,
+      "n_seeds": 3,
+      "flagged_at_chance": false
+    },
+    "kor_Hang": {
+      "retention_off": 0.8194444444444445,
+      "retention_on": 0.7083333333333334,
+      "n_seeds": 3,
+      "flagged_at_chance": false
+    },
+    "zho_Hans": {
+      "retention_off": 0.6631205673758865,
+      "retention_on": 0.6595744680851063,
+      "n_seeds": 3,
+      "flagged_at_chance": false
+    },
+    "swh_Latn": {
+      "retention_off": 0.9064327485380118,
+      "retention_on": 0.8479532163742691,
+      "n_seeds": 3,
+      "flagged_at_chance": true
+    },
+    "ben_Beng": {
+      "retention_off": 0.976608187134503,
+      "retention_on": 0.9649122807017546,
+      "n_seeds": 3,
+      "flagged_at_chance": true
+    }
+  },
+  "macro_average_retention": {
+    "off": 0.7026539457390522,
+    "on": 0.657027468197681
+  },
+  "worst_language_retention": {
+    "off": 0.6253968253968254,
+    "on": 0.6031746031746031
+  }
+}

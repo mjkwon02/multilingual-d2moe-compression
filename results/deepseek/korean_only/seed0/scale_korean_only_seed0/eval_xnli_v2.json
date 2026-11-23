@@ -1,0 +1,685 @@
+{
+  "protocol": "v2_true_false_neither",
+  "num_fewshot": 6,
+  "demo_seed": 42,
+  "limit": 200,
+  "langs": [
+    "en",
+    "zh",
+    "sw"
+  ],
+  "results": {
+    "en": {
+      "name": "English",
+      "acc": 0.335,
+      "acc_unnormalized": 0.335,
+      "n_samples": 200,
+      "pred_distribution": {
+        "entailment": 161,
+        "neutral": 39,
+        "contradiction": 0
+      },
+      "_sample_items": [
+        {
+          "premise": "Well, I wasn't even thinking about that, but I was so frustrated, and, I ended up talking to him again.",
+          "hypothesis": "I havent spoken to him again.",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.1190402507781982,
+              "normalized": -1.1190402507781982
+            },
+            "neutral": {
+              "sum": -0.9940402507781982,
+              "normalized": -0.9940402507781982
+            },
+            "contradiction": {
+              "sum": -2.1190402507781982,
+              "normalized": -2.1190402507781982
+            }
+          }
+        },
+        {
+          "premise": "Well, I wasn't even thinking about that, but I was so frustrated, and, I ended up talking to him again.",
+          "hypothesis": "I was so upset that I just started talking to him again.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.8959372043609619,
+              "normalized": -0.8959372043609619
+            },
+            "neutral": {
+              "sum": -1.270937204360962,
+              "normalized": -1.270937204360962
+            },
+            "contradiction": {
+              "sum": -2.020937204360962,
+              "normalized": -2.020937204360962
+            }
+          }
+        },
+        {
+          "premise": "Well, I wasn't even thinking about that, but I was so frustrated, and, I ended up talking to him again.",
+          "hypothesis": "We had a great talk.",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.3980971574783325,
+              "normalized": -1.3980971574783325
+            },
+            "neutral": {
+              "sum": -0.7730971574783325,
+              "normalized": -0.7730971574783325
+            },
+            "contradiction": {
+              "sum": -2.648097038269043,
+              "normalized": -2.648097038269043
+            }
+          }
+        },
+        {
+          "premise": "And I thought that was a privilege, and it's still, it's still, I was the only nine two-two Ex-O which was my AFFC Air Force Career field.",
+          "hypothesis": "I was not aware that I was not the only person to be at the field that day.",
+          "gold": 1,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.040285348892212,
+              "normalized": -1.040285348892212
+            },
+            "neutral": {
+              "sum": -1.040285348892212,
+              "normalized": -1.040285348892212
+            },
+            "contradiction": {
+              "sum": -2.415285348892212,
+              "normalized": -2.415285348892212
+            }
+          }
+        },
+        {
+          "premise": "And I thought that was a privilege, and it's still, it's still, I was the only nine two-two Ex-O which was my AFFC Air Force Career field.",
+          "hypothesis": "I was under the impression that I was the only one with that number at the AFFC Air Force Career field.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.892667293548584,
+              "normalized": -0.892667293548584
+            },
+            "neutral": {
+              "sum": -1.267667293548584,
+              "normalized": -1.267667293548584
+            },
+            "contradiction": {
+              "sum": -2.142667293548584,
+              "normalized": -2.142667293548584
+            }
+          }
+        },
+        {
+          "premise": "And I thought that was a privilege, and it's still, it's still, I was the only nine two-two Ex-O which was my AFFC Air Force Career field.",
+          "hypothesis": "We all were given the same exact number no matter what privileges we were promised to be granted, it was all a lie.",
+          "gold": 2,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.020630121231079,
+              "normalized": -1.020630121231079
+            },
+            "neutral": {
+              "sum": -1.270630121231079,
+              "normalized": -1.270630121231079
+            },
+            "contradiction": {
+              "sum": -2.020630121231079,
+              "normalized": -2.020630121231079
+            }
+          }
+        },
+        {
+          "premise": "They told me that, uh, that I would be called in a guy at the end for me to meet.",
+          "hypothesis": "I was never told anything about meeting anyone.",
+          "gold": 2,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.9254804849624634,
+              "normalized": -0.9254804849624634
+            },
+            "neutral": {
+              "sum": -1.3004804849624634,
+              "normalized": -1.3004804849624634
+            },
+            "contradiction": {
+              "sum": -2.050480365753174,
+              "normalized": -2.050480365753174
+            }
+          }
+        },
+        {
+          "premise": "They told me that, uh, that I would be called in a guy at the end for me to meet.",
+          "hypothesis": "I was told a guy would be called in for me to meet.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.8950657248497009,
+              "normalized": -0.8950657248497009
+            },
+            "neutral": {
+              "sum": -1.3950657844543457,
+              "normalized": -1.3950657844543457
+            },
+            "contradiction": {
+              "sum": -1.8950657844543457,
+              "normalized": -1.8950657844543457
+            }
+          }
+        },
+        {
+          "premise": "They told me that, uh, that I would be called in a guy at the end for me to meet.",
+          "hypothesis": "The guy showed up a bit late.",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.2994494438171387,
+              "normalized": -1.2994494438171387
+            },
+            "neutral": {
+              "sum": -1.0494494438171387,
+              "normalized": -1.0494494438171387
+            },
+            "contradiction": {
+              "sum": -1.6744494438171387,
+              "normalized": -1.6744494438171387
+            }
+          }
+        },
+        {
+          "premise": "There's so much you could talk about on that I'll just skip that.",
+          "hypothesis": "I want to tell you everything I know about that!",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.1328668594360352,
+              "normalized": -1.1328668594360352
+            },
+            "neutral": {
+              "sum": -1.0078668594360352,
+              "normalized": -1.0078668594360352
+            },
+            "contradiction": {
+              "sum": -2.507866859436035,
+              "normalized": -2.507866859436035
+            }
+          }
+        }
+      ]
+    },
+    "zh": {
+      "name": "Chinese",
+      "acc": 0.335,
+      "acc_unnormalized": 0.335,
+      "n_samples": 200,
+      "pred_distribution": {
+        "entailment": 14,
+        "neutral": 186,
+        "contradiction": 0
+      },
+      "_sample_items": [
+        {
+          "premise": "\u55ef\uff0c\u6211\u6839\u672c\u6ca1\u60f3\u8fc7\uff0c\u4f46\u662f\u6211\u5f88\u6cae\u4e27\uff0c\u6700\u540e\u6211\u53c8\u548c\u4ed6\u8bf4\u8bdd\u4e86\u3002",
+          "hypothesis": "\u6211\u8fd8\u6ca1\u6709\u548c\u4ed6\u518d\u6b21\u8c08\u8bba\u3002",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -2.0187227725982666,
+              "normalized": -2.0187227725982666
+            },
+            "neutral": {
+              "sum": -0.6437227129936218,
+              "normalized": -0.6437227129936218
+            },
+            "contradiction": {
+              "sum": -2.7687227725982666,
+              "normalized": -2.7687227725982666
+            }
+          }
+        },
+        {
+          "premise": "\u55ef\uff0c\u6211\u6839\u672c\u6ca1\u60f3\u8fc7\uff0c\u4f46\u662f\u6211\u5f88\u6cae\u4e27\uff0c\u6700\u540e\u6211\u53c8\u548c\u4ed6\u8bf4\u8bdd\u4e86\u3002",
+          "hypothesis": "\u6211\u975e\u5e38\u6cae\u4e27\uff0c\u6211\u521a\u521a\u5f00\u59cb\u8ddf\u4ed6\u8bf4\u8bdd\u3002",
+          "gold": 0,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -2.1823675632476807,
+              "normalized": -2.1823675632476807
+            },
+            "neutral": {
+              "sum": -0.6823676228523254,
+              "normalized": -0.6823676228523254
+            },
+            "contradiction": {
+              "sum": -2.9323675632476807,
+              "normalized": -2.9323675632476807
+            }
+          }
+        },
+        {
+          "premise": "\u55ef\uff0c\u6211\u6839\u672c\u6ca1\u60f3\u8fc7\uff0c\u4f46\u662f\u6211\u5f88\u6cae\u4e27\uff0c\u6700\u540e\u6211\u53c8\u548c\u4ed6\u8bf4\u8bdd\u4e86\u3002",
+          "hypothesis": "\u6211\u4eec\u8c08\u5f97\u5f88\u597d\u3002",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.9978504180908203,
+              "normalized": -1.9978504180908203
+            },
+            "neutral": {
+              "sum": -0.6228504776954651,
+              "normalized": -0.6228504776954651
+            },
+            "contradiction": {
+              "sum": -3.2478504180908203,
+              "normalized": -3.2478504180908203
+            }
+          }
+        },
+        {
+          "premise": "\u800c\u6211\u5f53\u521d\u8ba4\u4e3a\u8fd9\u662f\u4e00\u4e2a\u7279\u6743\uff0c\u6211\u73b0\u5728\u4ecd\u7136\u8fd9\u6837\u60f3\uff0c\u6211\u662f\u552f\u4e00\u7684922 Ex-O\uff0c\u4e5f\u662f\u6211\u7684AFFC\u7a7a\u519b\u804c\u4e1a\u751f\u6daf\u3002",
+          "hypothesis": "\u6211\u4e0d\u77e5\u9053\u90a3\u5929\u6211\u4e0d\u662f\u552f\u4e00\u4e00\u4e2a\u5728\u573a\u7684\u4eba\u3002",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.8160654306411743,
+              "normalized": -1.8160654306411743
+            },
+            "neutral": {
+              "sum": -0.6910654306411743,
+              "normalized": -0.6910654306411743
+            },
+            "contradiction": {
+              "sum": -2.8160653114318848,
+              "normalized": -2.8160653114318848
+            }
+          }
+        },
+        {
+          "premise": "\u800c\u6211\u5f53\u521d\u8ba4\u4e3a\u8fd9\u662f\u4e00\u4e2a\u7279\u6743\uff0c\u6211\u73b0\u5728\u4ecd\u7136\u8fd9\u6837\u60f3\uff0c\u6211\u662f\u552f\u4e00\u7684922 Ex-O\uff0c\u4e5f\u662f\u6211\u7684AFFC\u7a7a\u519b\u804c\u4e1a\u751f\u6daf\u3002",
+          "hypothesis": "\u6211\u7684\u5370\u8c61\u662f\uff0c\u6211\u662fAFFC\u7a7a\u519b\u804c\u4e1a\u9886\u57df\u552f\u4e00\u62e5\u6709\u8fd9\u4e2a\u6570\u5b57\u7684\u4eba\u3002",
+          "gold": 0,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.7103006839752197,
+              "normalized": -1.7103006839752197
+            },
+            "neutral": {
+              "sum": -0.7103006839752197,
+              "normalized": -0.7103006839752197
+            },
+            "contradiction": {
+              "sum": -2.7103006839752197,
+              "normalized": -2.7103006839752197
+            }
+          }
+        },
+        {
+          "premise": "\u800c\u6211\u5f53\u521d\u8ba4\u4e3a\u8fd9\u662f\u4e00\u4e2a\u7279\u6743\uff0c\u6211\u73b0\u5728\u4ecd\u7136\u8fd9\u6837\u60f3\uff0c\u6211\u662f\u552f\u4e00\u7684922 Ex-O\uff0c\u4e5f\u662f\u6211\u7684AFFC\u7a7a\u519b\u804c\u4e1a\u751f\u6daf\u3002",
+          "hypothesis": "\u6211\u4eec\u90fd\u88ab\u8d4b\u4e88\u4e86\u76f8\u540c\u7684\u786e\u5207\u6570\u5b57\uff0c\u65e0\u8bba\u6211\u4eec\u88ab\u8bb8\u8bfa\u4e86\u4f55\u79cd\u7279\u6743\uff0c\u90fd\u662f\u8c0e\u8a00\u3002",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.9881672859191895,
+              "normalized": -1.9881672859191895
+            },
+            "neutral": {
+              "sum": -0.7381672859191895,
+              "normalized": -0.7381672859191895
+            },
+            "contradiction": {
+              "sum": -2.4881672859191895,
+              "normalized": -2.4881672859191895
+            }
+          }
+        },
+        {
+          "premise": "\u4ed6\u4eec\u544a\u8bc9\u6211\uff0c\u5443\uff0c\u6211\u6700\u540e\u4f1a\u88ab\u53eb\u5230\u4e00\u4e2a\u4eba\u90a3\u91cc\u53bb\u89c1\u9762\u3002",
+          "hypothesis": "\u6211\u4ece\u6765\u6ca1\u6709\u88ab\u544a\u77e5\u4efb\u4f55\u4e0e\u4efb\u4f55\u4eba\u4f1a\u9762\u3002",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.9654418230056763,
+              "normalized": -1.9654418230056763
+            },
+            "neutral": {
+              "sum": -0.8404418230056763,
+              "normalized": -0.8404418230056763
+            },
+            "contradiction": {
+              "sum": -2.4654417037963867,
+              "normalized": -2.4654417037963867
+            }
+          }
+        },
+        {
+          "premise": "\u4ed6\u4eec\u544a\u8bc9\u6211\uff0c\u5443\uff0c\u6211\u6700\u540e\u4f1a\u88ab\u53eb\u5230\u4e00\u4e2a\u4eba\u90a3\u91cc\u53bb\u89c1\u9762\u3002",
+          "hypothesis": "\u6211\u88ab\u544a\u77e5\u5c06\u6709\u4e00\u4e2a\u4eba\u88ab\u53eb\u8fdb\u6765\u4e0e\u6211\u89c1\u9762\u3002",
+          "gold": 0,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -2.0416293144226074,
+              "normalized": -2.0416293144226074
+            },
+            "neutral": {
+              "sum": -0.7916292548179626,
+              "normalized": -0.7916292548179626
+            },
+            "contradiction": {
+              "sum": -2.9166293144226074,
+              "normalized": -2.9166293144226074
+            }
+          }
+        },
+        {
+          "premise": "\u4ed6\u4eec\u544a\u8bc9\u6211\uff0c\u5443\uff0c\u6211\u6700\u540e\u4f1a\u88ab\u53eb\u5230\u4e00\u4e2a\u4eba\u90a3\u91cc\u53bb\u89c1\u9762\u3002",
+          "hypothesis": "\u90a3\u4e2a\u4eba\u6765\u5f97\u6709\u70b9\u665a\u3002",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.6904113292694092,
+              "normalized": -1.6904113292694092
+            },
+            "neutral": {
+              "sum": -0.9404113292694092,
+              "normalized": -0.9404113292694092
+            },
+            "contradiction": {
+              "sum": -2.565411329269409,
+              "normalized": -2.565411329269409
+            }
+          }
+        },
+        {
+          "premise": "\u4f60\u53ef\u4ee5\u8bb2\u7684\u592a\u591a\u4e86\uff0c\u6211\u5c31\u4e0d\u63d0\u4e86\u3002",
+          "hypothesis": "\u6211\u60f3\u628a\u6211\u77e5\u9053\u7684\u5173\u4e8e\u90a3\u4ef6\u4e8b\u4e00\u5207\u90fd\u544a\u8bc9\u4f60\uff01",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -2.55055832862854,
+              "normalized": -2.55055832862854
+            },
+            "neutral": {
+              "sum": -0.6755582690238953,
+              "normalized": -0.6755582690238953
+            },
+            "contradiction": {
+              "sum": -3.17555832862854,
+              "normalized": -3.17555832862854
+            }
+          }
+        }
+      ]
+    },
+    "sw": {
+      "name": "Swahili",
+      "acc": 0.33,
+      "acc_unnormalized": 0.33,
+      "n_samples": 200,
+      "pred_distribution": {
+        "entailment": 143,
+        "neutral": 57,
+        "contradiction": 0
+      },
+      "_sample_items": [
+        {
+          "premise": "Naam, sikukuwa nafikiri juu ya hilo, lakini nilichanganyikiwa sana, na, hatimaye nikaendelea kuzungumza naye tena.",
+          "hypothesis": "Sijaongea na yeye tena.",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.1757736206054688,
+              "normalized": -1.1757736206054688
+            },
+            "neutral": {
+              "sum": -0.9257736206054688,
+              "normalized": -0.9257736206054688
+            },
+            "contradiction": {
+              "sum": -2.5507736206054688,
+              "normalized": -2.5507736206054688
+            }
+          }
+        },
+        {
+          "premise": "Naam, sikukuwa nafikiri juu ya hilo, lakini nilichanganyikiwa sana, na, hatimaye nikaendelea kuzungumza naye tena.",
+          "hypothesis": "Nilikasirika sana kwamba nikaanza kuzungumza naye tena.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.9151067137718201,
+              "normalized": -0.9151067137718201
+            },
+            "neutral": {
+              "sum": -1.2901067733764648,
+              "normalized": -1.2901067733764648
+            },
+            "contradiction": {
+              "sum": -2.165106773376465,
+              "normalized": -2.165106773376465
+            }
+          }
+        },
+        {
+          "premise": "Naam, sikukuwa nafikiri juu ya hilo, lakini nilichanganyikiwa sana, na, hatimaye nikaendelea kuzungumza naye tena.",
+          "hypothesis": "Tulikuwa na majadiliano mazuri.",
+          "gold": 1,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.522914171218872,
+              "normalized": -1.522914171218872
+            },
+            "neutral": {
+              "sum": -0.7729142308235168,
+              "normalized": -0.7729142308235168
+            },
+            "contradiction": {
+              "sum": -2.647914171218872,
+              "normalized": -2.647914171218872
+            }
+          }
+        },
+        {
+          "premise": "Nami nilifikiri kwamba ilikuwa ni fursa, na bado, bado, nilikuwa pekee wa tisa mbili na mbili Ex-O ambayo ilikuwa uwanja wangu wa AFFC Air Force Career.",
+          "hypothesis": "Sikujua kwamba sikuwa mtu wa pekee kuwa uwanjani leo.",
+          "gold": 1,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.1322773694992065,
+              "normalized": -1.1322773694992065
+            },
+            "neutral": {
+              "sum": -1.1322773694992065,
+              "normalized": -1.1322773694992065
+            },
+            "contradiction": {
+              "sum": -2.257277488708496,
+              "normalized": -2.257277488708496
+            }
+          }
+        },
+        {
+          "premise": "Nami nilifikiri kwamba ilikuwa ni fursa, na bado, bado, nilikuwa pekee wa tisa mbili na mbili Ex-O ambayo ilikuwa uwanja wangu wa AFFC Air Force Career.",
+          "hypothesis": "Nilikuwa chini ya hisia kwamba nilikuwa pekee na nambari hiyo katika uwanja wa Kazi ya Air Force ya AFFC.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.9137921333312988,
+              "normalized": -0.9137921333312988
+            },
+            "neutral": {
+              "sum": -1.4137921333312988,
+              "normalized": -1.4137921333312988
+            },
+            "contradiction": {
+              "sum": -2.163792133331299,
+              "normalized": -2.163792133331299
+            }
+          }
+        },
+        {
+          "premise": "Nami nilifikiri kwamba ilikuwa ni fursa, na bado, bado, nilikuwa pekee wa tisa mbili na mbili Ex-O ambayo ilikuwa uwanja wangu wa AFFC Air Force Career.",
+          "hypothesis": "Sisi sote tumepewa idadi sawa sawa bila kujali marupurupu tuliyoahidi kupewa, ilikuwa ni uongo.",
+          "gold": 2,
+          "pred": 1,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.2618719339370728,
+              "normalized": -1.2618719339370728
+            },
+            "neutral": {
+              "sum": -1.1368719339370728,
+              "normalized": -1.1368719339370728
+            },
+            "contradiction": {
+              "sum": -2.136871814727783,
+              "normalized": -2.136871814727783
+            }
+          }
+        },
+        {
+          "premise": "Walinieleza ya kwamba mwishowe ningeitiwa jamaa fulani ambaye tungepatana naye.",
+          "hypothesis": "Sikuambiwa chochote kuhusu kukutana na mtu yeyote.",
+          "gold": 2,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.9600023627281189,
+              "normalized": -0.9600023627281189
+            },
+            "neutral": {
+              "sum": -1.3350024223327637,
+              "normalized": -1.3350024223327637
+            },
+            "contradiction": {
+              "sum": -2.3350024223327637,
+              "normalized": -2.3350024223327637
+            }
+          }
+        },
+        {
+          "premise": "Walinieleza ya kwamba mwishowe ningeitiwa jamaa fulani ambaye tungepatana naye.",
+          "hypothesis": "Niliambiwa mtu angeitwa aje ili nikutane naye.",
+          "gold": 0,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -0.9314621686935425,
+              "normalized": -0.9314621686935425
+            },
+            "neutral": {
+              "sum": -1.4314621686935425,
+              "normalized": -1.4314621686935425
+            },
+            "contradiction": {
+              "sum": -2.181462287902832,
+              "normalized": -2.181462287902832
+            }
+          }
+        },
+        {
+          "premise": "Walinieleza ya kwamba mwishowe ningeitiwa jamaa fulani ambaye tungepatana naye.",
+          "hypothesis": "Alikuja akiwa amechelewa.",
+          "gold": 1,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.0510355234146118,
+              "normalized": -1.0510355234146118
+            },
+            "neutral": {
+              "sum": -1.1760355234146118,
+              "normalized": -1.1760355234146118
+            },
+            "contradiction": {
+              "sum": -2.4260354042053223,
+              "normalized": -2.4260354042053223
+            }
+          }
+        },
+        {
+          "premise": "Kuna mengi ambayo unaweza kuzungumzia kuhusu hilo lakini  nitaachana nayo tu.",
+          "hypothesis": "Nataka kukuambia kila kitu ninachokijua kuhusu mambo hayo",
+          "gold": 2,
+          "pred": 0,
+          "logprobs": {
+            "entailment": {
+              "sum": -1.013631820678711,
+              "normalized": -1.013631820678711
+            },
+            "neutral": {
+              "sum": -1.638631820678711,
+              "normalized": -1.638631820678711
+            },
+            "contradiction": {
+              "sum": -2.013631820678711,
+              "normalized": -2.013631820678711
+            }
+          }
+        }
+      ]
+    },
+    "_demonstrations": [
+      {
+        "premise": "Well, well, maybe he'll not find me quite so easy to grasp as he imagines.",
+        "hypothesis": "He thinks grabbing me will be really simple.",
+        "label": 1
+      },
+      {
+        "premise": "Beside the cruise port is Flag Hill, rising 700 ft (214 m) above sea level.",
+        "hypothesis": "Flag Hill is below sea level.",
+        "label": 2
+      },
+      {
+        "premise": "You are Lord Julian Wade, I understand,  was his truculent greeting.",
+        "hypothesis": "Though many had tried to approach him, Lord Wade was often cold and emotionless.",
+        "label": 1
+      },
+      {
+        "premise": "Life can be infernally complex,  he sighed.",
+        "hypothesis": "He let out a sign of resignation.",
+        "label": 0
+      },
+      {
+        "premise": "It wasn't nothing but a desert; there was sagebrush out on the runway.",
+        "hypothesis": "There was a lot of scrubbby foilage in the area.",
+        "label": 0
+      },
+      {
+        "premise": "besides i probably would look at something uh maybe a a V six",
+        "hypothesis": "I would never consider a V6.",
+        "label": 2
+      }
+    ],
+    "_demo_seed": 42
+  }
+}

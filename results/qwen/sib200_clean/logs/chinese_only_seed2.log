@@ -1,0 +1,20 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:24<02:49, 24.20s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:48<02:24, 24.02s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [01:03<01:39, 19.94s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [01:08<00:56, 14.05s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [01:12<00:31, 10.46s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [01:15<00:16,  8.12s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [01:20<00:07,  7.08s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [01:22<00:00,  5.37s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [01:22<00:00, 10.31s/it]
+[qwen-sib-clean] chinese_only_seed2: model ready ({'baseline': False, 'source': 'saved', 'compressed_model_dir': 'results/qwen/phase1/chinese_only/seed2/scale_chinese_only_seed2/compressed_model', 'manifest_created_utc': '2026-09-18T18:16:50Z', 'params': {'total_params_before': 14315784192, 'total_params_after': 12024576000, 'total_reduction': 2291208192, 'total_reduction_pct': 16.00476901070066, 'routed_expert_params_before': 12457082880, 'routed_expert_params_after': 10165874688, 'routed_expert_reduction_pct': 18.392814867424242, 'delta_ratio': 0.8, 'delta_rank': 667, 'note': 'delta_ratio sets the per-expert low-rank budget; the model-wide reduction is total_reduction_pct'}, 'scale_condition': 'chinese_only', 'scale_seed': 2})
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[qwen-sib-clean] chinese_only_seed2/eng_Latn: full=0.8088 (n=204)  clean=0.8061 (n=98) top=science/technology share=0.286  prompt_tokens max=847  [64s, 3.20 it/s]
+[qwen-sib-clean] chinese_only_seed2/kor_Hang: full=0.6324 (n=204)  clean=0.6735 (n=98) top=geography share=0.224  prompt_tokens max=887  [65s, 3.12 it/s]
+[qwen-sib-clean] chinese_only_seed2/zho_Hans: full=0.7108 (n=204)  clean=0.7041 (n=98) top=geography share=0.265  prompt_tokens max=859  [64s, 3.18 it/s]
+[qwen-sib-clean] chinese_only_seed2/swh_Latn: full=0.2794 (n=204)  clean=0.2347 (n=98) top=geography share=0.602  prompt_tokens max=918  [66s, 3.11 it/s]
+[qwen-sib-clean] chinese_only_seed2/ben_Beng: full=0.2941 (n=204)  clean=0.3163 (n=98) top=geography share=0.480  prompt_tokens max=1118  [71s, 2.86 it/s]
+[qwen-sib-clean] wrote results/qwen/sib200_clean/chinese_only_seed2.json and results/qwen/sib200_clean/chinese_only_seed2_predictions.jsonl (1020 items)

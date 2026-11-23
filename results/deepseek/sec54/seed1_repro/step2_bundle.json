@@ -1,0 +1,67 @@
+{
+  "mode": "bundle",
+  "pairs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "n_restored_per_arm": 12,
+  "scale_condition": "english_only/seed1 (whitening ON, AMENDMENT 1)",
+  "reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+  },
+  "compressed_delta_bpb_pct": {
+    "eng_Latn": 6.9149897837063605,
+    "kor_Hang": 85.38100815837835,
+    "zho_Hans": 12.925094116941438,
+    "swh_Latn": 30.248407952745364,
+    "ben_Beng": 87.09911376017759
+  },
+  "gains_pp": {
+    "treatment": {
+      "eng_Latn": 0.17446975316737134,
+      "kor_Hang": -0.11463154496603067,
+      "zho_Hans": 0.2093305852185452,
+      "swh_Latn": 0.47361073236810114,
+      "ben_Beng": -0.04733195208173413
+    },
+    "control": {
+      "eng_Latn": -0.0977988519185562,
+      "kor_Hang": 0.7326389837151766,
+      "zho_Hans": 0.0728332541711012,
+      "swh_Latn": 0.09593555079661442,
+      "ben_Beng": 0.12198194783557881
+    }
+  },
+  "P1_vulnerable_bundle": {
+    "treatment_vuln_mean_pp": 0.10388241177344544,
+    "control_vuln_mean_pp": 0.3168521607824566,
+    "difference_pp": -0.21296974900901117,
+    "direction_holds": false
+  },
+  "P3_english_control": {
+    "treatment_en_pp": 0.17446975316737134,
+    "control_en_pp": -0.0977988519185562,
+    "difference_pp": 0.27226860508592754
+  },
+  "P2": "dropped -- prereg \u00a75 bundle-mode fallback",
+  "additivity_vs_step1": null,
+  "eval_seconds": {
+    "compressed": 73.34095120429993,
+    "bundle_T": 71.35947227478027,
+    "bundle_C": 71.47112846374512
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "stage": "revised validation: microbatch probe + baseline dev pilot + gate",
+  "protocol_id": "massive_intent60_base_lm_revised200_v1",
+  "reused_validation": {
+    "source": "logs/massive_scorer_diagnostic2.log + results/massive/massive_scorer_ablation*.json",
+    "what": "reference-scorer comparison at microbatch 6 after the candidate-token cache fix; 0 argmax disagreements per language, max|mean-logprob diff| ~0.27-0.34, which is below the model's own shape-sensitivity floor (the uncached oracle differs from itself by 0.48 when only tensor shape changes)",
+    "not_repeated": "the full 5-language x 2-prompt reference sweep is not re-run"
+  },
+  "dev_n": 59,
+  "device_map_unique": [
+    0,
+    1
+  ],
+  "seconds_model_load": 173.52019429206848,
+  "microbatch_probe": {
+    "cap_seconds": 1200,
+    "baseline_microbatch_reused": 6,
+    "prompt_used": "P0 (evaluated first per the revision; if P8 is ever needed its longer prefix is re-checked for memory before use)",
+    "items": [
+      {
+        "lang": "KO",
+        "id": "12656",
+        "utt_chars": 34
+      },
+      {
+        "lang": "KO",
+        "id": "15180",
+        "utt_chars": 32
+      },
+      {
+        "lang": "KO",
+        "id": "15921",
+        "utt_chars": 31
+      },
+      {
+        "lang": "BN",
+        "id": "15921",
+        "utt_chars": 81
+      },
+      {
+        "lang": "BN",
+        "id": "12656",
+        "utt_chars": 72
+      },
+      {
+        "lang": "BN",
+        "id": "12627",
+        "utt_chars": 65
+      },
+      {
+        "lang": "EN",
+        "id": "15921",
+        "utt_chars": 70
+      },
+      {
+        "lang": "EN",
+        "id": "12627",
+        "utt_chars": 65
+      },
+      {
+        "lang": "EN",
+        "id": "12656",
+        "utt_chars": 58
+      }
+    ],
+    "measurements": {
+      "mb6": {
+        "items_per_second": 0.4568676146238744,
+        "seconds": 19.699360847473145,
+        "peak_gpu_bytes": 18522287616,
+        "argmax_match_vs_mb6": 9,
+        "max_abs_diff_vs_mb6": 0.0,
+        "note": "reference point; its reference-scorer validation was done earlier and is reused"
+      },
+      "mb12": {
+        "items_per_second": 0.6748270740177263,
+        "seconds": 13.336750030517578,
+        "peak_gpu_bytes": 18882203136,
+        "argmax_match_vs_mb6": 9,
+        "n_items": 9,
+        "max_abs_diff_vs_mb6": 0.17026996612548828
+      },
+      "mb20": {
+        "items_per_second": 0.8818003831883835,
+        "seconds": 10.20639157295227,
+        "peak_gpu_bytes": 19362090496,
+        "argmax_match_vs_mb6": 8,
+        "n_items": 9,
+        "max_abs_diff_vs_mb6": 0.18901395797729492
+      },
+      "mb30": {
+        "items_per_second": 1.054455615220033,
+        "seconds": 8.535209894180298,
+        "peak_gpu_bytes": 19961949696,
+        "argmax_match_vs_mb6": 8,
+        "n_items": 9,
+        "max_abs_diff_vs_mb6": 0.18552637100219727
+      },
+      "mb60": {
+        "items_per_second": 1.3807526872084435,
+        "seconds": 6.518183946609497,
+        "peak_gpu_bytes": 21761527296,
+        "argmax_match_vs_mb6": 8,
+        "n_items": 9,
+        "max_abs_diff_vs_mb6": 0.19899225234985352
+      }
+    },
+    "mode": "shared_prefix",
+    "viable_microbatches": {
+      "6": 0.4568676146238744,
+      "12": 0.6748270740177263
+    },
+    "selected_microbatch": 12,
+    "scoring_mode": "shared_prefix",
+    "selection_rule": "fastest microbatch with no OOM, full argmax agreement with the validated mb6, and max|diff| <= 0.5 (the model's own shape-sensitivity floor is ~0.3-0.5); largest is NOT assumed fastest",
+    "tolerance_fixed_before_seeing_test": 0.5
+  },
+  "per_prompt": {
+    "P0": {
+      "EN": {
+        "n": 59,
+        "acc": 0.5084745762711864,
+        "majority_label": "alarm_query",
+        "majority_acc": 0.01694915254237288,
+        "margin_over_majority_pp": 49.15254237288135,
+        "uniform_chance": 0.016666666666666666,
+        "top_label_share": 0.0847457627118644,
+        "n_distinct_predicted": 36,
+        "seconds": 80.61810827255249,
+        "items_per_second": 0.7318454965114909
+      },
+      "ZH": {
+        "n": 59,
+        "acc": 0.4406779661016949,
+        "majority_label": "alarm_query",
+        "majority_acc": 0.01694915254237288,
+        "margin_over_majority_pp": 42.3728813559322,
+        "uniform_chance": 0.016666666666666666,
+        "top_label_share": 0.15254237288135594,
+        "n_distinct_predicted": 32,
+        "seconds": 79.52627086639404,
+        "items_per_second": 0.7418932008689192
+      },
+      "KO": {
+        "n": 59,
+        "acc": 0.288135593220339,
+        "majority_label": "alarm_query",
+        "majority_acc": 0.01694915254237288,
+        "margin_over_majority_pp": 27.11864406779661,
+        "uniform_chance": 0.016666666666666666,
+        "top_label_share": 0.2033898305084746,
+        "n_distinct_predicted": 27,
+        "seconds": 85.05113482475281,
+        "items_per_second": 0.6937003226445707
+      },
+      "SW": {
+        "n": 59,
+        "acc": 0.03389830508474576,
+        "majority_label": "alarm_query",
+        "majority_acc": 0.01694915254237288,
+        "margin_over_majority_pp": 1.694915254237288,
+        "uniform_chance": 0.016666666666666666,
+        "top_label_share": 0.3220338983050847,
+        "n_distinct_predicted": 16,
+        "seconds": 80.83263850212097,
+        "items_per_second": 0.7299031770490448
+      },
+      "BN": {
+        "n": 59,
+        "acc": 0.1016949152542373,
+        "majority_label": "alarm_query",
+        "majority_acc": 0.01694915254237288,
+        "margin_over_majority_pp": 8.474576271186441,
+        "uniform_chance": 0.016666666666666666,
+        "top_label_share": 0.22033898305084745,
+        "n_distinct_predicted": 21,
+        "seconds": 87.81971263885498,
+        "items_per_second": 0.6718309334727326
+      },
+      "_macro_avg_acc": 0.2745762711864406
+    }
+  },
+  "prompt_selection": {
+    "selected": "P0",
+    "p8_evaluated": false,
+    "rule": "P0 passed the gate, so P8 was never run and no prompt search happened",
+    "P0_macro_avg_acc": 0.2745762711864406,
+    "P8_macro_avg_acc": null
+  },
+  "gate": {
+    "margin_over_majority_pp": 5.0,
+    "floor_risk_langs_to_hold": 3,
+    "uniform_chance": 0.016666666666666666,
+    "per_language_margin_pp": {
+      "EN": 49.15254237288135,
+      "ZH": 42.3728813559322,
+      "KO": 27.11864406779661,
+      "SW": 1.694915254237288,
+      "BN": 8.474576271186441
+    },
+    "floor_risk_languages": [
+      "SW"
+    ],
+    "n_floor_risk": 1,
+    "verdict": "PROCEED_ALL_FIVE_LANGUAGES",
+    "nature": "operational cost-control criterion, NOT a statistical significance test",
+    "languages_dropped": "none -- no language is removed to improve the picture"
+  },
+  "inference_signature": "d96e8c49fbb07aa2face666abfd277069b60176b01c9744b48855d86f67164f5"
+}

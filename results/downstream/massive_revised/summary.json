@@ -1,0 +1,134 @@
+{
+  "split": "test",
+  "n_items_per_language": 200,
+  "is_sample_not_full_test_split": true,
+  "prompt": "P0",
+  "scoring_mode": "shared_prefix",
+  "microbatch": 12,
+  "inference_signature": "d96e8c49fbb07aa2face666abfd277069b60176b01c9744b48855d86f67164f5",
+  "protocol_id": "massive_intent60_base_lm_revised200_v1",
+  "cells_complete": 35,
+  "cells_expected": 35,
+  "baseline_acc_pct": {
+    "EN": 41.0,
+    "ZH": 40.5,
+    "KO": 33.5,
+    "SW": 6.0,
+    "BN": 9.5
+  },
+  "baseline_language_macro_acc_pct": 26.1,
+  "per_condition": {
+    "english_only": {
+      "per_language_mean_acc_pct": {
+        "EN": 32.833,
+        "ZH": 25.167,
+        "KO": 4.833,
+        "SW": 0.667,
+        "BN": 1.167
+      },
+      "per_language_std_pct_ddof1": {
+        "EN": 2.466,
+        "ZH": 1.258,
+        "KO": 1.443,
+        "SW": 0.289,
+        "BN": 0.764
+      },
+      "per_language_per_seed_acc_pct": {
+        "EN": {
+          "0": 34.0,
+          "1": 34.5,
+          "2": 30.0
+        },
+        "ZH": {
+          "0": 26.5,
+          "1": 24.0,
+          "2": 25.0
+        },
+        "KO": {
+          "0": 4.0,
+          "1": 4.0,
+          "2": 6.5
+        },
+        "SW": {
+          "0": 0.5,
+          "1": 0.5,
+          "2": 1.0
+        },
+        "BN": {
+          "0": 0.5,
+          "1": 2.0,
+          "2": 1.0
+        }
+      },
+      "n_seeds_per_language": {
+        "EN": 3,
+        "ZH": 3,
+        "KO": 3,
+        "SW": 3,
+        "BN": 3
+      },
+      "language_macro_acc_pct": 12.933,
+      "worst_language": "SW",
+      "worst_language_acc_pct": 0.667
+    },
+    "mixed_5lang": {
+      "per_language_mean_acc_pct": {
+        "EN": 28.667,
+        "ZH": 21.833,
+        "KO": 17.833,
+        "SW": 1.333,
+        "BN": 4.0
+      },
+      "per_language_std_pct_ddof1": {
+        "EN": 3.014,
+        "ZH": 2.255,
+        "KO": 1.155,
+        "SW": 1.041,
+        "BN": 2.179
+      },
+      "per_language_per_seed_acc_pct": {
+        "EN": {
+          "0": 25.5,
+          "1": 31.5,
+          "2": 29.0
+        },
+        "ZH": {
+          "0": 24.0,
+          "1": 19.5,
+          "2": 22.0
+        },
+        "KO": {
+          "0": 18.5,
+          "1": 16.5,
+          "2": 18.5
+        },
+        "SW": {
+          "0": 2.5,
+          "1": 0.5,
+          "2": 1.0
+        },
+        "BN": {
+          "0": 6.5,
+          "1": 2.5,
+          "2": 3.0
+        }
+      },
+      "n_seeds_per_language": {
+        "EN": 3,
+        "ZH": 3,
+        "KO": 3,
+        "SW": 3,
+        "BN": 3
+      },
+      "language_macro_acc_pct": 14.733,
+      "worst_language": "SW",
+      "worst_language_acc_pct": 1.333
+    }
+  },
+  "paired_seeds_used_for_contrast": [
+    0,
+    1,
+    2
+  ],
+  "missing_cells": []
+}

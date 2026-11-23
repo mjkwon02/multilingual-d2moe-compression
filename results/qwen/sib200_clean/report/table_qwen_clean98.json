@@ -1,0 +1,1338 @@
+{
+  "model": "Qwen/Qwen1.5-MoE-A2.7B",
+  "revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+  "collapse_criterion": {
+    "top_label_share_gt": 0.9,
+    "acc_lt": 0.25,
+    "subset": "clean98"
+  },
+  "table": {
+    "baseline": {
+      "EN": {
+        "acc_pct": 78.57142857142857,
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false,
+        "full204_acc_pct": 77.94117647058823
+      },
+      "ZH": {
+        "acc_pct": 61.224489795918366,
+        "top_label": "geography",
+        "top_label_share": 0.3673469387755102,
+        "collapsed": false,
+        "full204_acc_pct": 60.29411764705882
+      },
+      "KO": {
+        "acc_pct": 70.40816326530613,
+        "top_label": "geography",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false,
+        "full204_acc_pct": 64.2156862745098
+      },
+      "SW": {
+        "acc_pct": 37.755102040816325,
+        "top_label": "geography",
+        "top_label_share": 0.6224489795918368,
+        "collapsed": false,
+        "full204_acc_pct": 37.745098039215684
+      },
+      "BN": {
+        "acc_pct": 52.04081632653062,
+        "top_label": "geography",
+        "top_label_share": 0.46938775510204084,
+        "collapsed": false,
+        "full204_acc_pct": 54.90196078431373
+      }
+    },
+    "conditions": {
+      "english_only": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 77.55102040816327,
+          "std_ddof1": 4.676097647914123,
+          "seeds": [
+            81.63265306122449,
+            78.57142857142857,
+            72.44897959183673
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 61.22448979591837,
+          "std_ddof1": 6.206900541120633,
+          "seeds": [
+            65.3061224489796,
+            64.28571428571429,
+            54.08163265306123
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 59.183673469387756,
+          "std_ddof1": 11.362784413938822,
+          "seeds": [
+            71.42857142857143,
+            57.14285714285714,
+            48.97959183673469
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 19.047619047619047,
+          "std_ddof1": 5.0335539411390275,
+          "seeds": [
+            21.428571428571427,
+            22.448979591836736,
+            13.26530612244898
+          ],
+          "n_collapsed": 3
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 20.068027210884352,
+          "std_ddof1": 9.20255051596509,
+          "seeds": [
+            29.591836734693878,
+            19.387755102040817,
+            11.224489795918368
+          ],
+          "n_collapsed": 2
+        }
+      },
+      "chinese_only": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 81.97278911564626,
+          "std_ddof1": 1.5586992159713748,
+          "seeds": [
+            83.6734693877551,
+            81.63265306122449,
+            80.61224489795919
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 70.06802721088435,
+          "std_ddof1": 5.619969946210304,
+          "seeds": [
+            75.51020408163265,
+            64.28571428571429,
+            70.40816326530613
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 66.3265306122449,
+          "std_ddof1": 1.7673987832335403,
+          "seeds": [
+            67.3469387755102,
+            64.28571428571429,
+            67.3469387755102
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 28.231292517006803,
+          "std_ddof1": 4.601275257982546,
+          "seeds": [
+            32.6530612244898,
+            28.57142857142857,
+            23.46938775510204
+          ],
+          "n_collapsed": 1
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 29.25170068027211,
+          "std_ddof1": 3.2801533200656308,
+          "seeds": [
+            30.612244897959183,
+            25.510204081632654,
+            31.63265306122449
+          ],
+          "n_collapsed": 0
+        }
+      },
+      "korean_only": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 77.89115646258503,
+          "std_ddof1": 3.5835556982492287,
+          "seeds": [
+            81.63265306122449,
+            77.55102040816327,
+            74.48979591836735
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 67.00680272108843,
+          "std_ddof1": 4.601275257982545,
+          "seeds": [
+            71.42857142857143,
+            67.3469387755102,
+            62.244897959183675
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 75.51020408163265,
+          "std_ddof1": 1.0204081632653015,
+          "seeds": [
+            76.53061224489795,
+            75.51020408163265,
+            74.48979591836735
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 26.53061224489796,
+          "std_ddof1": 7.142857142857142,
+          "seeds": [
+            23.46938775510204,
+            34.69387755102041,
+            21.428571428571427
+          ],
+          "n_collapsed": 2
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 34.69387755102041,
+          "std_ddof1": 8.099238707340582,
+          "seeds": [
+            37.755102040816325,
+            40.816326530612244,
+            25.510204081632654
+          ],
+          "n_collapsed": 0
+        }
+      },
+      "swahili_only": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 77.89115646258503,
+          "std_ddof1": 3.280153320065632,
+          "seeds": [
+            75.51020408163265,
+            76.53061224489795,
+            81.63265306122449
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 61.904761904761905,
+          "std_ddof1": 8.247860988423229,
+          "seeds": [
+            57.14285714285714,
+            57.14285714285714,
+            71.42857142857143
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 61.22448979591837,
+          "std_ddof1": 8.352400787624948,
+          "seeds": [
+            52.04081632653062,
+            63.26530612244898,
+            68.36734693877551
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 32.993197278911566,
+          "std_ddof1": 7.925972923626561,
+          "seeds": [
+            26.53061224489796,
+            30.612244897959183,
+            41.83673469387755
+          ],
+          "n_collapsed": 0
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 27.891156462585034,
+          "std_ddof1": 10.620744895235369,
+          "seeds": [
+            19.387755102040817,
+            24.489795918367346,
+            39.795918367346935
+          ],
+          "n_collapsed": 2
+        }
+      },
+      "bengali_only": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 72.78911564625851,
+          "std_ddof1": 7.239386616936317,
+          "seeds": [
+            80.61224489795919,
+            71.42857142857143,
+            66.3265306122449
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 62.58503401360544,
+          "std_ddof1": 4.601275257982542,
+          "seeds": [
+            67.3469387755102,
+            62.244897959183675,
+            58.16326530612245
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 68.02721088435375,
+          "std_ddof1": 6.9457747811776,
+          "seeds": [
+            73.46938775510205,
+            70.40816326530613,
+            60.204081632653065
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 30.612244897959183,
+          "std_ddof1": 7.069595132934191,
+          "seeds": [
+            34.69387755102041,
+            34.69387755102041,
+            22.448979591836736
+          ],
+          "n_collapsed": 1
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 54.76190476190476,
+          "std_ddof1": 6.945774781177598,
+          "seeds": [
+            60.204081632653065,
+            57.14285714285714,
+            46.93877551020408
+          ],
+          "n_collapsed": 0
+        }
+      },
+      "mixed_5lang": {
+        "EN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 77.55102040816327,
+          "std_ddof1": 6.122448979591837,
+          "seeds": [
+            83.6734693877551,
+            71.42857142857143,
+            77.55102040816327
+          ],
+          "n_collapsed": 0
+        },
+        "ZH": {
+          "n_seeds": 3,
+          "mean_acc_pct": 64.28571428571428,
+          "std_ddof1": 12.538985436167867,
+          "seeds": [
+            78.57142857142857,
+            59.183673469387756,
+            55.10204081632652
+          ],
+          "n_collapsed": 0
+        },
+        "KO": {
+          "n_seeds": 3,
+          "mean_acc_pct": 70.06802721088435,
+          "std_ddof1": 3.5835556982492363,
+          "seeds": [
+            73.46938775510205,
+            70.40816326530613,
+            66.3265306122449
+          ],
+          "n_collapsed": 0
+        },
+        "SW": {
+          "n_seeds": 3,
+          "mean_acc_pct": 41.156462585034014,
+          "std_ddof1": 14.76362885320456,
+          "seeds": [
+            58.16326530612245,
+            33.6734693877551,
+            31.63265306122449
+          ],
+          "n_collapsed": 0
+        },
+        "BN": {
+          "n_seeds": 3,
+          "mean_acc_pct": 52.72108843537415,
+          "std_ddof1": 12.469593727770992,
+          "seeds": [
+            66.3265306122449,
+            50.0,
+            41.83673469387755
+          ],
+          "n_collapsed": 0
+        }
+      }
+    },
+    "per_seed": [
+      {
+        "condition": "english_only",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 81.63265306122449,
+        "full204_acc_pct": 79.90196078431373,
+        "top_label": "science/technology",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 78.57142857142857,
+        "full204_acc_pct": 80.3921568627451,
+        "top_label": "science/technology",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 72.44897959183673,
+        "full204_acc_pct": 75.49019607843137,
+        "top_label": "science/technology",
+        "top_label_share": 0.2653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 65.3061224489796,
+        "full204_acc_pct": 65.19607843137256,
+        "top_label": "geography",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 64.28571428571429,
+        "full204_acc_pct": 63.725490196078425,
+        "top_label": "geography",
+        "top_label_share": 0.32653061224489793,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 54.08163265306123,
+        "full204_acc_pct": 54.41176470588235,
+        "top_label": "geography",
+        "top_label_share": 0.4897959183673469,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 71.42857142857143,
+        "full204_acc_pct": 66.17647058823529,
+        "top_label": "travel",
+        "top_label_share": 0.20408163265306123,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 57.14285714285714,
+        "full204_acc_pct": 56.86274509803921,
+        "top_label": "entertainment",
+        "top_label_share": 0.32653061224489793,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 48.97959183673469,
+        "full204_acc_pct": 50.0,
+        "top_label": "geography",
+        "top_label_share": 0.4489795918367347,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 21.428571428571427,
+        "full204_acc_pct": 25.49019607843137,
+        "top_label": "geography",
+        "top_label_share": 0.7551020408163265,
+        "collapsed": true
+      },
+      {
+        "condition": "english_only",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 22.448979591836736,
+        "full204_acc_pct": 24.509803921568626,
+        "top_label": "entertainment",
+        "top_label_share": 0.6326530612244898,
+        "collapsed": true
+      },
+      {
+        "condition": "english_only",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 13.26530612244898,
+        "full204_acc_pct": 16.176470588235293,
+        "top_label": "geography",
+        "top_label_share": 0.8979591836734694,
+        "collapsed": true
+      },
+      {
+        "condition": "english_only",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 29.591836734693878,
+        "full204_acc_pct": 27.941176470588236,
+        "top_label": "entertainment",
+        "top_label_share": 0.40816326530612246,
+        "collapsed": false
+      },
+      {
+        "condition": "english_only",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 19.387755102040817,
+        "full204_acc_pct": 19.11764705882353,
+        "top_label": "entertainment",
+        "top_label_share": 0.7142857142857143,
+        "collapsed": true
+      },
+      {
+        "condition": "english_only",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 11.224489795918368,
+        "full204_acc_pct": 12.745098039215685,
+        "top_label": "geography",
+        "top_label_share": 0.9285714285714286,
+        "collapsed": true
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 83.6734693877551,
+        "full204_acc_pct": 82.84313725490196,
+        "top_label": "science/technology",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 81.63265306122449,
+        "full204_acc_pct": 81.37254901960785,
+        "top_label": "science/technology",
+        "top_label_share": 0.3163265306122449,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 80.61224489795919,
+        "full204_acc_pct": 80.88235294117648,
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 75.51020408163265,
+        "full204_acc_pct": 76.47058823529412,
+        "top_label": "science/technology",
+        "top_label_share": 0.22448979591836735,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 64.28571428571429,
+        "full204_acc_pct": 67.64705882352942,
+        "top_label": "science/technology",
+        "top_label_share": 0.2653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 70.40816326530613,
+        "full204_acc_pct": 71.07843137254902,
+        "top_label": "geography",
+        "top_label_share": 0.2653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 67.3469387755102,
+        "full204_acc_pct": 66.17647058823529,
+        "top_label": "entertainment",
+        "top_label_share": 0.22448979591836735,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 64.28571428571429,
+        "full204_acc_pct": 63.725490196078425,
+        "top_label": "entertainment",
+        "top_label_share": 0.25510204081632654,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 67.3469387755102,
+        "full204_acc_pct": 63.23529411764706,
+        "top_label": "geography",
+        "top_label_share": 0.22448979591836735,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 32.6530612244898,
+        "full204_acc_pct": 33.33333333333333,
+        "top_label": "entertainment",
+        "top_label_share": 0.5408163265306123,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 28.57142857142857,
+        "full204_acc_pct": 29.901960784313726,
+        "top_label": "entertainment",
+        "top_label_share": 0.45918367346938777,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 23.46938775510204,
+        "full204_acc_pct": 27.941176470588236,
+        "top_label": "geography",
+        "top_label_share": 0.6020408163265306,
+        "collapsed": true
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 30.612244897959183,
+        "full204_acc_pct": 29.411764705882355,
+        "top_label": "entertainment",
+        "top_label_share": 0.3877551020408163,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 25.510204081632654,
+        "full204_acc_pct": 25.98039215686275,
+        "top_label": "entertainment",
+        "top_label_share": 0.5816326530612245,
+        "collapsed": false
+      },
+      {
+        "condition": "chinese_only",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 31.63265306122449,
+        "full204_acc_pct": 29.411764705882355,
+        "top_label": "geography",
+        "top_label_share": 0.47959183673469385,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 81.63265306122449,
+        "full204_acc_pct": 82.84313725490196,
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 77.55102040816327,
+        "full204_acc_pct": 79.90196078431373,
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 74.48979591836735,
+        "full204_acc_pct": 77.45098039215686,
+        "top_label": "science/technology",
+        "top_label_share": 0.30612244897959184,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 71.42857142857143,
+        "full204_acc_pct": 71.56862745098039,
+        "top_label": "geography",
+        "top_label_share": 0.2653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 67.3469387755102,
+        "full204_acc_pct": 66.66666666666666,
+        "top_label": "science/technology",
+        "top_label_share": 0.2755102040816326,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 62.244897959183675,
+        "full204_acc_pct": 62.254901960784316,
+        "top_label": "geography",
+        "top_label_share": 0.3163265306122449,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 76.53061224489795,
+        "full204_acc_pct": 72.54901960784314,
+        "top_label": "travel",
+        "top_label_share": 0.25510204081632654,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 75.51020408163265,
+        "full204_acc_pct": 75.49019607843137,
+        "top_label": "travel",
+        "top_label_share": 0.21428571428571427,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 74.48979591836735,
+        "full204_acc_pct": 72.05882352941177,
+        "top_label": "travel",
+        "top_label_share": 0.23469387755102042,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 23.46938775510204,
+        "full204_acc_pct": 28.921568627450984,
+        "top_label": "geography",
+        "top_label_share": 0.7551020408163265,
+        "collapsed": true
+      },
+      {
+        "condition": "korean_only",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 34.69387755102041,
+        "full204_acc_pct": 35.294117647058826,
+        "top_label": "geography",
+        "top_label_share": 0.5816326530612245,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 21.428571428571427,
+        "full204_acc_pct": 25.98039215686275,
+        "top_label": "geography",
+        "top_label_share": 0.8571428571428571,
+        "collapsed": true
+      },
+      {
+        "condition": "korean_only",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 37.755102040816325,
+        "full204_acc_pct": 37.254901960784316,
+        "top_label": "geography",
+        "top_label_share": 0.5204081632653061,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 40.816326530612244,
+        "full204_acc_pct": 39.21568627450981,
+        "top_label": "geography",
+        "top_label_share": 0.3979591836734694,
+        "collapsed": false
+      },
+      {
+        "condition": "korean_only",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 25.510204081632654,
+        "full204_acc_pct": 25.49019607843137,
+        "top_label": "geography",
+        "top_label_share": 0.7857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 75.51020408163265,
+        "full204_acc_pct": 79.41176470588235,
+        "top_label": "science/technology",
+        "top_label_share": 0.32653061224489793,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 76.53061224489795,
+        "full204_acc_pct": 81.86274509803921,
+        "top_label": "science/technology",
+        "top_label_share": 0.30612244897959184,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 81.63265306122449,
+        "full204_acc_pct": 82.84313725490196,
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 57.14285714285714,
+        "full204_acc_pct": 59.31372549019608,
+        "top_label": "geography",
+        "top_label_share": 0.3877551020408163,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 57.14285714285714,
+        "full204_acc_pct": 57.84313725490197,
+        "top_label": "geography",
+        "top_label_share": 0.3979591836734694,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 71.42857142857143,
+        "full204_acc_pct": 68.62745098039215,
+        "top_label": "geography",
+        "top_label_share": 0.2857142857142857,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 52.04081632653062,
+        "full204_acc_pct": 52.94117647058824,
+        "top_label": "geography",
+        "top_label_share": 0.3877551020408163,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 63.26530612244898,
+        "full204_acc_pct": 59.80392156862745,
+        "top_label": "geography",
+        "top_label_share": 0.3163265306122449,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 68.36734693877551,
+        "full204_acc_pct": 66.17647058823529,
+        "top_label": "travel",
+        "top_label_share": 0.19387755102040816,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 26.53061224489796,
+        "full204_acc_pct": 31.862745098039213,
+        "top_label": "geography",
+        "top_label_share": 0.7653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 30.612244897959183,
+        "full204_acc_pct": 34.80392156862745,
+        "top_label": "geography",
+        "top_label_share": 0.6530612244897959,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 41.83673469387755,
+        "full204_acc_pct": 46.07843137254902,
+        "top_label": "geography",
+        "top_label_share": 0.42857142857142855,
+        "collapsed": false
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 19.387755102040817,
+        "full204_acc_pct": 20.588235294117645,
+        "top_label": "geography",
+        "top_label_share": 0.8061224489795918,
+        "collapsed": true
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 24.489795918367346,
+        "full204_acc_pct": 26.96078431372549,
+        "top_label": "geography",
+        "top_label_share": 0.7551020408163265,
+        "collapsed": true
+      },
+      {
+        "condition": "swahili_only",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 39.795918367346935,
+        "full204_acc_pct": 38.72549019607843,
+        "top_label": "geography",
+        "top_label_share": 0.5306122448979592,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 80.61224489795919,
+        "full204_acc_pct": 81.37254901960785,
+        "top_label": "science/technology",
+        "top_label_share": 0.30612244897959184,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 71.42857142857143,
+        "full204_acc_pct": 77.94117647058823,
+        "top_label": "science/technology",
+        "top_label_share": 0.3673469387755102,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 66.3265306122449,
+        "full204_acc_pct": 71.07843137254902,
+        "top_label": "science/technology",
+        "top_label_share": 0.24489795918367346,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 67.3469387755102,
+        "full204_acc_pct": 67.64705882352942,
+        "top_label": "geography",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 62.244897959183675,
+        "full204_acc_pct": 66.17647058823529,
+        "top_label": "science/technology",
+        "top_label_share": 0.3163265306122449,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 58.16326530612245,
+        "full204_acc_pct": 57.35294117647059,
+        "top_label": "geography",
+        "top_label_share": 0.3877551020408163,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 73.46938775510205,
+        "full204_acc_pct": 71.07843137254902,
+        "top_label": "travel",
+        "top_label_share": 0.30612244897959184,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 70.40816326530613,
+        "full204_acc_pct": 73.0392156862745,
+        "top_label": "travel",
+        "top_label_share": 0.21428571428571427,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 60.204081632653065,
+        "full204_acc_pct": 56.372549019607845,
+        "top_label": "geography",
+        "top_label_share": 0.35714285714285715,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 34.69387755102041,
+        "full204_acc_pct": 38.72549019607843,
+        "top_label": "geography",
+        "top_label_share": 0.4897959183673469,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 34.69387755102041,
+        "full204_acc_pct": 35.78431372549019,
+        "top_label": "geography",
+        "top_label_share": 0.3979591836734694,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 22.448979591836736,
+        "full204_acc_pct": 22.54901960784314,
+        "top_label": "geography",
+        "top_label_share": 0.7857142857142857,
+        "collapsed": true
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 60.204081632653065,
+        "full204_acc_pct": 59.31372549019608,
+        "top_label": "geography",
+        "top_label_share": 0.3469387755102041,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 57.14285714285714,
+        "full204_acc_pct": 55.392156862745104,
+        "top_label": "geography",
+        "top_label_share": 0.35714285714285715,
+        "collapsed": false
+      },
+      {
+        "condition": "bengali_only",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 46.93877551020408,
+        "full204_acc_pct": 48.03921568627451,
+        "top_label": "geography",
+        "top_label_share": 0.5204081632653061,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 0,
+        "lang": "EN",
+        "clean_acc_pct": 83.6734693877551,
+        "full204_acc_pct": 83.82352941176471,
+        "top_label": "science/technology",
+        "top_label_share": 0.29591836734693877,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 1,
+        "lang": "EN",
+        "clean_acc_pct": 71.42857142857143,
+        "full204_acc_pct": 75.98039215686273,
+        "top_label": "science/technology",
+        "top_label_share": 0.40816326530612246,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 2,
+        "lang": "EN",
+        "clean_acc_pct": 77.55102040816327,
+        "full204_acc_pct": 78.92156862745098,
+        "top_label": "science/technology",
+        "top_label_share": 0.30612244897959184,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 0,
+        "lang": "ZH",
+        "clean_acc_pct": 78.57142857142857,
+        "full204_acc_pct": 75.98039215686273,
+        "top_label": "science/technology",
+        "top_label_share": 0.2653061224489796,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 1,
+        "lang": "ZH",
+        "clean_acc_pct": 59.183673469387756,
+        "full204_acc_pct": 59.31372549019608,
+        "top_label": "science/technology",
+        "top_label_share": 0.336734693877551,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 2,
+        "lang": "ZH",
+        "clean_acc_pct": 55.10204081632652,
+        "full204_acc_pct": 54.90196078431373,
+        "top_label": "geography",
+        "top_label_share": 0.4489795918367347,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 0,
+        "lang": "KO",
+        "clean_acc_pct": 73.46938775510205,
+        "full204_acc_pct": 74.01960784313727,
+        "top_label": "travel",
+        "top_label_share": 0.22448979591836735,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 1,
+        "lang": "KO",
+        "clean_acc_pct": 70.40816326530613,
+        "full204_acc_pct": 67.15686274509804,
+        "top_label": "science/technology",
+        "top_label_share": 0.21428571428571427,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 2,
+        "lang": "KO",
+        "clean_acc_pct": 66.3265306122449,
+        "full204_acc_pct": 61.274509803921575,
+        "top_label": "geography",
+        "top_label_share": 0.2755102040816326,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 0,
+        "lang": "SW",
+        "clean_acc_pct": 58.16326530612245,
+        "full204_acc_pct": 55.392156862745104,
+        "top_label": "entertainment",
+        "top_label_share": 0.24489795918367346,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 1,
+        "lang": "SW",
+        "clean_acc_pct": 33.6734693877551,
+        "full204_acc_pct": 36.76470588235294,
+        "top_label": "geography",
+        "top_label_share": 0.5510204081632653,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 2,
+        "lang": "SW",
+        "clean_acc_pct": 31.63265306122449,
+        "full204_acc_pct": 35.78431372549019,
+        "top_label": "geography",
+        "top_label_share": 0.6428571428571429,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 0,
+        "lang": "BN",
+        "clean_acc_pct": 66.3265306122449,
+        "full204_acc_pct": 63.725490196078425,
+        "top_label": "entertainment",
+        "top_label_share": 0.21428571428571427,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 1,
+        "lang": "BN",
+        "clean_acc_pct": 50.0,
+        "full204_acc_pct": 46.568627450980394,
+        "top_label": "geography",
+        "top_label_share": 0.4387755102040816,
+        "collapsed": false
+      },
+      {
+        "condition": "mixed_5lang",
+        "seed": 2,
+        "lang": "BN",
+        "clean_acc_pct": 41.83673469387755,
+        "full204_acc_pct": 41.17647058823529,
+        "top_label": "geography",
+        "top_label_share": 0.5612244897959183,
+        "collapsed": false
+      }
+    ]
+  },
+  "completeness": {
+    "qwen_models_present": 19,
+    "qwen_models_expected": 19,
+    "qwen_problems": [],
+    "deepseek_problems": [],
+    "within_language_item_sets": {
+      "EN": {
+        "n_qwen_models": 19,
+        "n_deepseek_models": 19,
+        "identical_within_qwen": true,
+        "identical_qwen_vs_deepseek": true,
+        "n_items": 98
+      },
+      "ZH": {
+        "n_qwen_models": 19,
+        "n_deepseek_models": 19,
+        "identical_within_qwen": true,
+        "identical_qwen_vs_deepseek": true,
+        "n_items": 98
+      },
+      "KO": {
+        "n_qwen_models": 19,
+        "n_deepseek_models": 19,
+        "identical_within_qwen": true,
+        "identical_qwen_vs_deepseek": true,
+        "n_items": 98
+      },
+      "SW": {
+        "n_qwen_models": 19,
+        "n_deepseek_models": 19,
+        "identical_within_qwen": true,
+        "identical_qwen_vs_deepseek": true,
+        "n_items": 98
+      },
+      "BN": {
+        "n_qwen_models": 19,
+        "n_deepseek_models": 19,
+        "identical_within_qwen": true,
+        "identical_qwen_vs_deepseek": true,
+        "n_items": 98
+      }
+    },
+    "complete": true
+  }
+}

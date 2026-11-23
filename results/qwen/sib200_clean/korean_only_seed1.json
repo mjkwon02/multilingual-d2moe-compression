@@ -1,0 +1,467 @@
+{
+  "task": "sib200",
+  "model": "korean_only_seed1",
+  "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+  "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+  "condition": "korean_only",
+  "seed": 1,
+  "model_source": {
+    "baseline": false,
+    "source": "saved",
+    "compressed_model_dir": "results/qwen/phase1/korean_only/seed1/scale_korean_only_seed1/compressed_model",
+    "manifest_created_utc": "2026-09-17T23:49:48Z",
+    "params": {
+      "total_params_before": 14315784192,
+      "total_params_after": 12024576000,
+      "total_reduction": 2291208192,
+      "total_reduction_pct": 16.00476901070066,
+      "routed_expert_params_before": 12457082880,
+      "routed_expert_params_after": 10165874688,
+      "routed_expert_reduction_pct": 18.392814867424242,
+      "delta_ratio": 0.8,
+      "delta_rank": 667,
+      "note": "delta_ratio sets the per-expert low-rank budget; the model-wide reduction is total_reduction_pct"
+    },
+    "scale_condition": "korean_only",
+    "scale_seed": 1
+  },
+  "protocol": "sib200_natural_continuation_v1 (unchanged from phase1_sib200_eval.py)",
+  "num_fewshot": 14,
+  "demo_seed": 42,
+  "batch_size": 4,
+  "demonstrations": [
+    {
+      "text": "In 1957 Luxembourg became a founding member of the organization which is today known as the European Union.",
+      "category": "politics"
+    },
+    {
+      "text": "In summer, especially, you'll need to watch out for mosquitoes if you decide to hike through the rainforest.",
+      "category": "health"
+    },
+    {
+      "text": "For example, one might say that the motor car necessarily leads to the development of roads.",
+      "category": "science/technology"
+    },
+    {
+      "text": "Take a look at what trips the agent is promoting, whether on a website or in a shop window.",
+      "category": "travel"
+    },
+    {
+      "text": "In fact, region codes have absolutely no effect on illegal copying; a bit-for-bit copy of a disk will play just fine on any device where the original will.",
+      "category": "science/technology"
+    },
+    {
+      "text": "The archipelago lies 120 km north of the Peninsula. The largest is King George Island with the settlement of Villa Las Estrellas.",
+      "category": "geography"
+    },
+    {
+      "text": "Most of the temples do have an Annual festival starting from November end to Mid of May, which varies according to each temple's annual calendar.",
+      "category": "entertainment"
+    },
+    {
+      "text": "Murray lost the first set in a tie break after both men held each and every serve in the set.",
+      "category": "sports"
+    },
+    {
+      "text": "2004 Olympic silver medallist Amir Khan said, \"Deep down I think women shouldn’t fight. That’s my opinion.\"",
+      "category": "sports"
+    },
+    {
+      "text": "The Oyapock River Bridge is a cable-stayed bridge. It spans the Oyapock River to link the cities of Oiapoque in Brazil and Saint-Georges de l'Oyapock in French Guiana.",
+      "category": "geography"
+    },
+    {
+      "text": "After initial military setbacks, Ethelred was able to agree to terms with Olaf, who returned to Norway to try to gain his kingdom with mixed success.",
+      "category": "politics"
+    },
+    {
+      "text": "In the archipelagos and lakes you do not necessarily need a yacht.",
+      "category": "entertainment"
+    },
+    {
+      "text": "The best indication of internal poisoning may be the presence of an open container of medication or toxic household chemicals.",
+      "category": "health"
+    },
+    {
+      "text": "There are infinite variations possible, but this remains what most people mean when they talk of \"going to Disney World\".",
+      "category": "travel"
+    }
+  ],
+  "clean_subset_source": "analysis/data_audit_0916/clean_eval_ids.json",
+  "clean_variant": "primary (identical to strict for SIB; keep set identical across all 5 languages)",
+  "evaluation_scope": "TEST-ITEM clean: the 98 test items per language that the audit marks unexposed. The 14 fixed English demonstrations are unchanged (6 of them are calibration-exposed per the audit), so calibration exposure is NOT fully removed.",
+  "qwen_input_processing": {
+    "tokenizer_class": "Qwen2Tokenizer",
+    "use_fast": false,
+    "bos_token": null,
+    "eos_token": "<|endoftext|>",
+    "pad_token": "<|endoftext|>",
+    "adds_bos_by_default": false,
+    "prompt_prefix_token": null,
+    "padding_side_used_by_score_batch": "right",
+    "choice_words": [
+      " Science",
+      " Travel",
+      " Politics",
+      " Sports",
+      " Health",
+      " Entertainment",
+      " Geography"
+    ],
+    "choice_token_ids": [
+      9965,
+      18097,
+      34879,
+      13180,
+      6267,
+      22518,
+      83325
+    ],
+    "answer_colon_then_candidate_is_two_tokens": true,
+    "note": "Qwen2Tokenizer adds no BOS; DeepSeek's LlamaTokenizerFast adds <｜begin▁of▁sentence｜>. No prefix token is inserted for Qwen (same as the Qwen FLORES primary bpb metric). All other prompt text, demonstrations and candidates are byte-identical to the DeepSeek run.",
+    "demo_prompt_tokens_with_placeholder_text": 770
+  },
+  "comparison_note": "Comparable to DeepSeek only on the same 98-item clean subset (analysis/clean_eval_0916/sib200); Qwen has no earlier full-204 SIB result, so reproduction_check is null.",
+  "results": {
+    "eng_Latn": {
+      "full": {
+        "n": 204,
+        "acc": 0.7990196078431373,
+        "pred_distribution": {
+          "science/technology": 55,
+          "travel": 39,
+          "politics": 30,
+          "sports": 24,
+          "health": 18,
+          "entertainment": 17,
+          "geography": 21
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "science/technology",
+        "top_label_share": 0.2696078431372549,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.7755102040816326,
+        "pred_distribution": {
+          "science/technology": 28,
+          "travel": 21,
+          "politics": 12,
+          "sports": 9,
+          "health": 9,
+          "entertainment": 8,
+          "geography": 11
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "science/technology",
+        "top_label_share": 0.2857142857142857,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": null,
+      "prompt_tokens": {
+        "min": 778,
+        "max": 847,
+        "mean": 794.9901960784314
+      },
+      "seconds": 64.04861402511597,
+      "items_per_second": 3.185080631409192
+    },
+    "kor_Hang": {
+      "full": {
+        "n": 204,
+        "acc": 0.7549019607843137,
+        "pred_distribution": {
+          "science/technology": 37,
+          "travel": 38,
+          "politics": 29,
+          "sports": 21,
+          "health": 18,
+          "entertainment": 28,
+          "geography": 33
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "travel",
+        "top_label_share": 0.18627450980392157,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.7551020408163265,
+        "pred_distribution": {
+          "science/technology": 19,
+          "travel": 21,
+          "politics": 12,
+          "sports": 9,
+          "health": 7,
+          "entertainment": 16,
+          "geography": 14
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "travel",
+        "top_label_share": 0.21428571428571427,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": null,
+      "prompt_tokens": {
+        "min": 786,
+        "max": 887,
+        "mean": 812.5833333333334
+      },
+      "seconds": 65.22222995758057,
+      "items_per_second": 3.1277679425048506
+    },
+    "zho_Hans": {
+      "full": {
+        "n": 204,
+        "acc": 0.6666666666666666,
+        "pred_distribution": {
+          "science/technology": 51,
+          "travel": 25,
+          "politics": 23,
+          "sports": 17,
+          "health": 12,
+          "entertainment": 13,
+          "geography": 63
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "geography",
+        "top_label_share": 0.3088235294117647,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.673469387755102,
+        "pred_distribution": {
+          "science/technology": 27,
+          "travel": 13,
+          "politics": 11,
+          "sports": 7,
+          "health": 7,
+          "entertainment": 7,
+          "geography": 26
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "science/technology",
+        "top_label_share": 0.2755102040816326,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": null,
+      "prompt_tokens": {
+        "min": 777,
+        "max": 859,
+        "mean": 795.5784313725491
+      },
+      "seconds": 64.47043657302856,
+      "items_per_second": 3.1642410202840803
+    },
+    "swh_Latn": {
+      "full": {
+        "n": 204,
+        "acc": 0.35294117647058826,
+        "pred_distribution": {
+          "science/technology": 7,
+          "travel": 7,
+          "politics": 19,
+          "sports": 12,
+          "health": 5,
+          "entertainment": 39,
+          "geography": 115
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "geography",
+        "top_label_share": 0.5637254901960784,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.3469387755102041,
+        "pred_distribution": {
+          "science/technology": 2,
+          "travel": 4,
+          "politics": 10,
+          "sports": 3,
+          "health": 4,
+          "entertainment": 18,
+          "geography": 57
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "geography",
+        "top_label_share": 0.5816326530612245,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": null,
+      "prompt_tokens": {
+        "min": 784,
+        "max": 918,
+        "mean": 821.2598039215686
+      },
+      "seconds": 65.98665857315063,
+      "items_per_second": 3.0915340223486587
+    },
+    "ben_Beng": {
+      "full": {
+        "n": 204,
+        "acc": 0.39215686274509803,
+        "pred_distribution": {
+          "science/technology": 21,
+          "travel": 4,
+          "politics": 10,
+          "sports": 10,
+          "health": 4,
+          "entertainment": 68,
+          "geography": 87
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "geography",
+        "top_label_share": 0.4264705882352941,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.40816326530612246,
+        "pred_distribution": {
+          "science/technology": 11,
+          "travel": 1,
+          "politics": 6,
+          "sports": 5,
+          "health": 1,
+          "entertainment": 35,
+          "geography": 39
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "geography",
+        "top_label_share": 0.3979591836734694,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": null,
+      "prompt_tokens": {
+        "min": 807,
+        "max": 1118,
+        "mean": 905.7598039215686
+      },
+      "seconds": 71.29479360580444,
+      "items_per_second": 2.86135900929786
+    }
+  },
+  "runtime": {
+    "model": "korean_only_seed1",
+    "started_utc": "2026-09-19T14:31:30Z",
+    "seconds_load": 14.678020000457764,
+    "device_map_unique": [
+      "0",
+      "1"
+    ],
+    "seconds_reload_compressed": 207.6706314086914,
+    "finished_utc": "2026-09-19T14:40:50Z",
+    "peak_gpu_bytes": {
+      "0": 13769892864,
+      "1": 18600793088
+    }
+  },
+  "env": {
+    "host": "<redacted-host>",
+    "python": "3.10.20",
+    "prefix": "<conda>/envs/d2moe_env",
+    "torch": "2.3.1+cu121",
+    "cuda": "12.1",
+    "transformers": "4.42.4",
+    "accelerate": "0.29.2",
+    "CUDA_VISIBLE_DEVICES": "2,3",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "HF_HOME": "$HF_HOME",
+    "gpus": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+    "attn_implementation": "sdpa",
+    "device_map_strategy": "sequential",
+    "gpu_mem_caps_gib": [
+      13,
+      22
+    ],
+    "utc": "2026-09-19T14:40:50Z"
+  }
+}

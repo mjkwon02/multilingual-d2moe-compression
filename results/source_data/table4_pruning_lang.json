@@ -1,0 +1,438 @@
+{
+  "metric": "delta_delta_bpb_pct_pp (ON - OFF)",
+  "pp_ratio": 0.2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "eval_langs": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "vulnerable": [
+    "kor_Hang",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "results_root": "results/deepseek",
+  "condition_order": [
+    "english_only",
+    "chinese_only",
+    "korean_only",
+    "swahili_only",
+    "bengali_only"
+  ],
+  "prereg_conditions": [
+    "english_only",
+    "korean_only",
+    "swahili_only",
+    "bengali_only"
+  ],
+  "post_hoc_conditions": [
+    "chinese_only"
+  ],
+  "conditions": {
+    "english_only": {
+      "n_seeds": 3,
+      "seeds_used": [
+        0,
+        1,
+        2
+      ],
+      "per_lang": {
+        "eng_Latn": {
+          "per_seed": [
+            0.14319435289553795,
+            0.530612356989991,
+            0.19210757616117036
+          ],
+          "mean": 0.2886380953488998,
+          "sign_consistent": true
+        },
+        "kor_Hang": {
+          "per_seed": [
+            0.5708826926283272,
+            0.7462253417501294,
+            0.8146121540880671
+          ],
+          "mean": 0.710573396155508,
+          "sign_consistent": true
+        },
+        "zho_Hans": {
+          "per_seed": [
+            0.3759030231535583,
+            0.22184720813638314,
+            0.32743221088274055
+          ],
+          "mean": 0.308394147390894,
+          "sign_consistent": true
+        },
+        "swh_Latn": {
+          "per_seed": [
+            0.11524263113218325,
+            0.917084024991933,
+            0.8000480941548354
+          ],
+          "mean": 0.6107915834263172,
+          "sign_consistent": true
+        },
+        "ben_Beng": {
+          "per_seed": [
+            0.9178247146664873,
+            1.202223438386497,
+            1.383375416629697
+          ],
+          "mean": 1.1678078565608938,
+          "sign_consistent": true
+        }
+      },
+      "vulnerable_mean": {
+        "per_seed": [
+          0.5346500128089993,
+          0.9551776017095198,
+          0.9993452216241998
+        ],
+        "mean": 0.8297242787142396
+      }
+    },
+    "chinese_only": {
+      "n_seeds": 3,
+      "seeds_used": [
+        0,
+        1,
+        2
+      ],
+      "per_lang": {
+        "eng_Latn": {
+          "per_seed": [
+            0.6478211342902291,
+            0.7425954915547752,
+            0.6170192214263608
+          ],
+          "mean": 0.6691452824237883,
+          "sign_consistent": true
+        },
+        "kor_Hang": {
+          "per_seed": [
+            1.2443404151901696,
+            1.0999571973355309,
+            1.2413549415078116
+          ],
+          "mean": 1.1952175180111706,
+          "sign_consistent": true
+        },
+        "zho_Hans": {
+          "per_seed": [
+            0.4126971261515955,
+            0.2587100569549463,
+            0.4738697618294161
+          ],
+          "mean": 0.3817589816453193,
+          "sign_consistent": true
+        },
+        "swh_Latn": {
+          "per_seed": [
+            1.5603520245811353,
+            0.8438416286640873,
+            1.108711854925648
+          ],
+          "mean": 1.1709685027236236,
+          "sign_consistent": true
+        },
+        "ben_Beng": {
+          "per_seed": [
+            2.073853231295338,
+            2.2465446954608836,
+            2.0105109626707502
+          ],
+          "mean": 2.110302963142324,
+          "sign_consistent": true
+        }
+      },
+      "vulnerable_mean": {
+        "per_seed": [
+          1.6261818903555476,
+          1.3967811738201672,
+          1.4535259197014032
+        ],
+        "mean": 1.492162994625706
+      }
+    },
+    "korean_only": {
+      "n_seeds": 3,
+      "seeds_used": [
+        0,
+        1,
+        2
+      ],
+      "per_lang": {
+        "eng_Latn": {
+          "per_seed": [
+            0.07921057871682535,
+            -0.0901811401634589,
+            -1.576277254369085
+          ],
+          "mean": -0.5290826052719062,
+          "sign_consistent": false
+        },
+        "kor_Hang": {
+          "per_seed": [
+            2.2564060880547068,
+            2.1836011268609354,
+            1.9195916546202554
+          ],
+          "mean": 2.1198662898452993,
+          "sign_consistent": true
+        },
+        "zho_Hans": {
+          "per_seed": [
+            0.9591813200730872,
+            0.9612733092361658,
+            0.8126412764960271
+          ],
+          "mean": 0.9110319686017601,
+          "sign_consistent": true
+        },
+        "swh_Latn": {
+          "per_seed": [
+            1.2009021110397597,
+            0.7219896951957914,
+            0.35100779939611826
+          ],
+          "mean": 0.7579665352105565,
+          "sign_consistent": true
+        },
+        "ben_Beng": {
+          "per_seed": [
+            4.695501469632202,
+            4.417142300055541,
+            4.122910118929223
+          ],
+          "mean": 4.411851296205655,
+          "sign_consistent": true
+        }
+      },
+      "vulnerable_mean": {
+        "per_seed": [
+          2.7176032229088896,
+          2.4409110407040893,
+          2.131169857648532
+        ],
+        "mean": 2.42989470708717
+      }
+    },
+    "swahili_only": {
+      "n_seeds": 3,
+      "seeds_used": [
+        0,
+        1,
+        2
+      ],
+      "per_lang": {
+        "eng_Latn": {
+          "per_seed": [
+            2.018280043464358,
+            1.858123553290337,
+            2.036298352375777
+          ],
+          "mean": 1.9709006497101573,
+          "sign_consistent": true
+        },
+        "kor_Hang": {
+          "per_seed": [
+            3.457120820957215,
+            3.568021152738268,
+            3.509373449881757
+          ],
+          "mean": 3.5115051411924134,
+          "sign_consistent": true
+        },
+        "zho_Hans": {
+          "per_seed": [
+            1.4094507293714198,
+            1.530649736171405,
+            1.726008453384285
+          ],
+          "mean": 1.55536963964237,
+          "sign_consistent": true
+        },
+        "swh_Latn": {
+          "per_seed": [
+            1.602790019001409,
+            1.9423397933111755,
+            1.9100553315864133
+          ],
+          "mean": 1.8183950479663327,
+          "sign_consistent": true
+        },
+        "ben_Beng": {
+          "per_seed": [
+            5.321174738816481,
+            5.719051881880823,
+            6.049741896701576
+          ],
+          "mean": 5.696656172466294,
+          "sign_consistent": true
+        }
+      },
+      "vulnerable_mean": {
+        "per_seed": [
+          3.4603618595917016,
+          3.743137609310089,
+          3.823056892723249
+        ],
+        "mean": 3.6755187872083463
+      }
+    },
+    "bengali_only": {
+      "n_seeds": 3,
+      "seeds_used": [
+        0,
+        1,
+        2
+      ],
+      "per_lang": {
+        "eng_Latn": {
+          "per_seed": [
+            2.425951103042955,
+            2.284752945812297,
+            2.407655110309559
+          ],
+          "mean": 2.3727863863882703,
+          "sign_consistent": true
+        },
+        "kor_Hang": {
+          "per_seed": [
+            5.48208697669881,
+            5.04510878489144,
+            5.374449707276426
+          ],
+          "mean": 5.3005484896222255,
+          "sign_consistent": true
+        },
+        "zho_Hans": {
+          "per_seed": [
+            2.1412334597759273,
+            1.6648594216904122,
+            1.9280072780611732
+          ],
+          "mean": 1.9113667198425042,
+          "sign_consistent": true
+        },
+        "swh_Latn": {
+          "per_seed": [
+            1.7953147144061496,
+            2.0318024744262715,
+            2.2610043210156796
+          ],
+          "mean": 2.0293738366160334,
+          "sign_consistent": true
+        },
+        "ben_Beng": {
+          "per_seed": [
+            3.9145648228229106,
+            3.8569467226100542,
+            3.9932362131870995
+          ],
+          "mean": 3.921582586206688,
+          "sign_consistent": true
+        }
+      },
+      "vulnerable_mean": {
+        "per_seed": [
+          3.7306555046426233,
+          3.6446193273092553,
+          3.8762300804930683
+        ],
+        "mean": 3.750501637481649
+      }
+    }
+  },
+  "gate_crosscheck": {
+    "tolerance": 1e-12,
+    "conditions": {
+      "english_only": {
+        "gate_json": "results/deepseek/phase1_pruning_gate_english_only_result.json",
+        "status": "ok",
+        "compared": 5,
+        "not_in_gate_json": [],
+        "per_lang_max_abs_diff": {
+          "eng_Latn": 0.0,
+          "kor_Hang": 0.0,
+          "zho_Hans": 0.0,
+          "swh_Latn": 0.0,
+          "ben_Beng": 0.0
+        },
+        "max_abs_diff": 0.0,
+        "within_tolerance": true
+      },
+      "chinese_only": {
+        "gate_json": "results/deepseek/phase1_pruning_gate_chinese_only_result.json",
+        "status": "ok",
+        "compared": 5,
+        "not_in_gate_json": [],
+        "per_lang_max_abs_diff": {
+          "eng_Latn": 0.0,
+          "kor_Hang": 0.0,
+          "zho_Hans": 0.0,
+          "swh_Latn": 0.0,
+          "ben_Beng": 0.0
+        },
+        "max_abs_diff": 0.0,
+        "within_tolerance": true
+      },
+      "korean_only": {
+        "gate_json": "results/deepseek/phase1_pruning_gate_korean_only_result.json",
+        "status": "ok",
+        "compared": 3,
+        "not_in_gate_json": [
+          "swh_Latn",
+          "ben_Beng"
+        ],
+        "per_lang_max_abs_diff": {
+          "eng_Latn": 0.0,
+          "kor_Hang": 0.0,
+          "zho_Hans": 0.0
+        },
+        "max_abs_diff": 0.0,
+        "within_tolerance": true
+      },
+      "swahili_only": {
+        "gate_json": "results/deepseek/phase1_pruning_gate_swahili_only_result.json",
+        "status": "ok",
+        "compared": 5,
+        "not_in_gate_json": [],
+        "per_lang_max_abs_diff": {
+          "eng_Latn": 0.0,
+          "kor_Hang": 0.0,
+          "zho_Hans": 0.0,
+          "swh_Latn": 0.0,
+          "ben_Beng": 0.0
+        },
+        "max_abs_diff": 0.0,
+        "within_tolerance": true
+      },
+      "bengali_only": {
+        "gate_json": "results/deepseek/phase1_pruning_gate_bengali_only_result.json",
+        "status": "ok",
+        "compared": 5,
+        "not_in_gate_json": [],
+        "per_lang_max_abs_diff": {
+          "eng_Latn": 0.0,
+          "kor_Hang": 0.0,
+          "zho_Hans": 0.0,
+          "swh_Latn": 0.0,
+          "ben_Beng": 0.0
+        },
+        "max_abs_diff": 0.0,
+        "within_tolerance": true
+      }
+    },
+    "max_abs_diff": 0.0,
+    "all_within_tolerance": true
+  }
+}

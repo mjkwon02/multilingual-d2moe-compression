@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+Calibration & EN & ZH & KO & SW & BN \\
+\midrule
+English calibration & 0.673 $\pm$ 0.072 & 0.778 $\pm$ 0.115 & 0.709 $\pm$ 0.015 & -- & -- \\
+Chinese calibration & 0.607 $\pm$ 0.078 & 0.712 $\pm$ 0.011 & 0.692 $\pm$ 0.026 & -- & -- \\
+Korean calibration & 0.637 $\pm$ 0.081 & 0.654 $\pm$ 0.082 & 0.803 $\pm$ 0.030 & 0.676 $\pm$ 0.100 & 0.901 $\pm$ 0.041 \\
+Korean calibration, pruning 0.2 & 0.619 $\pm$ 0.098 & 0.634 $\pm$ 0.088 & 0.726 $\pm$ 0.039 & 0.590 $\pm$ 0.087 & 0.829 $\pm$ 0.068 \\
+Balanced-character calibration & 0.696 $\pm$ 0.062 & 0.817 $\pm$ 0.093 & 0.889 $\pm$ 0.129 & -- & -- \\
+\bottomrule
+\end{tabular}
+\caption{Belebele retention (ratio, $\times$; not a percentage): compressed accuracy divided by the uncompressed accuracy of the same language on the same clean subset. Mean $\pm$ sample standard deviation (ddof = 1) of per-seed retention over 3 seeds. Where the uncompressed accuracy is itself low (KO 34.5\%, BN 29.6\%), a retention near 1 does not indicate preserved task ability.}
+\label{tab:belebele-retention}
+\end{table}

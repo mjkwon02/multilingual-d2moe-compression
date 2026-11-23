@@ -1,0 +1,89 @@
+{
+  "mode": "bundle",
+  "pairs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "n_restored_per_arm": 12,
+  "scale_condition": "english_only/seed0 (whitening ON, AMENDMENT 1)",
+  "reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+  },
+  "compressed_delta_bpb_pct": {
+    "eng_Latn": 7.690521426360671,
+    "kor_Hang": 88.68195771581392,
+    "zho_Hans": 13.791171056414761,
+    "swh_Latn": 34.776191722743086,
+    "ben_Beng": 89.73056747256616
+  },
+  "gains_pp": {
+    "treatment": {
+      "eng_Latn": 0.11419074687537467,
+      "kor_Hang": -0.011505818720536354,
+      "zho_Hans": 0.1715481827879337,
+      "swh_Latn": 1.0150579799108428,
+      "ben_Beng": 0.015640509849220052
+    },
+    "control": {
+      "eng_Latn": -0.070756687643172,
+      "kor_Hang": 0.8641929821760357,
+      "zho_Hans": 0.019514985012985875,
+      "swh_Latn": 0.026364653693256912,
+      "ben_Beng": 0.26037333480297775
+    }
+  },
+  "P1_vulnerable_bundle": {
+    "treatment_vuln_mean_pp": 0.33973089034650883,
+    "control_vuln_mean_pp": 0.3836436568907568,
+    "difference_pp": -0.04391276654424797,
+    "direction_holds": false
+  },
+  "P3_english_control": {
+    "treatment_en_pp": 0.11419074687537467,
+    "control_en_pp": -0.070756687643172,
+    "difference_pp": 0.18494743451854667
+  },
+  "P2": "dropped -- prereg \u00a75 bundle-mode fallback",
+  "additivity_vs_step1": {
+    "caveat": "individual sum covers only 2 of 12 treatment experts (['T_L23E51', 'T_L25E32']) -- partial, not the full 12-expert individual sum",
+    "individual_partial_sum_pp": {
+      "eng_Latn": -0.04536262376856026,
+      "kor_Hang": 0.006550180830416252,
+      "zho_Hans": 0.05857306694551667,
+      "swh_Latn": 0.003498087983942355,
+      "ben_Beng": 0.10045182132191144
+    },
+    "bundle_treatment_pp": {
+      "eng_Latn": 0.11419074687537467,
+      "kor_Hang": -0.011505818720536354,
+      "zho_Hans": 0.1715481827879337,
+      "swh_Latn": 1.0150579799108428,
+      "ben_Beng": 0.015640509849220052
+    },
+    "bundle_minus_partial_sum_pp": {
+      "eng_Latn": 0.15955337064393493,
+      "kor_Hang": -0.018055999550952606,
+      "zho_Hans": 0.11297511584241704,
+      "swh_Latn": 1.0115598919269004,
+      "ben_Beng": -0.08481131147269139
+    }
+  },
+  "eval_seconds": {
+    "bundle_T": 74.08139157295227,
+    "bundle_C": 73.14073491096497
+  }
+}

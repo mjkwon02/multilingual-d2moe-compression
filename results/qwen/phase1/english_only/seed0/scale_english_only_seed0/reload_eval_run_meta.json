@@ -1,0 +1,254 @@
+{
+  "mode": "reload_eval",
+  "condition": "english_only",
+  "seed": 0,
+  "scale_condition": "english_only",
+  "scale_seed": 0,
+  "plain_svd": false,
+  "delta_ratio": 0.8,
+  "share_ratio": 1.0,
+  "merge_method": "fisher",
+  "structured_pruning": "off",
+  "env": {
+    "host": "<redacted-host>",
+    "python": "3.10.20",
+    "prefix": "<conda>/envs/d2moe_env",
+    "torch": "2.3.1+cu121",
+    "cuda": "12.1",
+    "transformers": "4.42.4",
+    "accelerate": "0.29.2",
+    "CUDA_VISIBLE_DEVICES": "0,2",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "HF_HOME": "$HF_HOME",
+    "gpus": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+    "attn_implementation": "sdpa",
+    "device_map_strategy": "sequential",
+    "gpu_mem_caps_gib": [
+      13,
+      22
+    ],
+    "utc": "2026-09-15T19:59:45Z"
+  },
+  "status": "ok",
+  "device_map": {
+    "hf_device_map": {
+      "model.embed_tokens": 0,
+      "model.layers.0": 0,
+      "model.layers.1": 0,
+      "model.layers.2": 0,
+      "model.layers.3": 0,
+      "model.layers.4": 0,
+      "model.layers.5": 0,
+      "model.layers.6": 0,
+      "model.layers.7": 0,
+      "model.layers.8": 0,
+      "model.layers.9": 0,
+      "model.layers.10": 1,
+      "model.layers.11": 1,
+      "model.layers.12": 1,
+      "model.layers.13": 1,
+      "model.layers.14": 1,
+      "model.layers.15": 1,
+      "model.layers.16": 1,
+      "model.layers.17": 1,
+      "model.layers.18": 1,
+      "model.layers.19": 1,
+      "model.layers.20": 1,
+      "model.layers.21": 1,
+      "model.layers.22": 1,
+      "model.layers.23": 1,
+      "model.norm": 1,
+      "lm_head": 1
+    },
+    "modules_per_device": {
+      "0": 11,
+      "1": 16
+    }
+  },
+  "params": {
+    "total_params_before": 14315784192,
+    "total_params_after": 12024576000,
+    "total_reduction": 2291208192,
+    "total_reduction_pct": 16.00476901070066,
+    "routed_expert_params_before": 12457082880,
+    "routed_expert_params_after": 10165874688,
+    "routed_expert_reduction_pct": 18.392814867424242,
+    "delta_ratio": 0.8,
+    "delta_rank": 667,
+    "note": "delta_ratio sets the per-expert low-rank budget; the model-wide reduction is total_reduction_pct"
+  },
+  "reload_vs_in_process": {
+    "eng_Latn": {
+      "in_process": 0.9177949414612855,
+      "reloaded": 0.9177949414612855,
+      "identical": true,
+      "abs_diff": 0.0
+    },
+    "kor_Hang": {
+      "in_process": 1.8497881519009547,
+      "reloaded": 1.8497881519009547,
+      "identical": true,
+      "abs_diff": 0.0
+    },
+    "zho_Hans": {
+      "in_process": 1.167503137697857,
+      "reloaded": 1.167503137697857,
+      "identical": true,
+      "abs_diff": 0.0
+    },
+    "swh_Latn": {
+      "in_process": 2.6588637080815043,
+      "reloaded": 2.6588637080815043,
+      "identical": true,
+      "abs_diff": 0.0
+    },
+    "ben_Beng": {
+      "in_process": 1.3145527574008364,
+      "reloaded": 1.3145527574008364,
+      "identical": true,
+      "abs_diff": 0.0
+    }
+  },
+  "resources": {
+    "stages": [
+      {
+        "name": "load",
+        "seconds": 13.49,
+        "gpu": {
+          "0": {
+            "peak_allocated_gib": 11.246,
+            "peak_reserved_gib": 11.254,
+            "now_allocated_gib": 11.246
+          },
+          "1": {
+            "peak_allocated_gib": 15.513,
+            "peak_reserved_gib": 15.531,
+            "now_allocated_gib": 15.513
+          }
+        },
+        "cpu_rss_peak_gib_sampled": 2.367,
+        "cpu_rss_peak_gib_lifetime": 4.62,
+        "nvidia_smi_after": [
+          {
+            "index": "0",
+            "uuid": "GPU-9db24f70-d549-0747-f93b-410201bf45d5",
+            "used_mib": "11786",
+            "total_mib": "24576"
+          },
+          {
+            "index": "1",
+            "uuid": "GPU-4b735cc7-8589-b256-47aa-9ecbcd53940d",
+            "used_mib": "1",
+            "total_mib": "24576"
+          },
+          {
+            "index": "2",
+            "uuid": "GPU-5dedb5fe-b0e1-070f-e190-b1c711773125",
+            "used_mib": "16166",
+            "total_mib": "24576"
+          },
+          {
+            "index": "3",
+            "uuid": "GPU-ee4099f5-b352-fbb3-1c5b-12b224aeb076",
+            "used_mib": "9",
+            "total_mib": "24576"
+          }
+        ]
+      },
+      {
+        "name": "reload_compressed",
+        "seconds": 117.3,
+        "gpu": {
+          "0": {
+            "peak_allocated_gib": 12.824,
+            "peak_reserved_gib": 12.836,
+            "now_allocated_gib": 9.468
+          },
+          "1": {
+            "peak_allocated_gib": 17.091,
+            "peak_reserved_gib": 17.094,
+            "now_allocated_gib": 13.024
+          }
+        },
+        "cpu_rss_peak_gib_sampled": 2.162,
+        "cpu_rss_peak_gib_lifetime": 4.62,
+        "nvidia_smi_after": [
+          {
+            "index": "0",
+            "uuid": "GPU-9db24f70-d549-0747-f93b-410201bf45d5",
+            "used_mib": "10006",
+            "total_mib": "24576"
+          },
+          {
+            "index": "1",
+            "uuid": "GPU-4b735cc7-8589-b256-47aa-9ecbcd53940d",
+            "used_mib": "1",
+            "total_mib": "24576"
+          },
+          {
+            "index": "2",
+            "uuid": "GPU-5dedb5fe-b0e1-070f-e190-b1c711773125",
+            "used_mib": "13666",
+            "total_mib": "24576"
+          },
+          {
+            "index": "3",
+            "uuid": "GPU-ee4099f5-b352-fbb3-1c5b-12b224aeb076",
+            "used_mib": "9",
+            "total_mib": "24576"
+          }
+        ]
+      },
+      {
+        "name": "eval_flores",
+        "seconds": 92.41,
+        "gpu": {
+          "0": {
+            "peak_allocated_gib": 14.038,
+            "peak_reserved_gib": 16.057,
+            "now_allocated_gib": 9.476
+          },
+          "1": {
+            "peak_allocated_gib": 15.504,
+            "peak_reserved_gib": 15.867,
+            "now_allocated_gib": 13.032
+          }
+        },
+        "cpu_rss_peak_gib_sampled": 2.041,
+        "cpu_rss_peak_gib_lifetime": 4.62,
+        "nvidia_smi_after": [
+          {
+            "index": "0",
+            "uuid": "GPU-9db24f70-d549-0747-f93b-410201bf45d5",
+            "used_mib": "16764",
+            "total_mib": "24576"
+          },
+          {
+            "index": "1",
+            "uuid": "GPU-4b735cc7-8589-b256-47aa-9ecbcd53940d",
+            "used_mib": "1",
+            "total_mib": "24576"
+          },
+          {
+            "index": "2",
+            "uuid": "GPU-5dedb5fe-b0e1-070f-e190-b1c711773125",
+            "used_mib": "16568",
+            "total_mib": "24576"
+          },
+          {
+            "index": "3",
+            "uuid": "GPU-ee4099f5-b352-fbb3-1c5b-12b224aeb076",
+            "used_mib": "9",
+            "total_mib": "24576"
+          }
+        ]
+      }
+    ],
+    "total_seconds": 224.3
+  }
+}

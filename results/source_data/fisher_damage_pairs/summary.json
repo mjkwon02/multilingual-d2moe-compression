@@ -1,0 +1,251 @@
+{
+  "question": "Fisher expert-ranking similarity vs cross-language compression damage, 10 language pairs",
+  "primary_seed": 0,
+  "seeds_analysed": [
+    0,
+    1,
+    2
+  ],
+  "definitions": {
+    "F": "27-layer mean of per-layer Spearman rho between the two languages' per-expert Fisher (Table 17)",
+    "D(A->B)": "100*(bpb[A,seed,B]/bpb[baseline,B]-1); whitening-ON own-scale, dr 0.8, pruning OFF",
+    "Dsym": "[D(A->B)+D(B->A)]/2",
+    "Esym": "[(D(A->B)-D(B->B)) + (D(B->A)-D(A->A))]/2",
+    "primary": "Spearman(F, Esym)",
+    "comparison": "Spearman(F, Dsym)",
+    "quadrant_rule": "median split on the 10 pairs, declared before computing"
+  },
+  "not_computed": [
+    "p-values (pairs share languages; not independent)",
+    "any 270-observation layer-level test",
+    "placebo rows"
+  ],
+  "per_seed": {
+    "0": {
+      "spearman_F_Esym": -0.17575757575757575,
+      "spearman_F_Dsym": -0.23636363636363633,
+      "median_F": 0.3083273979107312,
+      "median_Esym": 43.234387645408326,
+      "median_Dsym": 47.942614752679205,
+      "KO_BN": {
+        "F": 0.6816748066748066,
+        "rank_F_desc": 1.0,
+        "Esym": 22.51293502223063,
+        "rank_Esym_desc": 8.0,
+        "Dsym": 25.03772303188635,
+        "rank_Dsym_desc": 8.0
+      },
+      "high_F_high_Esym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "high_F_high_Dsym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "damage_files": {
+        "EN": "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_ppl.json",
+        "ZH": "results/deepseek/chinese_only/seed0/scale_chinese_only_seed0/eval_ppl.json",
+        "KO": "results/deepseek/korean_only/seed0/scale_korean_only_seed0/eval_ppl.json",
+        "SW": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+        "BN": "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_ppl.json"
+      }
+    },
+    "1": {
+      "spearman_F_Esym": -0.2606060606060606,
+      "spearman_F_Dsym": -0.32121212121212117,
+      "median_F": 0.33834283000949666,
+      "median_Esym": 43.17219634806404,
+      "median_Dsym": 48.01976908430161,
+      "KO_BN": {
+        "F": 0.7108245149911815,
+        "rank_F_desc": 1.0,
+        "Esym": 21.150322091423426,
+        "rank_Esym_desc": 8.0,
+        "Dsym": 23.862061472227104,
+        "rank_Dsym_desc": 8.0
+      },
+      "high_F_high_Esym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "high_F_high_Dsym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "damage_files": {
+        "EN": "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_ppl.json",
+        "ZH": "results/deepseek/chinese_only/seed1/scale_chinese_only_seed1/eval_ppl.json",
+        "KO": "results/deepseek/korean_only/seed1/scale_korean_only_seed1/eval_ppl.json",
+        "SW": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl.json",
+        "BN": "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_ppl.json"
+      }
+    },
+    "2": {
+      "spearman_F_Esym": -0.23636363636363633,
+      "spearman_F_Dsym": -0.17575757575757575,
+      "median_F": 0.3260361552028218,
+      "median_Esym": 44.203992356834654,
+      "median_Dsym": 49.08464821776552,
+      "KO_BN": {
+        "F": 0.7030948989282321,
+        "rank_F_desc": 1.0,
+        "Esym": 22.263293832772,
+        "rank_Esym_desc": 8.0,
+        "Dsym": 24.81862824276991,
+        "rank_Dsym_desc": 7.0
+      },
+      "high_F_high_Esym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "high_F_high_Dsym_pairs": [
+        "KO-SW",
+        "SW-BN"
+      ],
+      "damage_files": {
+        "EN": "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_ppl.json",
+        "ZH": "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_ppl.json",
+        "KO": "results/deepseek/korean_only/seed2/scale_korean_only_seed2/eval_ppl.json",
+        "SW": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ppl.json",
+        "BN": "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_ppl.json"
+      }
+    }
+  },
+  "consistency_checks": {
+    "damage_formula_vs_table1_draft": {
+      "cells_compared": 18,
+      "max_abs_diff_after_rounding_to_2dp": 0.0,
+      "n_exact_at_2dp": 18,
+      "detail": [
+        {
+          "cell": "EN->EN",
+          "table1_draft": 7.28,
+          "recomputed_3seed_mean": 7.279221153917682,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "EN->KO",
+          "table1_draft": 88.76,
+          "recomputed_3seed_mean": 88.75596603296026,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "EN->ZH",
+          "table1_draft": 13.8,
+          "recomputed_3seed_mean": 13.7966620610014,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "EN->SW",
+          "table1_draft": 33.09,
+          "recomputed_3seed_mean": 33.092587250163206,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "KO->EN",
+          "table1_draft": 12.68,
+          "recomputed_3seed_mean": 12.677010597787882,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "KO->KO",
+          "table1_draft": 3.86,
+          "recomputed_3seed_mean": 3.864778410745906,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "KO->ZH",
+          "table1_draft": 12.68,
+          "recomputed_3seed_mean": 12.684218466388865,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "KO->SW",
+          "table1_draft": 38.52,
+          "recomputed_3seed_mean": 38.52135263185432,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "ZH->EN",
+          "table1_draft": 10.29,
+          "recomputed_3seed_mean": 10.286903761204504,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "ZH->KO",
+          "table1_draft": 79.28,
+          "recomputed_3seed_mean": 79.27884764252477,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "ZH->ZH",
+          "table1_draft": 4.24,
+          "recomputed_3seed_mean": 4.239829630509596,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "ZH->SW",
+          "table1_draft": 35.1,
+          "recomputed_3seed_mean": 35.09971550257169,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "ZH->BN",
+          "table1_draft": 87.41,
+          "recomputed_3seed_mean": 87.41046704600272,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "SW->EN",
+          "table1_draft": 12.83,
+          "recomputed_3seed_mean": 12.829926386732424,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "SW->KO",
+          "table1_draft": 66.65,
+          "recomputed_3seed_mean": 66.65154619422803,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "SW->ZH",
+          "table1_draft": 15.2,
+          "recomputed_3seed_mean": 15.199759541227934,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "SW->SW",
+          "table1_draft": -0.05,
+          "recomputed_3seed_mean": -0.047477827102608096,
+          "abs_diff_vs_2dp": 0.0
+        },
+        {
+          "cell": "SW->BN",
+          "table1_draft": 75.06,
+          "recomputed_3seed_mean": 75.05539292159922,
+          "abs_diff_vs_2dp": 0.0
+        }
+      ],
+      "note": "the draft table predates later backfills and is a 2-dp display value, so agreement is checked at 2 dp; it validates the formula and file choice, it is not an input"
+    },
+    "fisher_seed0": {
+      "stored_overall_mean_lang_rho": 0.3138953330619997,
+      "recomputed_mean_of_pair_means": 0.3138953330619997,
+      "abs_diff": 0.0,
+      "n_layers": 27
+    },
+    "fisher_seed1": {
+      "stored_overall_mean_lang_rho": 0.3409979989146656,
+      "recomputed_mean_of_pair_means": 0.34099799891466553,
+      "abs_diff": 5.551115123125783e-17,
+      "n_layers": 27
+    },
+    "fisher_seed2": {
+      "stored_overall_mean_lang_rho": 0.3317055012888345,
+      "recomputed_mean_of_pair_means": 0.3317055012888346,
+      "abs_diff": 5.551115123125783e-17,
+      "n_layers": 27
+    }
+  }
+}

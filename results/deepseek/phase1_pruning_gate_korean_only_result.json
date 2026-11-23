@@ -1,0 +1,56 @@
+{
+  "condition": "korean_only",
+  "pp_ratio": 0.2,
+  "per_language": {
+    "eng_Latn": {
+      "mean_delta_pp": -0.5290826052719062,
+      "per_seed_delta": [
+        0.07921057871682535,
+        -0.0901811401634589,
+        -1.576277254369085
+      ],
+      "sign_consistent_across_seeds": false,
+      "direction": "PRUNING_HELPS"
+    },
+    "kor_Hang": {
+      "mean_delta_pp": 2.1198662898452993,
+      "per_seed_delta": [
+        2.2564060880547068,
+        2.1836011268609354,
+        1.9195916546202554
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "zho_Hans": {
+      "mean_delta_pp": 0.9110319686017601,
+      "per_seed_delta": [
+        0.9591813200730872,
+        0.9612733092361658,
+        0.8126412764960271
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "swh_Latn": {
+      "mean_delta_pp": 0.7579665352105565,
+      "per_seed_delta": [
+        1.2009021110397597,
+        0.7219896951957914,
+        0.35100779939611826
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "ben_Beng": {
+      "mean_delta_pp": 4.411851296205655,
+      "per_seed_delta": [
+        4.695501469632202,
+        4.417142300055541,
+        4.122910118929223
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    }
+  }
+}

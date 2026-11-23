@@ -1,0 +1,265 @@
+{
+  "question": "Are the SW/BN argmax disagreements near-ties or boundary/cache errors?",
+  "verdict": "NEAR_TIE — not a boundary or cache error",
+  "evidence": {
+    "SW_shared_prefix": "0/12 disagreements",
+    "BN_shared_prefix": "1/12 disagreements",
+    "the_single_BN_flip": {
+      "reference_top1_top2_margin": 0.032,
+      "abs_diff_on_reference_argmax": 0.001,
+      "reference_argmax": "alarm set",
+      "cached_argmax": "alarm remove",
+      "reading": "the cached scorer reproduces the reference winner to 0.001 nats; the two candidates are separated by only 0.032 nats, so which one wins is decided by noise far below the model s own shape-sensitivity floor (0.48)"
+    },
+    "structural": "abs_diff_on_reference_argmax stays 0.001-0.092 on every item, while the larger max|D| (0.12-0.28) falls on low-ranked candidates that cannot change the prediction. A boundary or cache misalignment would corrupt the top candidate s score, not only the tail.",
+    "margin_dependence": "every item with a comfortable margin (0.67, 0.82, 0.83) agrees despite max|D| up to 0.28; the only flip is at the smallest margin in the set"
+  },
+  "consequence": "accepted: the fast scorer may be used. The residual effect is that a small fraction of near-tie items have an implementation-dependent prediction, which inflates variance in absolute accuracy but does not bias a contrast in which both arms use identical prompt, label order, tensor shapes, batching and dtype.",
+  "raw_source": "results/deepseek/massive/equivalence/baseline_P0_swbn_neartie.json",
+  "per_item": {
+    "SW": [
+      {
+        "tail_sha256": "f485d746b2eea6ff",
+        "max_abs_mean_logprob_diff": 0.2466716766357422,
+        "abs_diff_on_reference_argmax": 0.06016990223433827,
+        "reference_top1_top2_margin": 0.2207791499327869,
+        "max_abs_diff_over_margin": 1.1172779526999623,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      },
+      {
+        "tail_sha256": "57f4e89bd5edec39",
+        "max_abs_mean_logprob_diff": 0.14860910177230835,
+        "abs_diff_on_reference_argmax": 0.04134935140609741,
+        "reference_top1_top2_margin": 0.23071801145561044,
+        "max_abs_diff_over_margin": 0.6441157360655406,
+        "cached_argmax": "general greet",
+        "reference_argmax": "general greet",
+        "agree": true
+      },
+      {
+        "tail_sha256": "1d9034002073a904",
+        "max_abs_mean_logprob_diff": 0.1399935483932495,
+        "abs_diff_on_reference_argmax": 0.020499110221862793,
+        "reference_top1_top2_margin": 0.08150380849838257,
+        "max_abs_diff_over_margin": 1.717631985209963,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "2dbb0b6b2d6da3d6",
+        "max_abs_mean_logprob_diff": 0.15543675422668457,
+        "abs_diff_on_reference_argmax": 0.0406840443611145,
+        "reference_top1_top2_margin": 0.11823643571697173,
+        "max_abs_diff_over_margin": 1.3146265217158697,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "963d84977b8f9d2f",
+        "max_abs_mean_logprob_diff": 0.11836671829223633,
+        "abs_diff_on_reference_argmax": 0.013257745886221528,
+        "reference_top1_top2_margin": 0.13741988269612193,
+        "max_abs_diff_over_margin": 0.8613507446661262,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      },
+      {
+        "tail_sha256": "44d0606060aa42cd",
+        "max_abs_mean_logprob_diff": 0.14588958024978638,
+        "abs_diff_on_reference_argmax": 0.022294342517852783,
+        "reference_top1_top2_margin": 0.013993918895721436,
+        "max_abs_diff_over_margin": 10.425212646786978,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "118f0197cabc85a3",
+        "max_abs_mean_logprob_diff": 0.21222293376922607,
+        "abs_diff_on_reference_argmax": 0.04551977102091764,
+        "reference_top1_top2_margin": 0.13088068857323365,
+        "max_abs_diff_over_margin": 1.6214992149164753,
+        "cached_argmax": "music dislikeness",
+        "reference_argmax": "music dislikeness",
+        "agree": true
+      },
+      {
+        "tail_sha256": "95bce6d8c2c78228",
+        "max_abs_mean_logprob_diff": 0.1539092466700822,
+        "abs_diff_on_reference_argmax": 0.01323067645231868,
+        "reference_top1_top2_margin": 0.07180247337867818,
+        "max_abs_diff_over_margin": 2.1435089827391063,
+        "cached_argmax": "audio volume up",
+        "reference_argmax": "audio volume up",
+        "agree": true
+      },
+      {
+        "tail_sha256": "3739edfd009fa726",
+        "max_abs_mean_logprob_diff": 0.14588189125061035,
+        "abs_diff_on_reference_argmax": 0.025966662773862392,
+        "reference_top1_top2_margin": 0.03172117147284248,
+        "max_abs_diff_over_margin": 4.598880951654151,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      },
+      {
+        "tail_sha256": "a09922b9e90c3d43",
+        "max_abs_mean_logprob_diff": 0.2284855842590332,
+        "abs_diff_on_reference_argmax": 0.005876898765563965,
+        "reference_top1_top2_margin": 0.0700259804725647,
+        "max_abs_diff_over_margin": 3.2628687626666077,
+        "cached_argmax": "alarm set",
+        "reference_argmax": "alarm set",
+        "agree": true
+      },
+      {
+        "tail_sha256": "22695ba64f191740",
+        "max_abs_mean_logprob_diff": 0.1372418999671936,
+        "abs_diff_on_reference_argmax": 0.0019432265544310212,
+        "reference_top1_top2_margin": 0.02955964012071499,
+        "max_abs_diff_over_margin": 4.642881287009186,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      },
+      {
+        "tail_sha256": "ed416a6fdbe1324f",
+        "max_abs_mean_logprob_diff": 0.16953608393669128,
+        "abs_diff_on_reference_argmax": 0.04736713357269773,
+        "reference_top1_top2_margin": 0.09772359188646074,
+        "max_abs_diff_over_margin": 1.7348531778658447,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      }
+    ],
+    "BN": [
+      {
+        "tail_sha256": "f65eef78704c1b4a",
+        "max_abs_mean_logprob_diff": 0.1613454818725586,
+        "abs_diff_on_reference_argmax": 0.017234718543477356,
+        "reference_top1_top2_margin": 0.06356419208459552,
+        "max_abs_diff_over_margin": 2.538307757578813,
+        "cached_argmax": "iot wemo on",
+        "reference_argmax": "iot wemo on",
+        "agree": true
+      },
+      {
+        "tail_sha256": "e1ff55ca42dfd93e",
+        "max_abs_mean_logprob_diff": 0.2636876106262207,
+        "abs_diff_on_reference_argmax": 0.019710272550582886,
+        "reference_top1_top2_margin": 0.16486632823944092,
+        "max_abs_diff_over_margin": 1.5994024579916544,
+        "cached_argmax": "alarm query",
+        "reference_argmax": "alarm query",
+        "agree": true
+      },
+      {
+        "tail_sha256": "085d11329bc7c544",
+        "max_abs_mean_logprob_diff": 0.2767232656478882,
+        "abs_diff_on_reference_argmax": 0.025200501084327698,
+        "reference_top1_top2_margin": 0.8231645673513412,
+        "max_abs_diff_over_margin": 0.336170040139468,
+        "cached_argmax": "alarm set",
+        "reference_argmax": "alarm set",
+        "agree": true
+      },
+      {
+        "tail_sha256": "22bd08673dbf79fd",
+        "max_abs_mean_logprob_diff": 0.1612483263015747,
+        "abs_diff_on_reference_argmax": 0.05798625946044922,
+        "reference_top1_top2_margin": 0.18611764907836914,
+        "max_abs_diff_over_margin": 0.8663784821055706,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "b7d5506a02fcda03",
+        "max_abs_mean_logprob_diff": 0.25954532623291016,
+        "abs_diff_on_reference_argmax": 0.05464182794094086,
+        "reference_top1_top2_margin": 0.3255067684920505,
+        "max_abs_diff_over_margin": 0.7973576937748031,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "7c3e31a574e04d04",
+        "max_abs_mean_logprob_diff": 0.1742306351661682,
+        "abs_diff_on_reference_argmax": 0.03403224050998688,
+        "reference_top1_top2_margin": 0.8257872760295868,
+        "max_abs_diff_over_margin": 0.21098730898818763,
+        "cached_argmax": "alarm set",
+        "reference_argmax": "alarm set",
+        "agree": true
+      },
+      {
+        "tail_sha256": "aee44a012b96200b",
+        "max_abs_mean_logprob_diff": 0.1495111584663391,
+        "abs_diff_on_reference_argmax": 0.0922938883304596,
+        "reference_top1_top2_margin": 0.12026932835578918,
+        "max_abs_diff_over_margin": 1.2431362219305382,
+        "cached_argmax": "alarm query",
+        "reference_argmax": "alarm query",
+        "agree": true
+      },
+      {
+        "tail_sha256": "a2b752b104e33127",
+        "max_abs_mean_logprob_diff": 0.22428768873214722,
+        "abs_diff_on_reference_argmax": 0.00678059458732605,
+        "reference_top1_top2_margin": 0.1456015408039093,
+        "max_abs_diff_over_margin": 1.5404211211899843,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm remove",
+        "agree": true
+      },
+      {
+        "tail_sha256": "e249e77c40f95db3",
+        "max_abs_mean_logprob_diff": 0.13370007276535034,
+        "abs_diff_on_reference_argmax": 0.032944157952442765,
+        "reference_top1_top2_margin": 0.15559248657276226,
+        "max_abs_diff_over_margin": 0.8592964590409448,
+        "cached_argmax": "iot cleaning",
+        "reference_argmax": "iot cleaning",
+        "agree": true
+      },
+      {
+        "tail_sha256": "799c3b0c6b14b5c2",
+        "max_abs_mean_logprob_diff": 0.20513319969177246,
+        "abs_diff_on_reference_argmax": 0.009892895817756653,
+        "reference_top1_top2_margin": 0.6662161350250244,
+        "max_abs_diff_over_margin": 0.30790788290359744,
+        "cached_argmax": "alarm set",
+        "reference_argmax": "alarm set",
+        "agree": true
+      },
+      {
+        "tail_sha256": "ca0548dacee7a3b3",
+        "max_abs_mean_logprob_diff": 0.25063276290893555,
+        "abs_diff_on_reference_argmax": 0.001045525074005127,
+        "reference_top1_top2_margin": 0.0320320725440979,
+        "max_abs_diff_over_margin": 7.824431671222476,
+        "cached_argmax": "alarm remove",
+        "reference_argmax": "alarm set",
+        "agree": false
+      },
+      {
+        "tail_sha256": "f39993d074950e38",
+        "max_abs_mean_logprob_diff": 0.16495531797409058,
+        "abs_diff_on_reference_argmax": 0.04079213738441467,
+        "reference_top1_top2_margin": 0.2661154325818642,
+        "max_abs_diff_over_margin": 0.6198637800659904,
+        "cached_argmax": "social query",
+        "reference_argmax": "social query",
+        "agree": true
+      }
+    ]
+  }
+}

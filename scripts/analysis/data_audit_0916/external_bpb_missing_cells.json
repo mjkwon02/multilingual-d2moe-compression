@@ -1,0 +1,40 @@
+{
+  "missing_xlsum_cells": [
+    {
+      "condition": "chinese_only",
+      "seed": 2,
+      "missing": "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_ood_unseen.json"
+    },
+    {
+      "condition": "swahili_only",
+      "seed": 0,
+      "missing": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ood_unseen.json"
+    },
+    {
+      "condition": "swahili_only",
+      "seed": 1,
+      "missing": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ood_unseen.json"
+    },
+    {
+      "condition": "swahili_only",
+      "seed": 2,
+      "missing": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ood_unseen.json"
+    },
+    {
+      "condition": "bengali_only",
+      "seed": 0,
+      "missing": "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_ood_unseen.json"
+    },
+    {
+      "condition": "bengali_only",
+      "seed": 1,
+      "missing": "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_ood_unseen.json"
+    },
+    {
+      "condition": "bengali_only",
+      "seed": 2,
+      "missing": "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_ood_unseen.json"
+    }
+  ],
+  "note": "미산출 셀은 0이나 추정으로 채우지 않는다."
+}

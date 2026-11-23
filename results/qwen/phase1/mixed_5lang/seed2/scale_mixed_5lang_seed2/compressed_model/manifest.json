@@ -1,0 +1,172 @@
+{
+  "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+  "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+  "condition": "mixed_5lang",
+  "seed": 2,
+  "scale_condition": "mixed_5lang",
+  "scale_seed": 2,
+  "plain_svd": false,
+  "delta_ratio": 0.8,
+  "params": {
+    "total_params_before": 14315784192,
+    "total_params_after": 12024576000,
+    "total_reduction": 2291208192,
+    "total_reduction_pct": 16.00476901070066,
+    "routed_expert_params_before": 12457082880,
+    "routed_expert_params_after": 10165874688,
+    "routed_expert_reduction_pct": 18.392814867424242,
+    "delta_ratio": 0.8,
+    "delta_rank": 667,
+    "note": "delta_ratio sets the per-expert low-rank budget; the model-wide reduction is total_reduction_pct"
+  },
+  "dtype": "bfloat16",
+  "created_utc": "2026-09-19T03:42:41Z",
+  "layers": {
+    "0": {
+      "file": "layer_0.safetensors",
+      "sha256_tensors": "eef248715485c5b6dc40c7844556694d3a35e0b1e9deed6439b7e6c5e812cd52",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "1": {
+      "file": "layer_1.safetensors",
+      "sha256_tensors": "75d5a85969a60b17c940b30de7a3535926d12f236b13cd61822ae6ecd9c0aefa",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "2": {
+      "file": "layer_2.safetensors",
+      "sha256_tensors": "c8b301fcb94f88358adf9547656b2ea1fb00469d841bd0ef628ae0fa02e98fa1",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "3": {
+      "file": "layer_3.safetensors",
+      "sha256_tensors": "71fda0f0b6d9d994d482cbb5307803955abd76d8a27da2838259422cd0c68f08",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "4": {
+      "file": "layer_4.safetensors",
+      "sha256_tensors": "39a88d2ef66cf45dbf327e3f81a3068011202d2c5814816767de7288cdc63150",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "5": {
+      "file": "layer_5.safetensors",
+      "sha256_tensors": "f85b1098ecddbcea29b57016551fa5d61bddb0a0b1f7d334c914c8608b540a4a",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "6": {
+      "file": "layer_6.safetensors",
+      "sha256_tensors": "ba4abb206d49ecad4b6119734f72f9c64575108ae8383b0f6046cb3d144ed5b0",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "7": {
+      "file": "layer_7.safetensors",
+      "sha256_tensors": "d60183ab9b0178ab1cb13dc6ad50bdc9bb098f9d20a9ac12e08781f9ee4ffad6",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "8": {
+      "file": "layer_8.safetensors",
+      "sha256_tensors": "dfa741d500176275d7f596d40f60e611060bc997e8e893dcb66d9f19e9a29b3c",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "9": {
+      "file": "layer_9.safetensors",
+      "sha256_tensors": "e9b48d2a64b8e43a8dbfb0659dbc678f1c7ab9ed3b0d2204046d844a0bcf78d8",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "10": {
+      "file": "layer_10.safetensors",
+      "sha256_tensors": "3561800d5a7e7f22a207cb935f0655a86a3b86d4a0d7d3a2bb0d5476908746fc",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "11": {
+      "file": "layer_11.safetensors",
+      "sha256_tensors": "0517f1455df597dd3efcc6f9e6f528e756a1461079ffac907a41ba0a9c895430",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "12": {
+      "file": "layer_12.safetensors",
+      "sha256_tensors": "b754bf3a66a54036fb5c027dfd5ba71880bbb4b0e91f22af3719298fc12638e1",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "13": {
+      "file": "layer_13.safetensors",
+      "sha256_tensors": "210086ea364dc62d0a4bae0bfe4f7bed296046cbb78fcec865f2c6e007051be2",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "14": {
+      "file": "layer_14.safetensors",
+      "sha256_tensors": "27eafb8b8f0c7cd52dc0fe01d0cfa25606bb768643d199d3f168a91b11171591",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "15": {
+      "file": "layer_15.safetensors",
+      "sha256_tensors": "9bacf8b38c560e8c7e535079cde493e55aabaaad75e2e406aa1d16e1653c01e7",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "16": {
+      "file": "layer_16.safetensors",
+      "sha256_tensors": "df7c9826dde32769aecae80e884800e741a911fe893514561f8539bc2f182155",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "17": {
+      "file": "layer_17.safetensors",
+      "sha256_tensors": "1802aa47a488b8ae9ac4a298d40f6772cbf187c983181ad78865720ec7f2235c",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "18": {
+      "file": "layer_18.safetensors",
+      "sha256_tensors": "ef8c38f45802fe730a9c53e85015a057a70e2033316537c51b7940703ca4ea4b",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "19": {
+      "file": "layer_19.safetensors",
+      "sha256_tensors": "dba7fac55b88666eda023b0de7421a67a54f145da0076ad46df902d648313ad2",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "20": {
+      "file": "layer_20.safetensors",
+      "sha256_tensors": "6225de45099d5e446833c4cc09d26f4baf4caa6eb351fd1a23bf26b84aafd435",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "21": {
+      "file": "layer_21.safetensors",
+      "sha256_tensors": "7fa6c5ef153755376cb9990bfb9b67c91314d5f26e69ffc4622a997a5a8a31e6",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "22": {
+      "file": "layer_22.safetensors",
+      "sha256_tensors": "7d0e2c3db11d4bbcc78424d0e7fd1f778f84dd2282289e8aa434d9e8396bf230",
+      "bytes": 847190640,
+      "n_tensors": 363
+    },
+    "23": {
+      "file": "layer_23.safetensors",
+      "sha256_tensors": "4b499cb0d9f6cf12fb4a906c84965297b84a0f2d0c23287e8ca6e3abb71ef756",
+      "bytes": 847190640,
+      "n_tensors": 363
+    }
+  },
+  "total_bytes": 20332575360,
+  "load_recipe": "qwen15_merge_eval.load_saved_compressed(): original pinned checkpoint + per-layer Wmean/delta tensors installed as block.experts (meanW_deltaUV)"
+}

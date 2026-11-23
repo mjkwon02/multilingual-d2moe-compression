@@ -1,0 +1,97 @@
+{
+  "reference_budget_tokens": 32768,
+  "n_candidate_pairs": 810,
+  "n_candidate_cells": 4050,
+  "threshold_sweep": {
+    "15": {
+      "eng_Latn": 0,
+      "kor_Hang": 0,
+      "zho_Hans": 0,
+      "swh_Latn": 22,
+      "ben_Beng": 4
+    },
+    "20": {
+      "eng_Latn": 0,
+      "kor_Hang": 0,
+      "zho_Hans": 0,
+      "swh_Latn": 31,
+      "ben_Beng": 5
+    },
+    "25": {
+      "eng_Latn": 0,
+      "kor_Hang": 0,
+      "zho_Hans": 0,
+      "swh_Latn": 36,
+      "ben_Beng": 6
+    },
+    "30": {
+      "eng_Latn": 0,
+      "kor_Hang": 0,
+      "zho_Hans": 0,
+      "swh_Latn": 48,
+      "ben_Beng": 6
+    }
+  },
+  "borderline_20_to_25": [
+    {
+      "layer": 8,
+      "expert": 42,
+      "lang": "ben_Beng",
+      "hits": 208,
+      "expected_hits_at_baseline": 20.8
+    },
+    {
+      "layer": 21,
+      "expert": 35,
+      "lang": "swh_Latn",
+      "hits": 218,
+      "expected_hits_at_baseline": 21.8
+    },
+    {
+      "layer": 23,
+      "expert": 24,
+      "lang": "swh_Latn",
+      "hits": 201,
+      "expected_hits_at_baseline": 20.1
+    },
+    {
+      "layer": 25,
+      "expert": 27,
+      "lang": "swh_Latn",
+      "hits": 203,
+      "expected_hits_at_baseline": 20.3
+    },
+    {
+      "layer": 26,
+      "expert": 7,
+      "lang": "swh_Latn",
+      "hits": 222,
+      "expected_hits_at_baseline": 22.200000000000003
+    },
+    {
+      "layer": 27,
+      "expert": 12,
+      "lang": "swh_Latn",
+      "hits": 238,
+      "expected_hits_at_baseline": 23.8
+    }
+  ],
+  "borderline_count": 6,
+  "borderline_by_band": {
+    "front(1-9)": 1,
+    "mid(10-18)": 0,
+    "back(19-27)": 5
+  },
+  "denominator_check": {
+    "n_layers": 27,
+    "top_k_per_layer": 30,
+    "expected_total": 810,
+    "actual_total_candidates": 810,
+    "layers_with_nonstandard_count": {},
+    "n_experts_per_layer_total": 64,
+    "n_experts_scanned_total": 1728,
+    "n_experts_excluded_from_candidacy_but_hit_count_recorded": 918
+  },
+  "hit_count_semantics": "hit_count[cond][expert] is the raw count of ROUTED TOKENS (top-k gate assignments) from that condition's calibration corpus that were dispatched to that expert, accumulated over the whole single-seed forward pass over all calibration texts for that condition -- not a count of calibration windows/texts, and not normalized by corpus size. See scan_disagreement_experts.py make_capturing_forward()/scan_condition().",
+  "window_level_bootstrap": "NOT COMPUTABLE from existing artifacts -- scan_results.json only stores the final per-condition/per-expert hit_count TOTAL, no per-window or per-text breakdown is persisted anywhere in the repo. A genuine window-resampling bootstrap would require re-instrumenting and re-running scan_disagreement_experts.py on GPU, which this CPU-only lock-before-write pass does not do."
+}

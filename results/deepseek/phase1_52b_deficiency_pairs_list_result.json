@@ -1,0 +1,336 @@
+{
+  "target_hit_count": 20,
+  "reference_budget_tokens": 32768,
+  "total_pairs_scanned": 810,
+  "total_flagged": 36,
+  "by_lang": {
+    "ben_Beng": 5,
+    "swh_Latn": 31
+  },
+  "flagged": [
+    {
+      "layer": 1,
+      "expert": 24,
+      "lang": "ben_Beng",
+      "hits": 24,
+      "n_tok": 65536,
+      "rate": 0.0003662109375,
+      "expected_hits_at_baseline": 2.4000000000000004
+    },
+    {
+      "layer": 1,
+      "expert": 31,
+      "lang": "ben_Beng",
+      "hits": 17,
+      "n_tok": 65536,
+      "rate": 0.0002593994140625,
+      "expected_hits_at_baseline": 1.7000000000000002
+    },
+    {
+      "layer": 3,
+      "expert": 13,
+      "lang": "ben_Beng",
+      "hits": 142,
+      "n_tok": 65536,
+      "rate": 0.002166748046875,
+      "expected_hits_at_baseline": 14.200000000000001
+    },
+    {
+      "layer": 4,
+      "expert": 55,
+      "lang": "swh_Latn",
+      "hits": 196,
+      "n_tok": 65536,
+      "rate": 0.00299072265625,
+      "expected_hits_at_baseline": 19.6
+    },
+    {
+      "layer": 5,
+      "expert": 44,
+      "lang": "ben_Beng",
+      "hits": 196,
+      "n_tok": 65536,
+      "rate": 0.00299072265625,
+      "expected_hits_at_baseline": 19.6
+    },
+    {
+      "layer": 22,
+      "expert": 46,
+      "lang": "swh_Latn",
+      "hits": 76,
+      "n_tok": 65536,
+      "rate": 0.00115966796875,
+      "expected_hits_at_baseline": 7.6000000000000005
+    },
+    {
+      "layer": 23,
+      "expert": 51,
+      "lang": "swh_Latn",
+      "hits": 117,
+      "n_tok": 65536,
+      "rate": 0.0017852783203125,
+      "expected_hits_at_baseline": 11.700000000000001
+    },
+    {
+      "layer": 23,
+      "expert": 58,
+      "lang": "swh_Latn",
+      "hits": 128,
+      "n_tok": 65536,
+      "rate": 0.001953125,
+      "expected_hits_at_baseline": 12.8
+    },
+    {
+      "layer": 24,
+      "expert": 1,
+      "lang": "swh_Latn",
+      "hits": 70,
+      "n_tok": 65536,
+      "rate": 0.001068115234375,
+      "expected_hits_at_baseline": 7.0
+    },
+    {
+      "layer": 24,
+      "expert": 15,
+      "lang": "swh_Latn",
+      "hits": 43,
+      "n_tok": 65536,
+      "rate": 0.0006561279296875,
+      "expected_hits_at_baseline": 4.3
+    },
+    {
+      "layer": 24,
+      "expert": 21,
+      "lang": "swh_Latn",
+      "hits": 188,
+      "n_tok": 65536,
+      "rate": 0.00286865234375,
+      "expected_hits_at_baseline": 18.8
+    },
+    {
+      "layer": 24,
+      "expert": 28,
+      "lang": "swh_Latn",
+      "hits": 75,
+      "n_tok": 65536,
+      "rate": 0.0011444091796875,
+      "expected_hits_at_baseline": 7.5
+    },
+    {
+      "layer": 24,
+      "expert": 40,
+      "lang": "swh_Latn",
+      "hits": 173,
+      "n_tok": 65536,
+      "rate": 0.0026397705078125,
+      "expected_hits_at_baseline": 17.3
+    },
+    {
+      "layer": 24,
+      "expert": 48,
+      "lang": "swh_Latn",
+      "hits": 94,
+      "n_tok": 65536,
+      "rate": 0.001434326171875,
+      "expected_hits_at_baseline": 9.4
+    },
+    {
+      "layer": 24,
+      "expert": 58,
+      "lang": "swh_Latn",
+      "hits": 131,
+      "n_tok": 65536,
+      "rate": 0.0019989013671875,
+      "expected_hits_at_baseline": 13.100000000000001
+    },
+    {
+      "layer": 25,
+      "expert": 10,
+      "lang": "swh_Latn",
+      "hits": 86,
+      "n_tok": 65536,
+      "rate": 0.001312255859375,
+      "expected_hits_at_baseline": 8.6
+    },
+    {
+      "layer": 25,
+      "expert": 16,
+      "lang": "swh_Latn",
+      "hits": 128,
+      "n_tok": 65536,
+      "rate": 0.001953125,
+      "expected_hits_at_baseline": 12.8
+    },
+    {
+      "layer": 25,
+      "expert": 32,
+      "lang": "swh_Latn",
+      "hits": 17,
+      "n_tok": 65536,
+      "rate": 0.0002593994140625,
+      "expected_hits_at_baseline": 1.7000000000000002
+    },
+    {
+      "layer": 25,
+      "expert": 39,
+      "lang": "swh_Latn",
+      "hits": 147,
+      "n_tok": 65536,
+      "rate": 0.0022430419921875,
+      "expected_hits_at_baseline": 14.700000000000001
+    },
+    {
+      "layer": 25,
+      "expert": 42,
+      "lang": "swh_Latn",
+      "hits": 75,
+      "n_tok": 65536,
+      "rate": 0.0011444091796875,
+      "expected_hits_at_baseline": 7.5
+    },
+    {
+      "layer": 25,
+      "expert": 46,
+      "lang": "swh_Latn",
+      "hits": 94,
+      "n_tok": 65536,
+      "rate": 0.001434326171875,
+      "expected_hits_at_baseline": 9.4
+    },
+    {
+      "layer": 25,
+      "expert": 53,
+      "lang": "swh_Latn",
+      "hits": 7,
+      "n_tok": 65536,
+      "rate": 0.0001068115234375,
+      "expected_hits_at_baseline": 0.7000000000000001
+    },
+    {
+      "layer": 25,
+      "expert": 55,
+      "lang": "swh_Latn",
+      "hits": 74,
+      "n_tok": 65536,
+      "rate": 0.001129150390625,
+      "expected_hits_at_baseline": 7.4
+    },
+    {
+      "layer": 26,
+      "expert": 0,
+      "lang": "swh_Latn",
+      "hits": 11,
+      "n_tok": 65536,
+      "rate": 0.0001678466796875,
+      "expected_hits_at_baseline": 1.1
+    },
+    {
+      "layer": 26,
+      "expert": 6,
+      "lang": "swh_Latn",
+      "hits": 167,
+      "n_tok": 65536,
+      "rate": 0.0025482177734375,
+      "expected_hits_at_baseline": 16.7
+    },
+    {
+      "layer": 26,
+      "expert": 13,
+      "lang": "swh_Latn",
+      "hits": 119,
+      "n_tok": 65536,
+      "rate": 0.0018157958984375,
+      "expected_hits_at_baseline": 11.9
+    },
+    {
+      "layer": 26,
+      "expert": 26,
+      "lang": "swh_Latn",
+      "hits": 167,
+      "n_tok": 65536,
+      "rate": 0.0025482177734375,
+      "expected_hits_at_baseline": 16.7
+    },
+    {
+      "layer": 26,
+      "expert": 45,
+      "lang": "swh_Latn",
+      "hits": 186,
+      "n_tok": 65536,
+      "rate": 0.002838134765625,
+      "expected_hits_at_baseline": 18.6
+    },
+    {
+      "layer": 27,
+      "expert": 60,
+      "lang": "ben_Beng",
+      "hits": 130,
+      "n_tok": 65536,
+      "rate": 0.001983642578125,
+      "expected_hits_at_baseline": 13.0
+    },
+    {
+      "layer": 27,
+      "expert": 4,
+      "lang": "swh_Latn",
+      "hits": 150,
+      "n_tok": 65536,
+      "rate": 0.002288818359375,
+      "expected_hits_at_baseline": 15.0
+    },
+    {
+      "layer": 27,
+      "expert": 15,
+      "lang": "swh_Latn",
+      "hits": 11,
+      "n_tok": 65536,
+      "rate": 0.0001678466796875,
+      "expected_hits_at_baseline": 1.1
+    },
+    {
+      "layer": 27,
+      "expert": 24,
+      "lang": "swh_Latn",
+      "hits": 47,
+      "n_tok": 65536,
+      "rate": 0.0007171630859375,
+      "expected_hits_at_baseline": 4.7
+    },
+    {
+      "layer": 27,
+      "expert": 29,
+      "lang": "swh_Latn",
+      "hits": 52,
+      "n_tok": 65536,
+      "rate": 0.00079345703125,
+      "expected_hits_at_baseline": 5.2
+    },
+    {
+      "layer": 27,
+      "expert": 31,
+      "lang": "swh_Latn",
+      "hits": 188,
+      "n_tok": 65536,
+      "rate": 0.00286865234375,
+      "expected_hits_at_baseline": 18.8
+    },
+    {
+      "layer": 27,
+      "expert": 38,
+      "lang": "swh_Latn",
+      "hits": 18,
+      "n_tok": 65536,
+      "rate": 0.000274658203125,
+      "expected_hits_at_baseline": 1.8
+    },
+    {
+      "layer": 27,
+      "expert": 59,
+      "lang": "swh_Latn",
+      "hits": 170,
+      "n_tok": 65536,
+      "rate": 0.002593994140625,
+      "expected_hits_at_baseline": 17.0
+    }
+  ]
+}

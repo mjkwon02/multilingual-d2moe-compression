@@ -1,0 +1,415 @@
+{
+ "provenance": {
+  "generated_utc": "2026-08-02",
+  "primary_json": "results/table5_sec54_bundle.json",
+  "raw_run_paths": {
+   "english_only seed0": "results/deepseek/sec54/step2_bundle.json",
+   "english_only seed1": "results/deepseek/sec54/seed1_repro/step2_bundle.json",
+   "korean_only seed0": "results/deepseek/sec54/korean_only_repro/step2_bundle.json"
+  },
+  "grid_reference": "results/deepseek/phase1_41_headline_gate_result.json",
+  "seeds_used": {
+   "english_only": [
+    0,
+    1
+   ],
+   "korean_only": [
+    0
+   ]
+  },
+  "metric": "restoration gain (pp) = dpct_compressed - dpct_intervened",
+  "vulnerable_set": [
+   "kor_Hang",
+   "swh_Latn",
+   "ben_Beng"
+  ]
+ },
+ "runs": {
+  "english_only seed0": {
+   "in_main_table": true,
+   "scale_condition": "english_only/seed0 (whitening ON, AMENDMENT 1)",
+   "treatment_gain_pp_raw": {
+    "eng_Latn": 0.11419074687537467,
+    "kor_Hang": -0.011505818720536354,
+    "zho_Hans": 0.1715481827879337,
+    "swh_Latn": 1.0150579799108428,
+    "ben_Beng": 0.015640509849220052
+   },
+   "control_gain_pp_raw": {
+    "eng_Latn": -0.070756687643172,
+    "kor_Hang": 0.8641929821760357,
+    "zho_Hans": 0.019514985012985875,
+    "swh_Latn": 0.026364653693256912,
+    "ben_Beng": 0.26037333480297775
+   },
+   "treatment_gain_pp_rounded": {
+    "EN": 0.114,
+    "KO": -0.012,
+    "ZH": 0.172,
+    "SW": 1.015,
+    "BN": 0.016
+   },
+   "control_gain_pp_rounded": {
+    "EN": -0.071,
+    "KO": 0.864,
+    "ZH": 0.02,
+    "SW": 0.026,
+    "BN": 0.26
+   },
+   "vulnerable_mean_treatment_raw": 0.33973089034650883,
+   "vulnerable_mean_control_raw": 0.3836436568907568,
+   "vulnerable_mean_treatment_recomputed": 0.33973089034650883,
+   "vulnerable_mean_control_recomputed": 0.3836436568907568,
+   "vulnerable_mean_recompute_absdiff": {
+    "treatment": 0.0,
+    "control": 0.0
+   },
+   "P1_difference_pp_raw": -0.04391276654424797,
+   "P1_difference_pp_rounded": -0.044,
+   "P1_matches_stored": true,
+   "P1_direction_holds": false,
+   "P3_english_diff_pp_raw": 0.18494743451854667,
+   "P3_english_diff_pp_rounded": 0.185,
+   "P3_matches_stored": true,
+   "P3_over_P1_abs_ratio": 4.211700812158748,
+   "compressed_delta_bpb_pct": {
+    "eng_Latn": 7.690521426360671,
+    "kor_Hang": 88.68195771581392,
+    "zho_Hans": 13.791171056414761,
+    "swh_Latn": 34.776191722743086,
+    "ben_Beng": 89.73056747256616
+   }
+  },
+  "english_only seed1": {
+   "in_main_table": true,
+   "scale_condition": "english_only/seed1 (whitening ON, AMENDMENT 1)",
+   "treatment_gain_pp_raw": {
+    "eng_Latn": 0.17446975316737134,
+    "kor_Hang": -0.11463154496603067,
+    "zho_Hans": 0.2093305852185452,
+    "swh_Latn": 0.47361073236810114,
+    "ben_Beng": -0.04733195208173413
+   },
+   "control_gain_pp_raw": {
+    "eng_Latn": -0.0977988519185562,
+    "kor_Hang": 0.7326389837151766,
+    "zho_Hans": 0.0728332541711012,
+    "swh_Latn": 0.09593555079661442,
+    "ben_Beng": 0.12198194783557881
+   },
+   "treatment_gain_pp_rounded": {
+    "EN": 0.174,
+    "KO": -0.115,
+    "ZH": 0.209,
+    "SW": 0.474,
+    "BN": -0.047
+   },
+   "control_gain_pp_rounded": {
+    "EN": -0.098,
+    "KO": 0.733,
+    "ZH": 0.073,
+    "SW": 0.096,
+    "BN": 0.122
+   },
+   "vulnerable_mean_treatment_raw": 0.10388241177344544,
+   "vulnerable_mean_control_raw": 0.3168521607824566,
+   "vulnerable_mean_treatment_recomputed": 0.10388241177344544,
+   "vulnerable_mean_control_recomputed": 0.3168521607824566,
+   "vulnerable_mean_recompute_absdiff": {
+    "treatment": 0.0,
+    "control": 0.0
+   },
+   "P1_difference_pp_raw": -0.21296974900901117,
+   "P1_difference_pp_rounded": -0.213,
+   "P1_matches_stored": true,
+   "P1_direction_holds": false,
+   "P3_english_diff_pp_raw": 0.27226860508592754,
+   "P3_english_diff_pp_rounded": 0.272,
+   "P3_matches_stored": true,
+   "P3_over_P1_abs_ratio": 1.2784379300480244,
+   "compressed_delta_bpb_pct": {
+    "eng_Latn": 6.9149897837063605,
+    "kor_Hang": 85.38100815837835,
+    "zho_Hans": 12.925094116941438,
+    "swh_Latn": 30.248407952745364,
+    "ben_Beng": 87.09911376017759
+   }
+  },
+  "korean_only seed0": {
+   "in_main_table": false,
+   "scale_condition": "korean_only/seed0 (whitening ON, AMENDMENT 1)",
+   "treatment_gain_pp_raw": {
+    "eng_Latn": 0.4166448692975617,
+    "kor_Hang": 0.04494538806778037,
+    "zho_Hans": 0.2548508368901512,
+    "swh_Latn": 1.6218336673405247,
+    "ben_Beng": -0.0892500578286679
+   },
+   "control_gain_pp_raw": {
+    "eng_Latn": -0.05866809258572303,
+    "kor_Hang": 0.027093236559286193,
+    "zho_Hans": 0.10999362588503381,
+    "swh_Latn": 0.29436738664146134,
+    "ben_Beng": -0.044950275447131816
+   },
+   "treatment_gain_pp_rounded": {
+    "EN": 0.417,
+    "KO": 0.045,
+    "ZH": 0.255,
+    "SW": 1.622,
+    "BN": -0.089
+   },
+   "control_gain_pp_rounded": {
+    "EN": -0.059,
+    "KO": 0.027,
+    "ZH": 0.11,
+    "SW": 0.294,
+    "BN": -0.045
+   },
+   "vulnerable_mean_treatment_raw": 0.5258429991932124,
+   "vulnerable_mean_control_raw": 0.0921701159178719,
+   "vulnerable_mean_treatment_recomputed": 0.5258429991932124,
+   "vulnerable_mean_control_recomputed": 0.0921701159178719,
+   "vulnerable_mean_recompute_absdiff": {
+    "treatment": 0.0,
+    "control": 0.0
+   },
+   "P1_difference_pp_raw": 0.43367288327534054,
+   "P1_difference_pp_rounded": 0.434,
+   "P1_matches_stored": true,
+   "P1_direction_holds": true,
+   "P3_english_diff_pp_raw": 0.47531296188328476,
+   "P3_english_diff_pp_rounded": 0.475,
+   "P3_matches_stored": true,
+   "P3_over_P1_abs_ratio": 1.0960172522050606,
+   "compressed_delta_bpb_pct": {
+    "eng_Latn": 12.837890062177898,
+    "kor_Hang": 3.6593729839714504,
+    "zho_Hans": 13.006907027825514,
+    "swh_Latn": 39.83147205663776,
+    "ben_Beng": 25.5020535355569
+   }
+  }
+ },
+ "integrity_B3": {
+  "english_only seed0": {
+   "grid_row": "english_only",
+   "seed": 0,
+   "per_lang": {
+    "eng_Latn": {
+     "grid_official": 7.690521426360664,
+     "run_compressed": 7.690521426360671,
+     "abs_diff": 7.105427357601002e-15,
+     "match_6dp": true
+    },
+    "kor_Hang": {
+     "grid_official": 88.68195771581391,
+     "run_compressed": 88.68195771581392,
+     "abs_diff": 1.4210854715202004e-14,
+     "match_6dp": true
+    },
+    "zho_Hans": {
+     "grid_official": 13.791171056414765,
+     "run_compressed": 13.791171056414761,
+     "abs_diff": 3.552713678800501e-15,
+     "match_6dp": true
+    },
+    "swh_Latn": {
+     "grid_official": 34.776191722743086,
+     "run_compressed": 34.776191722743086,
+     "abs_diff": 0.0,
+     "match_6dp": true
+    },
+    "ben_Beng": {
+     "grid_official": 89.73056747256616,
+     "run_compressed": 89.73056747256616,
+     "abs_diff": 0.0,
+     "match_6dp": true
+    }
+   },
+   "stored_reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+   },
+   "all_match_6dp": true,
+   "max_abs_diff": 1.4210854715202004e-14,
+   "STOP": false
+  },
+  "english_only seed1": {
+   "grid_row": "english_only",
+   "seed": 1,
+   "per_lang": {
+    "eng_Latn": {
+     "grid_official": 6.914989783706371,
+     "run_compressed": 6.9149897837063605,
+     "abs_diff": 1.0658141036401503e-14,
+     "match_6dp": true
+    },
+    "kor_Hang": {
+     "grid_official": 85.38100815837835,
+     "run_compressed": 85.38100815837835,
+     "abs_diff": 0.0,
+     "match_6dp": true
+    },
+    "zho_Hans": {
+     "grid_official": 12.925094116941427,
+     "run_compressed": 12.925094116941438,
+     "abs_diff": 1.0658141036401503e-14,
+     "match_6dp": true
+    },
+    "swh_Latn": {
+     "grid_official": 30.24840795274537,
+     "run_compressed": 30.248407952745364,
+     "abs_diff": 7.105427357601002e-15,
+     "match_6dp": true
+    },
+    "ben_Beng": {
+     "grid_official": 87.09911376017759,
+     "run_compressed": 87.09911376017759,
+     "abs_diff": 0.0,
+     "match_6dp": true
+    }
+   },
+   "stored_reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+   },
+   "all_match_6dp": true,
+   "max_abs_diff": 1.0658141036401503e-14,
+   "STOP": false
+  },
+  "korean_only seed0": {
+   "grid_row": "korean_only",
+   "seed": 0,
+   "per_lang": {
+    "eng_Latn": {
+     "grid_official": 12.837890062177904,
+     "run_compressed": 12.837890062177898,
+     "abs_diff": 5.329070518200751e-15,
+     "match_6dp": true
+    },
+    "kor_Hang": {
+     "grid_official": 3.659372983971454,
+     "run_compressed": 3.6593729839714504,
+     "abs_diff": 3.552713678800501e-15,
+     "match_6dp": true
+    },
+    "zho_Hans": {
+     "grid_official": 13.00690702782552,
+     "run_compressed": 13.006907027825514,
+     "abs_diff": 5.329070518200751e-15,
+     "match_6dp": true
+    },
+    "swh_Latn": {
+     "grid_official": 39.83147205663775,
+     "run_compressed": 39.83147205663776,
+     "abs_diff": 7.105427357601002e-15,
+     "match_6dp": true
+    },
+    "ben_Beng": {
+     "grid_official": 25.5020535355569,
+     "run_compressed": 25.5020535355569,
+     "abs_diff": 0.0,
+     "match_6dp": true
+    }
+   },
+   "stored_reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+   },
+   "all_match_6dp": true,
+   "max_abs_diff": 7.105427357601002e-15,
+   "STOP": false
+  }
+ },
+ "gate": {
+  "english_only seed0": {
+   "status": "run",
+   "path": "results/deepseek/sec54/step1_gate.json",
+   "threshold_pp": 0.3,
+   "max_treatment_gain_pp": 0.10261266931259172,
+   "passed_threshold": false,
+   "verdict": "BUNDLE_MODE",
+   "per_treatment_pair_gain_pp": {
+    "T_L25E32": {
+     "eng_Latn": -0.021533181378578625,
+     "kor_Hang": -0.04677797646597526,
+     "zho_Hans": -0.002746326658801479,
+     "swh_Latn": 0.0018176646040970468,
+     "ben_Beng": -0.0021608479906802813
+    },
+    "T_L23E51": {
+     "eng_Latn": -0.023829442389981637,
+     "kor_Hang": 0.05332815729639151,
+     "zho_Hans": 0.06131939360431815,
+     "swh_Latn": 0.0016804233798453083,
+     "ben_Beng": 0.10261266931259172
+    }
+   }
+  },
+  "english_only seed1": {
+   "status": "not_run",
+   "note": "no step1_gate.json in results/deepseek/sec54/seed1_repro -- the 2-pair pre-gate was NOT re-run for this condition; the run went straight to bundle mode reusing the english_only/seed0 BUNDLE_MODE verdict",
+   "dir_listing": [
+    "evals",
+    "interventions.csv",
+    "step2_bundle.json"
+   ]
+  },
+  "korean_only seed0": {
+   "status": "not_run",
+   "note": "no step1_gate.json in results/deepseek/sec54/korean_only_repro -- the 2-pair pre-gate was NOT re-run for this condition; the run went straight to bundle mode reusing the english_only/seed0 BUNDLE_MODE verdict",
+   "dir_listing": [
+    "evals",
+    "interventions.csv",
+    "step2_bundle.json"
+   ]
+  }
+ },
+ "comparison": {
+  "definition": "direction_replicated = sign(korean_only seed0 statistic) equals the sign observed in BOTH english_only seeds. This is a reproduction-of-the-english_only-pattern flag, not a prereg verdict.",
+  "P1_signs": {
+   "english_only seed0": -1,
+   "english_only seed1": -1,
+   "korean_only seed0": 1
+  },
+  "P3_signs": {
+   "english_only seed0": 1,
+   "english_only seed1": 1,
+   "korean_only seed0": 1
+  },
+  "P1_direction_replicated": false,
+  "P3_direction_replicated": true,
+  "P1_prereg_direction_holds": {
+   "english_only seed0": false,
+   "english_only seed1": false,
+   "korean_only seed0": true
+  },
+  "negative_control_magnitude": {
+   "english_only seed0": {
+    "P3_english_diff_pp": 0.18494743451854667,
+    "P1_vulnerable_diff_pp": -0.04391276654424797,
+    "abs_ratio_P3_over_P1": 4.211700812158748
+   },
+   "english_only seed1": {
+    "P3_english_diff_pp": 0.27226860508592754,
+    "P1_vulnerable_diff_pp": -0.21296974900901117,
+    "abs_ratio_P3_over_P1": 1.2784379300480244
+   },
+   "korean_only seed0": {
+    "P3_english_diff_pp": 0.47531296188328476,
+    "P1_vulnerable_diff_pp": 0.43367288327534054,
+    "abs_ratio_P3_over_P1": 1.0960172522050606
+   }
+  }
+ }
+}

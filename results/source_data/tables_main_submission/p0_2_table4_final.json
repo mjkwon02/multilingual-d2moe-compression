@@ -1,0 +1,1031 @@
+{
+ "provenance": {
+  "generated_utc": "2026-08-02",
+  "reference_json": "results/source_data/table4_pruning_lang.json",
+  "raw_root": "results/deepseek",
+  "baseline_file": "results/deepseek/baseline/eval_ppl.json",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "pp_ratio": 0.2,
+  "metric": "delta_delta_bpb_pct_pp (ON - OFF) = 100*(bpb_ON - bpb_OFF)/bpb_baseline",
+  "note": "chinese_only is absent from table4_pruning_lang.json and was recomputed here from the same raw eval_ppl.json files with the identical formula; the other 4 conditions were recomputed too and reproduce the json exactly (see cross_check)."
+ },
+ "baseline_bpb": {
+  "eng_Latn": 0.9136547950497197,
+  "kor_Hang": 1.3696976405041057,
+  "zho_Hans": 1.0776064815914224,
+  "swh_Latn": 2.242880728735387,
+  "ben_Beng": 0.8857422239274809
+ },
+ "conditions": {
+  "english_only": {
+   "per_lang": {
+    "eng_Latn": {
+     "per_seed": [
+      0.1431943528955479,
+      0.5306123569899831,
+      0.19210757616117938
+     ],
+     "mean": 0.28863809534890345,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "kor_Hang": {
+     "per_seed": [
+      0.5708826926283268,
+      0.7462253417501378,
+      0.8146121540880606
+     ],
+     "mean": 0.7105733961555084,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "zho_Hans": {
+     "per_seed": [
+      0.37590302315355684,
+      0.2218472081363712,
+      0.32743221088275837
+     ],
+     "mean": 0.3083941473908955,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "swh_Latn": {
+     "per_seed": [
+      0.1152426311321734,
+      0.917084024991919,
+      0.8000480941548291
+     ],
+     "mean": 0.6107915834263072,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "ben_Beng": {
+     "per_seed": [
+      0.9178247146664823,
+      1.202223438386491,
+      1.3833754166296963
+     ],
+     "mean": 1.1678078565608898,
+     "sign_consistent": true,
+     "n_seeds": 3
+    }
+   },
+   "vulnerable_mean": {
+    "per_seed": [
+     0.5346500128089942,
+     0.9551776017095159,
+     0.9993452216241954
+    ],
+    "mean": 0.829724278714235
+   },
+   "source_files": {
+    "seed0": {
+     "ON": "results/deepseek/english_only/seed0/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/english_only/seed0/eval_ppl.json"
+    },
+    "seed1": {
+     "ON": "results/deepseek/english_only/seed1/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/english_only/seed1/eval_ppl.json"
+    },
+    "seed2": {
+     "ON": "results/deepseek/english_only/seed2/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/english_only/seed2/eval_ppl.json"
+    }
+   }
+  },
+  "chinese_only": {
+   "per_lang": {
+    "eng_Latn": {
+     "per_seed": [
+      0.6478211342902181,
+      0.7425954915547954,
+      0.61701922142638
+     ],
+     "mean": 0.6691452824237979,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "kor_Hang": {
+     "per_seed": [
+      1.2443404151901614,
+      1.099957197335531,
+      1.2413549415078007
+     ],
+     "mean": 1.1952175180111644,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "zho_Hans": {
+     "per_seed": [
+      0.4126971261515991,
+      0.25871005695493926,
+      0.4738697618293976
+     ],
+     "mean": 0.38175898164531197,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "swh_Latn": {
+     "per_seed": [
+      1.5603520245811329,
+      0.8438416286640671,
+      1.1087118549256338
+     ],
+     "mean": 1.1709685027236112,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "ben_Beng": {
+     "per_seed": [
+      2.0738532312953297,
+      2.246544695460899,
+      2.0105109626707702
+     ],
+     "mean": 2.110302963142333,
+     "sign_consistent": true,
+     "n_seeds": 3
+    }
+   },
+   "vulnerable_mean": {
+    "per_seed": [
+     1.6261818903555412,
+     1.3967811738201659,
+     1.4535259197014014
+    ],
+    "mean": 1.492162994625703
+   },
+   "source_files": {
+    "seed0": {
+     "ON": "results/deepseek/chinese_only/seed0/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/chinese_only/seed0/eval_ppl.json"
+    },
+    "seed1": {
+     "ON": "results/deepseek/chinese_only/seed1/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/chinese_only/seed1/eval_ppl.json"
+    },
+    "seed2": {
+     "ON": "results/deepseek/chinese_only/seed2/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/chinese_only/seed2/eval_ppl.json"
+    }
+   }
+  },
+  "korean_only": {
+   "per_lang": {
+    "eng_Latn": {
+     "per_seed": [
+      0.07921057871682054,
+      -0.09018114016344381,
+      -1.5762772543690828
+     ],
+     "mean": -0.5290826052719021,
+     "sign_consistent": false,
+     "n_seeds": 3
+    },
+    "kor_Hang": {
+     "per_seed": [
+      2.2564060880547108,
+      2.1836011268609528,
+      1.9195916546202496
+     ],
+     "mean": 2.1198662898453047,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "zho_Hans": {
+     "per_seed": [
+      0.9591813200730883,
+      0.961273309236178,
+      0.8126412764960287
+     ],
+     "mean": 0.911031968601765,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "swh_Latn": {
+     "per_seed": [
+      1.2009021110397726,
+      0.7219896951957858,
+      0.3510077993961289
+     ],
+     "mean": 0.7579665352105623,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "ben_Beng": {
+     "per_seed": [
+      4.695501469632214,
+      4.417142300055549,
+      4.122910118929234
+     ],
+     "mean": 4.411851296205666,
+     "sign_consistent": true,
+     "n_seeds": 3
+    }
+   },
+   "vulnerable_mean": {
+    "per_seed": [
+     2.717603222908899,
+     2.440911040704096,
+     2.1311698576485374
+    ],
+    "mean": 2.4298947070871773
+   },
+   "source_files": {
+    "seed0": {
+     "ON": "results/deepseek/korean_only/seed0/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/korean_only/seed0/eval_ppl.json"
+    },
+    "seed1": {
+     "ON": "results/deepseek/korean_only/seed1/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/korean_only/seed1/eval_ppl.json"
+    },
+    "seed2": {
+     "ON": "results/deepseek/korean_only/seed2/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/korean_only/seed2/eval_ppl.json"
+    }
+   }
+  },
+  "swahili_only": {
+   "per_lang": {
+    "eng_Latn": {
+     "per_seed": [
+      2.01828004346435,
+      1.8581235532903366,
+      2.0362983523757907
+     ],
+     "mean": 1.970900649710159,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "kor_Hang": {
+     "per_seed": [
+      3.4571208209572113,
+      3.56802115273826,
+      3.509373449881764
+     ],
+     "mean": 3.511505141192412,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "zho_Hans": {
+     "per_seed": [
+      1.4094507293714287,
+      1.5306497361714118,
+      1.7260084533842934
+     ],
+     "mean": 1.555369639642378,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "swh_Latn": {
+     "per_seed": [
+      1.6027900190014175,
+      1.9423397933111861,
+      1.9100553315864297
+     ],
+     "mean": 1.8183950479663444,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "ben_Beng": {
+     "per_seed": [
+      5.321174738816483,
+      5.719051881880823,
+      6.049741896701585
+     ],
+     "mean": 5.696656172466297,
+     "sign_consistent": true,
+     "n_seeds": 3
+    }
+   },
+   "vulnerable_mean": {
+    "per_seed": [
+     3.460361859591704,
+     3.7431376093100894,
+     3.8230568927232595
+    ],
+    "mean": 3.675518787208351
+   },
+   "source_files": {
+    "seed0": {
+     "ON": "results/deepseek/swahili_only/seed0/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/swahili_only/seed0/eval_ppl.json"
+    },
+    "seed1": {
+     "ON": "results/deepseek/swahili_only/seed1/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/swahili_only/seed1/eval_ppl.json"
+    },
+    "seed2": {
+     "ON": "results/deepseek/swahili_only/seed2/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/swahili_only/seed2/eval_ppl.json"
+    }
+   }
+  },
+  "bengali_only": {
+   "per_lang": {
+    "eng_Latn": {
+     "per_seed": [
+      2.425951103042951,
+      2.2847529458123095,
+      2.407655110309577
+     ],
+     "mean": 2.372786386388279,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "kor_Hang": {
+     "per_seed": [
+      5.482086976698814,
+      5.045108784891437,
+      5.374449707276436
+     ],
+     "mean": 5.300548489622229,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "zho_Hans": {
+     "per_seed": [
+      2.141233459775932,
+      1.6648594216904127,
+      1.9280072780611701
+     ],
+     "mean": 1.9113667198425048,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "swh_Latn": {
+     "per_seed": [
+      1.7953147144061594,
+      2.031802474426276,
+      2.261004321015688
+     ],
+     "mean": 2.0293738366160414,
+     "sign_consistent": true,
+     "n_seeds": 3
+    },
+    "ben_Beng": {
+     "per_seed": [
+      3.914564822822903,
+      3.8569467226100422,
+      3.993236213187104
+     ],
+     "mean": 3.9215825862066835,
+     "sign_consistent": true,
+     "n_seeds": 3
+    }
+   },
+   "vulnerable_mean": {
+    "per_seed": [
+     3.7306555046426255,
+     3.6446193273092518,
+     3.8762300804930763
+    ],
+    "mean": 3.7505016374816513
+   },
+   "source_files": {
+    "seed0": {
+     "ON": "results/deepseek/bengali_only/seed0/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/bengali_only/seed0/eval_ppl.json"
+    },
+    "seed1": {
+     "ON": "results/deepseek/bengali_only/seed1/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/bengali_only/seed1/eval_ppl.json"
+    },
+    "seed2": {
+     "ON": "results/deepseek/bengali_only/seed2/pp_ratio_0.2/eval_ppl.json",
+     "OFF": "results/deepseek/bengali_only/seed2/eval_ppl.json"
+    }
+   }
+  }
+ },
+ "cross_check_vs_table4_json": {
+  "json_conditions": [
+   "bengali_only",
+   "chinese_only",
+   "english_only",
+   "korean_only",
+   "swahili_only"
+  ],
+  "n_conditions_in_json": 5,
+  "conditions_recomputed_here": [
+   "english_only",
+   "chinese_only",
+   "korean_only",
+   "swahili_only",
+   "bengali_only"
+  ],
+  "chinese_only_in_json": true,
+  "per_cell": {
+   "english_only|eng_Latn": {
+    "json_mean": 0.2886380953488998,
+    "recomputed_mean": 0.28863809534890345,
+    "abs_diff": 3.6637359812630166e-15
+   },
+   "english_only|kor_Hang": {
+    "json_mean": 0.710573396155508,
+    "recomputed_mean": 0.7105733961555084,
+    "abs_diff": 4.440892098500626e-16
+   },
+   "english_only|zho_Hans": {
+    "json_mean": 0.308394147390894,
+    "recomputed_mean": 0.3083941473908955,
+    "abs_diff": 1.4988010832439613e-15
+   },
+   "english_only|swh_Latn": {
+    "json_mean": 0.6107915834263172,
+    "recomputed_mean": 0.6107915834263072,
+    "abs_diff": 9.992007221626409e-15
+   },
+   "english_only|ben_Beng": {
+    "json_mean": 1.1678078565608938,
+    "recomputed_mean": 1.1678078565608898,
+    "abs_diff": 3.9968028886505635e-15
+   },
+   "chinese_only|eng_Latn": {
+    "json_mean": 0.6691452824237883,
+    "recomputed_mean": 0.6691452824237979,
+    "abs_diff": 9.547918011776346e-15
+   },
+   "chinese_only|kor_Hang": {
+    "json_mean": 1.1952175180111706,
+    "recomputed_mean": 1.1952175180111644,
+    "abs_diff": 6.217248937900877e-15
+   },
+   "chinese_only|zho_Hans": {
+    "json_mean": 0.3817589816453193,
+    "recomputed_mean": 0.38175898164531197,
+    "abs_diff": 7.327471962526033e-15
+   },
+   "chinese_only|swh_Latn": {
+    "json_mean": 1.1709685027236236,
+    "recomputed_mean": 1.1709685027236112,
+    "abs_diff": 1.2434497875801753e-14
+   },
+   "chinese_only|ben_Beng": {
+    "json_mean": 2.110302963142324,
+    "recomputed_mean": 2.110302963142333,
+    "abs_diff": 8.881784197001252e-15
+   },
+   "korean_only|eng_Latn": {
+    "json_mean": -0.5290826052719062,
+    "recomputed_mean": -0.5290826052719021,
+    "abs_diff": 4.107825191113079e-15
+   },
+   "korean_only|kor_Hang": {
+    "json_mean": 2.1198662898452993,
+    "recomputed_mean": 2.1198662898453047,
+    "abs_diff": 5.329070518200751e-15
+   },
+   "korean_only|zho_Hans": {
+    "json_mean": 0.9110319686017601,
+    "recomputed_mean": 0.911031968601765,
+    "abs_diff": 4.9960036108132044e-15
+   },
+   "korean_only|swh_Latn": {
+    "json_mean": 0.7579665352105565,
+    "recomputed_mean": 0.7579665352105623,
+    "abs_diff": 5.88418203051333e-15
+   },
+   "korean_only|ben_Beng": {
+    "json_mean": 4.411851296205655,
+    "recomputed_mean": 4.411851296205666,
+    "abs_diff": 1.0658141036401503e-14
+   },
+   "swahili_only|eng_Latn": {
+    "json_mean": 1.9709006497101573,
+    "recomputed_mean": 1.970900649710159,
+    "abs_diff": 1.7763568394002505e-15
+   },
+   "swahili_only|kor_Hang": {
+    "json_mean": 3.5115051411924134,
+    "recomputed_mean": 3.511505141192412,
+    "abs_diff": 1.3322676295501878e-15
+   },
+   "swahili_only|zho_Hans": {
+    "json_mean": 1.55536963964237,
+    "recomputed_mean": 1.555369639642378,
+    "abs_diff": 7.993605777301127e-15
+   },
+   "swahili_only|swh_Latn": {
+    "json_mean": 1.8183950479663327,
+    "recomputed_mean": 1.8183950479663444,
+    "abs_diff": 1.176836406102666e-14
+   },
+   "swahili_only|ben_Beng": {
+    "json_mean": 5.696656172466294,
+    "recomputed_mean": 5.696656172466297,
+    "abs_diff": 3.552713678800501e-15
+   },
+   "bengali_only|eng_Latn": {
+    "json_mean": 2.3727863863882703,
+    "recomputed_mean": 2.372786386388279,
+    "abs_diff": 8.881784197001252e-15
+   },
+   "bengali_only|kor_Hang": {
+    "json_mean": 5.3005484896222255,
+    "recomputed_mean": 5.300548489622229,
+    "abs_diff": 3.552713678800501e-15
+   },
+   "bengali_only|zho_Hans": {
+    "json_mean": 1.9113667198425042,
+    "recomputed_mean": 1.9113667198425048,
+    "abs_diff": 6.661338147750939e-16
+   },
+   "bengali_only|swh_Latn": {
+    "json_mean": 2.0293738366160334,
+    "recomputed_mean": 2.0293738366160414,
+    "abs_diff": 7.993605777301127e-15
+   },
+   "bengali_only|ben_Beng": {
+    "json_mean": 3.921582586206688,
+    "recomputed_mean": 3.9215825862066835,
+    "abs_diff": 4.440892098500626e-15
+   }
+  },
+  "max_abs_diff_vs_json": 1.2434497875801753e-14,
+  "recompute_reproduces_json": true,
+  "official_gate_jsons": {
+   "note": "phase1_pruning_gate.py official outputs, one json per condition. These are the authoritative per-cell numbers; chinese_only HAS one (2026-08-02 05:04) even though it is missing from table4_pruning_lang.json.",
+   "per_condition": {
+    "english_only": {
+     "status": "present",
+     "path": "results/deepseek/phase1_pruning_gate_english_only_result.json",
+     "pp_ratio": 0.2,
+     "langs_in_gate_json": [
+      "ben_Beng",
+      "eng_Latn",
+      "kor_Hang",
+      "swh_Latn",
+      "zho_Hans"
+     ],
+     "cells": {
+      "EN": {
+       "gate_mean": 0.2886380953488998,
+       "recomputed_mean": 0.28863809534890345,
+       "abs_diff": 3.6637359812630166e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "KO": {
+       "gate_mean": 0.710573396155508,
+       "recomputed_mean": 0.7105733961555084,
+       "abs_diff": 4.440892098500626e-16,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "ZH": {
+       "gate_mean": 0.308394147390894,
+       "recomputed_mean": 0.3083941473908955,
+       "abs_diff": 1.4988010832439613e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "SW": {
+       "gate_mean": 0.6107915834263172,
+       "recomputed_mean": 0.6107915834263072,
+       "abs_diff": 9.992007221626409e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "BN": {
+       "gate_mean": 1.1678078565608938,
+       "recomputed_mean": 1.1678078565608898,
+       "abs_diff": 3.9968028886505635e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      }
+     }
+    },
+    "chinese_only": {
+     "status": "present",
+     "path": "results/deepseek/phase1_pruning_gate_chinese_only_result.json",
+     "pp_ratio": 0.2,
+     "langs_in_gate_json": [
+      "ben_Beng",
+      "eng_Latn",
+      "kor_Hang",
+      "swh_Latn",
+      "zho_Hans"
+     ],
+     "cells": {
+      "EN": {
+       "gate_mean": 0.6691452824237883,
+       "recomputed_mean": 0.6691452824237979,
+       "abs_diff": 9.547918011776346e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "KO": {
+       "gate_mean": 1.1952175180111706,
+       "recomputed_mean": 1.1952175180111644,
+       "abs_diff": 6.217248937900877e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "ZH": {
+       "gate_mean": 0.3817589816453193,
+       "recomputed_mean": 0.38175898164531197,
+       "abs_diff": 7.327471962526033e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "SW": {
+       "gate_mean": 1.1709685027236236,
+       "recomputed_mean": 1.1709685027236112,
+       "abs_diff": 1.2434497875801753e-14,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "BN": {
+       "gate_mean": 2.110302963142324,
+       "recomputed_mean": 2.110302963142333,
+       "abs_diff": 8.881784197001252e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      }
+     }
+    },
+    "korean_only": {
+     "status": "present",
+     "path": "results/deepseek/phase1_pruning_gate_korean_only_result.json",
+     "pp_ratio": 0.2,
+     "langs_in_gate_json": [
+      "ben_Beng",
+      "eng_Latn",
+      "kor_Hang",
+      "swh_Latn",
+      "zho_Hans"
+     ],
+     "cells": {
+      "EN": {
+       "gate_mean": -0.5290826052719062,
+       "recomputed_mean": -0.5290826052719021,
+       "abs_diff": 4.107825191113079e-15,
+       "gate_sign_consistent": false,
+       "recomputed_sign_consistent": false,
+       "direction": "PRUNING_HELPS"
+      },
+      "KO": {
+       "gate_mean": 2.1198662898452993,
+       "recomputed_mean": 2.1198662898453047,
+       "abs_diff": 5.329070518200751e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "ZH": {
+       "gate_mean": 0.9110319686017601,
+       "recomputed_mean": 0.911031968601765,
+       "abs_diff": 4.9960036108132044e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "SW": {
+       "gate_mean": 0.7579665352105565,
+       "recomputed_mean": 0.7579665352105623,
+       "abs_diff": 5.88418203051333e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "BN": {
+       "gate_mean": 4.411851296205655,
+       "recomputed_mean": 4.411851296205666,
+       "abs_diff": 1.0658141036401503e-14,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      }
+     }
+    },
+    "swahili_only": {
+     "status": "present",
+     "path": "results/deepseek/phase1_pruning_gate_swahili_only_result.json",
+     "pp_ratio": 0.2,
+     "langs_in_gate_json": [
+      "ben_Beng",
+      "eng_Latn",
+      "kor_Hang",
+      "swh_Latn",
+      "zho_Hans"
+     ],
+     "cells": {
+      "EN": {
+       "gate_mean": 1.9709006497101573,
+       "recomputed_mean": 1.970900649710159,
+       "abs_diff": 1.7763568394002505e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "KO": {
+       "gate_mean": 3.5115051411924134,
+       "recomputed_mean": 3.511505141192412,
+       "abs_diff": 1.3322676295501878e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "ZH": {
+       "gate_mean": 1.55536963964237,
+       "recomputed_mean": 1.555369639642378,
+       "abs_diff": 7.993605777301127e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "SW": {
+       "gate_mean": 1.8183950479663327,
+       "recomputed_mean": 1.8183950479663444,
+       "abs_diff": 1.176836406102666e-14,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "BN": {
+       "gate_mean": 5.696656172466294,
+       "recomputed_mean": 5.696656172466297,
+       "abs_diff": 3.552713678800501e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      }
+     }
+    },
+    "bengali_only": {
+     "status": "present",
+     "path": "results/deepseek/phase1_pruning_gate_bengali_only_result.json",
+     "pp_ratio": 0.2,
+     "langs_in_gate_json": [
+      "ben_Beng",
+      "eng_Latn",
+      "kor_Hang",
+      "swh_Latn",
+      "zho_Hans"
+     ],
+     "cells": {
+      "EN": {
+       "gate_mean": 2.3727863863882703,
+       "recomputed_mean": 2.372786386388279,
+       "abs_diff": 8.881784197001252e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "KO": {
+       "gate_mean": 5.3005484896222255,
+       "recomputed_mean": 5.300548489622229,
+       "abs_diff": 3.552713678800501e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "ZH": {
+       "gate_mean": 1.9113667198425042,
+       "recomputed_mean": 1.9113667198425048,
+       "abs_diff": 6.661338147750939e-16,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "SW": {
+       "gate_mean": 2.0293738366160334,
+       "recomputed_mean": 2.0293738366160414,
+       "abs_diff": 7.993605777301127e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      },
+      "BN": {
+       "gate_mean": 3.921582586206688,
+       "recomputed_mean": 3.9215825862066835,
+       "abs_diff": 4.440892098500626e-15,
+       "gate_sign_consistent": true,
+       "recomputed_sign_consistent": true,
+       "direction": "PRUNING_HURTS"
+      }
+     }
+    }
+   },
+   "max_abs_diff_vs_gate_jsons": 1.2434497875801753e-14
+  }
+ },
+ "diff_vs_body_text": {
+  "english_only|EN": {
+   "body": 0.29,
+   "final_json_2dp": 0.29,
+   "computed_raw": 0.28863809534890345,
+   "match": true
+  },
+  "english_only|KO": {
+   "body": 0.71,
+   "final_json_2dp": 0.71,
+   "computed_raw": 0.7105733961555084,
+   "match": true
+  },
+  "english_only|ZH": {
+   "body": 0.31,
+   "final_json_2dp": 0.31,
+   "computed_raw": 0.3083941473908955,
+   "match": true
+  },
+  "english_only|SW": {
+   "body": 0.61,
+   "final_json_2dp": 0.61,
+   "computed_raw": 0.6107915834263072,
+   "match": true
+  },
+  "english_only|BN": {
+   "body": 1.17,
+   "final_json_2dp": 1.17,
+   "computed_raw": 1.1678078565608898,
+   "match": true
+  },
+  "english_only|vulnerable_mean": {
+   "body": 0.83,
+   "final_json_2dp": 0.83,
+   "computed_raw": 0.829724278714235,
+   "match": true
+  },
+  "chinese_only|EN": {
+   "body": 0.67,
+   "final_json_2dp": 0.67,
+   "computed_raw": 0.6691452824237979,
+   "match": true
+  },
+  "chinese_only|KO": {
+   "body": 1.2,
+   "final_json_2dp": 1.2,
+   "computed_raw": 1.1952175180111644,
+   "match": true
+  },
+  "chinese_only|ZH": {
+   "body": 0.38,
+   "final_json_2dp": 0.38,
+   "computed_raw": 0.38175898164531197,
+   "match": true
+  },
+  "chinese_only|SW": {
+   "body": 1.17,
+   "final_json_2dp": 1.17,
+   "computed_raw": 1.1709685027236112,
+   "match": true
+  },
+  "chinese_only|BN": {
+   "body": 2.11,
+   "final_json_2dp": 2.11,
+   "computed_raw": 2.110302963142333,
+   "match": true
+  },
+  "korean_only|EN": {
+   "body": -0.53,
+   "final_json_2dp": -0.53,
+   "computed_raw": -0.5290826052719021,
+   "match": true
+  },
+  "korean_only|KO": {
+   "body": 2.12,
+   "final_json_2dp": 2.12,
+   "computed_raw": 2.1198662898453047,
+   "match": true
+  },
+  "korean_only|ZH": {
+   "body": 0.91,
+   "final_json_2dp": 0.91,
+   "computed_raw": 0.911031968601765,
+   "match": true
+  },
+  "korean_only|SW": {
+   "body": 0.76,
+   "final_json_2dp": 0.76,
+   "computed_raw": 0.7579665352105623,
+   "match": true
+  },
+  "korean_only|BN": {
+   "body": 4.41,
+   "final_json_2dp": 4.41,
+   "computed_raw": 4.411851296205666,
+   "match": true
+  },
+  "korean_only|vulnerable_mean": {
+   "body": 2.43,
+   "final_json_2dp": 2.43,
+   "computed_raw": 2.4298947070871773,
+   "match": true
+  },
+  "swahili_only|EN": {
+   "body": 1.97,
+   "final_json_2dp": 1.97,
+   "computed_raw": 1.970900649710159,
+   "match": true
+  },
+  "swahili_only|KO": {
+   "body": 3.51,
+   "final_json_2dp": 3.51,
+   "computed_raw": 3.511505141192412,
+   "match": true
+  },
+  "swahili_only|ZH": {
+   "body": 1.56,
+   "final_json_2dp": 1.56,
+   "computed_raw": 1.555369639642378,
+   "match": true
+  },
+  "swahili_only|SW": {
+   "body": 1.82,
+   "final_json_2dp": 1.82,
+   "computed_raw": 1.8183950479663444,
+   "match": true
+  },
+  "swahili_only|BN": {
+   "body": 5.7,
+   "final_json_2dp": 5.7,
+   "computed_raw": 5.696656172466297,
+   "match": true
+  },
+  "swahili_only|vulnerable_mean": {
+   "body": 3.68,
+   "final_json_2dp": 3.68,
+   "computed_raw": 3.675518787208351,
+   "match": true
+  },
+  "bengali_only|EN": {
+   "body": 2.37,
+   "final_json_2dp": 2.37,
+   "computed_raw": 2.372786386388279,
+   "match": true
+  },
+  "bengali_only|KO": {
+   "body": 5.3,
+   "final_json_2dp": 5.3,
+   "computed_raw": 5.300548489622229,
+   "match": true
+  },
+  "bengali_only|ZH": {
+   "body": 1.91,
+   "final_json_2dp": 1.91,
+   "computed_raw": 1.9113667198425048,
+   "match": true
+  },
+  "bengali_only|SW": {
+   "body": 2.03,
+   "final_json_2dp": 2.03,
+   "computed_raw": 2.0293738366160414,
+   "match": true
+  },
+  "bengali_only|BN": {
+   "body": 3.92,
+   "final_json_2dp": 3.92,
+   "computed_raw": 3.9215825862066835,
+   "match": true
+  },
+  "bengali_only|vulnerable_mean": {
+   "body": 3.75,
+   "final_json_2dp": 3.75,
+   "computed_raw": 3.7505016374816513,
+   "match": true
+  }
+ },
+ "missing": [],
+ "vulnerable_mean_ordering": {
+  "computed_ascending": [
+   [
+    "english_only",
+    0.829724278714235
+   ],
+   [
+    "chinese_only",
+    1.492162994625703
+   ],
+   [
+    "korean_only",
+    2.4298947070871773
+   ],
+   [
+    "swahili_only",
+    3.675518787208351
+   ],
+   [
+    "bengali_only",
+    3.7505016374816513
+   ]
+  ],
+  "body_claim_4cond": "0.83 < 1.49 < 2.43 < 3.68 < 3.75 (5 values quoted in the request)",
+  "body_claim_4cond_matches": null
+ }
+}

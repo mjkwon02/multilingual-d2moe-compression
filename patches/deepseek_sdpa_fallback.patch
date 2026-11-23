@@ -1,0 +1,18 @@
+--- a/modeling_deepseek.py	(upstream revision 521d2bc4fb69a3f3ae565310fcc3b65f97af2580)
++++ b/modeling_deepseek.py	(patched, used in all DeepSeek runs)
+@@ -51,9 +51,12 @@
+ from .configuration_deepseek import DeepseekConfig
+ 
+ 
+-if is_flash_attn_2_available():
+-    from flash_attn import flash_attn_func, flash_attn_varlen_func
+-    from flash_attn.bert_padding import index_first_axis, pad_input, unpad_input  # noqa
++try:
++    if is_flash_attn_2_available():
++        from flash_attn import flash_attn_func, flash_attn_varlen_func
++        from flash_attn.bert_padding import index_first_axis, pad_input, unpad_input  # noqa
++except ImportError:
++    pass
+ 
+ 
+ # This makes `_prepare_4d_causal_attention_mask` a leaf function in the FX graph.

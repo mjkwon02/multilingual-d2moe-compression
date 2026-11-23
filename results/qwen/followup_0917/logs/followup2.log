@@ -1,0 +1,151 @@
+[qwen15-followup2 2026-09-17T17:10:22Z | 2026-09-18 02:10:22 KST] ===== part 2 started (pid 2223983) =====
+[qwen15-followup2 2026-09-17T17:10:22Z | 2026-09-18 02:10:22 KST] WAITING2 [part1] waiting for qwen15_followup_run.sh (12 cells) to finish
+[qwen15-followup2 2026-09-17T17:10:23Z | 2026-09-18 02:10:23 KST] part 1 still running: UNIT_START cell bengali_only 0
+[qwen15-followup2 2026-09-17T17:10:26Z] another part-2 instance holds the lock -- exiting
+[qwen15-followup2 2026-09-17T18:10:23Z | 2026-09-18 03:10:23 KST] part 1 still running: UNIT_START cell bengali_only 0
+[qwen15-followup2 2026-09-17T19:10:24Z | 2026-09-18 04:10:24 KST] part 1 still running: UNIT_START cell bengali_only 0
+[qwen15-followup2 2026-09-17T20:10:26Z | 2026-09-18 05:10:26 KST] part 1 still running: UNIT_START cell english_only 1
+[qwen15-followup2 2026-09-17T21:10:27Z | 2026-09-18 06:10:27 KST] part 1 still running: UNIT_START cell english_only 1
+[qwen15-followup2 2026-09-17T22:10:28Z | 2026-09-18 07:10:28 KST] part 1 still running: UNIT_START cell korean_only 1
+[qwen15-followup2 2026-09-17T23:10:29Z | 2026-09-18 08:10:29 KST] part 1 still running: UNIT_START cell korean_only 1
+[qwen15-followup2 2026-09-18T00:10:30Z | 2026-09-18 09:10:30 KST] part 1 still running: UNIT_START cell mixed_5lang 1
+[qwen15-followup2 2026-09-18T00:13:44Z | 2026-09-18 09:13:44 KST] ===== part 2 started (pid 2511033) =====
+[qwen15-followup2 2026-09-18T00:13:44Z | 2026-09-18 09:13:44 KST] WAITING2 [part1] waiting for qwen15_followup_run.sh (12 cells) to finish
+[qwen15-followup2 2026-09-18T00:13:44Z | 2026-09-18 09:13:44 KST] part 1 still running: UNIT_START cell mixed_5lang 1
+[qwen15-followup2 2026-09-18T01:13:45Z | 2026-09-18 10:13:45 KST] part 1 still running: UNIT_START cell mixed_5lang 1
+[qwen15-followup2 2026-09-18T02:13:46Z | 2026-09-18 11:13:46 KST] part 1 still running: UNIT_START cell mixed_5lang 1
+[qwen15-followup2 2026-09-18T03:13:48Z | 2026-09-18 12:13:48 KST] part 1 still running: UNIT_START cell bengali_only 1
+[qwen15-followup2 2026-09-18T04:13:49Z | 2026-09-18 13:13:49 KST] part 1 still running: UNIT_START cell bengali_only 1
+[qwen15-followup2 2026-09-18T05:13:50Z | 2026-09-18 14:13:50 KST] part 1 still running: UNIT_START cell chinese_only 0
+[qwen15-followup2 2026-09-18T06:13:51Z | 2026-09-18 15:13:51 KST] part 1 still running: UNIT_START cell chinese_only 0
+[qwen15-followup2 2026-09-18T07:13:52Z | 2026-09-18 16:13:52 KST] part 1 still running: UNIT_START cell swahili_only 0
+[qwen15-followup2 2026-09-18T08:13:53Z | 2026-09-18 17:13:53 KST] part 1 still running: UNIT_START cell swahili_only 0
+[qwen15-followup2 2026-09-18T09:13:54Z | 2026-09-18 18:13:54 KST] part 1 still running: UNIT_START cell chinese_only 1
+[qwen15-followup2 2026-09-18T10:13:55Z | 2026-09-18 19:13:55 KST] part 1 still running: UNIT_START cell chinese_only 1
+[qwen15-followup2 2026-09-18T11:13:56Z | 2026-09-18 20:13:56 KST] part 1 still running: UNIT_START cell chinese_only 1
+[qwen15-followup2 2026-09-18T12:13:57Z | 2026-09-18 21:13:57 KST] part 1 still running: UNIT_START cell swahili_only 1
+[qwen15-followup2 2026-09-18T13:13:58Z | 2026-09-18 22:13:58 KST] part 1 still running: UNIT_START cell swahili_only 1
+[qwen15-followup2 2026-09-18T13:47:58Z | 2026-09-18 22:47:58 KST] PART1_DONE [part1] part 1 finished its queue
+[qwen15-followup2 2026-09-18T13:47:58Z | 2026-09-18 22:47:58 KST] CUDA_VISIBLE_DEVICES=2,3 CUDA_DEVICE_ORDER=PCI_BUS_ID
+tempfile.gettempdir()              results/qwen/followup_0917/runtime/tmp
+huggingface_hub HF_HOME            $HF_HOME
+huggingface_hub HF_HUB_CACHE       $HF_HOME/hub
+datasets HF_DATASETS_CACHE         $HF_HOME/datasets
+torch.hub.get_dir()                results/qwen/followup_0917/runtime/torch_home/hub
+TRITON_CACHE_DIR                   results/qwen/followup_0917/runtime/triton_cache
+TORCHINDUCTOR_CACHE_DIR            results/qwen/followup_0917/runtime/inductor_cache
+XDG_CACHE_HOME                     results/qwen/followup_0917/runtime/xdg_cache
+matplotlib.get_cachedir()          results/qwen/followup_0917/runtime/mplconfig
+qwen15_config.RESULTS_ROOT         results/qwen/phase1
+qwen15_config.HF_HOME_EXPECTED     $HF_HOME
+[qwen15-followup2 2026-09-18T13:48:00Z | 2026-09-18 22:48:00 KST] PHASE_START [T1] FLORES table, 6 conditions x seeds 0,1
+[qwen15-followup2 2026-09-18T13:48:00Z | 2026-09-18 22:48:00 KST] PHASE_DONE [T1] 12 cells + baseline validated; table in results/qwen/phase1/report
+[qwen15-followup2 2026-09-18T13:48:00Z | 2026-09-18 22:48:00 KST] MASSIVE_HELD [massive] not started (user scope change); qwen15_massive.py untouched, tokcheck record preserved
+[qwen15-followup2 2026-09-18T13:48:00Z | 2026-09-18 22:48:00 KST] PHASE_START [S2] seed-2 cells for 6 conditions
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] disk ok: /mnt/HDD avail 796GiB >= 460GiB
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] disk ok: /mnt/HDD avail 796GiB >= 110GiB
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] RAM ok: 118GiB available
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] UNIT_START [cell english_only seed2] log results/qwen/followup_0917/logs/cell_english_only_seed2.log
+[qwen15-followup2 2026-09-18T13:48:01Z | 2026-09-18 22:48:01 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions english_only --seeds 2
+[qwen15-followup2 2026-09-18T13:48:20Z | 2026-09-18 22:48:20 KST] stage DONE  calib_report (19s)
+[qwen15-followup2 2026-09-18T13:48:20Z | 2026-09-18 22:48:20 KST] stage START freq: python -u qwen15_freq.py --condition english_only --seed 2
+[qwen15-followup2 2026-09-18T13:51:06Z | 2026-09-18 22:51:06 KST] stage DONE  freq (166s)
+[qwen15-followup2 2026-09-18T13:51:06Z | 2026-09-18 22:51:06 KST] stage START fisher: python -u qwen15_fisher.py --condition english_only --seed 2
+[qwen15-followup2 2026-09-18T14:21:29Z | 2026-09-18 23:21:29 KST] stage DONE  fisher (1823s)
+[qwen15-followup2 2026-09-18T14:21:29Z | 2026-09-18 23:21:29 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition english_only --seed 2
+[qwen15-followup2 2026-09-18T15:42:25Z | 2026-09-19 00:42:25 KST] stage DONE  svd_scale (4856s)
+[qwen15-followup2 2026-09-18T15:42:25Z | 2026-09-19 00:42:25 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition english_only --seed 2 --save-compressed
+[qwen15-followup2 2026-09-18T16:01:54Z | 2026-09-19 01:01:54 KST] stage DONE  merge_save (1169s)
+[qwen15-followup2 2026-09-18T16:01:54Z | 2026-09-19 01:01:54 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition english_only --seed 2 --reload-eval
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] stage DONE  reload_eval (227s)
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] UNIT_DONE [cell english_only seed2] 8260s, outputs validated, /mnt/HDD avail 726GiB
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] disk ok: /mnt/HDD avail 726GiB >= 110GiB
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] RAM ok: 119GiB available
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] UNIT_START [cell chinese_only seed2] log results/qwen/followup_0917/logs/cell_chinese_only_seed2.log
+[qwen15-followup2 2026-09-18T16:05:41Z | 2026-09-19 01:05:41 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions chinese_only --seeds 2
+[qwen15-followup2 2026-09-18T16:06:00Z | 2026-09-19 01:06:00 KST] stage DONE  calib_report (19s)
+[qwen15-followup2 2026-09-18T16:06:00Z | 2026-09-19 01:06:00 KST] stage START freq: python -u qwen15_freq.py --condition chinese_only --seed 2
+[qwen15-followup2 2026-09-18T16:08:47Z | 2026-09-19 01:08:47 KST] stage DONE  freq (167s)
+[qwen15-followup2 2026-09-18T16:08:47Z | 2026-09-19 01:08:47 KST] stage START fisher: python -u qwen15_fisher.py --condition chinese_only --seed 2
+[qwen15-followup2 2026-09-18T16:39:13Z | 2026-09-19 01:39:13 KST] stage DONE  fisher (1826s)
+[qwen15-followup2 2026-09-18T16:39:13Z | 2026-09-19 01:39:13 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition chinese_only --seed 2
+[qwen15-followup2 2026-09-18T17:57:57Z | 2026-09-19 02:57:57 KST] stage DONE  svd_scale (4724s)
+[qwen15-followup2 2026-09-18T17:57:57Z | 2026-09-19 02:57:57 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition chinese_only --seed 2 --save-compressed
+[qwen15-followup2 2026-09-18T18:17:43Z | 2026-09-19 03:17:43 KST] stage DONE  merge_save (1186s)
+[qwen15-followup2 2026-09-18T18:17:45Z | 2026-09-19 03:17:45 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition chinese_only --seed 2 --reload-eval
+[qwen15-followup2 2026-09-18T18:21:30Z | 2026-09-19 03:21:30 KST] stage DONE  reload_eval (225s)
+[qwen15-followup2 2026-09-18T18:21:30Z | 2026-09-19 03:21:30 KST] UNIT_DONE [cell chinese_only seed2] 8149s, outputs validated, /mnt/HDD avail 656GiB
+[qwen15-followup2 2026-09-18T18:21:30Z | 2026-09-19 03:21:30 KST] disk ok: /mnt/HDD avail 656GiB >= 110GiB
+[qwen15-followup2 2026-09-18T18:21:30Z | 2026-09-19 03:21:30 KST] RAM ok: 119GiB available
+[qwen15-followup2 2026-09-18T18:21:31Z | 2026-09-19 03:21:31 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-18T18:21:31Z | 2026-09-19 03:21:31 KST] UNIT_START [cell korean_only seed2] log results/qwen/followup_0917/logs/cell_korean_only_seed2.log
+[qwen15-followup2 2026-09-18T18:21:31Z | 2026-09-19 03:21:31 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions korean_only --seeds 2
+[qwen15-followup2 2026-09-18T18:21:50Z | 2026-09-19 03:21:50 KST] stage DONE  calib_report (18s)
+[qwen15-followup2 2026-09-18T18:21:50Z | 2026-09-19 03:21:50 KST] stage START freq: python -u qwen15_freq.py --condition korean_only --seed 2
+[qwen15-followup2 2026-09-18T18:24:36Z | 2026-09-19 03:24:36 KST] stage DONE  freq (166s)
+[qwen15-followup2 2026-09-18T18:24:36Z | 2026-09-19 03:24:36 KST] stage START fisher: python -u qwen15_fisher.py --condition korean_only --seed 2
+[qwen15-followup2 2026-09-18T18:55:08Z | 2026-09-19 03:55:08 KST] stage DONE  fisher (1832s)
+[qwen15-followup2 2026-09-18T18:55:08Z | 2026-09-19 03:55:08 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition korean_only --seed 2
+[qwen15-followup2 2026-09-18T20:19:38Z | 2026-09-19 05:19:38 KST] stage DONE  svd_scale (5070s)
+[qwen15-followup2 2026-09-18T20:19:38Z | 2026-09-19 05:19:38 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition korean_only --seed 2 --save-compressed
+[qwen15-followup2 2026-09-18T20:39:47Z | 2026-09-19 05:39:47 KST] stage DONE  merge_save (1209s)
+[qwen15-followup2 2026-09-18T20:39:47Z | 2026-09-19 05:39:47 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition korean_only --seed 2 --reload-eval
+[qwen15-followup2 2026-09-18T20:43:32Z | 2026-09-19 05:43:32 KST] stage DONE  reload_eval (225s)
+[qwen15-followup2 2026-09-18T20:43:32Z | 2026-09-19 05:43:32 KST] UNIT_DONE [cell korean_only seed2] 8521s, outputs validated, /mnt/HDD avail 586GiB
+[qwen15-followup2 2026-09-18T20:43:32Z | 2026-09-19 05:43:32 KST] disk ok: /mnt/HDD avail 586GiB >= 110GiB
+[qwen15-followup2 2026-09-18T20:43:32Z | 2026-09-19 05:43:32 KST] RAM ok: 119GiB available
+[qwen15-followup2 2026-09-18T20:43:33Z | 2026-09-19 05:43:33 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-18T20:43:33Z | 2026-09-19 05:43:33 KST] UNIT_START [cell swahili_only seed2] log results/qwen/followup_0917/logs/cell_swahili_only_seed2.log
+[qwen15-followup2 2026-09-18T20:43:33Z | 2026-09-19 05:43:33 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions swahili_only --seeds 2
+[qwen15-followup2 2026-09-18T20:43:51Z | 2026-09-19 05:43:51 KST] stage DONE  calib_report (18s)
+[qwen15-followup2 2026-09-18T20:43:51Z | 2026-09-19 05:43:51 KST] stage START freq: python -u qwen15_freq.py --condition swahili_only --seed 2
+[qwen15-followup2 2026-09-18T20:46:40Z | 2026-09-19 05:46:40 KST] stage DONE  freq (169s)
+[qwen15-followup2 2026-09-18T20:46:40Z | 2026-09-19 05:46:40 KST] stage START fisher: python -u qwen15_fisher.py --condition swahili_only --seed 2
+[qwen15-followup2 2026-09-18T21:16:57Z | 2026-09-19 06:16:57 KST] stage DONE  fisher (1817s)
+[qwen15-followup2 2026-09-18T21:16:57Z | 2026-09-19 06:16:57 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition swahili_only --seed 2
+[qwen15-followup2 2026-09-18T22:38:15Z | 2026-09-19 07:38:15 KST] stage DONE  svd_scale (4878s)
+[qwen15-followup2 2026-09-18T22:38:15Z | 2026-09-19 07:38:15 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition swahili_only --seed 2 --save-compressed
+[qwen15-followup2 2026-09-18T22:57:53Z | 2026-09-19 07:57:53 KST] stage DONE  merge_save (1178s)
+[qwen15-followup2 2026-09-18T22:57:53Z | 2026-09-19 07:57:53 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition swahili_only --seed 2 --reload-eval
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] stage DONE  reload_eval (226s)
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] UNIT_DONE [cell swahili_only seed2] 8286s, outputs validated, /mnt/HDD avail 516GiB
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] disk ok: /mnt/HDD avail 516GiB >= 110GiB
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] RAM ok: 119GiB available
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] UNIT_START [cell bengali_only seed2] log results/qwen/followup_0917/logs/cell_bengali_only_seed2.log
+[qwen15-followup2 2026-09-18T23:01:39Z | 2026-09-19 08:01:39 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions bengali_only --seeds 2
+[qwen15-followup2 2026-09-18T23:01:58Z | 2026-09-19 08:01:58 KST] stage DONE  calib_report (19s)
+[qwen15-followup2 2026-09-18T23:01:58Z | 2026-09-19 08:01:58 KST] stage START freq: python -u qwen15_freq.py --condition bengali_only --seed 2
+[qwen15-followup2 2026-09-18T23:05:07Z | 2026-09-19 08:05:07 KST] stage DONE  freq (189s)
+[qwen15-followup2 2026-09-18T23:05:07Z | 2026-09-19 08:05:07 KST] stage START fisher: python -u qwen15_fisher.py --condition bengali_only --seed 2
+[qwen15-followup2 2026-09-18T23:35:42Z | 2026-09-19 08:35:42 KST] stage DONE  fisher (1835s)
+[qwen15-followup2 2026-09-18T23:35:42Z | 2026-09-19 08:35:42 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition bengali_only --seed 2
+[qwen15-followup2 2026-09-19T00:58:36Z | 2026-09-19 09:58:36 KST] stage DONE  svd_scale (4974s)
+[qwen15-followup2 2026-09-19T00:58:36Z | 2026-09-19 09:58:36 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition bengali_only --seed 2 --save-compressed
+[qwen15-followup2 2026-09-19T01:18:03Z | 2026-09-19 10:18:03 KST] stage DONE  merge_save (1167s)
+[qwen15-followup2 2026-09-19T01:18:04Z | 2026-09-19 10:18:04 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition bengali_only --seed 2 --reload-eval
+[qwen15-followup2 2026-09-19T01:21:49Z | 2026-09-19 10:21:49 KST] stage DONE  reload_eval (225s)
+[qwen15-followup2 2026-09-19T01:21:49Z | 2026-09-19 10:21:49 KST] UNIT_DONE [cell bengali_only seed2] 8410s, outputs validated, /mnt/HDD avail 446GiB
+[qwen15-followup2 2026-09-19T01:21:49Z | 2026-09-19 10:21:49 KST] disk ok: /mnt/HDD avail 446GiB >= 110GiB
+[qwen15-followup2 2026-09-19T01:21:49Z | 2026-09-19 10:21:49 KST] RAM ok: 119GiB available
+[qwen15-followup2 2026-09-19T01:21:50Z | 2026-09-19 10:21:50 KST] GPUs 2,3 idle
+[qwen15-followup2 2026-09-19T01:21:50Z | 2026-09-19 10:21:50 KST] UNIT_START [cell mixed_5lang seed2] log results/qwen/followup_0917/logs/cell_mixed_5lang_seed2.log
+[qwen15-followup2 2026-09-19T01:21:50Z | 2026-09-19 10:21:50 KST] stage START calib_report: python -u qwen15_calib_report.py --conditions mixed_5lang --seeds 2
+[qwen15-followup2 2026-09-19T01:24:09Z | 2026-09-19 10:24:09 KST] stage DONE  calib_report (139s)
+[qwen15-followup2 2026-09-19T01:24:09Z | 2026-09-19 10:24:09 KST] stage START freq: python -u qwen15_freq.py --condition mixed_5lang --seed 2
+[qwen15-followup2 2026-09-19T01:29:24Z | 2026-09-19 10:29:24 KST] stage DONE  freq (315s)
+[qwen15-followup2 2026-09-19T01:29:24Z | 2026-09-19 10:29:24 KST] stage START fisher: python -u qwen15_fisher.py --condition mixed_5lang --seed 2
+[qwen15-followup2 2026-09-19T02:00:24Z | 2026-09-19 11:00:24 KST] stage DONE  fisher (1860s)
+[qwen15-followup2 2026-09-19T02:00:24Z | 2026-09-19 11:00:24 KST] stage START svd_scale: python -u qwen15_svd_scale.py --condition mixed_5lang --seed 2
+[qwen15-followup2 2026-09-19T03:24:02Z | 2026-09-19 12:24:02 KST] stage DONE  svd_scale (5018s)
+[qwen15-followup2 2026-09-19T03:24:02Z | 2026-09-19 12:24:02 KST] stage START merge_save: python -u qwen15_merge_eval.py --condition mixed_5lang --seed 2 --save-compressed
+[qwen15-followup2 2026-09-19T03:43:34Z | 2026-09-19 12:43:34 KST] stage DONE  merge_save (1172s)
+[qwen15-followup2 2026-09-19T03:43:35Z | 2026-09-19 12:43:35 KST] stage START reload_eval: python -u qwen15_merge_eval.py --condition mixed_5lang --seed 2 --reload-eval
+[qwen15-followup2 2026-09-19T03:47:20Z | 2026-09-19 12:47:20 KST] stage DONE  reload_eval (225s)
+[qwen15-followup2 2026-09-19T03:47:20Z | 2026-09-19 12:47:20 KST] UNIT_DONE [cell mixed_5lang seed2] 8730s, outputs validated, /mnt/HDD avail 376GiB
+[qwen15-followup2 2026-09-19T03:47:20Z | 2026-09-19 12:47:20 KST] PHASE_DONE [S2] 6 seed-2 cells validated
+[qwen15-followup2 2026-09-19T03:47:20Z | 2026-09-19 12:47:20 KST] PHASE_START [T2] FLORES table, 6 conditions x seeds 0,1,2
+[qwen15-followup2 2026-09-19T03:47:21Z | 2026-09-19 12:47:21 KST] PHASE_DONE [T2] 18 cells validated; table in results/qwen/phase1/report
+[qwen15-followup2 2026-09-19T03:47:21Z | 2026-09-19 12:47:21 KST] FINISHED2 [all] Qwen main experiment complete: 6 conditions x 3 seeds, FLORES Δbpb tables for seeds 0,1 and 0,1,2 (MASSIVE held)

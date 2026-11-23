@@ -1,0 +1,325 @@
+{
+  "task": "sib200",
+  "model": "mixed_5lang_seed0",
+  "condition": "mixed_5lang",
+  "seed": 0,
+  "protocol": "sib200_natural_continuation_v1 (unchanged from phase1_sib200_eval.py)",
+  "num_fewshot": 14,
+  "demo_seed": 42,
+  "batch_size": 4,
+  "clean_subset_source": "analysis/data_audit_0916/clean_eval_ids.json",
+  "clean_variant": "primary (identical to strict for SIB; keep set identical across all 5 languages)",
+  "demonstration_exposure_note": "the audit reports 6 of the 14 fixed English demonstrations are calibration-exposed. Demonstrations are deliberately NOT changed here: changing them would alter the evaluation protocol and make these numbers incomparable to Table 2. Reported separately from test exposure.",
+  "original_file_for_reproduction_check": "results/deepseek/mixed_5lang/seed0/scale_mixed_5lang_seed0/eval_sib200.json",
+  "results": {
+    "eng_Latn": {
+      "full": {
+        "n": 204,
+        "acc": 0.6862745098039216,
+        "pred_distribution": {
+          "science/technology": 27,
+          "travel": 70,
+          "politics": 31,
+          "sports": 19,
+          "health": 12,
+          "entertainment": 37,
+          "geography": 8
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "travel",
+        "top_label_share": 0.3431372549019608,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.673469387755102,
+        "pred_distribution": {
+          "science/technology": 18,
+          "travel": 39,
+          "politics": 13,
+          "sports": 5,
+          "health": 5,
+          "entertainment": 16,
+          "geography": 2
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "travel",
+        "top_label_share": 0.3979591836734694,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": {
+        "original_acc": 0.6813725490196079,
+        "rerun_full_acc": 0.6862745098039216,
+        "abs_diff": 0.004901960784313708,
+        "reproduced": false
+      },
+      "seconds": 71.53489518165588,
+      "items_per_second": 2.851755069773457
+    },
+    "kor_Hang": {
+      "full": {
+        "n": 204,
+        "acc": 0.5833333333333334,
+        "pred_distribution": {
+          "science/technology": 33,
+          "travel": 63,
+          "politics": 45,
+          "sports": 5,
+          "health": 12,
+          "entertainment": 21,
+          "geography": 25
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "travel",
+        "top_label_share": 0.3088235294117647,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.5714285714285714,
+        "pred_distribution": {
+          "science/technology": 21,
+          "travel": 35,
+          "politics": 19,
+          "sports": 3,
+          "health": 4,
+          "entertainment": 7,
+          "geography": 9
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "travel",
+        "top_label_share": 0.35714285714285715,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": {
+        "original_acc": 0.5735294117647058,
+        "rerun_full_acc": 0.5833333333333334,
+        "abs_diff": 0.009803921568627527,
+        "reproduced": false
+      },
+      "seconds": 79.32745409011841,
+      "items_per_second": 2.5716191492575797
+    },
+    "zho_Hans": {
+      "full": {
+        "n": 204,
+        "acc": 0.7156862745098039,
+        "pred_distribution": {
+          "science/technology": 38,
+          "travel": 54,
+          "politics": 36,
+          "sports": 15,
+          "health": 15,
+          "entertainment": 27,
+          "geography": 19
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "travel",
+        "top_label_share": 0.2647058823529412,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.6836734693877551,
+        "pred_distribution": {
+          "science/technology": 23,
+          "travel": 32,
+          "politics": 16,
+          "sports": 3,
+          "health": 6,
+          "entertainment": 11,
+          "geography": 7
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "travel",
+        "top_label_share": 0.32653061224489793,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": {
+        "original_acc": 0.7205882352941176,
+        "rerun_full_acc": 0.7156862745098039,
+        "abs_diff": 0.004901960784313708,
+        "reproduced": false
+      },
+      "seconds": 74.73377633094788,
+      "items_per_second": 2.729689439171588
+    },
+    "swh_Latn": {
+      "full": {
+        "n": 204,
+        "acc": 0.35294117647058826,
+        "pred_distribution": {
+          "science/technology": 3,
+          "travel": 67,
+          "politics": 35,
+          "sports": 3,
+          "health": 2,
+          "entertainment": 26,
+          "geography": 68
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "geography",
+        "top_label_share": 0.3333333333333333,
+        "n_distinct_pred": 7
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.3469387755102041,
+        "pred_distribution": {
+          "science/technology": 1,
+          "travel": 31,
+          "politics": 14,
+          "sports": 1,
+          "health": 1,
+          "entertainment": 13,
+          "geography": 37
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "geography",
+        "top_label_share": 0.37755102040816324,
+        "n_distinct_pred": 7
+      },
+      "reproduction_check": {
+        "original_acc": 0.36764705882352944,
+        "rerun_full_acc": 0.35294117647058826,
+        "abs_diff": 0.01470588235294118,
+        "reproduced": false
+      },
+      "seconds": 76.55056810379028,
+      "items_per_second": 2.664905108521321
+    },
+    "ben_Beng": {
+      "full": {
+        "n": 204,
+        "acc": 0.22549019607843138,
+        "pred_distribution": {
+          "science/technology": 17,
+          "travel": 16,
+          "politics": 13,
+          "sports": 0,
+          "health": 1,
+          "entertainment": 11,
+          "geography": 146
+        },
+        "gold_distribution": {
+          "science/technology": 51,
+          "travel": 40,
+          "politics": 30,
+          "sports": 25,
+          "health": 22,
+          "entertainment": 19,
+          "geography": 17
+        },
+        "top_label": "geography",
+        "top_label_share": 0.7156862745098039,
+        "n_distinct_pred": 6
+      },
+      "clean": {
+        "n": 98,
+        "acc": 0.19387755102040816,
+        "pred_distribution": {
+          "science/technology": 9,
+          "travel": 8,
+          "politics": 4,
+          "sports": 0,
+          "health": 0,
+          "entertainment": 5,
+          "geography": 72
+        },
+        "gold_distribution": {
+          "science/technology": 26,
+          "travel": 22,
+          "politics": 12,
+          "sports": 11,
+          "health": 10,
+          "entertainment": 9,
+          "geography": 8
+        },
+        "top_label": "geography",
+        "top_label_share": 0.7346938775510204,
+        "n_distinct_pred": 5
+      },
+      "reproduction_check": {
+        "original_acc": 0.22058823529411764,
+        "rerun_full_acc": 0.22549019607843138,
+        "abs_diff": 0.004901960784313736,
+        "reproduced": false
+      },
+      "seconds": 88.38176465034485,
+      "items_per_second": 2.3081684418393658
+    }
+  },
+  "runtime": {
+    "model": "mixed_5lang_seed0",
+    "reused_merge": true,
+    "finished_utc": "2026-09-16T08:09:55Z",
+    "peak_gpu_bytes": {
+      "0": 17125423616,
+      "1": 20488752640
+    }
+  }
+}

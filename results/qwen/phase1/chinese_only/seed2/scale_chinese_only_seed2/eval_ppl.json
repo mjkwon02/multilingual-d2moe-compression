@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "eval_source": "israel/flores-parallel",
+    "eval_split": "test",
+    "eval_n_sentences": 60,
+    "batch_size": 8,
+    "tokenizer_bos": null,
+    "primary": "data_utils.evaluate_sentences unchanged (tokenizer default special tokens: none for Qwen)",
+    "sensitivity": "same, with eos (<|endoftext|>) prepended to every sentence",
+    "run": {
+      "mode": "merge_eval",
+      "condition": "chinese_only",
+      "seed": 2,
+      "scale_condition": "chinese_only",
+      "scale_seed": 2,
+      "plain_svd": false,
+      "delta_ratio": 0.8,
+      "share_ratio": 1.0,
+      "merge_method": "fisher",
+      "structured_pruning": "off",
+      "status": "running",
+      "device_map": {
+        "hf_device_map": {
+          "model.embed_tokens": 0,
+          "model.layers.0": 0,
+          "model.layers.1": 0,
+          "model.layers.2": 0,
+          "model.layers.3": 0,
+          "model.layers.4": 0,
+          "model.layers.5": 0,
+          "model.layers.6": 0,
+          "model.layers.7": 0,
+          "model.layers.8": 0,
+          "model.layers.9": 0,
+          "model.layers.10": 1,
+          "model.layers.11": 1,
+          "model.layers.12": 1,
+          "model.layers.13": 1,
+          "model.layers.14": 1,
+          "model.layers.15": 1,
+          "model.layers.16": 1,
+          "model.layers.17": 1,
+          "model.layers.18": 1,
+          "model.layers.19": 1,
+          "model.layers.20": 1,
+          "model.layers.21": 1,
+          "model.layers.22": 1,
+          "model.layers.23": 1,
+          "model.norm": 1,
+          "lm_head": 1
+        },
+        "modules_per_device": {
+          "0": 11,
+          "1": 16
+        }
+      },
+      "params": {
+        "total_params_before": 14315784192,
+        "total_params_after": 12024576000,
+        "total_reduction": 2291208192,
+        "total_reduction_pct": 16.00476901070066,
+        "routed_expert_params_before": 12457082880,
+        "routed_expert_params_after": 10165874688,
+        "routed_expert_reduction_pct": 18.392814867424242,
+        "delta_ratio": 0.8,
+        "delta_rank": 667,
+        "note": "delta_ratio sets the per-expert low-rank budget; the model-wide reduction is total_reduction_pct"
+      }
+    },
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9"
+  },
+  "eng_Latn": {
+    "name": "English",
+    "ppl": 26.025400161743164,
+    "n_sentences": 60,
+    "n_tokens": 1752,
+    "n_bytes": 8666,
+    "bits_per_byte": 0.9505699075894162,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.350011635142739,
+      "n_tokens": 1812,
+      "prefix_id": 151643
+    }
+  },
+  "kor_Hang": {
+    "name": "Korean",
+    "ppl": 94.65503692626953,
+    "n_sentences": 60,
+    "n_tokens": 2919,
+    "n_bytes": 10222,
+    "bits_per_byte": 1.8745928647274095,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 2.3976642637434624,
+      "n_tokens": 2979,
+      "prefix_id": 151643
+    }
+  },
+  "zho_Hans": {
+    "name": "Chinese",
+    "ppl": 25.399694442749023,
+    "n_sentences": 60,
+    "n_tokens": 1865,
+    "n_bytes": 8157,
+    "bits_per_byte": 1.0669938179184126,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.4240066882605829,
+      "n_tokens": 1925,
+      "prefix_id": 151643
+    }
+  },
+  "swh_Latn": {
+    "name": "Swahili",
+    "ppl": 142.281982421875,
+    "n_sentences": 60,
+    "n_tokens": 3437,
+    "n_bytes": 9104,
+    "bits_per_byte": 2.7002985227539034,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 3.400560694546757,
+      "n_tokens": 3497,
+      "prefix_id": 151643
+    }
+  },
+  "ben_Beng": {
+    "name": "Bengali",
+    "ppl": 8.271231651306152,
+    "n_sentences": 60,
+    "n_tokens": 9323,
+    "n_bytes": 23314,
+    "bits_per_byte": 1.218900994059963,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 2.2091055031371214,
+      "n_tokens": 9383,
+      "prefix_id": 151643
+    }
+  },
+  "_delta_vs_baseline": {
+    "eng_Latn": {
+      "delta_bpb_pct": 12.225412097939014,
+      "delta_bpb_pct_eos_prefixed": 1.5754627356195483
+    },
+    "kor_Hang": {
+      "delta_bpb_pct": 46.000778766925876,
+      "delta_bpb_pct_eos_prefixed": 20.273713404775528
+    },
+    "zho_Hans": {
+      "delta_bpb_pct": 2.758593065420478,
+      "delta_bpb_pct_eos_prefixed": -4.787752200547269
+    },
+    "swh_Latn": {
+      "delta_bpb_pct": 48.22629396586766,
+      "delta_bpb_pct_eos_prefixed": 3.4413358143636774
+    },
+    "ben_Beng": {
+      "delta_bpb_pct": 74.05813005862547,
+      "delta_bpb_pct_eos_prefixed": 33.380946008585724
+    }
+  }
+}

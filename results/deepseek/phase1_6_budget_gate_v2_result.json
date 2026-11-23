@@ -1,0 +1,169 @@
+{
+  "balanced_row": {
+    "per_seed_worst": [
+      21.604014296112737,
+      22.221687417378554,
+      22.2748106446214
+    ],
+    "per_seed_worst_lang": [
+      "ben_Beng",
+      "ben_Beng",
+      "ben_Beng"
+    ],
+    "per_seed_mean": [
+      17.34913644697336,
+      18.139934964005125,
+      17.684020330976665
+    ],
+    "mean_of_worst": 22.0335041193709,
+    "mean_of_mean": 17.724363913985048
+  },
+  "best_single_lang_condition": "korean_only",
+  "single_rows": {
+    "english_only": {
+      "per_seed_worst": [
+        35.00492603783245,
+        34.94579715628152,
+        34.11331154580617
+      ],
+      "per_seed_worst_lang": [
+        "ben_Beng",
+        "ben_Beng",
+        "ben_Beng"
+      ],
+      "per_seed_mean": [
+        21.56132462291075,
+        21.530497464622222,
+        21.333899901397935
+      ],
+      "mean_of_worst": 34.688011579973384,
+      "mean_of_mean": 21.475240662976972
+    },
+    "korean_only": {
+      "per_seed_worst": [
+        24.18979519277564,
+        23.685862235542764,
+        23.909877377262468
+      ],
+      "per_seed_worst_lang": [
+        "swh_Latn",
+        "swh_Latn",
+        "swh_Latn"
+      ],
+      "per_seed_mean": [
+        19.1426650551493,
+        19.189474910786874,
+        19.30669657657986
+      ],
+      "mean_of_worst": 23.928511601860293,
+      "mean_of_mean": 19.212945514172013
+    },
+    "chinese_only": {
+      "per_seed_worst": [
+        35.171788489284374,
+        33.69483806744542,
+        35.007251268043206
+      ],
+      "per_seed_worst_lang": [
+        "ben_Beng",
+        "ben_Beng",
+        "ben_Beng"
+      ],
+      "per_seed_mean": [
+        21.09307020884814,
+        21.016230825227268,
+        21.608801444118082
+      ],
+      "mean_of_worst": 34.624625941591,
+      "mean_of_mean": 21.239367492731162
+    },
+    "swahili_only": {
+      "per_seed_worst": [
+        41.221056854324665,
+        41.06141421496026,
+        40.41088756937285
+      ],
+      "per_seed_worst_lang": [
+        "ben_Beng",
+        "ben_Beng",
+        "ben_Beng"
+      ],
+      "per_seed_mean": [
+        22.788163313141098,
+        22.91927136097407,
+        22.41224618415585
+      ],
+      "mean_of_worst": 40.897786212885926,
+      "mean_of_mean": 22.706560286090337
+    },
+    "bengali_only": {
+      "per_seed_worst": [
+        25.71516148609938,
+        25.122895635190233,
+        25.230185821965545
+      ],
+      "per_seed_worst_lang": [
+        "swh_Latn",
+        "swh_Latn",
+        "swh_Latn"
+      ],
+      "per_seed_mean": [
+        19.27964184775478,
+        19.260664503837535,
+        18.9169902916599
+      ],
+      "mean_of_worst": 25.356080981085054,
+      "mean_of_mean": 19.152432214417406
+    }
+  },
+  "candidates": {
+    "Track A (gap)": {
+      "ready": false,
+      "condition": "vulnerability_targeted",
+      "scale_condition": null
+    },
+    "Track A (abs)": {
+      "ready": false,
+      "condition": "vulnerability_targeted_abs",
+      "scale_condition": null
+    },
+    "Track A (random control)": {
+      "ready": false,
+      "condition": "vulnerability_targeted_random",
+      "scale_condition": null
+    },
+    "Track B (minimax)": {
+      "ready": false,
+      "condition": "interference_minimax",
+      "scale_condition": null
+    },
+    "Track B (random control)": {
+      "ready": false,
+      "condition": "interference_minimax_random",
+      "scale_condition": null
+    },
+    "Track C (whitening=A)": {
+      "ready": false,
+      "condition": "mixed_5lang",
+      "scale_condition": "vulnerability_targeted"
+    },
+    "Track C (whitening=B)": {
+      "ready": false,
+      "condition": "mixed_5lang",
+      "scale_condition": "interference_minimax"
+    }
+  },
+  "overall_verdict": "NOT_SUPPORTED",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "langs": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans",
+    "swh_Latn",
+    "ben_Beng"
+  ]
+}

@@ -1,0 +1,1800 @@
+{
+  "_purpose": "Calibration/evaluation 데이터 감사 + XL-Sum 외부 bpb 격자 완성 (2026-09-16 지시문)",
+  "generated_utc": "2026-09-16T03:20:40.976385+00:00",
+  "repo": {
+    "root": "<repo>",
+    "git_head": "a51215d82179687f41693a2a0f95cb3900a28aef",
+    "git_branch": "main",
+    "git_status_short": [
+      "M \"00_docs/06_\\353\\205\\274\\353\\254\\270_\\352\\265\\254\\354\\204\\261.md\"",
+      " M \"00_docs/08_figure_\\354\\240\\225\\353\\246\\254.md\"",
+      " D figures/figure2_fisher_pilot_a_validation.png",
+      " D figures/figure3_whitening_layer_evidence.png",
+      " M figures/figure4_whitening_distributions.png",
+      " M figures/figureG1_whitening_layer_curve_raw.png",
+      " M figures/figureG2_whitening_heatmap.png",
+      " D figures/figure_a_path_decomposition.png",
+      " M scripts/make_figure3_whitening_evidence.py",
+      " M scripts/make_figure4_whitening_distributions.py",
+      " M scripts/make_figure_whitening_geometry.py",
+      " M scripts/phase1_41_headline_gate.py",
+      " M scripts/phase1_belebele_eval.py",
+      " M scripts/phase1_belebele_gate.py",
+      " M scripts/phase1_calib_data.py",
+      " M scripts/phase1_fisher.py",
+      " M scripts/phase1_merge_eval.py",
+      "?? 00_docs/0802_SUPPLEMENT_SUMMARY.md",
+      "?? \"00_docs/10_52\\354\\204\\234\\353\\262\\204_flashattn_\\354\\236\\254\\355\\230\\204\\354\\204\\261_\\353\\205\\270\\355\\212\\270.txt\"",
+      "?? \"00_docs/11_\\354\\240\\234\\354\\225\\210\\353\\260\\251\\353\\262\\225_\\352\\263\\204\\353\\263\\264.md\"",
+      "?? \"00_docs/12_Qwen15_MoE_\\354\\213\\244\\355\\226\\211\\354\\225\\210\\353\\202\\264.md\"",
+      "?? 00_docs/DR_SWEEP_RESULT.md",
+      "?? 00_docs/E1E5_CAMPAIGN_PROMPT.md",
+      "?? 00_docs/E1E5_STOP1_REPORT.md",
+      "?? 00_docs/E5_RESULT.md",
+      "?? 00_docs/PRUNING_LANG_PREREG.md",
+      "?? 00_docs/PRUNING_LANG_RESULT.md",
+      "?? 00_docs/SEC54_PREREG.md",
+      "?? 00_docs/SEC54_RESULT.md",
+      "?? 00_docs/SIB_0SHOT_RESULT.md",
+      "?? 00_docs/SIB_DIAGNOSIS.md",
+      "?? 00_docs/TABLE4_PRUNING_LANG_SOURCE.md",
+      "?? 00_docs/TABLE5_SEC54_BUNDLE_SOURCE.md",
+      "?? 00_docs/TABLE_B6_2X2_ENSW_SOURCE.md",
+      "?? 02_prompt/0731_2030_prompt.txt",
+      "?? 02_prompt/0801_0400_prompt.txt",
+      "?? 02_prompt/0802_1215_prompt.txt",
+      "?? 02_prompt/translation_prompt.md",
+      "?? D2MoE/",
+      "?? analysis/",
+      "?? data/ood_xlsum/",
+      "?? figures/fig1_overview.pdf",
+      "?? figures/fig1_overview.png",
+      "?? figures/fig3_layerwise.pdf",
+      "?? figures/fig3_layerwise.png",
+      "?? figures/fig_teaser_calibration_gap.pdf",
+      "?? figures/fig_teaser_calibration_gap.png",
+      "?? figures/figure4_whitening_distributions.pdf",
+      "?? figures/figureG1_whitening_layer_curve_raw.pdf",
+      "?? figures/figureG2_whitening_heatmap.pdf",
+      "?? logs/sib200_diag_fewshot.json",
+      "?? (source-data dir)/",
+      "?? results/calib_token_length_results.json",
+      "?? results/e1_balanced_tok_mix_weights.json",
+      "?? results/massive/",
+      "?? results/overnight_0801.md",
+      "?? results/placebo_eval_backup_0802.tar.gz",
+      "?? results/placebo_fisher_rank_zh_bn.json",
+      "?? results/placebo_fisher_rank_zh_bn.md",
+      "?? results/placebo_switch1_zh_bn.json",
+      "?? results/placebo_zh_bn_summary.md",
+      "?? results/synthetic_sweep/MORNING_REPORT.md",
+      "?? results/synthetic_sweep/SWEEP_LOG.md",
+      "?? results/synthetic_sweep/candidate_C2_relfrob_wstar_test.json",
+      "?? results/synthetic_sweep/candidates_listing.txt",
+      "?? results/synthetic_sweep/candidates_manifest.md",
+      "?? results/synthetic_sweep/g0_dev_baseline.json",
+      "?? results/synthetic_sweep/g0_dev_selection.json",
+      "?? results/synthetic_sweep/g0_overlap_check.json",
+      "?? results/synthetic_sweep/g1_gate_result.json",
+      "?? results/synthetic_sweep/g1_gate_result.md",
+      "?? results/synthetic_sweep/idea1_diagnosis_standalone/",
+      "?? results/table4_pruning_lang.json",
+      "?? results/table5_sec54_bundle.json",
+      "?? results/tableH1_sec54_recovery.json",
+      "?? results/table_b6_2x2_ensw_effects.json",
+      "?? scripts/audit_calib_eval_overlap.py",
+      "?? scripts/diag_idea2_cholesky.py",
+      "?? scripts/diag_sib200_1gpu.py",
+      "?? scripts/diag_sib200_fewshot.py",
+      "?? scripts/dr_sweep_0802_driver.sh",
+      "?? scripts/e1_mono_0803.sh",
+      "?? scripts/e1_mono_bpb_0803.sh",
+      "?? scripts/e1_mono_compress_0803.sh",
+      "?? scripts/e1_mono_sib_0803.sh",
+      "?? scripts/e1_token_balanced_design.py",
+      "?? scripts/e2_build_ood_corpus.py",
+      "?? scripts/e2_grid_completion_0916.sh",
+      "?? scripts/e2e3_driver_0803.sh",
+      "?? scripts/e2e3_ood_unseen_eval.py",
+      "?? scripts/e4_dr_seed12_0803.sh",
+      "?? scripts/e4_to_e2e3_chain.sh",
+      "?? scripts/e5_bengali_bundle_0803.sh",
+      "?? scripts/figure_style.py",
+      "?? scripts/make_audit_manifest_0916.py",
+      "?? scripts/make_clean_eval_ids_0916.py",
+      "?? scripts/make_figure1_overview.py",
+      "?? scripts/make_figure_teaser_calibration_gap.py",
+      "?? scripts/make_table4_pruning_lang.py",
+      "?? scripts/make_table5_sec54_bundle.py",
+      "?? scripts/make_tableH1_sec54_recovery.py",
+      "?? scripts/massive_aggregate.py",
+      "?? scripts/massive_baseline_pilot.py",
+      "?? scripts/massive_build_protocol.py",
+      "?? scripts/massive_data.py",
+      "?? scripts/massive_eval.py",
+      "?? scripts/overnight_0801_driver.sh",
+      "?? scripts/overnight_0801_driver_v2.sh",
+      "?? scripts/overnight_0801_handoff_to_v2.sh",
+      "?? scripts/overnight_0801_stepD.sh",
+      "?? scripts/overnight_0801_stepD_supervisor.sh",
+      "?? scripts/overnight_0801_supervisor.sh",
+      "?? scripts/overnight_reaper_0803.sh",
+      "?? scripts/phase1_2x2_ensw_effects.py",
+      "?? scripts/phase1_a2_balanced_token_share.py",
+      "?? scripts/phase1_idea2_probe_synth.py",
+      "?? scripts/phase1_sec54_intervene.py",
+      "?? scripts/phase1_sec54_select_targets.py",
+      "?? scripts/phase1_sib200_eval.py",
+      "?? scripts/phaseB_driver_v2.sh",
+      "?? scripts/phaseB_g1_gate.py",
+      "?? scripts/phaseB_reap.py",
+      "?? scripts/placebo_fisher_rank_zh_bn.py",
+      "?? scripts/placebo_switch1_zh_bn.py",
+      "?? scripts/pruning_chinese_0802_driver.sh",
+      "?? scripts/qwen15_calib_report.py",
+      "?? scripts/qwen15_config.py",
+      "?? scripts/qwen15_downstream_eval.py",
+      "?? scripts/qwen15_fetch.py",
+      "?? scripts/qwen15_fisher.py",
+      "?? scripts/qwen15_freq.py",
+      "?? scripts/qwen15_merge_eval.py",
+      "?? scripts/qwen15_moe_adapter.py",
+      "?? scripts/qwen15_report.py",
+      "?? scripts/qwen15_run_condition.sh",
+      "?? scripts/qwen15_svd_scale.py",
+      "?? scripts/qwen15_sweep_plan.sh",
+      "?? scripts/rerun_phaseB_fixed.sh",
+      "?? scripts/run_unified_sweep_overnight.sh",
+      "?? scripts/sec54_korean_repro_0802.sh",
+      "?? scripts/sib200_extended_campaign.sh",
+      "?? scripts/sib200_extended_report.py",
+      "?? scripts/sib_0shot_0802_driver.sh",
+      "?? scripts/stage2x2_sw_0802_driver.sh",
+      "?? scripts/synthetic_sweep.py",
+      "?? scripts/synthetic_sweep/",
+      "?? scripts/unified_sweep.py",
+      "?? scripts/wait_and_run_belebele_seed2_retry.sh",
+      "?? scripts/wait_and_run_belebele_sib200_scheduler.sh",
+      "?? scripts/wait_and_run_bn_repro.sh",
+      "?? scripts/wait_and_run_sib200_2gpu_rerun.sh"
+    ],
+    "git_diff_stat_tracked": [
+      "...05\\274\\353\\254\\270_\\352\\265\\254\\354\\204\\261.md\" |   10 +-",
+      " .../00_docs/08_figure_\\354\\240\\225\\353\\246\\254.md\" | 1659 +++++++++++++++++---",
+      " .../figures/figure2_fisher_pilot_a_validation.png  |  Bin 95378 -> 0 bytes",
+      " figures/figure3_whitening_layer_evidence.png |  Bin 210222 -> 0 bytes",
+      " figures/figure4_whitening_distributions.png  |  Bin 115200 -> 132819 bytes",
+      " .../figures/figureG1_whitening_layer_curve_raw.png |  Bin 284155 -> 107379 bytes",
+      " figures/figureG2_whitening_heatmap.png       |  Bin 231315 -> 144562 bytes",
+      " figures/figure_a_path_decomposition.png      |  Bin 99623 -> 0 bytes",
+      " scripts/make_figure3_whitening_evidence.py   |  203 ++-",
+      " .../make_figure4_whitening_distributions.py        |   89 +-",
+      " scripts/make_figure_whitening_geometry.py    |  196 ++-",
+      " scripts/phase1_41_headline_gate.py           |   12 +-",
+      " scripts/phase1_belebele_eval.py              |   10 +",
+      " scripts/phase1_belebele_gate.py              |   90 +-",
+      " scripts/phase1_calib_data.py                 |  104 +-",
+      " scripts/phase1_fisher.py                     |  200 ++-",
+      " scripts/phase1_merge_eval.py                 |   75 +-",
+      " 17 files changed, 2223 insertions(+), 425 deletions(-)"
+    ]
+  },
+  "environment": {
+    "conda_env": "d2moe_env",
+    "python": "3.10.20",
+    "packages": {
+      "torch": "2.3.1+cu121",
+      "transformers": "4.42.4",
+      "datasets": "3.2.0"
+    },
+    "HF_HOME": "$HF_HOME",
+    "gpus": [
+      "0, NVIDIA GeForce RTX 3090, 24576 MiB",
+      "1, NVIDIA GeForce RTX 3090, 24576 MiB",
+      "2, NVIDIA GeForce RTX 3090, 24576 MiB",
+      "3, NVIDIA GeForce RTX 3090, 24576 MiB"
+    ],
+    "note": "환경은 이 작업에서 업그레이드하지 않았다."
+  },
+  "model": {
+    "base_model": "deepseek-ai/deepseek-moe-16b-base",
+    "load_kwargs": {
+      "device_map": "auto",
+      "max_memory_per_gpu": "22GiB",
+      "trust_remote_code": true,
+      "torch_dtype": "torch.bfloat16"
+    },
+    "tokenizer": {
+      "same_repo": true,
+      "use_fast": false
+    },
+    "hub": {
+      "repo": "deepseek-ai/deepseek-moe-16b-base",
+      "local_cache": "$HF_HOME/hub/models--deepseek-ai--deepseek-moe-16b-base",
+      "refs": {
+        "main": "521d2bc4fb69a3f3ae565310fcc3b65f97af2580"
+      },
+      "snapshots": [
+        "521d2bc4fb69a3f3ae565310fcc3b65f97af2580"
+      ]
+    },
+    "revision_pinned_in_code": null,
+    "revision_note": "코드가 revision을 고정하지 않는다(from_pretrained에 revision 인자 없음). 아래 hub.refs/snapshots가 실제 로드된 로컬 스냅샷이다."
+  },
+  "compression_protocol": {
+    "delta_ratio": 0.8,
+    "share_ratio_and_merge_method": [
+      "DELTA_RATIO = 0.8",
+      "SHARE_RATIO = 1.0",
+      "MERGE_METHOD = \"fisher\""
+    ],
+    "structured_pruning": "OFF (cfg['prune_ratio']=0.0, pp_ratio 미사용)",
+    "moe_layers": [
+      "43:MOE_LAYERS = list(range(1, NUM_HIDDEN_LAYERS))",
+      "392:    layers = MOE_LAYERS[:2] if args.smoke else MOE_LAYERS"
+    ],
+    "merged_checkpoints_on_disk": "없음 -- phase1_merge_eval.py에 torch.save/save_pretrained가 없다. 병합 모델은 RAM에서만 존재하며 압축 통계로 재구성된다."
+  },
+  "calibration_protocol": {
+    "source": {
+      "dataset": "israel/flores-parallel",
+      "split": "test",
+      "column_prefix": "sentence_",
+      "what_it_is": "FLORES-200 devtest 1012문장 (ungated 재업로드)",
+      "hub": {
+        "repo": "israel/flores-parallel",
+        "local_cache": "$HF_HOME/hub/datasets--israel--flores-parallel",
+        "refs": {
+          "main": "def3bd667c725e5c9f7795c7f6de114481010c1a"
+        },
+        "snapshots": [
+          "def3bd667c725e5c9f7795c7f6de114481010c1a"
+        ]
+      }
+    },
+    "eval_holdout_rule": {
+      "EVAL_N_SENTENCES": 60,
+      "rule": "각 언어 devtest의 앞 60문장은 평가 전용으로 제외하고 pool = column[60:] 가 calibration 풀이다 (phase1_calib_data._pool_for)"
+    },
+    "placebo_arm_rule": "arm B = pool[len(pool)//2:] (같은 언어, 풀의 뒤쪽 절반). Appendix B.2와 일치.",
+    "consumption_paths": {
+      "expert_frequency": {
+        "script": "D2MoE/preprocess/get_expert_freq.py",
+        "sampling": "dataset.shuffle(seed=seed).select(range(min(2000, N)))",
+        "unit": "문장(행) 전량, tokenizer truncation max_length=2048",
+        "max_samples": 2000,
+        "consequence": "단일 언어 풀은 952문장 < 2000 -> 풀 전체가 소비된다"
+      },
+      "fisher": {
+        "script": "scripts/phase1_fisher.py::build_samples",
+        "n_samples": 64,
+        "seqlen": 512,
+        "window_chars": 2048,
+        "window_rng": "random.Random(seed+1)",
+        "truncation": "tokenizer(truncation=True, max_length=512)"
+      },
+      "whitening": {
+        "script": "scripts/phase1_svd_scale.py",
+        "sampling": "phase1_fisher.build_samples를 무수정 import, 같은 인자/seed",
+        "consequence": "Fisher와 윈도우 집합이 동일하다",
+        "vendored_alternative_NOT_used": {
+          "script": "D2MoE/preprocess/get_scale.py",
+          "issue": "random을 시드하지 않아 윈도우 복원 불가(seqlen*10=5120자 윈도우). 공식 격자의 scale_* 셀은 이 스크립트가 아니라 phase1_svd_scale.py가 만들었다."
+        }
+      }
+    },
+    "driver_command": [
+      "183:        conda run -n d2moe_env python -u phase1_run_freq_and_scale.py --condition \"$cond\" --seed \"$seed\" \\",
+      "192:        conda run -n d2moe_env python -u phase1_fisher.py --condition \"$cond\" --seed \"$seed\" --n-samples 64 --seqlen 512 \\",
+      "203:        conda run -n d2moe_env python -u phase1_svd_scale.py --condition \"$cond\" --seed \"$seed\" --n-samples 64 --seqlen 512 \\"
+    ],
+    "balanced_definition": "mixed_5lang = **문자(character) 예산** 균등 5언어 혼합이다. 토큰 균등이 아니다 -- 실현 토큰으로는 KO+BN이 72.05%를 점유(부록 A.2). balanced_tok_mono/balanced_tok_mix가 토큰 균등 조건이다."
+  },
+  "evaluation_protocol": {
+    "flores_bpb": {
+      "source": "israel/flores-parallel",
+      "split": "test",
+      "n_sentences": 60,
+      "langs": [
+        "eng_Latn",
+        "kor_Hang",
+        "zho_Hans",
+        "swh_Latn",
+        "ben_Beng"
+      ],
+      "batch_size": 8,
+      "batch_note": "부록 B.5 -- bf16 reduction 순서 때문에 batch를 바꾸면 재현 안 됨",
+      "bpb_formula": "sum(scored-token NLL nats)/ (ln2 * sum(UTF-8 bytes of scored sentences))",
+      "shift": "causal label shift, pad 위치 마스크, 각 문장 첫 토큰은 예측 대상 아님"
+    },
+    "xlsum_ood_bpb": {
+      "corpus_dir": "data/ood_xlsum/",
+      "builder": "scripts/e2_build_ood_corpus.py",
+      "evaluator": "scripts/e2e3_ood_unseen_eval.py",
+      "batch_size": 8,
+      "segmentation_max_chars": 288,
+      "segmentation_rule": "개행 문단 분할 후 max_chars 초과 문단은 마지막 공백에서 재분할; tokenizer truncation 미사용 -> 채점 바이트 == 분모 바이트"
+    },
+    "sib200": {
+      "dataset": "Davlan/sib200",
+      "split": "test",
+      "n_per_lang": 204,
+      "demos": "eng_Latn validation, seed 42, 2/label = 14-shot",
+      "hub": {
+        "repo": "Davlan/sib200",
+        "local_cache": "$HF_HOME/hub/datasets--Davlan--sib200",
+        "refs": {
+          "main": "38977a667f6fc264d5c26ec57a01e16db040b358"
+        },
+        "snapshots": [
+          "38977a667f6fc264d5c26ec57a01e16db040b358"
+        ]
+      }
+    },
+    "belebele": {
+      "dataset": "facebook/belebele",
+      "split": "test",
+      "n_per_lang": 900,
+      "hub": {
+        "repo": "facebook/belebele",
+        "local_cache": "$HF_HOME/hub/datasets--facebook--belebele",
+        "refs": {
+          "main": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2"
+        },
+        "snapshots": [
+          "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2"
+        ]
+      }
+    }
+  },
+  "run_commands": {
+    "overlap_audit": "conda run -n d2moe_env python -u scripts/audit_calib_eval_overlap.py",
+    "xlsum_grid_completion": "bash scripts/e2_grid_completion_0916.sh   # 9셀: {zh,sw,bn}_only x seed{0,1,2}",
+    "xlsum_grid_prior": "bash scripts/e2e3_driver_0803.sh   # 2026-08-03, baseline + {en,ko,mixed_5lang} + balanced_tok_mono"
+  },
+  "artifacts": {
+    "english_only/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T11:36:50.517003+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T04:10:00.968256+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29104,
+          "mtime_utc": "2026-07-24T10:54:55.702469+00:00"
+        },
+        {
+          "path": "results/deepseek/english_only/seed0/deepseek_wikitext_50_expert_frequencies.json",
+          "exists": true,
+          "bytes": 26738,
+          "mtime_utc": "2026-07-24T10:44:54.878140+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-29T16:11:38.258917+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3755,
+        "mtime_utc": "2026-08-03T20:44:46.437099+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 41093,
+        "mtime_utc": "2026-07-31T19:28:20.290670+00:00"
+      }
+    },
+    "english_only/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T15:50:16.796457+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T10:18:53.001235+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29104,
+          "mtime_utc": "2026-07-24T15:08:23.072947+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-29T16:40:47.066961+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3757,
+        "mtime_utc": "2026-08-03T21:13:12.972985+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 41024,
+        "mtime_utc": "2026-07-31T20:12:08.455736+00:00"
+      }
+    },
+    "english_only/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T02:09:25.166209+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T12:09:56.416663+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29106,
+          "mtime_utc": "2026-07-25T01:28:16.582631+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 906,
+        "mtime_utc": "2026-07-29T18:25:07.700022+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3759,
+        "mtime_utc": "2026-08-03T21:40:55.206364+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 40921,
+        "mtime_utc": "2026-07-31T20:55:28.192879+00:00"
+      }
+    },
+    "chinese_only/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T13:43:47.814689+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-28T11:30:46.050270+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29097,
+          "mtime_utc": "2026-07-24T13:01:09.798162+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only/seed0/scale_chinese_only_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 908,
+        "mtime_utc": "2026-07-28T22:48:22.969333+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only/seed0/scale_chinese_only_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only/seed0/scale_chinese_only_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 41046,
+        "mtime_utc": "2026-07-31T21:35:44.350582+00:00"
+      }
+    },
+    "chinese_only/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T17:58:00.127315+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T02:20:35.063506+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29096,
+          "mtime_utc": "2026-07-24T17:15:10.143984+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only/seed1/scale_chinese_only_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 907,
+        "mtime_utc": "2026-07-29T02:49:22.908739+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only/seed1/scale_chinese_only_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only/seed1/scale_chinese_only_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 41084,
+        "mtime_utc": "2026-07-31T22:17:18.919844+00:00"
+      }
+    },
+    "chinese_only/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T04:18:15.564417+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T01:53:26.041154+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29097,
+          "mtime_utc": "2026-07-25T03:36:19.845169+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 906,
+        "mtime_utc": "2026-07-29T02:20:58.106830+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 40994,
+        "mtime_utc": "2026-07-31T22:58:42.078872+00:00"
+      }
+    },
+    "korean_only/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T12:38:55.599372+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T05:45:01.297112+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29641,
+          "mtime_utc": "2026-07-24T11:56:26.548134+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only/seed0/scale_korean_only_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-29T19:57:17.737501+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only/seed0/scale_korean_only_seed0/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3755,
+        "mtime_utc": "2026-08-03T22:09:46.818775+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only/seed0/scale_korean_only_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 40940,
+        "mtime_utc": "2026-07-31T05:29:08.858884+00:00"
+      }
+    },
+    "korean_only/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-24T16:53:00.257595+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T14:00:28.338846+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29642,
+          "mtime_utc": "2026-07-24T16:10:44.692701+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only/seed1/scale_korean_only_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 903,
+        "mtime_utc": "2026-07-29T23:24:25.665380+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only/seed1/scale_korean_only_seed1/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3755,
+        "mtime_utc": "2026-08-03T22:40:17.966217+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only/seed1/scale_korean_only_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 40948,
+        "mtime_utc": "2026-07-31T06:30:37.355174+00:00"
+      }
+    },
+    "korean_only/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T03:14:45.866130+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-26T15:44:02.404681+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29641,
+          "mtime_utc": "2026-07-25T02:32:18.792901+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only/seed2/scale_korean_only_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 903,
+        "mtime_utc": "2026-07-29T22:17:45.009023+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only/seed2/scale_korean_only_seed2/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3754,
+        "mtime_utc": "2026-08-03T23:06:50.083689+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only/seed2/scale_korean_only_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 41000,
+        "mtime_utc": "2026-07-31T07:27:02.740110+00:00"
+      }
+    },
+    "swahili_only/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T18:45:08.969606+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-28T15:43:48.426393+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28721,
+          "mtime_utc": "2026-07-25T18:01:22.364186+00:00"
+        },
+        {
+          "path": "results/deepseek/swahili_only/seed0/deepseek_wikitext_50_expert_frequencies.json",
+          "exists": true,
+          "bytes": 26505,
+          "mtime_utc": "2026-07-25T16:54:42.801827+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 900,
+        "mtime_utc": "2026-07-29T03:15:46.802975+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 40913,
+        "mtime_utc": "2026-07-31T08:32:39.250790+00:00"
+      }
+    },
+    "swahili_only/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T19:49:08.911561+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-28T09:51:40.970987+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28722,
+          "mtime_utc": "2026-07-25T19:05:09.443048+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-29T03:47:49.825622+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 41051,
+        "mtime_utc": "2026-07-31T09:15:02.579383+00:00"
+      }
+    },
+    "swahili_only/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-25T18:26:56.126735+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T05:52:46.725479+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28722,
+          "mtime_utc": "2026-07-25T17:42:02.592800+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 902,
+        "mtime_utc": "2026-07-29T06:20:10.975405+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 41019,
+        "mtime_utc": "2026-07-31T09:57:38.442137+00:00"
+      }
+    },
+    "bengali_only/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T09:15:47.834164+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T12:08:01.491671+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30361,
+          "mtime_utc": "2026-07-27T08:33:38.076933+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-29T13:09:55.579067+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 41068,
+        "mtime_utc": "2026-07-31T23:41:38.731809+00:00"
+      }
+    },
+    "bengali_only/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T21:30:33.455675+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T13:51:12.956323+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30347,
+          "mtime_utc": "2026-07-27T09:36:59.446452+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 902,
+        "mtime_utc": "2026-07-29T14:19:01.279257+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 41163,
+        "mtime_utc": "2026-08-01T00:23:27.681098+00:00"
+      }
+    },
+    "bengali_only/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T22:32:51.130347+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-29T09:47:49.091293+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30362,
+          "mtime_utc": "2026-07-28T03:48:09.706113+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-29T10:14:55.371660+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 41055,
+        "mtime_utc": "2026-08-01T01:05:17.221321+00:00"
+      }
+    },
+    "mixed_5lang/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/mixed_5lang/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T18:25:56.790189+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/mixed_5lang/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-27T21:52:41.572094+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/mixed_5lang/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30354,
+          "mtime_utc": "2026-07-27T17:40:53.323813+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/mixed_5lang/seed0/scale_mixed_5lang_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-28T01:06:25.162017+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/mixed_5lang/seed0/scale_mixed_5lang_seed0/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3756,
+        "mtime_utc": "2026-08-03T23:33:15.971303+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/mixed_5lang/seed0/scale_mixed_5lang_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 41074,
+        "mtime_utc": "2026-07-31T15:16:00.242009+00:00"
+      }
+    },
+    "mixed_5lang/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/mixed_5lang/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T19:27:05.419187+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/mixed_5lang/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-27T23:12:27.506002+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/mixed_5lang/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30289,
+          "mtime_utc": "2026-07-27T18:39:58.325340+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/mixed_5lang/seed1/scale_mixed_5lang_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 907,
+        "mtime_utc": "2026-07-28T01:32:25.676187+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/mixed_5lang/seed1/scale_mixed_5lang_seed1/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3755,
+        "mtime_utc": "2026-08-04T00:01:28.943648+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/mixed_5lang/seed1/scale_mixed_5lang_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 40964,
+        "mtime_utc": "2026-07-31T16:28:50.860750+00:00"
+      }
+    },
+    "mixed_5lang/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/mixed_5lang/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-07-27T20:21:13.100618+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/mixed_5lang/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-07-28T00:40:21.683586+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/mixed_5lang/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 30331,
+          "mtime_utc": "2026-07-27T19:34:16.278687+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/mixed_5lang/seed2/scale_mixed_5lang_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-28T01:58:56.630690+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/mixed_5lang/seed2/scale_mixed_5lang_seed2/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3754,
+        "mtime_utc": "2026-08-04T00:30:41.419746+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/mixed_5lang/seed2/scale_mixed_5lang_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 40940,
+        "mtime_utc": "2026-07-31T18:46:10.508928+00:00"
+      }
+    },
+    "balanced_tok_mono/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed0/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-08-03T07:28:21.867964+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed0/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-08-03T11:06:37.812474+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/balanced_tok_mono/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29761,
+          "mtime_utc": "2026-08-03T06:35:29.759544+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/balanced_tok_mono/seed0/scale_balanced_tok_mono_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-08-03T11:44:34.351597+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/balanced_tok_mono/seed0/scale_balanced_tok_mono_seed0/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3771,
+        "mtime_utc": "2026-08-04T00:57:42.943836+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/balanced_tok_mono/seed0/scale_balanced_tok_mono_seed0/eval_sib200.json",
+        "exists": true,
+        "bytes": 40915,
+        "mtime_utc": "2026-08-03T12:50:53.987613+00:00"
+      }
+    },
+    "balanced_tok_mono/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed1/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-08-03T07:32:50.524220+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed1/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-08-03T11:11:40.972173+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/balanced_tok_mono/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29734,
+          "mtime_utc": "2026-08-03T06:35:28.749533+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/balanced_tok_mono/seed1/scale_balanced_tok_mono_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 903,
+        "mtime_utc": "2026-08-03T12:09:52.130431+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/balanced_tok_mono/seed1/scale_balanced_tok_mono_seed1/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3768,
+        "mtime_utc": "2026-08-04T01:23:54.495553+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/balanced_tok_mono/seed1/scale_balanced_tok_mono_seed1/eval_sib200.json",
+        "exists": true,
+        "bytes": 41003,
+        "mtime_utc": "2026-08-03T13:22:28.523559+00:00"
+      }
+    },
+    "balanced_tok_mono/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed2/fisher_processed.pt",
+        "exists": true,
+        "bytes": 29898689570,
+        "mtime_utc": "2026-08-03T08:23:17.537935+00:00"
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/balanced_tok_mono/seed2/svd_scale_processed.pt",
+        "exists": true,
+        "bytes": 35844132530,
+        "mtime_utc": "2026-08-03T10:11:27.032998+00:00"
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/balanced_tok_mono/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29767,
+          "mtime_utc": "2026-08-03T06:34:15.617689+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/balanced_tok_mono/seed2/scale_balanced_tok_mono_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 902,
+        "mtime_utc": "2026-08-03T11:04:15.944243+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/balanced_tok_mono/seed2/scale_balanced_tok_mono_seed2/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3766,
+        "mtime_utc": "2026-08-04T01:51:08.972235+00:00"
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/balanced_tok_mono/seed2/scale_balanced_tok_mono_seed2/eval_sib200.json",
+        "exists": true,
+        "bytes": 41075,
+        "mtime_utc": "2026-08-03T13:53:35.370965+00:00"
+      }
+    },
+    "english_only_b/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only_b/seed0/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only_b/seed0/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only_b/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28434,
+          "mtime_utc": "2026-07-25T06:31:12.486242+00:00"
+        },
+        {
+          "path": "results/deepseek/english_only_b/seed0/deepseek_wikitext_50_expert_frequencies.json",
+          "exists": true,
+          "bytes": 26836,
+          "mtime_utc": "2026-07-25T06:27:34.450142+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only_b/seed0/scale_english_only_b_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 903,
+        "mtime_utc": "2026-07-28T04:41:17.001620+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only_b/seed0/scale_english_only_b_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only_b/seed0/scale_english_only_b_seed0/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "english_only_b/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only_b/seed1/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only_b/seed1/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only_b/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28433,
+          "mtime_utc": "2026-07-25T07:30:55.704982+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only_b/seed1/scale_english_only_b_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 906,
+        "mtime_utc": "2026-07-28T05:06:30.102917+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only_b/seed1/scale_english_only_b_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only_b/seed1/scale_english_only_b_seed1/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "english_only_b/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/english_only_b/seed2/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/english_only_b/seed2/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/english_only_b/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28431,
+          "mtime_utc": "2026-07-25T08:31:00.564422+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/english_only_b/seed2/scale_english_only_b_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-28T05:32:16.679077+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/english_only_b/seed2/scale_english_only_b_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/english_only_b/seed2/scale_english_only_b_seed2/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "korean_only_b/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only_b/seed0/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only_b/seed0/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only_b/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29180,
+          "mtime_utc": "2026-07-25T09:31:04.913971+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only_b/seed0/scale_korean_only_b_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-28T06:07:07.480608+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only_b/seed0/scale_korean_only_b_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only_b/seed0/scale_korean_only_b_seed0/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "korean_only_b/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only_b/seed1/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only_b/seed1/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only_b/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29180,
+          "mtime_utc": "2026-07-25T10:32:00.682810+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only_b/seed1/scale_korean_only_b_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 907,
+        "mtime_utc": "2026-07-28T06:33:43.808597+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only_b/seed1/scale_korean_only_b_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only_b/seed1/scale_korean_only_b_seed1/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "korean_only_b/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/korean_only_b/seed2/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/korean_only_b/seed2/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/korean_only_b/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29179,
+          "mtime_utc": "2026-07-25T11:32:38.057926+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/korean_only_b/seed2/scale_korean_only_b_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-28T07:01:31.627620+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/korean_only_b/seed2/scale_korean_only_b_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/korean_only_b/seed2/scale_korean_only_b_seed2/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "chinese_only_b/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only_b/seed0/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only_b/seed0/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only_b/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28382,
+          "mtime_utc": "2026-08-01T07:48:06.170329+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only_b/seed0/scale_chinese_only_b_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 906,
+        "mtime_utc": "2026-08-01T08:15:44.045367+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only_b/seed0/scale_chinese_only_b_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only_b/seed0/scale_chinese_only_b_seed0/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "chinese_only_b/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only_b/seed1/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only_b/seed1/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only_b/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28378,
+          "mtime_utc": "2026-08-01T08:21:54.247753+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only_b/seed1/scale_chinese_only_b_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 908,
+        "mtime_utc": "2026-08-01T11:17:10.049983+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only_b/seed1/scale_chinese_only_b_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only_b/seed1/scale_chinese_only_b_seed1/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "chinese_only_b/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/chinese_only_b/seed2/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/chinese_only_b/seed2/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/chinese_only_b/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28383,
+          "mtime_utc": "2026-08-01T11:22:11.463346+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/chinese_only_b/seed2/scale_chinese_only_b_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 906,
+        "mtime_utc": "2026-08-01T14:12:17.161908+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/chinese_only_b/seed2/scale_chinese_only_b_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/chinese_only_b/seed2/scale_chinese_only_b_seed2/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "swahili_only_b/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only_b/seed0/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only_b/seed0/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only_b/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28183,
+          "mtime_utc": "2026-07-25T20:08:09.037452+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only_b/seed0/scale_swahili_only_b_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-07-28T23:14:37.617531+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only_b/seed0/scale_swahili_only_b_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only_b/seed0/scale_swahili_only_b_seed0/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "swahili_only_b/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only_b/seed1/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only_b/seed1/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only_b/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28176,
+          "mtime_utc": "2026-07-25T18:45:45.711191+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only_b/seed1/scale_swahili_only_b_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 901,
+        "mtime_utc": "2026-07-29T04:16:32.151529+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only_b/seed1/scale_swahili_only_b_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only_b/seed1/scale_swahili_only_b_seed1/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "swahili_only_b/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/swahili_only_b/seed2/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/swahili_only_b/seed2/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/swahili_only_b/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 28193,
+          "mtime_utc": "2026-07-25T19:47:32.197492+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/swahili_only_b/seed2/scale_swahili_only_b_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-29T09:02:37.319315+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/swahili_only_b/seed2/scale_swahili_only_b_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/swahili_only_b/seed2/scale_swahili_only_b_seed2/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "bengali_only_b/seed0": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only_b/seed0/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only_b/seed0/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only_b/seed0/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29637,
+          "mtime_utc": "2026-08-01T14:17:14.536158+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only_b/seed0/scale_bengali_only_b_seed0/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-08-01T17:12:05.697955+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only_b/seed0/scale_bengali_only_b_seed0/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only_b/seed0/scale_bengali_only_b_seed0/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "bengali_only_b/seed1": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only_b/seed1/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only_b/seed1/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only_b/seed1/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29638,
+          "mtime_utc": "2026-08-01T17:17:01.985645+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only_b/seed1/scale_bengali_only_b_seed1/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-08-01T20:02:48.863076+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only_b/seed1/scale_bengali_only_b_seed1/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only_b/seed1/scale_bengali_only_b_seed1/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "bengali_only_b/seed2": {
+      "fisher_processed": {
+        "path": "results/deepseek/bengali_only_b/seed2/fisher_processed.pt",
+        "exists": false
+      },
+      "svd_scale_processed": {
+        "path": "results/deepseek/bengali_only_b/seed2/svd_scale_processed.pt",
+        "exists": false
+      },
+      "expert_frequencies": [
+        {
+          "path": "results/deepseek/bengali_only_b/seed2/deepseek_wikitext_2000_expert_frequencies.json",
+          "exists": true,
+          "bytes": 29639,
+          "mtime_utc": "2026-08-01T20:09:59.176468+00:00"
+        }
+      ],
+      "eval_ppl_flores": {
+        "path": "results/deepseek/bengali_only_b/seed2/scale_bengali_only_b_seed2/eval_ppl.json",
+        "exists": true,
+        "bytes": 905,
+        "mtime_utc": "2026-08-01T22:59:53.709506+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/bengali_only_b/seed2/scale_bengali_only_b_seed2/eval_ood_unseen.json",
+        "exists": false
+      },
+      "eval_sib200": {
+        "path": "results/deepseek/bengali_only_b/seed2/scale_bengali_only_b_seed2/eval_sib200.json",
+        "exists": false
+      }
+    },
+    "baseline": {
+      "eval_ppl_flores": {
+        "path": "results/deepseek/baseline/eval_ppl.json",
+        "exists": true,
+        "bytes": 904,
+        "mtime_utc": "2026-07-27T08:29:44.955902+00:00"
+      },
+      "eval_ood_unseen_xlsum": {
+        "path": "results/deepseek/baseline/eval_ood_unseen.json",
+        "exists": true,
+        "bytes": 3625,
+        "mtime_utc": "2026-08-03T20:17:58.858381+00:00"
+      }
+    }
+  },
+  "xlsum_corpus": {
+    "_purpose": "E2 OOD bpb 평가용 코퍼스 (캠페인 등록 B-6 확정값)",
+    "corpus_id": "csebuetnlp/xlsum:v2.0:test",
+    "dataset": "csebuetnlp/xlsum",
+    "version": "v2.0",
+    "split": "test",
+    "sampling_rule": "equal BYTES per language; whole documents only (never truncated); documents that would exceed the budget are skipped, not cut; body text field only (no title/summary); fixed shuffle seed",
+    "bytes_budget_per_lang": 51200,
+    "shuffle_seed": 0,
+    "languages": {
+      "eng_Latn": {
+        "xlsum_config": "english",
+        "tar_member": "./english_test.jsonl",
+        "docs_available_in_split": 11535,
+        "docs_sampled": 20,
+        "bytes_realized": 50990,
+        "bytes_on_disk_with_separators": 51028,
+        "pct_of_budget": 99.58984375,
+        "sha256_of_text": "9caa3cd44f5d04f0cd6b97e93d432429a7e5c2d8d24b2baa9fb7e907b3ada5c3",
+        "file": "data/ood_xlsum/eng_Latn.txt"
+      },
+      "kor_Hang": {
+        "xlsum_config": "korean",
+        "tar_member": "./korean_test.jsonl",
+        "docs_available_in_split": 550,
+        "docs_sampled": 11,
+        "bytes_realized": 51004,
+        "bytes_on_disk_with_separators": 51024,
+        "pct_of_budget": 99.6171875,
+        "sha256_of_text": "2236ae793eb3ecc42d34e1342fe2e44dd3e7c150fbf44f50231fa33cd7a55f3e",
+        "file": "data/ood_xlsum/kor_Hang.txt"
+      },
+      "zho_Hans": {
+        "xlsum_config": "chinese_simplified",
+        "tar_member": "./chinese_simplified_test.jsonl",
+        "docs_available_in_split": 4670,
+        "docs_sampled": 18,
+        "bytes_realized": 51032,
+        "bytes_on_disk_with_separators": 51066,
+        "pct_of_budget": 99.671875,
+        "sha256_of_text": "8962bd9caa8a5da4d7c8374a3a10ae0408e32daca5c9d2a07562ed182561596b",
+        "file": "data/ood_xlsum/zho_Hans.txt"
+      },
+      "swh_Latn": {
+        "xlsum_config": "swahili",
+        "tar_member": "./swahili_test.jsonl",
+        "docs_available_in_split": 987,
+        "docs_sampled": 21,
+        "bytes_realized": 50853,
+        "bytes_on_disk_with_separators": 50893,
+        "pct_of_budget": 99.322265625,
+        "sha256_of_text": "f7dac977a75b06e8f970c934570cf583bc397a913b405afa8f8397ba485e1654",
+        "file": "data/ood_xlsum/swh_Latn.txt"
+      },
+      "ben_Beng": {
+        "xlsum_config": "bengali",
+        "tar_member": "./bengali_test.jsonl",
+        "docs_available_in_split": 1012,
+        "docs_sampled": 5,
+        "bytes_realized": 50751,
+        "bytes_on_disk_with_separators": 50759,
+        "pct_of_budget": 99.123046875,
+        "sha256_of_text": "930ba0041c13c7fcdf25a7cccf8eff5dc826d13d0f16e867630f0471f16acd18",
+        "file": "data/ood_xlsum/ben_Beng.txt"
+      }
+    }
+  },
+  "xlsum_corpus_integrity": {
+    "eng_Latn": {
+      "file": "<repo>/data/ood_xlsum/eng_Latn.txt",
+      "bytes_on_disk": 51028,
+      "manifest_sha256_of_text": "9caa3cd44f5d04f0cd6b97e93d432429a7e5c2d8d24b2baa9fb7e907b3ada5c3",
+      "recomputed_sha256_of_joined_docs": "9caa3cd44f5d04f0cd6b97e93d432429a7e5c2d8d24b2baa9fb7e907b3ada5c3",
+      "note": "manifest의 sha256은 문서를 '\\n\\n'으로 이은 text에 대한 값이고 디스크 파일도 같은 문자열이다. 두 값이 다르면 코퍼스가 재생성된 것이다.",
+      "match": true
+    },
+    "kor_Hang": {
+      "file": "<repo>/data/ood_xlsum/kor_Hang.txt",
+      "bytes_on_disk": 51024,
+      "manifest_sha256_of_text": "2236ae793eb3ecc42d34e1342fe2e44dd3e7c150fbf44f50231fa33cd7a55f3e",
+      "recomputed_sha256_of_joined_docs": "2236ae793eb3ecc42d34e1342fe2e44dd3e7c150fbf44f50231fa33cd7a55f3e",
+      "note": "manifest의 sha256은 문서를 '\\n\\n'으로 이은 text에 대한 값이고 디스크 파일도 같은 문자열이다. 두 값이 다르면 코퍼스가 재생성된 것이다.",
+      "match": true
+    },
+    "zho_Hans": {
+      "file": "<repo>/data/ood_xlsum/zho_Hans.txt",
+      "bytes_on_disk": 51066,
+      "manifest_sha256_of_text": "8962bd9caa8a5da4d7c8374a3a10ae0408e32daca5c9d2a07562ed182561596b",
+      "recomputed_sha256_of_joined_docs": "8962bd9caa8a5da4d7c8374a3a10ae0408e32daca5c9d2a07562ed182561596b",
+      "note": "manifest의 sha256은 문서를 '\\n\\n'으로 이은 text에 대한 값이고 디스크 파일도 같은 문자열이다. 두 값이 다르면 코퍼스가 재생성된 것이다.",
+      "match": true
+    },
+    "swh_Latn": {
+      "file": "<repo>/data/ood_xlsum/swh_Latn.txt",
+      "bytes_on_disk": 50893,
+      "manifest_sha256_of_text": "f7dac977a75b06e8f970c934570cf583bc397a913b405afa8f8397ba485e1654",
+      "recomputed_sha256_of_joined_docs": "f7dac977a75b06e8f970c934570cf583bc397a913b405afa8f8397ba485e1654",
+      "note": "manifest의 sha256은 문서를 '\\n\\n'으로 이은 text에 대한 값이고 디스크 파일도 같은 문자열이다. 두 값이 다르면 코퍼스가 재생성된 것이다.",
+      "match": true
+    },
+    "ben_Beng": {
+      "file": "<repo>/data/ood_xlsum/ben_Beng.txt",
+      "bytes_on_disk": 50759,
+      "manifest_sha256_of_text": "930ba0041c13c7fcdf25a7cccf8eff5dc826d13d0f16e867630f0471f16acd18",
+      "recomputed_sha256_of_joined_docs": "930ba0041c13c7fcdf25a7cccf8eff5dc826d13d0f16e867630f0471f16acd18",
+      "note": "manifest의 sha256은 문서를 '\\n\\n'으로 이은 text에 대한 값이고 디스크 파일도 같은 문자열이다. 두 값이 다르면 코퍼스가 재생성된 것이다.",
+      "match": true
+    }
+  }
+}

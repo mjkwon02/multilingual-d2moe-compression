@@ -1,0 +1,26 @@
+# Table D2 (full) -- placebo raw data, all 5 languages, same format as the EN/KO/SW version
+# provenance: {cond}/seed{s}/scale_{cond}_seed{s}/eval_ppl.json and {cond}_b/... under results/deepseek
+#             + baseline/eval_ppl.json; verdicts from phase1_41_headline_gate_result.json
+# dbpb%% = 100*(bpb/bpb_baseline - 1); noise_floor = max over seed |own - placebo| (phase1_41_headline_gate.py)
+# seeds 0,1,2. Values at 6 dp.
+lang,matched_condition,placebo_condition,seed,own_dbpb_pct,placebo_dbpb_pct,abs_diff_pp,signed_diff_placebo_minus_own_pp,placebo_not_better_than_own
+EN,english_only,english_only_placebo,0,7.690521,10.839566,3.149045,3.149045,True
+EN,english_only,english_only_placebo,1,6.914990,10.962476,4.047486,4.047486,True
+EN,english_only,english_only_placebo,2,7.232152,10.843687,3.611535,3.611535,True
+EN,english_only,english_only_placebo,SUMMARY,7.279221,10.881910,4.047486,,noise_floor=4.047486;own_gain_mean=5.962513;multiple=1.47;verdict=INCONCLUSIVE
+KO,korean_only,korean_only_placebo,0,3.659373,4.448989,0.789616,0.789616,True
+KO,korean_only,korean_only_placebo,1,4.073167,4.584559,0.511392,0.511392,True
+KO,korean_only,korean_only_placebo,2,3.861796,4.355322,0.493526,0.493526,True
+KO,korean_only,korean_only_placebo,SUMMARY,3.864778,4.462957,0.789616,,noise_floor=0.789616;own_gain_mean=60.783722;multiple=76.98;verdict=SUPPORTED
+ZH,chinese_only,chinese_only_placebo,0,3.823641,7.979356,4.155715,4.155715,True
+ZH,chinese_only,chinese_only_placebo,1,4.328968,8.572869,4.243901,4.243901,True
+ZH,chinese_only,chinese_only_placebo,2,4.566880,7.533570,2.966690,2.966690,True
+ZH,chinese_only,chinese_only_placebo,SUMMARY,4.239830,8.028598,4.243901,,noise_floor=4.243901;own_gain_mean=10.758536;multiple=2.54;verdict=SUPPORTED
+SW,swahili_only,swahili_only_placebo,0,0.017746,0.593094,0.575348,0.575348,True
+SW,swahili_only,swahili_only_placebo,1,0.064206,0.348926,0.284720,0.284720,True
+SW,swahili_only,swahili_only_placebo,2,-0.224386,0.682559,0.906945,0.906945,True
+SW,swahili_only,swahili_only_placebo,SUMMARY,-0.047478,0.541526,0.906945,,noise_floor=0.906945;own_gain_mean=35.550801;multiple=39.20;verdict=SUPPORTED
+BN,bengali_only,bengali_only_placebo,0,1.390203,1.326236,0.063967,-0.063967,False
+BN,bengali_only,bengali_only_placebo,1,1.350312,1.212250,0.138062,-0.138062,False
+BN,bengali_only,bengali_only_placebo,2,1.248873,1.585477,0.336603,0.336603,True
+BN,bengali_only,bengali_only_placebo,SUMMARY,1.329796,1.374654,0.336603,,noise_floor=0.336603;own_gain_mean=67.850211;multiple=201.57;verdict=SUPPORTED

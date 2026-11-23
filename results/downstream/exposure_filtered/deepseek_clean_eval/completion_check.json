@@ -1,0 +1,218 @@
+{
+  "sib200": {
+    "baseline": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "swahili_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "swahili_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "swahili_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "bengali_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "bengali_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "bengali_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    }
+  },
+  "belebele": {
+    "baseline": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "english_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "chinese_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "mixed_5lang_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed0": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed1": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed0_pp0.2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed1_pp0.2": {
+      "state": "COMPLETE",
+      "problems": []
+    },
+    "korean_only_seed2_pp0.2": {
+      "state": "COMPLETE",
+      "problems": []
+    }
+  },
+  "within_language_item_sets": {
+    "sib200": {
+      "eng_Latn": {
+        "n_models": 19,
+        "identical_across_models": true,
+        "n_items": 204
+      },
+      "kor_Hang": {
+        "n_models": 19,
+        "identical_across_models": true,
+        "n_items": 204
+      },
+      "zho_Hans": {
+        "n_models": 19,
+        "identical_across_models": true,
+        "n_items": 204
+      },
+      "swh_Latn": {
+        "n_models": 19,
+        "identical_across_models": true,
+        "n_items": 204
+      },
+      "ben_Beng": {
+        "n_models": 19,
+        "identical_across_models": true,
+        "n_items": 204
+      }
+    },
+    "belebele": {
+      "eng_Latn": {
+        "n_models": 16,
+        "identical_across_models": true,
+        "n_items": 200
+      },
+      "kor_Hang": {
+        "n_models": 16,
+        "identical_across_models": true,
+        "n_items": 200
+      },
+      "zho_Hans": {
+        "n_models": 16,
+        "identical_across_models": true,
+        "n_items": 200
+      },
+      "swh_Latn": {
+        "n_models": 7,
+        "identical_across_models": true,
+        "n_items": 200
+      },
+      "ben_Beng": {
+        "n_models": 7,
+        "identical_across_models": true,
+        "n_items": 200
+      }
+    },
+    "note": "within a language every model must share one item set; across languages Belebele item sets differ by construction (per-language split order + limit 200) and that is expected"
+  },
+  "intentional_holds": {
+    "MASSIVE revised 200-item run": "paused by user instruction before any test cell; validation complete; resume steps in analysis/massive_0916_revised/RESUME.md",
+    "XL-Sum / E2 remaining 7 cells": "stopped by user 2026-09-16T04:29:07Z; hold maintained",
+    "Qwen1.5-MoE": "awaiting delivery; hold maintained"
+  },
+  "tally": {
+    "sib200": {
+      "COMPLETE": 19
+    },
+    "belebele": {
+      "COMPLETE": 16
+    }
+  },
+  "within_language_mismatch": [],
+  "downstream_complete": true
+}

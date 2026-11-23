@@ -1,0 +1,127 @@
+{
+  "_purpose": "E2 (OOD bpb) + E3 (unseen-language bpb), campaign E1-E5",
+  "_registration": "logs/E1E5_PREREG.log (2026-08-03T04:45Z; confirmed values 05:35Z)",
+  "run": {
+    "baseline": false,
+    "condition": "korean_only",
+    "seed": 2,
+    "scale_condition": "korean_only",
+    "scale_seed": 2,
+    "delta_ratio": 0.8
+  },
+  "eval_batch_size": 8,
+  "segmentation": {
+    "max_chars": 288,
+    "rule": "split on newline into paragraphs; oversized paragraphs split at the last space before max_chars (character boundary if no space). No tokenizer truncation -- scored bytes == counted bytes."
+  },
+  "e2_ood": {
+    "corpus_id": "csebuetnlp/xlsum:v2.0:test",
+    "dataset": "csebuetnlp/xlsum",
+    "version": "v2.0",
+    "split": "test",
+    "bytes_budget_per_lang": 51200,
+    "sampling_rule": "equal BYTES per language; whole documents only (never truncated); documents that would exceed the budget are skipped, not cut; body text field only (no title/summary); fixed shuffle seed",
+    "results": {
+      "eng_Latn": {
+        "bits_per_byte": 1.051644743782657,
+        "ppl": 31.592634201049805,
+        "n_segments": 188,
+        "n_tokens_scored": 10729,
+        "n_bytes_scored": 50822,
+        "name": "eng_Latn",
+        "docs_sampled": 20,
+        "corpus_bytes_on_disk": 50990
+      },
+      "kor_Hang": {
+        "bits_per_byte": 1.1832195836265307,
+        "ppl": 3.243122100830078,
+        "n_segments": 80,
+        "n_tokens_scored": 35506,
+        "n_bytes_scored": 50935,
+        "name": "kor_Hang",
+        "docs_sampled": 11,
+        "corpus_bytes_on_disk": 51004
+      },
+      "zho_Hans": {
+        "bits_per_byte": 1.1367207089523248,
+        "ppl": 27.880874633789062,
+        "n_segments": 78,
+        "n_tokens_scored": 12068,
+        "n_bytes_scored": 50972,
+        "name": "zho_Hans",
+        "docs_sampled": 18,
+        "corpus_bytes_on_disk": 51032
+      },
+      "swh_Latn": {
+        "bits_per_byte": 2.9832860719820466,
+        "ppl": 216.5373992919922,
+        "n_segments": 190,
+        "n_tokens_scored": 19489,
+        "n_bytes_scored": 50684,
+        "name": "swh_Latn",
+        "docs_sampled": 21,
+        "corpus_bytes_on_disk": 50853
+      },
+      "ben_Beng": {
+        "bits_per_byte": 1.0070471617730539,
+        "ppl": 2.7701332569122314,
+        "n_segments": 69,
+        "n_tokens_scored": 34725,
+        "n_bytes_scored": 50687,
+        "name": "ben_Beng",
+        "docs_sampled": 5,
+        "corpus_bytes_on_disk": 50751
+      }
+    }
+  },
+  "e3_unseen": {
+    "source": "israel/flores-parallel",
+    "split": "test",
+    "n_sentences": 60,
+    "languages": [
+      "arb_Arab",
+      "hin_Deva",
+      "tur_Latn",
+      "rus_Cyrl"
+    ],
+    "results": {
+      "arb_Arab": {
+        "bits_per_byte": 1.555050309629849,
+        "ppl": 8.352998733520508,
+        "n_segments": 60,
+        "n_tokens_scored": 6961,
+        "n_bytes_scored": 13708,
+        "name": "Arabic",
+        "n_sentences": 60
+      },
+      "hin_Deva": {
+        "bits_per_byte": 0.9247786182398268,
+        "ppl": 3.7366554737091064,
+        "n_segments": 60,
+        "n_tokens_scored": 10986,
+        "n_bytes_scored": 22592,
+        "name": "Hindi",
+        "n_sentences": 60
+      },
+      "tur_Latn": {
+        "bits_per_byte": 2.11896063633581,
+        "ppl": 28.78726577758789,
+        "n_segments": 60,
+        "n_tokens_scored": 4367,
+        "n_bytes_scored": 9990,
+        "name": "Turkish",
+        "n_sentences": 60
+      },
+      "rus_Cyrl": {
+        "bits_per_byte": 0.8178383918284831,
+        "ppl": 12.706722259521484,
+        "n_segments": 60,
+        "n_tokens_scored": 3912,
+        "n_bytes_scored": 17543,
+        "name": "Russian",
+        "n_sentences": 60
+      }
+    }
+  },
+  "elapsed_sec": 1586.6
+}

@@ -1,0 +1,45 @@
+{
+  "model": "bengali_only_seed2",
+  "config": {
+    "condition": "bengali_only",
+    "seed": 2,
+    "dir": "results/deepseek/bengali_only/seed2",
+    "delta_ratio": 0.8,
+    "structured_pruning": "OFF at merge time",
+    "scale_condition": "bengali_only",
+    "scale_seed": 2,
+    "fisher_processed.pt_head_sha256": "392673dc0e24ab53",
+    "fisher_processed.pt_bytes": 29898689570,
+    "svd_scale_processed.pt_head_sha256": "d11633c38f01bd5b",
+    "svd_scale_processed.pt_bytes": 35844132530,
+    "expert_freq_available": [
+      "deepseek_wikitext_2000_expert_frequencies.json"
+    ],
+    "expert_freq_used_by_glob_order": "deepseek_wikitext_2000_expert_frequencies.json"
+  },
+  "tasks_requested": {
+    "sib": true,
+    "belebele": false,
+    "belebele_pruned": false
+  },
+  "already_done_skipped": {
+    "sib": false,
+    "belebele": false,
+    "belebele_pruned": false
+  },
+  "started_utc": "2026-09-16T17:52:29Z",
+  "seconds_load": 129.33291792869568,
+  "device_map_unique": [
+    0,
+    1
+  ],
+  "seconds_wait_for_lock": 6.198883056640625e-05,
+  "seconds_merge": 1431.4671070575714,
+  "seconds_sib": 397.92384338378906,
+  "finished_utc": "2026-09-16T18:25:08Z",
+  "peak_gpu_bytes": {
+    "0": 17125423616,
+    "1": 20488752640
+  },
+  "peak_host_rss_bytes": 68635598848
+}

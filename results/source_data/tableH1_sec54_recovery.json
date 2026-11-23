@@ -1,0 +1,313 @@
+{
+  "table": "H1 (부록 H.5) — §6.4 복원 범위별 회복률",
+  "metric": "recovery_pct_of_damage = 100 * gain_pp / compressed_delta_bpb_pct",
+  "unit": "손상 대비 % (pp 아님)",
+  "compression_condition": "english_only/seed0 (whitening ON, AMENDMENT 1)",
+  "counting_unit": "expert (not (T,C) pairs): T 12 expert = late 8 + early 4; '24 expert' = T 12 + C 12 = 12 pairs",
+  "eval_langs": [
+    "eng_Latn",
+    "kor_Hang",
+    "zho_Hans",
+    "swh_Latn",
+    "ben_Beng"
+  ],
+  "denominator_compressed_delta_bpb_pct": {
+    "eng_Latn": 7.690521426360671,
+    "kor_Hang": 88.68195771581392,
+    "zho_Hans": 13.791171056414761,
+    "swh_Latn": 34.776191722743086,
+    "ben_Beng": 89.73056747256616
+  },
+  "b3_reference_check_bpb_diff": {
+    "eng_Latn": 0.0,
+    "kor_Hang": 0.0,
+    "zho_Hans": 0.0,
+    "swh_Latn": 0.0,
+    "ben_Beng": 0.0
+  },
+  "rows": [
+    {
+      "key": "T_late8",
+      "label": "treatment 중 late 8 expert (L22–25, 27)",
+      "exploratory": false,
+      "gain_pp": {
+        "eng_Latn": -0.000661019561041698,
+        "kor_Hang": -0.05240042465139538,
+        "zho_Hans": 0.04113441858640776,
+        "swh_Latn": -0.0011113520504792973,
+        "ben_Beng": 0.09720905689040649
+      },
+      "recovery_pct_of_damage": {
+        "eng_Latn": -0.008595250235906403,
+        "kor_Hang": -0.05908803323818735,
+        "zho_Hans": 0.2982663213888185,
+        "swh_Latn": -0.0031957267182665386,
+        "ben_Beng": 0.10833438328597082
+      },
+      "stored_max_abs_diff": 5.551115123125783e-17
+    },
+    {
+      "key": "T_early4",
+      "label": "treatment 중 early 4 expert (L1×2, L3, L5)",
+      "exploratory": false,
+      "gain_pp": {
+        "eng_Latn": 0.05989907643701198,
+        "kor_Hang": -0.028107130968436422,
+        "zho_Hans": 0.13746277781652694,
+        "swh_Latn": 1.0167070846923636,
+        "ben_Beng": 0.0270103866765794
+      },
+      "recovery_pct_of_damage": {
+        "eng_Latn": 0.7788688583806154,
+        "kor_Hang": -0.031694305913393596,
+        "zho_Hans": 0.9967447815288183,
+        "swh_Latn": 2.923572232400171,
+        "ben_Beng": 0.030101655921029855
+      },
+      "stored_max_abs_diff": 1.1102230246251565e-16
+    },
+    {
+      "key": "explor_TC24",
+      "label": "선정 24 expert 전부 (T 12 + C 12)",
+      "exploratory": true,
+      "gain_pp": {
+        "eng_Latn": 0.04151633791898135,
+        "kor_Hang": 0.9550605465595652,
+        "zho_Hans": 0.18200731467299747,
+        "swh_Latn": 0.9897029602043759,
+        "ben_Beng": 0.35122169524260016
+      },
+      "recovery_pct_of_damage": {
+        "eng_Latn": 0.5398377511396887,
+        "kor_Hang": 1.0769502288392276,
+        "zho_Hans": 1.319737924563987,
+        "swh_Latn": 2.8459210487878854,
+        "ben_Beng": 0.39141811440118346
+      },
+      "stored_max_abs_diff": 1.1102230246251565e-16
+    },
+    {
+      "key": "explor_L25_all",
+      "label": "layer 25 전 expert (64)",
+      "exploratory": true,
+      "gain_pp": {
+        "eng_Latn": 0.37950370238479714,
+        "kor_Hang": 1.7743292094203724,
+        "zho_Hans": 0.791138861081583,
+        "swh_Latn": 0.5525554853925598,
+        "ben_Beng": 2.73730253673088
+      },
+      "recovery_pct_of_damage": {
+        "eng_Latn": 4.934694038872042,
+        "kor_Hang": 2.000778123444574,
+        "zho_Hans": 5.736560425835603,
+        "swh_Latn": 1.588890151624041,
+        "ben_Beng": 3.050579767666989
+      },
+      "stored_max_abs_diff": 2.220446049250313e-16
+    },
+    {
+      "key": "explor_L11_all",
+      "label": "layer 11 전 expert (64)",
+      "exploratory": true,
+      "gain_pp": {
+        "eng_Latn": 0.38041342099834896,
+        "kor_Hang": 2.983739362405501,
+        "zho_Hans": 0.6912696538243228,
+        "swh_Latn": 1.488705475246313,
+        "ben_Beng": 5.130577605525403
+      },
+      "recovery_pct_of_damage": {
+        "eng_Latn": 4.946523127735036,
+        "kor_Hang": 3.364539348541508,
+        "zho_Hans": 5.012407220507853,
+        "swh_Latn": 4.280818000760914,
+        "ben_Beng": 5.717759009040039
+      },
+      "stored_max_abs_diff": 8.881784197001252e-16
+    }
+  ],
+  "individual_expert_recovery_pct": {
+    "T_L25E32": {
+      "eng_Latn": -0.2799963771607177,
+      "kor_Hang": -0.052748019631995255,
+      "zho_Hans": -0.019913658148153164,
+      "swh_Latn": 0.005226750009283859,
+      "ben_Beng": -0.0024081514823150203
+    },
+    "C_L25E45": {
+      "eng_Latn": -0.29516776206712714,
+      "kor_Hang": -0.013535923287066572,
+      "zho_Hans": 0.0897403937959265,
+      "swh_Latn": 0.002500841774914215,
+      "ben_Beng": 0.05181743219096404
+    },
+    "T_L23E51": {
+      "eng_Latn": -0.3098547038475422,
+      "kor_Hang": 0.06013416783973628,
+      "zho_Hans": 0.4446278952924475,
+      "swh_Latn": 0.004832108682982495,
+      "ben_Beng": 0.11435642524378782
+    },
+    "C_L23E62": {
+      "eng_Latn": -0.44978826988422105,
+      "kor_Hang": 0.10969795267068702,
+      "zho_Hans": 0.10010263269877306,
+      "swh_Latn": 0.03141087650160854,
+      "ben_Beng": 0.06957395556015823
+    },
+    "T_L23E58": {
+      "eng_Latn": -0.477600366651295,
+      "kor_Hang": -0.0821469638610136,
+      "zho_Hans": 0.4889306092274562,
+      "swh_Latn": -0.0007570417272870303,
+      "ben_Beng": 0.12694902595247484
+    },
+    "C_L23E14": {
+      "eng_Latn": -0.5361836400249506,
+      "kor_Hang": -0.02900135811869754,
+      "zho_Hans": 0.09183962677241223,
+      "swh_Latn": 0.08096238864486388,
+      "ben_Beng": 0.04698378388270376
+    },
+    "T_L24E28": {
+      "eng_Latn": -0.3759016550809363,
+      "kor_Hang": -0.0009262825566895955,
+      "zho_Hans": 0.06624977703588673,
+      "swh_Latn": -0.003796058947986032,
+      "ben_Beng": 0.05056488453050252
+    },
+    "C_L24E34": {
+      "eng_Latn": -0.4038276321353755,
+      "kor_Hang": 0.030740631136379346,
+      "zho_Hans": -0.06568955785489287,
+      "swh_Latn": 0.03981304764645931,
+      "ben_Beng": 0.06775412011832176
+    },
+    "T_L24E1": {
+      "eng_Latn": -0.6406263242256534,
+      "kor_Hang": 0.0161522792424669,
+      "zho_Hans": 0.23692640694798922,
+      "swh_Latn": 0.02626891392573743,
+      "ben_Beng": 0.07711454671613768
+    },
+    "C_L24E53": {
+      "eng_Latn": -0.5793858441544059,
+      "kor_Hang": 0.5312679464475026,
+      "zho_Hans": 0.2937151080262841,
+      "swh_Latn": 0.010931688742793355,
+      "ben_Beng": 0.09547423659123415
+    },
+    "T_L24E48": {
+      "eng_Latn": -0.4831253681960147,
+      "kor_Hang": 0.008681649526798844,
+      "zho_Hans": 0.14357954542613505,
+      "swh_Latn": -0.004986493113853343,
+      "ben_Beng": 0.01751440137994858
+    },
+    "C_L24E32": {
+      "eng_Latn": 0.04115235896276937,
+      "kor_Hang": 0.09387952165373614,
+      "zho_Hans": 0.22741675444875215,
+      "swh_Latn": -0.08122109106966936,
+      "ben_Beng": 0.06847680317042687
+    },
+    "T_L22E46": {
+      "eng_Latn": -0.8424474995834528,
+      "kor_Hang": -0.043510192790542614,
+      "zho_Hans": 0.40547656470143206,
+      "swh_Latn": 0.006765014157957067,
+      "ben_Beng": 0.05691031022464364
+    },
+    "C_L22E62": {
+      "eng_Latn": -0.9421126345995007,
+      "kor_Hang": 0.0606469963008501,
+      "zho_Hans": 0.14954129444141848,
+      "swh_Latn": -0.027527705053410907,
+      "ben_Beng": -0.024657000061086704
+    },
+    "T_L27E60": {
+      "eng_Latn": 0.17131662323269692,
+      "kor_Hang": -0.02115867290583396,
+      "zho_Hans": -0.6869844332159458,
+      "swh_Latn": -0.012552260253657178,
+      "ben_Beng": 4.229412567956304e-05
+    },
+    "C_L27E36": {
+      "eng_Latn": -0.04916645821017566,
+      "kor_Hang": 0.19954390339792233,
+      "zho_Hans": 0.036121879541805756,
+      "swh_Latn": -0.022125335003730782,
+      "ben_Beng": -0.005638424733565515
+    },
+    "T_L1E31": {
+      "eng_Latn": 1.855947709353498,
+      "kor_Hang": 0.04496774258449918,
+      "zho_Hans": 0.6131989364189188,
+      "swh_Latn": 2.2036951467118056,
+      "ben_Beng": 0.04004600282151304
+    },
+    "C_L1E6": {
+      "eng_Latn": -1.157143923253717,
+      "kor_Hang": 0.027487871460607115,
+      "zho_Hans": 0.12305300567805148,
+      "swh_Latn": 0.0007274358776576239,
+      "ben_Beng": 0.0329538957230278
+    },
+    "T_L1E24": {
+      "eng_Latn": -0.7805472368969154,
+      "kor_Hang": -0.09102594375165113,
+      "zho_Hans": 0.19184147449684041,
+      "swh_Latn": 0.7937842918473699,
+      "ben_Beng": -0.038762209781744515
+    },
+    "C_L1E1": {
+      "eng_Latn": -1.454932739545815,
+      "kor_Hang": -0.06138011494798163,
+      "zho_Hans": 0.26670791284176876,
+      "swh_Latn": -0.004672764109708235,
+      "ben_Beng": 0.06944921165010166
+    },
+    "T_L5E44": {
+      "eng_Latn": -0.7846903101966519,
+      "kor_Hang": -0.00456368574028327,
+      "zho_Hans": 0.021023200837273923,
+      "swh_Latn": -0.04014816726438966,
+      "ben_Beng": 0.09437898506110758
+    },
+    "C_L5E37": {
+      "eng_Latn": -0.22969111608044573,
+      "kor_Hang": 0.08558996206358829,
+      "zho_Hans": 0.14333484677251057,
+      "swh_Latn": -0.051745910123124544,
+      "ben_Beng": 0.13153556251513984
+    },
+    "T_L3E13": {
+      "eng_Latn": -0.7495275120448475,
+      "kor_Hang": -0.03819645664239674,
+      "zho_Hans": 0.11471146010963869,
+      "swh_Latn": 0.07084524827991931,
+      "ben_Beng": -0.003478573034096794
+    },
+    "C_L3E26": {
+      "eng_Latn": -1.353922732568677,
+      "kor_Hang": 0.004767664701260286,
+      "zho_Hans": -0.015910860320924126,
+      "swh_Latn": -0.007864770721243726,
+      "ben_Beng": 0.12973556729514013
+    }
+  },
+  "source": "results/deepseek/sec54/step2_full_full.json",
+  "verification": {
+    "against": "step2_full_full.json:recovery_rate_pct_of_damage",
+    "n_cells": 25,
+    "tolerance": 1e-12,
+    "max_abs_diff": 8.881784197001252e-16,
+    "all_within_tolerance": true
+  },
+  "constraints": [
+    "rows 3-5 are labelled exploratory in the source run and feed no verdict",
+    "every row is english_only/seed0 only — single condition, single seed",
+    "unit is % of damage, not pp; Table 5 (§6.4) is in pp"
+  ]
+}

@@ -1,0 +1,369 @@
+{
+ "provenance": {
+  "generated_utc": "2026-08-02",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "results_root": "results/deepseek",
+  "baseline_file": "results/deepseek/baseline/eval_ppl.json",
+  "official_gate": "results/deepseek/phase1_41_headline_gate_result.json",
+  "definitions_source": "scripts/phase1_41_headline_gate.py (unchanged)",
+  "source_note": "results/placebo_zh_bn_summary.md and placebo_switch1_zh_bn.json contain Fisher-rank Spearman rho for Appendix F, NOT dbpb%. They hold no bpb numbers, so the ZH/BN bpb placebo values here were read from the same raw eval_ppl.json files that phase1_41_headline_gate.py reads."
+ },
+ "baseline_bpb": {
+  "eng_Latn": 0.9136547950497197,
+  "kor_Hang": 1.3696976405041057,
+  "zho_Hans": 1.0776064815914224,
+  "swh_Latn": 2.242880728735387,
+  "ben_Beng": 0.8857422239274809
+ },
+ "per_language": {
+  "eng_Latn": {
+   "matched_condition": "english_only",
+   "placebo_condition": "english_only_placebo",
+   "own_files": [
+    "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_ppl.json",
+    "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_ppl.json",
+    "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_ppl.json"
+   ],
+   "placebo_files": [
+    "results/deepseek/english_only_placebo/seed0/scale_english_only_placebo_seed0/eval_ppl.json",
+    "results/deepseek/english_only_placebo/seed1/scale_english_only_placebo_seed1/eval_ppl.json",
+    "results/deepseek/english_only_placebo/seed2/scale_english_only_placebo_seed2/eval_ppl.json"
+   ],
+   "own_dbpb_pct_per_seed": [
+    7.690521426360664,
+    6.914989783706371,
+    7.232152251686008
+   ],
+   "placebo_dbpb_pct_per_seed": [
+    10.83956599768845,
+    10.962476225095209,
+    10.843686839507093
+   ],
+   "abs_diff_per_seed": [
+    3.149044571327786,
+    4.047486441388838,
+    3.611534587821085
+   ],
+   "signed_diff_placebo_minus_own_per_seed": [
+    3.149044571327786,
+    4.047486441388838,
+    3.611534587821085
+   ],
+   "noise_floor_pp": 4.047486441388838,
+   "noise_floor_driving_seed": 1,
+   "official_noise_floor_pp": 4.047486441388838,
+   "floor_matches_official": true,
+   "body_floor_2dp": 4.05,
+   "floor_2dp": 4.05,
+   "floor_matches_body": true,
+   "own_gain_per_seed": [
+    5.561529173264602,
+    6.640931386487193,
+    5.685077656414682
+   ],
+   "own_gain_mean": 5.962512738722158,
+   "sign_consistent": true,
+   "threshold_2x_floor": 8.094972882777675,
+   "multiple_of_floor": 1.4731396448300904,
+   "multiple_of_floor_2dp": 1.47,
+   "body_multiple": 1.47,
+   "multiple_matches_body": true,
+   "verdict_official": "INCONCLUSIVE",
+   "verdict_recomputed": "INCONCLUSIVE",
+   "conservative_per_seed": [
+    true,
+    true,
+    true
+   ],
+   "conservative_all_seeds": true,
+   "conservative_on_mean": true,
+   "own_mean_dbpb_pct": 7.279221153917681,
+   "placebo_mean_dbpb_pct": 10.881909687430252,
+   "verdict_recomputed_matches_official": true
+  },
+  "kor_Hang": {
+   "matched_condition": "korean_only",
+   "placebo_condition": "korean_only_placebo",
+   "own_files": [
+    "results/deepseek/korean_only/seed0/scale_korean_only_seed0/eval_ppl.json",
+    "results/deepseek/korean_only/seed1/scale_korean_only_seed1/eval_ppl.json",
+    "results/deepseek/korean_only/seed2/scale_korean_only_seed2/eval_ppl.json"
+   ],
+   "placebo_files": [
+    "results/deepseek/korean_only_placebo/seed0/scale_korean_only_placebo_seed0/eval_ppl.json",
+    "results/deepseek/korean_only_placebo/seed1/scale_korean_only_placebo_seed1/eval_ppl.json",
+    "results/deepseek/korean_only_placebo/seed2/scale_korean_only_placebo_seed2/eval_ppl.json"
+   ],
+   "own_dbpb_pct_per_seed": [
+    3.659372983971454,
+    4.073166664506189,
+    3.861795583760075
+   ],
+   "placebo_dbpb_pct_per_seed": [
+    4.4489888712970105,
+    4.584558982790754,
+    4.355321757110908
+   ],
+   "abs_diff_per_seed": [
+    0.7896158873255565,
+    0.5113923182845648,
+    0.4935261733508334
+   ],
+   "signed_diff_placebo_minus_own_per_seed": [
+    0.7896158873255565,
+    0.5113923182845648,
+    0.4935261733508334
+   ],
+   "noise_floor_pp": 0.7896158873255565,
+   "noise_floor_driving_seed": 0,
+   "official_noise_floor_pp": 0.7896158873255565,
+   "floor_matches_official": true,
+   "body_floor_2dp": 0.79,
+   "floor_2dp": 0.79,
+   "floor_matches_body": true,
+   "own_gain_per_seed": [
+    60.22520162798156,
+    60.044218567204396,
+    62.08174616085328
+   ],
+   "own_gain_mean": 60.78372211867975,
+   "sign_consistent": true,
+   "threshold_2x_floor": 1.579231774651113,
+   "multiple_of_floor": 76.97884894965237,
+   "multiple_of_floor_2dp": 76.98,
+   "body_multiple": 76.98,
+   "multiple_matches_body": true,
+   "verdict_official": "SUPPORTED",
+   "verdict_recomputed": "SUPPORTED",
+   "conservative_per_seed": [
+    true,
+    true,
+    true
+   ],
+   "conservative_all_seeds": true,
+   "conservative_on_mean": true,
+   "own_mean_dbpb_pct": 3.864778410745906,
+   "placebo_mean_dbpb_pct": 4.462956537066224,
+   "verdict_recomputed_matches_official": true
+  },
+  "zho_Hans": {
+   "matched_condition": "chinese_only",
+   "placebo_condition": "chinese_only_placebo",
+   "own_files": [
+    "results/deepseek/chinese_only/seed0/scale_chinese_only_seed0/eval_ppl.json",
+    "results/deepseek/chinese_only/seed1/scale_chinese_only_seed1/eval_ppl.json",
+    "results/deepseek/chinese_only/seed2/scale_chinese_only_seed2/eval_ppl.json"
+   ],
+   "placebo_files": [
+    "results/deepseek/chinese_only_placebo/seed0/scale_chinese_only_placebo_seed0/eval_ppl.json",
+    "results/deepseek/chinese_only_placebo/seed1/scale_chinese_only_placebo_seed1/eval_ppl.json",
+    "results/deepseek/chinese_only_placebo/seed2/scale_chinese_only_placebo_seed2/eval_ppl.json"
+   ],
+   "own_dbpb_pct_per_seed": [
+    3.8236410347799676,
+    4.328967832231512,
+    4.566880024517306
+   ],
+   "placebo_dbpb_pct_per_seed": [
+    7.979356125968784,
+    8.572868972571035,
+    7.533570033583148
+   ],
+   "abs_diff_per_seed": [
+    4.155715091188816,
+    4.243901140339523,
+    2.966690009065842
+   ],
+   "signed_diff_placebo_minus_own_per_seed": [
+    4.155715091188816,
+    4.243901140339523,
+    2.966690009065842
+   ],
+   "noise_floor_pp": 4.243901140339523,
+   "noise_floor_driving_seed": 1,
+   "official_noise_floor_pp": 4.243901140339523,
+   "floor_matches_official": true,
+   "body_floor_2dp": 4.24,
+   "floor_2dp": 4.24,
+   "floor_matches_body": true,
+   "own_gain_per_seed": [
+    11.285447553630085,
+    10.395563210233632,
+    10.594596385292398
+   ],
+   "own_gain_mean": 10.758535716385373,
+   "sign_consistent": true,
+   "threshold_2x_floor": 8.487802280679047,
+   "multiple_of_floor": 2.5350580422626576,
+   "multiple_of_floor_2dp": 2.54,
+   "body_multiple": 2.54,
+   "multiple_matches_body": true,
+   "verdict_official": "SUPPORTED",
+   "verdict_recomputed": "SUPPORTED",
+   "conservative_per_seed": [
+    true,
+    true,
+    true
+   ],
+   "conservative_all_seeds": true,
+   "conservative_on_mean": true,
+   "own_mean_dbpb_pct": 4.239829630509595,
+   "placebo_mean_dbpb_pct": 8.028598377374323,
+   "verdict_recomputed_matches_official": true
+  },
+  "swh_Latn": {
+   "matched_condition": "swahili_only",
+   "placebo_condition": "swahili_only_placebo",
+   "own_files": [
+    "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+    "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl.json",
+    "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ppl.json"
+   ],
+   "placebo_files": [
+    "results/deepseek/swahili_only_placebo/seed0/scale_swahili_only_placebo_seed0/eval_ppl.json",
+    "results/deepseek/swahili_only_placebo/seed1/scale_swahili_only_placebo_seed1/eval_ppl.json",
+    "results/deepseek/swahili_only_placebo/seed2/scale_swahili_only_placebo_seed2/eval_ppl.json"
+   ],
+   "own_dbpb_pct_per_seed": [
+    0.017746379170624493,
+    0.06420603738439556,
+    -0.22438589786284435
+   ],
+   "placebo_dbpb_pct_per_seed": [
+    0.593094257481952,
+    0.3489255707980643,
+    0.6825593104014205
+   ],
+   "abs_diff_per_seed": [
+    0.5753478783113275,
+    0.28471953341366874,
+    0.9069452082642648
+   ],
+   "signed_diff_placebo_minus_own_per_seed": [
+    0.5753478783113275,
+    0.28471953341366874,
+    0.9069452082642648
+   ],
+   "noise_floor_pp": 0.9069452082642648,
+   "noise_floor_driving_seed": 2,
+   "official_noise_floor_pp": 0.9069452082642648,
+   "floor_matches_official": true,
+   "body_floor_2dp": 0.91,
+   "floor_2dp": 0.91,
+   "floor_matches_body": true,
+   "own_gain_per_seed": [
+    36.353013516281194,
+    34.32744638072156,
+    35.97194242297896
+   ],
+   "own_gain_mean": 35.55080077332724,
+   "sign_consistent": true,
+   "threshold_2x_floor": 1.8138904165285297,
+   "multiple_of_floor": 39.19839969314715,
+   "multiple_of_floor_2dp": 39.2,
+   "body_multiple": 39.2,
+   "multiple_matches_body": true,
+   "verdict_official": "SUPPORTED",
+   "verdict_recomputed": "SUPPORTED",
+   "conservative_per_seed": [
+    true,
+    true,
+    true
+   ],
+   "conservative_all_seeds": true,
+   "conservative_on_mean": true,
+   "own_mean_dbpb_pct": -0.047477827102608096,
+   "placebo_mean_dbpb_pct": 0.5415263795604789,
+   "verdict_recomputed_matches_official": true
+  },
+  "ben_Beng": {
+   "matched_condition": "bengali_only",
+   "placebo_condition": "bengali_only_placebo",
+   "own_files": [
+    "results/deepseek/bengali_only/seed0/scale_bengali_only_seed0/eval_ppl.json",
+    "results/deepseek/bengali_only/seed1/scale_bengali_only_seed1/eval_ppl.json",
+    "results/deepseek/bengali_only/seed2/scale_bengali_only_seed2/eval_ppl.json"
+   ],
+   "placebo_files": [
+    "results/deepseek/bengali_only_placebo/seed0/scale_bengali_only_placebo_seed0/eval_ppl.json",
+    "results/deepseek/bengali_only_placebo/seed1/scale_bengali_only_placebo_seed1/eval_ppl.json",
+    "results/deepseek/bengali_only_placebo/seed2/scale_bengali_only_placebo_seed2/eval_ppl.json"
+   ],
+   "own_dbpb_pct_per_seed": [
+    1.3902030353399875,
+    1.3503120971011695,
+    1.248873236235748
+   ],
+   "placebo_dbpb_pct_per_seed": [
+    1.326236231542599,
+    1.2122502740984142,
+    1.5854765869452558
+   ],
+   "abs_diff_per_seed": [
+    0.0639668037973884,
+    0.13806182300275527,
+    0.33660335070950786
+   ],
+   "signed_diff_placebo_minus_own_per_seed": [
+    -0.0639668037973884,
+    -0.13806182300275527,
+    0.33660335070950786
+   ],
+   "noise_floor_pp": 0.33660335070950786,
+   "noise_floor_driving_seed": 2,
+   "official_noise_floor_pp": 0.33660335070950786,
+   "floor_matches_official": true,
+   "body_floor_2dp": 0.34,
+   "floor_2dp": 0.34,
+   "floor_matches_body": true,
+   "own_gain_per_seed": [
+    66.70162986053256,
+    67.43086130327944,
+    69.41814144439866
+   ],
+   "own_gain_mean": 67.85021086940355,
+   "sign_consistent": true,
+   "threshold_2x_floor": 0.6732067014190157,
+   "multiple_of_floor": 201.57318911527705,
+   "multiple_of_floor_2dp": 201.57,
+   "body_multiple": 201.57,
+   "multiple_matches_body": true,
+   "verdict_official": "SUPPORTED",
+   "verdict_recomputed": "SUPPORTED",
+   "conservative_per_seed": [
+    false,
+    false,
+    true
+   ],
+   "conservative_all_seeds": false,
+   "conservative_on_mean": true,
+   "own_mean_dbpb_pct": 1.3297961228923016,
+   "placebo_mean_dbpb_pct": 1.374654364195423,
+   "verdict_recomputed_matches_official": true
+  }
+ },
+ "focus_zh_bn": {
+  "zho_Hans": {
+   "noise_floor_pp": 4.243901140339523,
+   "body_value": 4.24,
+   "matches_body": true,
+   "multiple_of_floor": 2.5350580422626576,
+   "body_multiple": 2.54,
+   "multiple_matches_body": true,
+   "conservative_all_seeds": true
+  },
+  "ben_Beng": {
+   "noise_floor_pp": 0.33660335070950786,
+   "body_value": 0.34,
+   "matches_body": true,
+   "multiple_of_floor": 201.57318911527705,
+   "body_multiple": 201.57,
+   "multiple_matches_body": true,
+   "conservative_all_seeds": false
+  }
+ }
+}

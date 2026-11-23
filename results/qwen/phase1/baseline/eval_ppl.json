@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "eval_source": "israel/flores-parallel",
+    "eval_split": "test",
+    "eval_n_sentences": 60,
+    "batch_size": 8,
+    "tokenizer_bos": null,
+    "primary": "data_utils.evaluate_sentences unchanged (tokenizer default special tokens: none for Qwen)",
+    "sensitivity": "same, with eos (<|endoftext|>) prepended to every sentence",
+    "run": {
+      "mode": "baseline",
+      "condition": null,
+      "seed": null,
+      "scale_condition": null,
+      "scale_seed": null,
+      "plain_svd": false,
+      "delta_ratio": 0.8,
+      "share_ratio": 1.0,
+      "merge_method": "fisher",
+      "structured_pruning": "off",
+      "status": "running",
+      "device_map": {
+        "hf_device_map": {
+          "model.embed_tokens": 0,
+          "model.layers.0": 0,
+          "model.layers.1": 0,
+          "model.layers.2": 0,
+          "model.layers.3": 0,
+          "model.layers.4": 0,
+          "model.layers.5": 0,
+          "model.layers.6": 0,
+          "model.layers.7": 0,
+          "model.layers.8": 0,
+          "model.layers.9": 0,
+          "model.layers.10": 1,
+          "model.layers.11": 1,
+          "model.layers.12": 1,
+          "model.layers.13": 1,
+          "model.layers.14": 1,
+          "model.layers.15": 1,
+          "model.layers.16": 1,
+          "model.layers.17": 1,
+          "model.layers.18": 1,
+          "model.layers.19": 1,
+          "model.layers.20": 1,
+          "model.layers.21": 1,
+          "model.layers.22": 1,
+          "model.layers.23": 1,
+          "model.norm": 1,
+          "lm_head": 1
+        },
+        "modules_per_device": {
+          "0": 11,
+          "1": 16
+        }
+      },
+      "params": {
+        "total_params_before": 14315784192
+      }
+    },
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "model_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9"
+  },
+  "eng_Latn": {
+    "name": "English",
+    "ppl": 18.247753143310547,
+    "n_sentences": 60,
+    "n_tokens": 1752,
+    "n_bytes": 8666,
+    "bits_per_byte": 0.847018415721971,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.329072591730689,
+      "n_tokens": 1812,
+      "prefix_id": 151643
+    }
+  },
+  "kor_Hang": {
+    "name": "Korean",
+    "ppl": 22.569185256958008,
+    "n_sentences": 60,
+    "n_tokens": 2919,
+    "n_bytes": 10222,
+    "bits_per_byte": 1.283960866893724,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.993506474414934,
+      "n_tokens": 2979,
+      "prefix_id": 151643
+    }
+  },
+  "zho_Hans": {
+    "name": "Chinese",
+    "ppl": 23.28709602355957,
+    "n_sentences": 60,
+    "n_tokens": 1865,
+    "n_bytes": 8157,
+    "bits_per_byte": 1.0383499677142516,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.4956129291895237,
+      "n_tokens": 1925,
+      "prefix_id": 151643
+    }
+  },
+  "swh_Latn": {
+    "name": "Swahili",
+    "ppl": 28.353713989257812,
+    "n_sentences": 60,
+    "n_tokens": 3437,
+    "n_bytes": 9104,
+    "bits_per_byte": 1.8217405633684034,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 3.287429215579176,
+      "n_tokens": 3497,
+      "prefix_id": 151643
+    }
+  },
+  "ben_Beng": {
+    "name": "Bengali",
+    "ppl": 3.366379499435425,
+    "n_sentences": 60,
+    "n_tokens": 9323,
+    "n_bytes": 23314,
+    "bits_per_byte": 0.7002838612878458,
+    "sensitivity_eos_prefixed": {
+      "bits_per_byte": 1.6562376930471923,
+      "n_tokens": 9383,
+      "prefix_id": 151643
+    }
+  }
+}

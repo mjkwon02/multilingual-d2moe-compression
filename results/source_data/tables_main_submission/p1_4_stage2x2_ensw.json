@@ -1,0 +1,308 @@
+{
+ "provenance": {
+  "generated_utc": "2026-08-02",
+  "driver": "scripts/stage2x2_sw_0802_driver.sh",
+  "log": "logs/stage2x2_sw_0802.log",
+  "cells_run_utc": "2026-08-02T05:5x -- 09:01:14Z (6 off-diagonal cells, 0 skipped)",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "baseline_file": "results/deepseek/baseline/eval_ppl.json",
+  "cell_paths": {
+   "fisher=english_only|scale=english_only|seed0": "results/deepseek/english_only/seed0/scale_english_only_seed0/eval_ppl.json",
+   "fisher=english_only|scale=english_only|seed1": "results/deepseek/english_only/seed1/scale_english_only_seed1/eval_ppl.json",
+   "fisher=english_only|scale=english_only|seed2": "results/deepseek/english_only/seed2/scale_english_only_seed2/eval_ppl.json",
+   "fisher=english_only|scale=swahili_only|seed0": "results/deepseek/english_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+   "fisher=english_only|scale=swahili_only|seed1": "results/deepseek/english_only/seed1/scale_swahili_only_seed1/eval_ppl.json",
+   "fisher=english_only|scale=swahili_only|seed2": "results/deepseek/english_only/seed2/scale_swahili_only_seed2/eval_ppl.json",
+   "fisher=swahili_only|scale=english_only|seed0": "results/deepseek/swahili_only/seed0/scale_english_only_seed0/eval_ppl.json",
+   "fisher=swahili_only|scale=english_only|seed1": "results/deepseek/swahili_only/seed1/scale_english_only_seed1/eval_ppl.json",
+   "fisher=swahili_only|scale=english_only|seed2": "results/deepseek/swahili_only/seed2/scale_english_only_seed2/eval_ppl.json",
+   "fisher=swahili_only|scale=swahili_only|seed0": "results/deepseek/swahili_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+   "fisher=swahili_only|scale=swahili_only|seed1": "results/deepseek/swahili_only/seed1/scale_swahili_only_seed1/eval_ppl.json",
+   "fisher=swahili_only|scale=swahili_only|seed2": "results/deepseek/swahili_only/seed2/scale_swahili_only_seed2/eval_ppl.json"
+  },
+  "note": "POST-HOC EXTENSION of the 2026-07-26 EN/KO 2x2; not covered by that registration."
+ },
+ "prereg_quoted_verbatim": "PRIMARY METRICS (evaluated on the swh_Latn column):\n  scale-language effect  = mean over fisher in {EN,SW} of\n                           [ dbpb%(scale=EN) - dbpb%(scale=SW) ]\n  fisher-language effect = mean over scale  in {EN,SW} of\n                           [ dbpb%(fisher=EN) - dbpb%(fisher=SW) ]\n  Both are main effects of the 2x2; positive = the mismatched (EN)\n  calibration language is worse for Swahili.\n  PREDICTION (same direction as the original EN/KO 2x2): scale effect >> fisher effect.\n\nDECISION RULE:\n  NO NOISE FLOOR IS AVAILABLE. The original 2x2's floor came from placebo\n  Fisher artefacts, which have since been deleted, so an equivalent floor\n  cannot be recomputed for this pair. This is stated as a limitation rather\n  than substituted for. In its place the report gives:\n    (a) sign consistency of both effects across the 3 seeds,\n    (b) the ratio scale-effect / fisher-effect,\n    (c) each effect against the seed spread of the cells that produced it.\n  VERDICT VOCABULARY:\n    SCALE_DOMINANT  = scale effect > 3x fisher effect AND both effects\n                      sign-consistent across all 3 seeds\n    MIXED           = otherwise\n    FISHER_DOMINANT = fisher effect exceeds scale effect\n  The headline Swahili floor of 0.91%p may be quoted for orientation ONLY,\n  and MUST carry the label 'noise floor from a DIFFERENT level of analysis\n  (headline single-condition comparison), not a floor for this 2x2'.\n\nSECONDARY: the identical computation on the eng_Latn column. Descriptive only.",
+ "baseline_bpb": {
+  "eng_Latn": 0.9136547950497197,
+  "kor_Hang": 1.3696976405041057,
+  "zho_Hans": 1.0776064815914224,
+  "swh_Latn": 2.242880728735387,
+  "ben_Beng": 0.8857422239274809
+ },
+ "cell_bpb_raw": {
+  "fisher=english_only|scale=english_only|seed0": {
+   "eng_Latn": 0.98391961282599,
+   "kor_Hang": 2.5843723228904576,
+   "zho_Hans": 1.226221034782708,
+   "swh_Latn": 3.0228692310728627,
+   "ben_Beng": 1.6805237478017372
+  },
+  "fisher=english_only|scale=english_only|seed1": {
+   "eng_Latn": 0.9768339307857511,
+   "kor_Hang": 2.539159294688032,
+   "zho_Hans": 1.216888133547375,
+   "swh_Latn": 2.921316441456775,
+   "ben_Beng": 1.6572158511680044
+  },
+  "fisher=english_only|scale=english_only|seed2": {
+   "eng_Latn": 0.9797317008825451,
+   "kor_Hang": 2.6326264216140745,
+   "zho_Hans": 1.2357314502820316,
+   "swh_Latn": 3.0111382998980862,
+   "ben_Beng": 1.6848493279651826
+  },
+  "fisher=english_only|scale=swahili_only|seed0": {
+   "eng_Latn": 1.0088246071261953,
+   "kor_Hang": 2.156316194273459,
+   "zho_Hans": 1.2083028729641923,
+   "swh_Latn": 2.259934966059053,
+   "ben_Beng": 1.4906220344897287
+  },
+  "fisher=english_only|scale=swahili_only|seed1": {
+   "eng_Latn": 1.0102091381956393,
+   "kor_Hang": 2.1602100521593126,
+   "zho_Hans": 1.199896324894113,
+   "swh_Latn": 2.26514436589182,
+   "ben_Beng": 1.4715893461791356
+  },
+  "fisher=english_only|scale=swahili_only|seed2": {
+   "eng_Latn": 1.0076617100552574,
+   "kor_Hang": 2.2052915425387583,
+   "zho_Hans": 1.206202416485178,
+   "swh_Latn": 2.2555438469844136,
+   "ben_Beng": 1.5173395288262137
+  },
+  "fisher=swahili_only|scale=english_only|seed0": {
+   "eng_Latn": 0.992213639493784,
+   "kor_Hang": 2.7321238101123773,
+   "zho_Hans": 1.2699079728766234,
+   "swh_Latn": 2.5984203359172997,
+   "ben_Beng": 1.7325976279180564
+  },
+  "fisher=swahili_only|scale=english_only|seed1": {
+   "eng_Latn": 0.9867658971993752,
+   "kor_Hang": 2.650241109359579,
+   "zho_Hans": 1.250162283476836,
+   "swh_Latn": 2.5788069725684575,
+   "ben_Beng": 1.6879181077210128
+  },
+  "fisher=swahili_only|scale=english_only|seed2": {
+   "eng_Latn": 0.98976880874887,
+   "kor_Hang": 2.7493610214119175,
+   "zho_Hans": 1.2676480548090203,
+   "swh_Latn": 2.583710221520385,
+   "ben_Beng": 1.711851999604624
+  },
+  "fisher=swahili_only|scale=swahili_only|seed0": {
+   "eng_Latn": 1.0297148238182394,
+   "kor_Hang": 2.2605386309585125,
+   "zho_Hans": 1.247911285483288,
+   "swh_Latn": 2.243278758853853,
+   "ben_Beng": 1.5361474771664545
+  },
+  "fisher=swahili_only|scale=swahili_only|seed1": {
+   "eng_Latn": 1.0329257104588607,
+   "kor_Hang": 2.2768580225023975,
+   "zho_Hans": 1.2402396682586092,
+   "swh_Latn": 2.2443207935745666,
+   "ben_Beng": 1.5500252425693115
+  },
+  "fisher=swahili_only|scale=swahili_only|seed2": {
+   "eng_Latn": 1.029987563773249,
+   "kor_Hang": 2.3104702347969432,
+   "zho_Hans": 1.2360492730401187,
+   "swh_Latn": 2.2378480206742215,
+   "ben_Beng": 1.565445871370523
+  }
+ },
+ "primary_swh_Latn": {
+  "per_seed": [
+   {
+    "seed": 0,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 34.776191722743086,
+     "fisher=EN,scale=SW": 0.7603720119919943,
+     "fisher=SW,scale=EN": 15.85191769793206,
+     "fisher=SW,scale=SW": 0.017746379170624493
+    },
+    "scale_effect_pp": 24.92499551475626,
+    "fisher_effect_pp": 9.833449828816198
+   },
+   {
+    "seed": 1,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 30.24840795274537,
+     "fisher=EN,scale=SW": 0.992635804088704,
+     "fisher=SW,scale=EN": 14.977445725456695,
+     "fisher=SW,scale=SW": 0.06420603738439556
+    },
+    "scale_effect_pp": 22.084505918364485,
+    "fisher_effect_pp": 8.099695996996491
+   },
+   {
+    "seed": 2,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 34.25316207500116,
+     "fisher=EN,scale=SW": 0.5645916916931393,
+     "fisher=SW,scale=EN": 15.196059621822577,
+     "fisher=SW,scale=SW": -0.22438589786284435
+    },
+    "scale_effect_pp": 24.55450795149672,
+    "fisher_effect_pp": 9.923040021367282
+   }
+  ],
+  "scale_effect_per_seed_pp": [
+   24.92499551475626,
+   22.084505918364485,
+   24.55450795149672
+  ],
+  "fisher_effect_per_seed_pp": [
+   9.833449828816198,
+   8.099695996996491,
+   9.923040021367282
+  ],
+  "scale_effect_mean_pp": 23.85466979487249,
+  "fisher_effect_mean_pp": 9.285395282393324,
+  "scale_sign_consistent": true,
+  "fisher_sign_consistent": true,
+  "scale_seed_spread_pp": 2.8404895963917767,
+  "fisher_seed_spread_pp": 1.8233440243707904,
+  "ratio_scale_over_fisher": 2.5690526972077286,
+  "verdict": "MIXED",
+  "verdict_basis": "neither the FISHER_DOMINANT nor the SCALE_DOMINANT condition is met"
+ },
+ "secondary_eng_Latn": {
+  "per_seed": [
+   {
+    "seed": 0,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 7.690521426360664,
+     "fisher=EN,scale=SW": 10.416386209771545,
+     "fisher=SW,scale=EN": 8.598307026866681,
+     "fisher=SW,scale=SW": 12.702831462971087
+    },
+    "scale_effect_pp": -3.4151946097576436,
+    "fisher_effect_pp": -1.5971154268527799
+   },
+   {
+    "seed": 1,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 6.914989783706371,
+     "fisher=EN,scale=SW": 10.567923866766904,
+     "fisher=SW,scale=EN": 8.002048754713421,
+     "fisher=SW,scale=SW": 13.05426470209139
+    },
+    "scale_effect_pp": -4.352575015219251,
+    "fisher_effect_pp": -1.7866999031657675
+   },
+   {
+    "seed": 2,
+    "cells_dbpb_pct": {
+     "fisher=EN,scale=EN": 7.232152251686008,
+     "fisher=EN,scale=SW": 10.289106511001457,
+     "fisher=SW,scale=EN": 8.330719010237143,
+     "fisher=SW,scale=SW": 12.732682995134791
+    },
+    "scale_effect_pp": -3.7294591221065483,
+    "fisher_effect_pp": -1.7710716213422346
+   }
+  ],
+  "scale_effect_per_seed_pp": [
+   -3.4151946097576436,
+   -4.352575015219251,
+   -3.7294591221065483
+  ],
+  "fisher_effect_per_seed_pp": [
+   -1.5971154268527799,
+   -1.7866999031657675,
+   -1.7710716213422346
+  ],
+  "scale_effect_mean_pp": -3.8324095823611475,
+  "fisher_effect_mean_pp": -1.7182956504535938,
+  "scale_sign_consistent": true,
+  "fisher_sign_consistent": true,
+  "scale_seed_spread_pp": 0.9373804054616071,
+  "fisher_seed_spread_pp": 0.1895844763129877,
+  "ratio_scale_over_fisher": 2.2303551669641206,
+  "verdict_if_rule_applied_mechanically": "FISHER_DOMINANT",
+  "verdict_basis": "fisher effect exceeds scale effect",
+  "status": "DESCRIPTIVE ONLY -- the prereg says the eng_Latn column carries no verdict",
+  "do_not_report_as_verdict": true,
+  "caveat": "Both effects are NEGATIVE on the English column (scale -3.832410, fisher -1.718296), which is the expected direction: English calibration helps English. The verdict vocabulary was written for the swh_Latn column where 'positive = the mismatched (EN) calibration is worse'. Applying 'FISHER_DOMINANT = fisher effect exceeds scale effect' to two negative numbers fires on -1.72 > -3.83, which inverts the intended meaning -- the scale path is in fact the LARGER effect on English too (|-3.83| > |-1.72|, ratio 2.23x on absolute values). Do not quote FISHER_DOMINANT for the English column.",
+  "abs_ratio_scale_over_fisher": 2.2303551669641206
+ },
+ "noise_floor": {
+  "available": false,
+  "prereg_statement": "NO NOISE FLOOR IS AVAILABLE. The original 2x2's floor came from placebo Fisher artefacts, which have since been deleted, so an equivalent floor cannot be recomputed for this pair.",
+  "orientation_only_value_pp": 0.91,
+  "mandatory_label": "noise floor from a DIFFERENT level of analysis (headline single-condition comparison), not a floor for this 2x2",
+  "ratio_of_scale_effect_to_that_value": 26.21392285150823,
+  "ratio_of_fisher_effect_to_that_value": 10.203731079553103,
+  "warning": "These ratios are NOT the requested 'multiple of the placebo noise floor'. No placebo floor exists for the EN/SW pair. They divide by the headline Swahili floor, which the prereg permits only for orientation and only with the label above.",
+  "substitute_evidence_per_prereg": {
+   "a_sign_consistency": {
+    "scale": true,
+    "fisher": true
+   },
+   "b_ratio_scale_over_fisher": 2.5690526972077286,
+   "c_effect_vs_seed_spread": {
+    "scale_effect_mean": 23.85466979487249,
+    "scale_seed_spread": 2.8404895963917767,
+    "scale_effect_over_spread": 8.39808384624068,
+    "fisher_effect_mean": 9.285395282393324,
+    "fisher_seed_spread": 1.8233440243707904,
+    "fisher_effect_over_spread": 5.092508686394264
+   }
+  }
+ },
+ "reproducibility_20260730": {
+  "prior_file": "results/deepseek/english_only/seed0/scale_swahili_only_seed0/eval_ppl_prior_20260730.json",
+  "prior_mtime_note": "file dated 2026-07-30 04:53, copied aside 2026-08-02 06:02 before the re-run",
+  "rerun_file": "results/deepseek/english_only/seed0/scale_swahili_only_seed0/eval_ppl.json",
+  "per_lang": {
+   "eng_Latn": {
+    "prior_bpb": 1.0088246071261953,
+    "rerun_bpb": 1.0088246071261953,
+    "abs_diff": 0.0,
+    "identical_6dp": true,
+    "bitwise_identical": true
+   },
+   "kor_Hang": {
+    "prior_bpb": 2.156316194273459,
+    "rerun_bpb": 2.156316194273459,
+    "abs_diff": 0.0,
+    "identical_6dp": true,
+    "bitwise_identical": true
+   },
+   "zho_Hans": {
+    "prior_bpb": 1.2083028729641923,
+    "rerun_bpb": 1.2083028729641923,
+    "abs_diff": 0.0,
+    "identical_6dp": true,
+    "bitwise_identical": true
+   },
+   "swh_Latn": {
+    "prior_bpb": 2.259934966059053,
+    "rerun_bpb": 2.259934966059053,
+    "abs_diff": 0.0,
+    "identical_6dp": true,
+    "bitwise_identical": true
+   },
+   "ben_Beng": {
+    "prior_bpb": 1.4906220344897287,
+    "rerun_bpb": 1.4906220344897287,
+    "abs_diff": 0.0,
+    "identical_6dp": true,
+    "bitwise_identical": true
+   }
+  },
+  "all_identical_6dp": true,
+  "all_bitwise_identical": true,
+  "max_abs_diff": 0.0
+ }
+}

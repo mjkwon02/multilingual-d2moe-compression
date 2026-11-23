@@ -1,0 +1,56 @@
+{
+  "condition": "bengali_only",
+  "pp_ratio": 0.2,
+  "per_language": {
+    "eng_Latn": {
+      "mean_delta_pp": 2.3727863863882703,
+      "per_seed_delta": [
+        2.425951103042955,
+        2.284752945812297,
+        2.407655110309559
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "kor_Hang": {
+      "mean_delta_pp": 5.3005484896222255,
+      "per_seed_delta": [
+        5.48208697669881,
+        5.04510878489144,
+        5.374449707276426
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "zho_Hans": {
+      "mean_delta_pp": 1.9113667198425042,
+      "per_seed_delta": [
+        2.1412334597759273,
+        1.6648594216904122,
+        1.9280072780611732
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "swh_Latn": {
+      "mean_delta_pp": 2.0293738366160334,
+      "per_seed_delta": [
+        1.7953147144061496,
+        2.0318024744262715,
+        2.2610043210156796
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "ben_Beng": {
+      "mean_delta_pp": 3.921582586206688,
+      "per_seed_delta": [
+        3.9145648228229106,
+        3.8569467226100542,
+        3.9932362131870995
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    }
+  }
+}

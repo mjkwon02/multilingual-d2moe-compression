@@ -1,0 +1,81 @@
+{
+  "condition": "chinese_only",
+  "pp_ratio": 0.2,
+  "per_language": {
+    "eng_Latn": {
+      "mean_delta_pp": 0.6691452824237883,
+      "per_seed_delta": [
+        0.6478211342902291,
+        0.7425954915547752,
+        0.6170192214263608
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "kor_Hang": {
+      "mean_delta_pp": 1.1952175180111706,
+      "per_seed_delta": [
+        1.2443404151901696,
+        1.0999571973355309,
+        1.2413549415078116
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "zho_Hans": {
+      "mean_delta_pp": 0.3817589816453193,
+      "per_seed_delta": [
+        0.4126971261515955,
+        0.2587100569549463,
+        0.4738697618294161
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "swh_Latn": {
+      "mean_delta_pp": 1.1709685027236236,
+      "per_seed_delta": [
+        1.5603520245811353,
+        0.8438416286640873,
+        1.108711854925648
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    },
+    "ben_Beng": {
+      "mean_delta_pp": 2.110302963142324,
+      "per_seed_delta": [
+        2.073853231295338,
+        2.2465446954608836,
+        2.0105109626707502
+      ],
+      "sign_consistent_across_seeds": true,
+      "direction": "PRUNING_HURTS"
+    }
+  },
+  "provenance": {
+    "status": "POST_HOC_EXTENSION",
+    "prereg_membership": "NOT part of PRUNING_LANG_PREREG.md's frozen anchors. chinese_only is a post-hoc extension (사전등록 외 조건), run 2026-08-02 after the 4-condition campaign closed. It must NOT be retro-fitted into the H_trunc/H_bpb decision against the frozen EN/M/SW anchors; report descriptively only. PRUNING_LANG_PREREG.md was not modified.",
+    "track": "plain SVD (svd_scale=None), pp_ratio=0.2, --pp-condition defaulted to --condition. NOT the whitening-ON track.",
+    "off_arm": "OFF arm reused from the existing chinese_only/seed{0,1,2}/eval_ppl.json grid cells (written 2026-07-29 18:46/20:18/22:57); never recomputed.",
+    "off_arm_batch_verification": "OFF arm은 무 _meta 구 산출물이나 batch=8을 소스 하드코딩+mtime+로그로 검증했으며, 이는 기존 4조건 캠페인과 동일한 취급이다. (No eval_ppl.json in this project has ever carried a _meta key, including the 12 ON-arm files of the frozen prereg campaign; phase1_merge_eval.py receives batch_used and discards it. The committed revision that produced these OFF arms hardcodes evaluate_sentences(batch_size=8) with no fallback path.)",
+    "oom_fallback_history": "No batch demotion ever occurred: 0 matches for 'OOM at batch_size' / 'retrying at' across all logs (existing OFF arms and these new ON arms). The 2026-08-02 ON-arm log prints batch=8 for all 15 language-runs (5 langs x 3 seeds). oom_fallback was not passed, so any OOM would have re-raised rather than silently demoting.",
+    "run_window_utc": "2026-08-02T04:01:03Z .. 2026-08-02T05:03:16Z",
+    "seed_exit_codes": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "log": "logs/pruning_chinese_0802.log",
+    "driver": "scripts/pruning_chinese_0802_driver.sh"
+  },
+  "derived": {
+    "vulnerable_column_mean_pp": 1.4922,
+    "vulnerable_set": [
+      "kor_Hang",
+      "swh_Latn",
+      "ben_Beng"
+    ],
+    "bn_column_pp": 2.1103
+  }
+}

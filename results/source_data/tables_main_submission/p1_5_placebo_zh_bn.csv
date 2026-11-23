@@ -1,0 +1,14 @@
+# P1-5 ZH/BN placebo -- own vs placebo self-language dbpb%, per seed
+# provenance: {cond}/seed{s}/scale_{cond}_seed{s}/eval_ppl.json and {cond}_b/... under results/deepseek
+#             + baseline/eval_ppl.json; verdicts from phase1_41_headline_gate_result.json
+# dbpb%% = 100*(bpb/bpb_baseline - 1); noise_floor = max over seed |own - placebo| (phase1_41_headline_gate.py)
+# seeds 0,1,2. Values at 6 dp.
+lang,matched_condition,placebo_condition,seed,own_dbpb_pct,placebo_dbpb_pct,abs_diff_pp,signed_diff_placebo_minus_own_pp,placebo_not_better_than_own
+ZH,chinese_only,chinese_only_placebo,0,3.823641,7.979356,4.155715,4.155715,True
+ZH,chinese_only,chinese_only_placebo,1,4.328968,8.572869,4.243901,4.243901,True
+ZH,chinese_only,chinese_only_placebo,2,4.566880,7.533570,2.966690,2.966690,True
+ZH,chinese_only,chinese_only_placebo,SUMMARY,4.239830,8.028598,4.243901,,noise_floor=4.243901;own_gain_mean=10.758536;multiple=2.54;verdict=SUPPORTED
+BN,bengali_only,bengali_only_placebo,0,1.390203,1.326236,0.063967,-0.063967,False
+BN,bengali_only,bengali_only_placebo,1,1.350312,1.212250,0.138062,-0.138062,False
+BN,bengali_only,bengali_only_placebo,2,1.248873,1.585477,0.336603,0.336603,True
+BN,bengali_only,bengali_only_placebo,SUMMARY,1.329796,1.374654,0.336603,,noise_floor=0.336603;own_gain_mean=67.850211;multiple=201.57;verdict=SUPPORTED
